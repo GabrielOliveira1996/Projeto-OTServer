@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="hoshi gennin" nameDescription="a hoshi gennin" race="blood" experience="3400" speed="325" manacost="2800">
+  <health now="6350" max="6350"/>
+  <look type="212" corpse="2852"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="76" attack="68"/> 
+  </attacks>
+  <defenses armor="22" defense="18"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="..."/>
+    <voice sentence="..."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0"/>
+    <item id="7452" chance1="4300" chancemax="0"/>
+    <item id="7457" chance1="2000" chancemax="0"/>
+    <item id="2468" chance1="3000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2396" chance1="2500" chancemax="0"/>
+        <item id="2148" countmax="63" chance1="39000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tazuna[saga 1]" script="data/npc/scripts/tazuna[saga 1].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="11"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Ola. E voce que vai me levar ate o pais das ondas?" />
+	</parameters>
+</npc>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="wolf" nameDescription="a wolf" race="blood" experience="100" speed="185" manacost="200">
+  <health now="20" max="20"/>
+  <look type="48" head="0" body="0" legs="0" feet="0" corpse="2879"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="16" attack="9"/>
+  </attacks>
+  <defenses armor="1" defense="1"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Rrrrrrrrr!"/>
+  </voices>
+  <loot>
+    <item id="2666" chance="20000" count="2">
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

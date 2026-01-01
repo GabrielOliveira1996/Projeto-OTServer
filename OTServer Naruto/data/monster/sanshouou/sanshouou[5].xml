@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="sanshouou[5]" nameDescription="a sanshouou[5]" race="blood" experience="0" speed="798" manacost="0">
+  <health now="13500" max="13500"/>
+  <look type="101" corpse="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="82" attack="78"/>    
+    <attack name="doku" interval="1000" chance="17" range="3" target="1" min="-660" max="-760"> 
+   </attack> 
+        <attack name="katon ryuuka" interval="1000" chance="17" range="3" target="1" min="-760" max="-840"> 
+   </attack>
+
+  </attacks>
+  <defenses armor="30" defense="28"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="..."/>
+  </voices>
+</monster>

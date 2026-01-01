@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="bandit hunter" nameDescription="a bandit hunter" race="blood" experience="1500" speed="255" manacost="900">
+  <health now="400" max="400"/>
+  <look type="55" corpse="2850"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="100"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="28" attack="22"/>  
+    <attack name="melee" interval="1000" chance="14" range="3" target="1" min="-15" max="-25">
+	    <attribute key="shootEffect" value="arrow"/>
+    </attack>  
+  </attacks>
+  <defenses armor="5" defense="3"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <loot>
+    <item id="2148" countmax="58" chance1="50000" chancemax="0"/>
+    <item id="2467" chance1="4600" chancemax="0"/>
+    <item id="2495" chance1="5000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2382" chance1="3000" chancemax="0"/>
+        <item id="2148" countmax="47" chance1="40000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

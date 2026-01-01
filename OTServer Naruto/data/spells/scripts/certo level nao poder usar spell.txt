@@ -1,0 +1,54 @@
+setCombatCallback(combat, CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
+
+function onCastSpell(cid, var)
+    if getPlayerLevel(cid) < 75 then
+        return doCombat(cid, combat, var)
+    else
+        doPlayerSendCancel(cid, "Voce nao pode mais usar esse jutsu.")
+        return false
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local storage = 150266
+
+
+
+local storage = 150266
+
+function onCastSpell(cid, var)
+if getPlayerStorageValue(cid, storage) >= os.time() then
+doCombat(cid, combat, var)
+else
+doPlayerSendCancel(cid, " Desculpe,você só pode usar essa magia se estiver com o BUFF O Algoz.") return false
+end
+return true
+end
+
+
+
+
+
+
+
+http://www.xtibia.com/forum/topic/185688-aprendendo-fazer-scripts/
+
+
+
+http://www.xtibia.com/forum/topic/202488-script-armas-gta/
+
+

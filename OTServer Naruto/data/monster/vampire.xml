@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="vampire" nameDescription="a vampire" race="blood" experience="5400" speed="380" manacost="3200">
+  <health now="4300" max="4300"/>
+  <look type="103" corpse="2876"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="72" attack="64"/> 
+    <attack name="chakra no mesu" interval="1000" chance="18" range="3" target="1" min="-320" max="-420">
+    </attack>  
+
+  </attacks>
+  <defenses armor="23" defense="18"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Sangue..."/>
+    <voice sentence="Eu vou tomar seu sangueeee..."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0"/>
+    <item id="2409" chance1="1400" chancemax="0"/>
+    <item id="2449" chance1="1200" chancemax="0"/>
+    <item id="5918" chance1="1500" chancemax="0"/>
+    <item id="2497" chance1="1000" chancemax="0"/>
+    <item id="1987" chance="1200">
+      <inside>
+        <item id="2434" chance1="2500" chancemax="0"/>
+        <item id="2148" countmax="99" chance1="39000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

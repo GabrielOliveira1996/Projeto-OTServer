@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mizuki[saga 2]" script="data/npc/scripts/mizuki[saga 2].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="81"/>
+
+</npc>

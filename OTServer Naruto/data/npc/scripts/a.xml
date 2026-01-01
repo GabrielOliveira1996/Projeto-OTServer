@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Iruka" script="data/npc/scripts/iruka.lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="133"/>
+</npc>

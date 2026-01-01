@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tazuna Teste" script="data/npc/scripts/tazuna teste.lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="391"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Holla |PLAYERNAME|. voce esta pronto para o exame?" />
+	</parameters>
+</npc>

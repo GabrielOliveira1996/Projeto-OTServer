@@ -1,0 +1,36 @@
+ryuu the monk
+
+o player não recebe a storage quando mata o monstro.
+o jogador sempre que desloga perde a storage por conta do login.
+
+
+
+
+
+
+primeiro:
+
+[18/11/2012 16:50:18] [Error - CreatureScript Interface] 
+[18/11/2012 16:50:18] data/creaturescripts/scripts/vocation corpse.lua:onPrepareDeath
+[18/11/2012 16:50:18] Description: 
+[18/11/2012 16:50:18] (luaDoDecayItem) Item not found
+
+[18/11/2012 16:50:18] [Error - CreatureScript Interface] 
+[18/11/2012 16:50:18] data/creaturescripts/scripts/vocation corpse.lua:onPrepareDeath
+[18/11/2012 16:50:18] Description: 
+[18/11/2012 16:50:18] (luaDoTransformItem) Item not found
+
+segundo:
+
+
+
+
+
+
+
+
+local master = getCreatureMaster(cid)
+
+
+mkillm 
+and getCreatureSummons(cid) and not isSummon(cid) and not isSummon(attacker) and getCreatureSummons(master) 

@@ -1,0 +1,430 @@
+----- 15/12/2013 04:01:38 - Gabriel (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Business Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 200 162 144 131 180 180 160 162 141 130
+Last Packet: 200 001 000 078 068 039 076 000 001 001 000 006 000 079 117 116
+Player Position: [4987,4925,7]
+Player Name: Gabriel (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 17 MaW: 2435558 MoW: 244C9B0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+DialogElements.cpp 986: exception occurred (Surface = 1), reason:
+Graphics.cpp 1244: exception occurred (Surface = 1) (OutfitType = 1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Sun Dec 15 04:01:20 2013
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 15/12/2013 04:38:32 - Gabriel (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Business Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 200 103 109 162 141 130 161 160 120 121
+Last Packet: 200 001 000 078 068 039 076 000 001 001 000 006 000 079 117 116
+Player Position: [4987,4926,7]
+Player Name: Gabriel (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 17 MaW: 2285808 MoW: 2297D00), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+DialogElements.cpp 986: exception occurred (Surface = 1), reason:
+Graphics.cpp 1244: exception occurred (Surface = 1) (OutfitType = 1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Sun Dec 15 04:01:39 2013
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 15/12/2013 22:28:00 - Sasuke (127.0.0.1) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows 7 Business Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 200 131 180 180 160 162 141 130 161 160
+Last Packet: 200 001 000 000 068 095 076 000 002 001 000 006 000 085 099 104
+Player Position: [4976,4935,7]
+Player Name: Sasuke (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 20F5570 MoW: 210F218), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+DialogElements.cpp 986: exception occurred (Surface = 1), reason:
+Graphics.cpp 1244: exception occurred (Surface = 1) (OutfitType = 2), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Sun Dec 15 22:20:01 2013
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 26/09/2015 03:21:00 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 110 103 109 103 109 103 109 103 109 103
+Last Packet: 110 001 037 011 003 000 098 097 103 008 000 008 044 013 012 001
+Player Position: [3033,3037,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = 110) (MainWindow = 36537952), reason:
+Communication.cpp 2136: exception occurred (Container = 1), reason:
+Objects.cpp 280: exception occurred (Type = 52492) (Flag = 11), reason:
+Objects.cpp 277: assertion failed (Type = 52492) (ObjectProperties->high() = 10478), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Sep 26 03:20:49 2015
+Debug Assertion 8.54 Objects.cpp 277
+
+----- 26/09/2015 03:21:18 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 110 101 109 111 160 106 121 103 109 103
+Last Packet: 110 000 037 011 003 000 098 097 103 008 000 008 012 001 161 031
+Player Position: [3033,3040,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = 110) (MainWindow = 37194000), reason:
+Communication.cpp 2136: exception occurred (Container = 0), reason:
+Objects.cpp 280: exception occurred (Type = 31489) (Flag = 11), reason:
+Objects.cpp 277: assertion failed (Type = 31489) (ObjectProperties->high() = 10478), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Sep 26 03:21:05 2015
+Debug Assertion 8.54 Objects.cpp 277
+
+----- 26/09/2015 03:21:34 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 110 160 106 121 030 162 141 130 161 160
+Last Packet: 121 006 106 217 011 223 011 007 001 037 011 160 100 000 100 000
+Player Position: [3033,3040,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = 110) (MainWindow = 36931856), reason:
+Communication.cpp 2136: exception occurred (Container = 0), reason:
+Objects.cpp 280: exception occurred (Type = 31489) (Flag = 11), reason:
+Objects.cpp 277: assertion failed (Type = 31489) (ObjectProperties->high() = 10478), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Sep 26 03:21:21 2015
+Debug Assertion 8.54 Objects.cpp 277
+
+----- 26/09/2015 03:24:39 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 109 030 109 180 109 131 131 030 109
+Last Packet: 131 242 011 239 011 007 117 000 000 000 000 000 000 000 000 000
+Player Position: [3058,3055,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 2328910 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 1217), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 117), reason:
+Objects.cpp 691: exception occurred (Number = 117), reason:
+Container.h 226: index out of range (original i: 117, i: 116, min: 1, d: 114)
+Sat Sep 26 03:24:25 2015
+Debug Assertion 8.54 Container.h 226
+
+----- 26/09/2015 03:25:29 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 030 109 109 162 141 130 161 160 120
+Last Packet: 131 242 011 239 011 007 116 000 000 000 000 000 000 000 000 000
+Player Position: [3058,3055,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 22F8910 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 1217), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 116), reason:
+Objects.cpp 691: exception occurred (Number = 116), reason:
+Container.h 226: index out of range (original i: 116, i: 115, min: 1, d: 114)
+Sat Sep 26 03:24:46 2015
+Debug Assertion 8.54 Container.h 226
+
+----- 26/09/2015 10:17:52 - [ANBU]Dunkelhein (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 030 131 109 131 131 109 131 030 131
+Last Packet: 131 242 011 239 011 007 115 000 000 000 000 000 000 000 000 000
+Player Position: [3058,3055,7]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1436: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Objects.cpp 757: exception occurred (Number = 115), reason:
+Container.h 226: index out of range (original i: 115, i: 114, min: 1, d: 114)
+Sat Sep 26 03:25:57 2015
+Debug Assertion 8.54 Container.h 226
+
+----- 26/09/2015 12:08:47 - [ANBU]Dunkelhein (127.0.0.1) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 101 109 101 109 101 109 101 109 101 109
+Last Packet: 109 106 011 235 011 006 002 106 011 234 011 006 101 104 004 000
+Player Position: [2922,3050,6]
+Player Name: [ANBU]Dunkelhein (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = 101) (MainWindow = 35162384), reason:
+Communication.cpp 1653: exception occurred, reason:
+Communication.cpp 1618: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1597: exception occurred (Type = 9) (OldType = 2561), reason:
+Objects.cpp 280: exception occurred (Type = 9) (Flag = 11), reason:
+Objects.cpp 277: assertion failed (Type = 9) (ObjectProperties->high() = 10478), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Sep 26 10:19:35 2015
+Debug Assertion 8.54 Objects.cpp 277
+
+----- 26/09/2015 16:38:35 - Naruto (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 109 107 131 132 131 106 140 180 160 160
+Last Packet: 109 075 012 016 012 008 002 075 012 017 012 008 103 017 255 163
+Player Position: [3147,3089,8]
+Player Name: Naruto (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1436: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 2), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Sep 26 16:38:02 2015
+Debug Assertion 8.54 Map.cpp 998
+
+----- 26/09/2015 16:39:04 - Naruto (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: Intel Celeron 847 @ 1.1
+Video Card: Intel (R) HD GR
+Last Packet Types: 107 131 132 131 106 108 140 180 160 160
+Last Packet: 109 075 012 018 012 008 001 075 012 017 012 008 101 177 017 000
+Player Position: [3147,3089,8]
+Player Name: Naruto (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 2518910 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1479: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 362), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 132), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 4) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 114)
+Sat Sep 26 16:38:43 2015
+Debug Assertion 8.54 Container.h 226
+
+----- 03/10/2015 18:12:07 - GOD Brolly (25.94.139.118) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+perating System: Windows 7 Ultimate Edition 64 Bitin BRA
+rocessor: AMD E-350
+ideo Card: ATI Radeon HD AMD 6310 
+ast Packet Types:010031100020000000000000000000
+Last Packet:010082010000016050000000011170170170170213213213
+Player Name: GOD Brolly (Slayer Yurots 8.57)
+Player Action:050053046052053046055052046050053052058055049055050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = 10) (ainWindow = 40467704), reason:
+Control.cpp 440: exception occurred, reason:
+MainWindow.cpp 476: exception occurred, reason:
+DialogWindow.cpp 194: exception occurred, reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at A0004BBC)
+Sat Oct 03 18:11:48 2015
+Debug Assertion 8.54 NWin32Exception.cpp 50
+
+----- 09/10/2015 00:08:05 - [ANBU]Hiroaki (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 110 160 111 111 111 111 101 109 110 110
+Last Packet: 160 024 001 024 001 064 066 015 000 120 039 011 000 037 000 021
+Player Position: [3035,3033,7]
+Player Name: [ANBU]Hiroaki (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 25786C0 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 122: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 707: exception occurred (Surface = 1) ((int) Child = 39379328), reason:
+DialogElements.cpp 1177: exception occurred (Surface = 1), reason:
+Graphics.cpp 1183: exception occurred (Debug: 3 Type: 4044 PX: 1 PY: 1 Ph: 1 W: -1 H: -1 L: -1 X: -1 Y: -1 L: -1 S: -1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Fri Oct 09 00:05:57 2015
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 09/10/2015 00:13:31 - Yoza (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 110 101 109 160 106 180 160 103 109 030
+Last Packet: 110 000 205 015 016 000 100 101 097 100 032 104 117 103 101 032
+Player Position: [3035,3033,7]
+Player Name: [ANBU]Hiroaki (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 24D8950 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 122: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 707: exception occurred (Surface = 1) ((int) Child = 145315128), reason:
+DialogElements.cpp 1177: exception occurred (Surface = 1), reason:
+Graphics.cpp 1183: exception occurred (Debug: 3 Type: 4045 PX: 1 PY: 1 Ph: 1 W: -1 H: -1 L: -1 X: -1 Y: -1 L: -1 S: -1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Fri Oct 09 00:08:15 2015
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 09/10/2015 00:13:49 - [ANBU]Hiroaki (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 110 180 180 170 142 160 210 210 210 210
+Last Packet: 110 000 205 015 016 000 100 101 097 100 032 104 117 103 101 032
+Player Position: [3035,3033,7]
+Player Name: [ANBU]Hiroaki (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: 2638950 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 122: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 707: exception occurred (Surface = 1) ((int) Child = 40087968), reason:
+DialogElements.cpp 1177: exception occurred (Surface = 1), reason:
+Graphics.cpp 1183: exception occurred (Debug: 3 Type: 4045 PX: 1 PY: 1 Ph: 1 W: -1 H: -1 L: -1 X: -1 Y: -1 L: -1 S: -1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Fri Oct 09 00:13:35 2015
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 09/10/2015 00:25:14 - [ANBU]Hiroaki (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Ultimate Edition 64 Bit in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 110 103 109 030 110 111 111 160 110 180
+Last Packet: 110 001 205 015 016 000 100 101 097 100 032 104 117 103 101 032
+Player Position: [3036,3034,7]
+Player Name: [ANBU]Hiroaki (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1720: exception occurred (MessageType: 0 MaW: A68950 MoW: 0), reason:
+Control.cpp 1715: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 122: exception occurred (Surface = 1), reason:
+DialogWindow.cpp 707: exception occurred (Surface = 1) ((int) Child = 146167360), reason:
+DialogElements.cpp 1177: exception occurred (Surface = 1), reason:
+Graphics.cpp 1183: exception occurred (Debug: 3 Type: 4045 PX: 1 PY: 1 Ph: 1 W: -1 H: -1 L: -1 X: -1 Y: -1 L: -1 S: -1), reason:
+NWin32Exception.cpp 75: win32 exception occurred, reason:
+integer divide by zero
+Fri Oct 09 00:21:06 2015
+Debug Assertion 8.54 NWin32Exception.cpp 75
+
+----- 23/05/2016 23:30:30 - Rock Balboa (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: AMD E-350
+Video Card: ATI Radeon HD AMD 6310 
+Last Packet Types: 101 109 030 170 160 160 162 131 131 180
+Last Packet: 109 140 012 204 011 008 001 140 012 203 011 008 101 204 004 000
+Player Position: [3212,3019,8]
+Player Name: Rock Balboa (Slayer Yurots 8.57)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 992: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1330: exception occurred (Type = -1) (MainWindow = 38953976), reason:
+Network.cpp 491: exception occurred, reason:
+Network.cpp 478: exception occurred, reason:
+Network.cpp 444: packet size does not fit to symmetric encryption (PacketSize = 15341)
+Mon May 23 23:29:53 2016
+Debug Assertion 8.54 Network.cpp 444
+

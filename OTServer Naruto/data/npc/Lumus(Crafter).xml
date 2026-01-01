@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Lumus(Crafter)" script="data/npc/scripts/Lumus(Crafter).lua">
+	<health now="100" max="100"/>
+        <look type="394" head="79" body="86" legs="114" feet="3" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Ola forasteiro, eu sou Lumus, eu construo 'itens', o que deseja?" />
+	</parameters>
+</npc>

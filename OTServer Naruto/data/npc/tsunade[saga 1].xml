@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tsunade[saga 1]" script="data/npc/scripts/tsunade[saga 1].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="377"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Quem e voce?" />
+	</parameters>
+</npc>
+

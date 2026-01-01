@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weapons>
+	<!-- Rods -->
+	<wand id="2182" level="7" mana="2" min="8" max="18" type="earth" event="function" value="default"> <!-- Snakebite Rod -->
+	</wand>
+	<wand id="2186" level="13" mana="3" min="13" max="25" type="ice" event="function" value="default"> <!-- Moonlight Rod -->
+	</wand>
+	<wand id="2185" level="19" mana="5" min="39" max="40" type="death" event="function" value="default"> <!-- Necrotic Rod -->
+	</wand>
+	<wand id="8911" level="22" mana="5" min="59" max="60" type="ice" event="function" value="default"> <!-- Northwind Rod -->
+	</wand>
+	<wand id="2181" level="26" mana="8" min="79" max="80" type="earth" event="function" value="default"> <!-- Terra Rod -->
+	</wand>
+	<wand id="2183" level="33" mana="13" min="99" max="100" type="ice" event="function" value="default"> <!-- Hailstorm Rod -->
+	</wand>
+	<wand id="8912" level="37" mana="13" min="119" max="120" type="earth" event="function" value="default"> <!-- Springsprout Rod -->
+	</wand>
+	<wand id="8910" level="42" mana="13" min="149" max="150" type="death" event="function" value="default"> <!-- Underworld Rod -->
+	</wand>
+	<wand id="7958" level="100" mana="15" min="249" max="250" type="death" event="function" value="default"> <!-- Rod of Slayer -->
+	</wand>
+
+	<!-- Wands -->
+	<wand id="2190" level="7" mana="2" min="8" max="18" type="energy" event="function" value="default"> <!-- Wand of Vortex -->	
+	</wand>
+	<wand id="2191" level="13" mana="3" min="13" max="25" type="fire" event="function" value="default"> <!-- Wand of Dragonbreath -->
+	</wand>
+	<wand id="2188" level="19" mana="5" min="39" max="40" type="death" event="function" value="default"> <!-- Wand of Decay -->
+	</wand>
+	<wand id="8921" level="22" mana="5" min="59" max="60" type="fire" event="function" value="default"> <!-- Wand of Draconia -->
+	</wand>
+	<wand id="2189" level="26" mana="8" min="79" max="80" type="energy" event="function" value="default"> <!-- Wand of Cosmic Energy -->
+	</wand>
+	<wand id="2187" level="33" mana="13" min="99" max="100" type="fire" event="function" value="default"> <!-- Wand of Inferno -->
+	</wand>
+	<wand id="8920" level="37" mana="13" min="119" max="120" type="energy" event="function" value="default"> <!-- Wand of Starmstorm -->
+	</wand>
+	<wand id="8922" level="42" mana="13" min="149" max="150" type="death" event="function" value="default"> <!-- Wand of Voodoo -->
+	</wand>
+	<wand id="2184" level="100" mana="15" min="249" max="250" type="death" event="function" value="default"> <!-- Wand of Slayer -->
+	</wand>
+	<wand id="7735" level="100" mana="15" min="230" max="300" type="holy" event="function" value="default"> <!-- Staff of Starlight -->
+	</wand>
+	<wand id="7410" level="130" mana="15" min="300" max="350" type="holy" event="function" value="default"> <!-- Staff of Sceptre -->	
+        </wand>
+
+		<!-- Fire -->
+	<melee id="7744" event="function" value="default"/>
+	<melee id="7745" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="7746" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7747" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7748" level="45" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Ice -->
+	<melee id="7763" event="function" value="default"/>
+	<melee id="7764" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="7765" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7766" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7767" level="45" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Earth -->
+	<melee id="7854" event="function" value="default"/>
+	<melee id="7855" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="7856" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7857" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7858" level="45" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Energy -->
+	<melee id="7869" event="function" value="default"/>
+	<melee id="7870" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="7871" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7872" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7873" level="45" unproperly="1" event="function" value="default">
+
+	</melee>
+
+	<!-- Axes -->
+	<melee id="2429" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="2435" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="2425" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="2387" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="2381" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="2440" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="2426" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="3962" level="30" unproperly="1" event="function" value="default"/>
+	<melee id="7454" level="100" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="2432" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7380" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7456" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7419" level="40" unproperly="1" event="function" value="default"/>
+	<melee id="7413" level="40" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7412" level="45" unproperly="1" event="function" value="default"/>
+	<melee id="7436" level="45" unproperly="1" event="function" value="default"/>
+	<melee id="7411" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="2447" level="50" unproperly="1" event="function" value="default"/>
+	<melee id="7388" level="55" unproperly="1" event="function" value="default"/>
+	<melee id="2427" level="55" unproperly="1" event="function" value="default"/>
+	<melee id="7389" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="2414" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="2454" level="65" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="2443" level="70" unproperly="1" event="function" value="default"/>
+	<melee id="7420" level="70" unproperly="1" event="function" value="default"/>
+	<melee id="7434" level="75" unproperly="1" event="function" value="default"/>
+	<melee id="6553" level="75" unproperly="1" event="function" value="default"/>
+	<melee id="7455" level="80" unproperly="1" event="function" value="default"/>
+	<melee id="7453" level="85" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="2431" level="90" unproperly="1" event="function" value="default"/>
+	<melee id="2415" level="95" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7435" level="85" unproperly="1" event="function" value="default"/>
+	<melee id="7423" level="130" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="8924" level="110" unproperly="1" event="function" value="default"/>
+	<melee id="8925" level="130" unproperly="1" event="function" value="default"/>
+
+		<!-- Fire -->
+	<melee id="7749" level="20" event="function" value="default"/>
+	<melee id="7750" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="7751" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7752" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7753" level="65" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Ice -->
+	<melee id="7768" level="20" event="function" value="default"/>
+	<melee id="7769" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="7770" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7771" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7772" level="65" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Earth -->
+	<melee id="7859" level="20" event="function" value="default"/>
+	<melee id="7860" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="7861" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7862" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7863" level="65" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Energy -->
+	<melee id="7874" level="20" event="function" value="default"/>
+	<melee id="7875" level="25" unproperly="1" event="function" value="default"/>
+	<melee id="7876" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7877" level="35" unproperly="1" event="function" value="default">
+
+	</melee>
+	<melee id="7878" level="65" unproperly="1" event="function" value="default">
+
+	</melee>
+
+	
+		<!-- Fire -->
+	<melee id="7754" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="7755" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7756" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7757" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7758" level="50" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Ice -->
+	<melee id="7773" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="7774" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7775" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7776" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7777" level="50" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Earth -->
+	<melee id="7864" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="7865" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7866" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7867" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7868" level="50" unproperly="1" event="function" value="default">
+
+	</melee>
+		<!-- Energy -->
+	<melee id="7879" level="20" unproperly="1" event="function" value="default"/>
+	<melee id="7880" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7881" level="60" unproperly="1" event="function" value="default"/>
+	<melee id="7882" level="35" unproperly="1" event="function" value="default"/>
+	<melee id="7883" level="50" unproperly="1" event="function" value="default">
+
+	</melee>
+
+
+
+
+	<melee id="2430" event="script" value="speed equipment.lua">
+
+
+	</melee>
+
+	<!-- Bows and Crossbows -->
+	<distance id="8849" level="45" unproperly="1" event="function" value="default"> <!-- Modified Crossbow -->
+
+	</distance>
+	<distance id="8850" level="60" unproperly="1" event="function" value="default"> <!-- Chain Bolter -->
+
+	</distance>
+	<distance id="8853" level="80" unproperly="1" event="function" value="default"> <!-- Ironworker -->
+
+	</distance>
+	<distance id="8852" level="100" unproperly="1" event="function" value="default"> <!-- Devileye -->
+
+	</distance>
+	<distance id="8851" level="130" unproperly="1" event="function" value="default"> <!-- Royal Crossbow -->
+
+	</distance>
+	<distance id="8857" level="40" unproperly="1" event="function" value="default"> <!-- Silkweaver Bow -->
+
+	</distance>
+	<distance id="8855" level="50" unproperly="1" event="function" value="default"> <!-- Composite Hornbow -->
+
+	</distance>
+	<distance id="8856" level="60" unproperly="1" event="function" value="default"> <!-- Yol's Bow -->
+
+	</distance>
+	<distance id="8858" level="70" unproperly="1" event="function" value="default"> <!-- Elethriel's Elemental Bow -->
+
+	</distance>
+	<distance id="8854" level="80" unproperly="1" event="function" value="default"> <!-- Warsinger Bow -->	
+	</distance>
+
+ 	<!-- Armas de Distancia -->
+	<distance id="2545" event="script" value="poison_arrow.lua"/>
+	<distance id="2546" event="script" value="Explosive Kunai.lua"/>
+	<distance id="7366" event="script" value="Suna Shuriken.lua"/>
+
+</weapons>

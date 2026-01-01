@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Ichiraku" script="data/npc/scripts/seller.lua">
+	<health now="100" max="100"/>
+	<look type="399" corpse="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="O que deseja |PLAYERNAME|. Eu vendo Ramen." />
+		<parameter key="shop_buyable" value="Ramen,2672,50" />
+	</parameters>
+</npc>

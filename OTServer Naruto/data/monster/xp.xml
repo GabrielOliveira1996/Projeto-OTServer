@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="xp" nameDescription="a xp" race="blood" experience="10000000" speed="845" manacost="0">
+  <health now="10" max="10"/>
+  <look type="108" corpse="2868"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="1" attack="2"/> 
+  </attacks>
+  <defenses armor="1" defense="1"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="Xp."/>
+  </voices>
+  <loot>
+  </loot>
+<script>
+  <event name="mkillm"/>
+</script>
+</monster>

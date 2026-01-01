@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="shadown man" nameDescription="a shadown man" race="blood" experience="17300" speed="480" manacost="0">
+  <health now="7300" max="7300"/>
+  <look type="404" corpse="2882"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="physical" interval="2000" range="4" min="-200" max="-340"/> 
+    <attack name="shadown" interval="1000" chance="23" min="-240" max="-360">
+    </attack>  
+
+  </attacks>
+  <defenses armor="25" defense="20"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Sua alma será minha!"/>
+    <voice sentence="A natureza está cheia de morte."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0"/>
+    <item id="2409" chance1="2300" chancemax="0"/>
+    <item id="5918" chance1="1500" chancemax="0"/>
+    <item id="2497" chance1="1000" chancemax="0"/>
+    <item id="1987" chance="1200">
+      <inside>
+        <item id="2434" chance1="2500" chancemax="0"/>
+        <item id="2148" countmax="99" chance1="39000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+
+        <event type="death" name="ryuuthemonk" event="script" value="ryuuthemonk.lua"/>
+        <event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+        <event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua"/>
+        <event type="receivemail" name="Mail" event="script" value="mail.lua"/>
+        <event type="reportbug" name="SaveReportBug" script="reportbug.lua"/>
+        <event type="think" name="Idle" event="script" value="idle.lua"/>
+        <event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
+        <event type="death" name="PlayerDeath" event="script" value="playerdeath.lua"/>
+        <event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
+        <event type="PrepareDeath" name="pvparena" script="pvparena.lua"/>
+        <event type="attack" name="attackguild" script="attackguild.lua"/>
+        <event type="death" name="incendio" script="incendioMonster.lua"/>
+        <event type="login" name="LookTypes" event="script" value="vocation outfit.lua"/>
+        <event type="StatsChange" name="mkillm" event="script" value="mkillm.lua"/>
+        <event type="death" name="akatsukiring" event="script" value="akatsuki ring.lua"/>
+        <event type="StatsChange" name="Susanoo" event="script" value="susanoo.lua"/>
+        <event type="death" name="ChangeCorpse" event="script" value="changecorpse.lua"/>
+        <event type="login" name="RegisterChangeCorpse" event="script" value="changecorpse.lua"/>
+        <event type="target" name="teste" event="script" value="teste.lua"/>
+        <event type="combat" name="summon" event="script" value="summon.lua"/>
+        <event type="combat" name="summonnokill" event="script" value="summonnokill.lua"/>
+        <event type="combat" name="summon1" event="script" value="summon1.lua"/>
+        <event type="combat" name="summon2" event="script" value="summon2.lua"/>
+        <event type="look" name="bunshin" event="script" value="kage bunshin no jutsu.lua"/>
+        <event type="Think" name="Buff" event="script" value="buff.lua"/> 
+        <event type="advance" name="shippuden" script="shippuden.lua"/>
+        
+        <event type="death" name="RemoveStorageOne" event="script" value="remove storage1.lua"/> 
+        
+        <event type="login" name="VocationHpeMana" event="script" value="vocation hp e mana.lua"/>
+        <event type="login" name="VocationHpeManaOne" event="script" value="vocation hp e mana1.lua"/>
+        <event type="login" name="VocationHpeManaTwo" event="script" value="vocation hp e mana2.lua"/>
+
+        <!-- Remove o acesso a storage das Sagas -->
+        <event type="death" name="RemoveStorage" event="script" value="remove storage.lua"/> 
+
+        <!-- Sagas -->
+        <event type="death" name="Mizuki" event="script" value="sagas/mizuki.lua"/>  
+        <event type="death" name="Ebisu" event="script" value="sagas/ebisu.lua"/>   
+        <event type="death" name="Zabuza" event="script" value="sagas/zabuza.lua"/> 
+        <event type="death" name="SecondZabuza" event="script" value="sagas/second zabuza.lua"/> 
+        <event type="death" name="Haku" event="script" value="sagas/haku.lua"/> 
+        <event type="death" name="Orochimaru" event="script" value="sagas/orochimaru.lua"/> 
+        <event type="death" name="Zaku" event="script" value="sagas/zaku.lua"/> 
+        <event type="death" name="Kin" event="script" value="sagas/kin.lua"/> 
+        <event type="death" name="Dosu" event="script" value="sagas/dosu.lua"/> 
+        <event type="death" name="RainShinobi" event="script" value="sagas/rain shinobi.lua"/> 
+        
+        <!-- Saga do Kiba e Neji precisam de teleport para sair da arena -->
+        <event type="death" name="Kiba" event="script" value="sagas/kiba.lua"/> 
+        <event type="death" name="KibaTeleport" event="script" value="sagas/kiba teleport.lua"/>
+        <event type="death" name="Neji" event="script" value="sagas/neji.lua"/> 
+        <event type="death" name="NejiTeleport" event="script" value="sagas/neji teleport.lua"/>
+
+        <event type="death" name="Kankuro" event="script" value="sagas/kankuro.lua"/> 
+        <event type="death" name="Temari" event="script" value="sagas/temari.lua"/> 
+        <event type="death" name="Gaara" event="script" value="sagas/gaara.lua"/> 
+        <event type="death" name="ShukakuOne" event="script" value="sagas/shukaku one.lua"/> 
+        <event type="death" name="ShukakuTwo" event="script" value="sagas/shukaku two.lua"/> 
+        <event type="death" name="Kabuto" event="script" value="sagas/kabuto.lua"/> 
+        <event type="death" name="Sasuke" event="script" value="sagas/sasuke.lua"/> 
+        <event type="death" name="Jiroubou" event="script" value="sagas/jiroubou.lua"/> 
+        <event type="death" name="JiroubouCursed" event="script" value="sagas/jiroubou cursed.lua"/> 
+        <event type="death" name="Kidomaru" event="script" value="sagas/kidomaru.lua"/> 
+        <event type="death" name="KidomaruCursed" event="script" value="sagas/kidomaru cursed.lua"/> 
+        <event type="death" name="SakonAndUkon" event="script" value="sagas/sakon and ukon.lua"/> 
+        <event type="death" name="SakonAndUkonCursed" event="script" value="sagas/sakon and ukon cursed.lua"/> 
+        <event type="death" name="Tayuya" event="script" value="sagas/tayuya.lua"/> 
+        <event type="death" name="TayuyaCursed" event="script" value="sagas/tayuya cursed.lua"/> 
+        <event type="death" name="Kimimaru" event="script" value="sagas/kimimaru.lua"/> 
+        <event type="death" name="KimimaruCursed" event="script" value="sagas/kimimaru cursed.lua"/> 
+
+</creaturescripts>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="kuroari[5]" nameDescription="a kuroari[5]" race="blood" experience="0" speed="270" manacost="0">
+  <health now="1900" max="1900"/>
+  <look type="43" corpse="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="42" attack="38"/>  
+    <attack name="doku" interval="1000" chance="44" range="7" target="7" min="-280" max="-340">  
+   </attack> 
+
+  </attacks>
+  <defenses armor="19" defense="14"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <summons maxSummons="1">
+    <summon name="karasu[9]" interval="1000" chance="50"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="..."/>
+  </voices>
+</monster>

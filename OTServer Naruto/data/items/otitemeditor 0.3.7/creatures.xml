@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<creatures>
+<creature looktype="194" name="cyborg" type="monster"/>
+<creature looktype="75" name="elite cyborg" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+<creature looktype="266" name="cursed skeleton" type="monster"/>
+
+	
+
+
+
+
+
+<!-- NPCS -->
+<creature looktype="128" addons="3" name="Medic Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Distance Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Trousers Seller Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Shirt Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Weapon Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Ichiraku" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Helmet Seller" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Iruka[Saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Mizuki[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Iruka[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Hokage[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Konohamaru[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kakashi[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Hokage[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kakashi[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sakura[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kabuto[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sensor[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Konohamaru[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kakashi[saga 3]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Naruto(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Rock Lee(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sakura(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Shikamaru(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Gaara(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kiba(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Jiraya[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sasuke(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Tsunade[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kabuto[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sakura[saga 2]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sakura[saga 3]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Shikamaru[saga 1]" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Neji(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Hinata(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Anko" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Kankuro(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Shino(Professor)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Tenten(Professora)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Temari(Professora)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Sakura(Professora)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Hinata(Professora)" type="npc" addon1="1" addon2="1"/>
+<creature looktype="129" addons="3" name="Trousers Seller" type="npc" addon1="1" addon2="1"/>
+
+</creatures>

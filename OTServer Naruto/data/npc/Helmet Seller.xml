@@ -1,0 +1,9 @@
+<npc name="Helmet Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
+    <health now="100" max="100"/>
+<look type="394" head="114" body="30" legs="94" feet="3" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu compro helmets e masks." />
+		<parameter key="shop_sellable" value="Cyborg Helmet,2471,2500;Shinobazu,2479,1200;Skeleton Helmet,2480,1500;Vampire Mask,2497,3500;Assassin Mask,2493,800;Cursed Mask,2475,6000;Ninja Mask,2462,600" />
+	</parameters>
+</npc>  

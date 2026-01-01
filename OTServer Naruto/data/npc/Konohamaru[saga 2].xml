@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Konohamaru[saga 2]" script="data/npc/scripts/konohamaru[saga 2].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="401"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Ola, o que deseja?" />
+	</parameters>
+</npc>

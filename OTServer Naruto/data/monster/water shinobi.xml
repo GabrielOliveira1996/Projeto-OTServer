@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="water shinobi" nameDescription="a water shinobi" race="blood" experience="7000" speed="360" manacost="3600">
+  <health now="6700" max="6700"/>
+  <look type="104" corpse="2877"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="83" attack="78"/>  
+    <attack name="water dragon" interval="1000" chance="18" range="1" target="3" min="-420" max="-500">
+    </attack>  
+
+  </attacks>
+  <defenses armor="36" defense="30"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Water is beatiful..."/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="2" chance1="50000" chancemax="0"/>
+    <item id="2448" chance1="1200" chancemax="0"/>
+    <item id="2479" chance1="7000" chancemax="0"/>
+    <item id="2469" chance1="3000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2650" chance1="2100" chancemax="0"/>
+        <item id="2400" chance1="1800" chancemax="0"/>
+        <item id="2152" countmax="1" chance1="40000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

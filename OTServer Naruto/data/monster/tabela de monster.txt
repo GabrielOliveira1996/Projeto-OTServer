@@ -1,0 +1,78 @@
+wolf - lvl 10 380
+
+bandit - lvl 11 750
+bandit hunter - lvl 11 800
+elite bandit - lvl 15 900
+
+fat ninja - lvl 20 1000
+
+ninja - lvl 25 1200
+
+assassin - lvl 30 1400
+
+desert jump - lvl 35 1600
+
+shinobazu - lvl 30 1600
+
+savager - lvl 30 1800
+
+white ninja - lvl 40 2600
+
+nervous wolf - lvl 50 2800
+
+cursed skeleton - lvl 60 3000
+
+kusa shinobi - lvl 60 3200
+
+cyborg - lvl 65 4200
+
+vampire - lvl 65 5400
+
+juhi member - lvl 70 6800
+
+huge onbu - lvl 85 8500
+
+water shinobi - lvl 90 7000
+
+sound beast - lvl 100 8000
+
+samurai - lvl 140 11500
+
+
+
+insect - lvl 70 7000
+
+huge insect - lvl 100 10000
+
+
+
+premmys
+
+elite cyborg - lvl 80 7400
+
+hoshi gennin - lvl 50 3400
+
+fishman - lvl 65 4200
+
+bunjin - lvl 60 3800
+
+hoshi chunnin - lvl 80 7600
+
+cursed man - lvl 160 16000
+
+commander - lvl 150 12000
+
+fuuton shinobi - lvl 180 17000
+
+monk - lvl 220 22000
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="mizuki1" script="data/npc/scripts/mizuki1.lua" walkinterval="3000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Eu nao falo com inuteis como voce... a menos que voce queira um {desafio}."/>
+		<parameter key="message_farewell" value="Va embora logo!"/>
+		<parameter key="message_walkaway" value="Que bons ventos o levem!"/>
+	</parameters>
+</npc>

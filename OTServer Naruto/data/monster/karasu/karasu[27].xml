@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="karasu[27]" nameDescription="a karasu[27]" race="blood" experience="0" speed="798" manacost="300">
+  <health now="14000" max="14000"/>
+  <look type="30" head="0" body="0" legs="0" feet="0" corpse="0"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="64" attack="60"/>
+    <attack name="doku" interval="1000" chance="20" range="3" target="1" min="-260" max="-340">  
+   </attack> 
+
+  </attacks>
+  <defenses armor="9" defense="13"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="..."/>
+  </voices>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

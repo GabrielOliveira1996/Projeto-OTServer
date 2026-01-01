@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Rock Lee(Professor)" script="data/npc/scripts/Rock Lee(Professor).lua" walkinterval="2000" lookdir="south">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="373"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Para saber quais jutsus eu posso te ensinar diga 'teach'." />
+	</parameters>
+</npc>

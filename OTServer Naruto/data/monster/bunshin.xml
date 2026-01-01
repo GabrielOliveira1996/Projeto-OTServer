@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="bunshin" nameDescription="a bunshin" race="blood" experience="0" speed="320" manacost="50">
+  <health now="50" max="50"/>
+  <look type="352" corpse="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="0"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="8" attack="6"/> 
+    <attack name="melee" interval="1000" chance="19" range="4" target="1" min="-2" max="-5">
+	  <attribute key="shootEffect" value="throwingknife"/>
+    </attack>  
+  </attacks>
+  <defenses armor="2" defense="2"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Come on, I'm ready."/>
+    <voice sentence="Let's finish him off."/>
+  </voices>
+</monster>

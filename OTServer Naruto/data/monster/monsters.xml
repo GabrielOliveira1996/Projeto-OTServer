@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<monsters>
+
+    <monster name="Xp" file="xp.xml"/>
+    <monster name="Kakashi Bunshin" file="saga/kakashi_bunshin.xml"/>
+
+    <!--Pets-->
+    <monster name="Gamakichi" file="gamakichi.xml"/>
+    <monster name="Katsuyo" file="katsuyo.xml"/>
+
+    <!--Saga-->
+    <monster name="Mizuki" file="saga/1.mizuki.xml"/>
+    <monster name="Ebisu" file="saga/2.ebisu.xml"/>
+    <monster name="Kimimaru Cursed" file="saga/kimimaru cursed.xml"/>
+    <monster name="Kimimaru" file="saga/kimimaru.xml"/>
+    <monster name="Doki" file="saga/doki.xml"/>
+    <monster name="Tayuya Cursed" file="saga/tayuya cursed.xml"/>
+    <monster name="Tayuya" file="saga/tayuya.xml"/>
+    <monster name="Sakon And Ukon Cursed" file="saga/sakon and ukon cursed.xml"/>
+    <monster name="Sakon And Ukon" file="saga/sakon and ukon.xml"/>
+    <monster name="Spider" file="saga/spider.xml"/>
+    <monster name="Kidomaru Cursed" file="saga/kidomaru cursed.xml"/>
+    <monster name="Kidomaru" file="saga/kidomaru.xml"/>
+    <monster name="Jiroubou Cursed" file="saga/jiroubou cursed.xml"/>
+    <monster name="Jiroubou" file="saga/jiroubou.xml"/>
+    <monster name="Sasuke" file="saga/sasuke.xml"/>
+    <monster name="Kabuto" file="saga/kabuto.xml"/>
+    <monster name="Shukaku Two" file="saga/shukaku two.xml"/>
+    <monster name="Shukaku One" file="saga/shukaku one.xml"/>
+    <monster name="Gaara" file="saga/gaara.xml"/>
+    <monster name="Temari" file="saga/temari.xml"/>
+    <monster name="Kuroari" file="saga/kuroari.xml"/>
+    <monster name="Karasu" file="saga/karasu.xml"/>
+    <monster name="Kankuro" file="saga/kankuro.xml"/>
+    <monster name="Neji" file="saga/neji.xml"/>
+    <monster name="Kiba" file="saga/kiba.xml"/>
+    <monster name="Rain Shinobi Clon" file="saga/rain shinobi clon.xml"/>
+    <monster name="Rain Shinobi" file="saga/rain shinobi.xml"/>
+    <monster name="Second Zabuza" file="saga/second zabuza.xml"/>
+    <monster name="Zabuza" file="saga/zabuza.xml"/>
+    <monster name="Haku" file="saga/haku.xml"/>
+    <monster name="Orochimaru" file="saga/orochimaru.xml"/>
+    <monster name="Manda" file="saga/manda.xml"/>
+    <monster name="Zaku" file="saga/zaku.xml"/>
+    <monster name="Kin" file="saga/kin.xml"/>
+    <monster name="Dosu" file="saga/dosu.xml"/>
+
+
+    <monster name="Tazuna" file="saga/Tazuna.xml"/>
+
+
+        <!--Bosses-->
+    <monster name="Sasuke Uchiha" file="sasuke uchiha.xml"/>
+
+
+        <!--world shinobi monsters-->
+    <monster name="trainer" file="trainer.xml"/>
+    <monster name="Hoshi Chunnin" file="hoshi chunnin.xml"/>
+    <monster name="Hoshi Gennin" file="hoshi gennin.xml"/>
+    <monster name="Elite Cyborg" file="elite cyborg.xml"/>
+    <monster name="Kusa Shinobi" file="kusa shinobi.xml"/>
+    <monster name="Huge Insect" file="huge insect.xml"/>
+    <monster name="Shadown Man" file="shadown man.xml"/>
+    <monster name="Sound Beast" file="sound beast.xml"/>
+    <monster name="Fishman" file="fishman.xml"/>
+    <monster name="White Ninja" file="white ninja.xml"/>
+    <monster name="Water Shinobi" file="water shinobi.xml"/>
+    <monster name="Vampire" file="vampire.xml"/>
+    <monster name="Snake" file="snake.xml"/>
+    <monster name="Nervous Wolf" file="cursed_wolf.xml"/>
+    <monster name="Monk" file="monk.xml"/>
+    <monster name="Ashar" file="ashar.xml"/>
+    <monster name="Juhi Member" file="juhi member.xml"/>
+    <monster name="Insect" file="insect.xml"/>
+    <monster name="Fuuton Shinobi" file="fuuton shinobi.xml"/>
+    <monster name="Desert Jump" file="desert jump.xml"/>
+    <monster name="Cyborg" file="cyborg.xml"/>
+    <monster name="Cursed Man" file="cursed man.xml"/>
+    <monster name="Commander" file="commander.xml"/>
+    <monster name="Bandit Hunter" file="bandit hunter.xml"/>
+    <monster name="Wolf" file="wolf.xml"/>
+    <monster name="Bandit" file="bandit.xml"/>
+    <monster name="Ninja" file="ninja.xml"/>
+    <monster name="Elite Bandit" file="elite bandit.xml"/>
+    <monster name="Assassin" file="assassin.xml"/>
+    <monster name="Cursed Skeleton" file="cursed skeleton.xml"/>
+    <monster name="Fat Ninja" file="fat ninja.xml"/>
+    <monster name="Shinobazu" file="shinobazu.xml"/>
+    <monster name="Savager" file="savager.xml"/> 
+    <monster name="Samurai" file="samurai.xml"/> 
+
+    <monster name="Uchiha Elite Renegade" file="uchiha elite renegade.xml"/>
+    <monster name="Uchiha Anbu Renegade" file="uchiha anbu renegade.xml"/>
+
+    <monster name="Paralize Snake" file="paralize snake.xml"/>
+    <monster name="Juujin Bunshin" file="juujin bunshin.xml"/>
+    <monster name="Bunshin" file="bunshin.xml"/>
+    <monster name="Tajuu Bunshin" file="tajuu bunshin.xml"/>
+
+        <!--kikaichu--> 
+    <monster name="Kikaichu[1]" file="Kikaichu/Kikaichu[1].xml"/>
+    <monster name="Kikaichu[2]" file="Kikaichu/Kikaichu[2].xml"/>
+    <monster name="Kikaichu[3]" file="Kikaichu/Kikaichu[3].xml"/>
+    <monster name="Kikaichu[4]" file="Kikaichu/Kikaichu[4].xml"/>
+    <monster name="Kikaichu[5]" file="Kikaichu/Kikaichu[5].xml"/>
+    <monster name="Kikaichu[6]" file="Kikaichu/Kikaichu[6].xml"/>
+    <monster name="Kikaichu[7]" file="Kikaichu/Kikaichu[7].xml"/>
+    <monster name="Kikaichu[8]" file="Kikaichu/Kikaichu[8].xml"/>
+    <monster name="Kikaichu[9]" file="Kikaichu/Kikaichu[9].xml"/>
+    <monster name="Kikaichu[10]" file="Kikaichu/Kikaichu[10].xml"/>
+    <monster name="Kikaichu[11]" file="Kikaichu/Kikaichu[11].xml"/>
+    <monster name="Kikaichu[12]" file="Kikaichu/Kikaichu[12].xml"/>
+    <monster name="Kikaichu[13]" file="Kikaichu/Kikaichu[13].xml"/>
+    <monster name="Kikaichu[14]" file="Kikaichu/Kikaichu[14].xml"/>
+    <monster name="Kikaichu[15]" file="Kikaichu/Kikaichu[15].xml"/>
+    <monster name="Kikaichu[16]" file="Kikaichu/Kikaichu[16].xml"/>
+    <monster name="Kikaichu[17]" file="Kikaichu/Kikaichu[17].xml"/>
+    <monster name="Kikaichu[18]" file="Kikaichu/Kikaichu[18].xml"/>
+    <monster name="Kikaichu[19]" file="Kikaichu/Kikaichu[19].xml"/>
+    <monster name="Kikaichu[20]" file="Kikaichu/Kikaichu[20].xml"/>
+    <monster name="Kikaichu[21]" file="Kikaichu/Kikaichu[21].xml"/>
+    <monster name="Kikaichu[22]" file="Kikaichu/Kikaichu[22].xml"/>
+    <monster name="Kikaichu[23]" file="Kikaichu/Kikaichu[23].xml"/>
+    <monster name="Kikaichu[24]" file="Kikaichu/Kikaichu[24].xml"/>
+    <monster name="Kikaichu[25]" file="Kikaichu/Kikaichu[25].xml"/>
+    <monster name="Kikaichu[26]" file="Kikaichu/Kikaichu[26].xml"/>
+    <monster name="Kikaichu[27]" file="Kikaichu/Kikaichu[27].xml"/>
+    <monster name="Kikaichu[28]" file="Kikaichu/Kikaichu[28].xml"/>
+    <monster name="Kikaichu[29]" file="Kikaichu/Kikaichu[29].xml"/>
+    <monster name="Kikaichu[30]" file="Kikaichu/Kikaichu[30].xml"/>
+
+        <!--sanshouou--> 
+    <monster name="Sasori[1]" file="sasori/sasori[1].xml"/>
+    <monster name="Sasori[2]" file="sasori/sasori[2].xml"/>
+
+        <!--sanshouou--> 
+    <monster name="Sanshouou[1]" file="sanshouou/sanshouou[1].xml"/>
+    <monster name="Sanshouou[2]" file="sanshouou/sanshouou[2].xml"/>
+    <monster name="Sanshouou[3]" file="sanshouou/sanshouou[3].xml"/>
+    <monster name="Sanshouou[4]" file="sanshouou/sanshouou[4].xml"/>
+    <monster name="Sanshouou[5]" file="sanshouou/sanshouou[5].xml"/>
+    <monster name="Sanshouou[6]" file="sanshouou/sanshouou[6].xml"/>
+    <monster name="Sanshouou[7]" file="sanshouou/sanshouou[7].xml"/>
+    <monster name="Sanshouou[8]" file="sanshouou/sanshouou[8].xml"/>
+    <monster name="Sanshouou[9]" file="sanshouou/sanshouou[9].xml"/>
+    <monster name="Sanshouou[10]" file="sanshouou/sanshouou[10].xml"/>
+    <monster name="Sanshouou[11]" file="sanshouou/sanshouou[11].xml"/>
+    <monster name="Sanshouou[12]" file="sanshouou/sanshouou[12].xml"/>
+    <monster name="Sanshouou[13]" file="sanshouou/sanshouou[13].xml"/>
+    <monster name="Sanshouou[14]" file="sanshouou/sanshouou[14].xml"/>
+    <monster name="Sanshouou[15]" file="sanshouou/sanshouou[15].xml"/>
+    <monster name="Sanshouou[16]" file="sanshouou/sanshouou[16].xml"/>
+    <monster name="Sanshouou[17]" file="sanshouou/sanshouou[17].xml"/>
+    <monster name="Sanshouou[18]" file="sanshouou/sanshouou[18].xml"/>
+    <monster name="Sanshouou[19]" file="sanshouou/sanshouou[19].xml"/>
+    <monster name="Sanshouou[20]" file="sanshouou/sanshouou[20].xml"/>
+    <monster name="Sanshouou[21]" file="sanshouou/sanshouou[21].xml"/>
+
+        <!--kuroari--> 
+    <monster name="Kuroari[1]" file="kuroari/kuroari[1].xml"/>
+    <monster name="Kuroari[2]" file="kuroari/kuroari[2].xml"/>
+    <monster name="Kuroari[3]" file="kuroari/kuroari[3].xml"/>
+    <monster name="Kuroari[4]" file="kuroari/kuroari[4].xml"/>
+    <monster name="Kuroari[5]" file="kuroari/kuroari[5].xml"/>
+    <monster name="Kuroari[6]" file="kuroari/kuroari[6].xml"/>
+    <monster name="Kuroari[7]" file="kuroari/kuroari[7].xml"/>
+    <monster name="Kuroari[8]" file="kuroari/kuroari[8].xml"/>
+    <monster name="Kuroari[9]" file="kuroari/kuroari[9].xml"/>
+    <monster name="Kuroari[10]" file="kuroari/kuroari[10].xml"/>
+    <monster name="Kuroari[11]" file="kuroari/kuroari[11].xml"/>
+    <monster name="Kuroari[12]" file="kuroari/kuroari[12].xml"/>
+    <monster name="Kuroari[13]" file="kuroari/kuroari[13].xml"/>
+    <monster name="Kuroari[14]" file="kuroari/kuroari[14].xml"/>
+    <monster name="Kuroari[15]" file="kuroari/kuroari[15].xml"/>
+    <monster name="Kuroari[16]" file="kuroari/kuroari[16].xml"/>
+    <monster name="Kuroari[17]" file="kuroari/kuroari[17].xml"/>
+    <monster name="Kuroari[18]" file="kuroari/kuroari[18].xml"/>
+    <monster name="Kuroari[19]" file="kuroari/kuroari[19].xml"/>
+    <monster name="Kuroari[20]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[21]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[22]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[23]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[24]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[25]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[26]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[27]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[28]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[29]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[30]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[31]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[32]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[33]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[34]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[35]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[36]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[37]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[38]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[39]" file="kuroari/kuroari[20].xml"/>
+    <monster name="Kuroari[40]" file="kuroari/kuroari[20].xml"/>
+
+
+        <!--karasu--> 
+    <monster name="Karasu[1]" file="karasu/karasu[1].xml"/>
+    <monster name="Karasu[2]" file="karasu/karasu[2].xml"/>
+    <monster name="Karasu[3]" file="karasu/karasu[3].xml"/>
+    <monster name="Karasu[4]" file="karasu/karasu[4].xml"/>
+    <monster name="Karasu[5]" file="karasu/karasu[5].xml"/>
+    <monster name="Karasu[6]" file="karasu/karasu[6].xml"/>
+    <monster name="Karasu[7]" file="karasu/karasu[7].xml"/>
+    <monster name="Karasu[8]" file="karasu/karasu[8].xml"/>
+    <monster name="Karasu[9]" file="karasu/karasu[9].xml"/>
+    <monster name="Karasu[10]" file="karasu/karasu[10].xml"/>
+    <monster name="Karasu[11]" file="karasu/karasu[11].xml"/>
+    <monster name="Karasu[12]" file="karasu/karasu[12].xml"/>
+    <monster name="Karasu[13]" file="karasu/karasu[13].xml"/>
+    <monster name="Karasu[14]" file="karasu/karasu[14].xml"/>
+    <monster name="Karasu[15]" file="karasu/karasu[15].xml"/>
+    <monster name="Karasu[16]" file="karasu/karasu[16].xml"/>
+    <monster name="Karasu[17]" file="karasu/karasu[17].xml"/>
+    <monster name="Karasu[18]" file="karasu/karasu[18].xml"/>
+    <monster name="Karasu[19]" file="karasu/karasu[19].xml"/>
+    <monster name="Karasu[20]" file="karasu/karasu[20].xml"/>
+    <monster name="Karasu[21]" file="karasu/karasu[21].xml"/>
+    <monster name="Karasu[22]" file="karasu/karasu[22].xml"/>
+    <monster name="Karasu[23]" file="karasu/karasu[23].xml"/>
+    <monster name="Karasu[24]" file="karasu/karasu[24].xml"/>
+    <monster name="Karasu[25]" file="karasu/karasu[25].xml"/>
+    <monster name="Karasu[26]" file="karasu/karasu[26].xml"/>
+    <monster name="Karasu[27]" file="karasu/karasu[27].xml"/>
+    <monster name="Karasu[28]" file="karasu/karasu[28].xml"/>
+    <monster name="Karasu[29]" file="karasu/karasu[29].xml"/>
+    <monster name="Karasu[30]" file="karasu/karasu[30].xml"/>
+    <monster name="Karasu[31]" file="karasu/karasu[31].xml"/>
+    <monster name="Karasu[32]" file="karasu/karasu[32].xml"/>
+    <monster name="Karasu[33]" file="karasu/karasu[33].xml"/>
+    <monster name="Karasu[34]" file="karasu/karasu[34].xml"/>
+    <monster name="Karasu[35]" file="karasu/karasu[35].xml"/>
+    <monster name="Karasu[36]" file="karasu/karasu[36].xml"/>
+    <monster name="Karasu[37]" file="karasu/karasu[37].xml"/>
+    <monster name="Karasu[38]" file="karasu/karasu[38].xml"/>
+    <monster name="Karasu[39]" file="karasu/karasu[39].xml"/>
+    <monster name="Karasu[40]" file="karasu/karasu[40].xml"/>
+
+
+        <!--akamaru--> 
+
+<monster name="Akamaru[1]" file="akamaru/akamaru[1].xml"/>
+        <monster name="Akamaru[2]" file="akamaru/akamaru[2].xml"/>
+        <monster name="Akamaru[3]" file="akamaru/akamaru[3].xml"/>
+        <monster name="Akamaru[4]" file="akamaru/akamaru[4].xml"/>
+        <monster name="Akamaru[5]" file="akamaru/akamaru[5].xml"/>
+        <monster name="Akamaru[6]" file="akamaru/akamaru[6].xml"/>
+        <monster name="Akamaru[7]" file="akamaru/akamaru[7].xml"/>
+        <monster name="Akamaru[8]" file="akamaru/akamaru[8].xml"/>
+        <monster name="Akamaru[9]" file="akamaru/akamaru[9].xml"/>        
+        <monster name="Akamaru[10]" file="akamaru/akamaru[10].xml"/>
+        <monster name="Akamaru[11]" file="akamaru/akamaru[11].xml"/>
+        <monster name="Akamaru[12]" file="akamaru/akamaru[12].xml"/>
+        <monster name="Akamaru[13]" file="akamaru/akamaru[13].xml"/>
+        <monster name="Akamaru[14]" file="akamaru/akamaru[14].xml"/>
+        <monster name="Akamaru[15]" file="akamaru/akamaru[15].xml"/>
+        <monster name="Akamaru[16]" file="akamaru/akamaru[16].xml"/>
+        <monster name="Akamaru[17]" file="akamaru/akamaru[17].xml"/>
+        <monster name="Akamaru[18]" file="akamaru/akamaru[18].xml"/>
+        <monster name="Akamaru[19]" file="akamaru/akamaru[19].xml"/>        
+        <monster name="Akamaru[20]" file="akamaru/akamaru[20].xml"/>  
+        <monster name="Akamaru[21]" file="akamaru/akamaru[21].xml"/> 
+        <monster name="Akamaru[22]" file="akamaru/akamaru[22].xml"/> 
+        <monster name="Akamaru[23]" file="akamaru/akamaru[23].xml"/> 
+        <monster name="Akamaru[24]" file="akamaru/akamaru[24].xml"/> 
+        <monster name="Akamaru[25]" file="akamaru/akamaru[25].xml"/> 
+        <monster name="Akamaru[26]" file="akamaru/akamaru[26].xml"/>
+        <monster name="Akamaru[27]" file="akamaru/akamaru[27].xml"/>
+        <monster name="Akamaru[28]" file="akamaru/akamaru[28].xml"/>
+        <monster name="Akamaru[29]" file="akamaru/akamaru[29].xml"/>
+        <monster name="Akamaru[30]" file="akamaru/akamaru[30].xml"/>
+        <monster name="Akamaru[31]" file="akamaru/akamaru[31].xml"/>
+        <monster name="Akamaru[32]" file="akamaru/akamaru[32].xml"/>
+        <monster name="Akamaru[33]" file="akamaru/akamaru[33].xml"/>
+        <monster name="Akamaru[34]" file="akamaru/akamaru[34].xml"/>
+        <monster name="Akamaru[35]" file="akamaru/akamaru[35].xml"/>
+        <monster name="Akamaru[36]" file="akamaru/akamaru[36].xml"/>
+        <monster name="Akamaru[37]" file="akamaru/akamaru[37].xml"/>
+        <monster name="Akamaru[38]" file="akamaru/akamaru[38].xml"/>
+        <monster name="Akamaru[39]" file="akamaru/akamaru[39].xml"/>
+        <monster name="Akamaru[40]" file="akamaru/akamaru[40].xml"/>
+
+
+</monsters>
+

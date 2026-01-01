@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="insect" nameDescription="a insect" race="blood" experience="7900" speed="340" manacost="1650">
+  <health now="3200" max="3200"/>
+  <look type="51" corpse="6016"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="60" attack="50"/>  
+    <attack name="doku" interval="1000" chance="16" range="3" target="0" min="-200" max="-300">
+    </attack>  
+
+  </attacks>
+  <defenses armor="24" defense="20"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity ice="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="ZzzZzzrrr..."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="80" chance1="40000" chancemax="0"/>
+    <item id="2148" countmax="78" chance1="44000" chancemax="0"/>
+    <item id="2148" countmax="100" chance1="42000" chancemax="0"/>
+    <item id="2148" countmax="36" chance1="44000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2422" chance1="1600" chancemax="0"/>
+        <item id="2488" chance1="800" chancemax="0"/>
+        <item id="5910" countmax="1" chance1="400" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

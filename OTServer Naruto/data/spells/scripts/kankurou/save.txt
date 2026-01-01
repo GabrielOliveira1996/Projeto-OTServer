@@ -1,0 +1,16 @@
+
+if getCreatureSummons(cid) == "karasu" then
+doPlayerSendCancel(cid,"Você não pode envocar dois ou mais karasu.")
+return false
+end
+     
+
+
+
+
+local name = getCreatureName(cid) == "karasu"
+
+if getCreatureSummons(cid) == "name" then
+doPlayerSendCancel(cid,"Você não pode envocar dois ou mais karasu.")
+return false
+end

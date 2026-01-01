@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gaara" nameDescription="a gaara" race="blood" experience="0" speed="320" manacost="0">
+  <health now="30000" max="30000"/>
+  <look type="8" corpse="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="80" attack="76"/> 
+    <attack name="Suna Jinji No Jutsu" interval="1000" chance="27" min="-400" max="-500"> 
+   </attack>
+    <attack name="sabaku kyu" interval="3000" chance="30" min="-200" max="-300">
+   </attack>
+    <attack name="Suna Ryuuna No Jutsu" interval="2000" chance="26" min="-400" max="-600">
+   </attack>
+  </attacks>
+  <defenses armor="30" defense="25"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity ice="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="..."/>
+  </voices>
+  <script>
+    <event name="Gaara"/>
+  </script>
+  <script>
+    <event name="RemoveStorage"/>
+  </script>
+</monster>

@@ -1,0 +1,75 @@
+pergaminho da saga
+
+2172
+
+foto da saga
+
+2302
+
+prova da saga
+
+2130
+
+
+
+
+crocodile boots - sandals - bota inicial
+
+gloves
+
+2382    ----   black gloves
+
+2391    ----   furnious gloves
+
+2398    ----   destruction gloves
+
+2417    ----   straw gloves
+
+2421    ----   hyper gloves
+
+2422    ----   nature gloves
+
+2423    ----   iron gloves
+
+2424    ----   metal gloves
+
+2434    ----   dinamic gloves
+
+2439    ----   shark gloves
+
+2444    ----   titan gloves
+
+2445    ----   spiked gloves
+
+2448    ----   slaver gloves
+
+2449    ----   vampire gloves
+
+2452    ----   white gloves
+
+3966    ----   yellow gloves
+
+7431    ----   sasuke gloves
+
+7451    ----   ninja gloves
+
+7452    ----   red gloves
+
+
+
+
+a serem substituidos
+7754    ----   iron glove attack
+
+7758    ----   furnious glove attack
+
+
+
+
+
+
+
+
+
+
+

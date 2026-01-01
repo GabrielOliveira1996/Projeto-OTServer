@@ -1,0 +1,9 @@
+<npc name="Distance Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
+    <health now="100" max="100"/>
+<look type="394" head="79" body="86" legs="114" feet="3" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu vendo kunais, shuriken e grandes shuriken o que deseja?" />
+		<parameter key="shop_buyable" value="Sebon,2544,10;Shuriken,2399,30;Kunai,2410,50;Big Shuriken,2389,100" />
+	</parameters>
+</npc>  

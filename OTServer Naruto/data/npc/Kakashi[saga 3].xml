@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kakashi[saga 3]" script="data/npc/scripts/kakashi[saga 3].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="369"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="|PLAYERNAME|, presciso de sua ajuda." />
+	</parameters>
+</npc>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="sasuke uchiha" nameDescription="a sasuke uchiha" race="blood" experience="100000000" speed="1000" manacost="0">
+  <health now="6000000" max="6000000"/>
+  <look type="172" corpse="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="120" attack="100"/> 
+    <attack name="katon goukakyu no jutsu" interval="1000" chance="30" min="-690" max="-720"> 
+
+   </attack>
+    <attack name="katon ryuuka" interval="2000" chance="28" min="-820" max="-930">
+
+   </attack>
+    <attack name="kirin" interval="3000" chance="28" min="-1380" max="-1530">
+   
+   </attack>
+    <attack name="chidori nagashi" interval="3000" chance="28" min="-1380" max="-1530">
+
+   </attack>
+
+  </attacks>
+  <defenses armor="40" defense="38"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity ice="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Vou destruir voces..."/>
+    <voice sentence="..."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0"/>
+  </loot>
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kankuro(Professor)" script="data/npc/scripts/Kankuro(Professor).lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="4"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Holla |PLAYERNAME|. Para saber quais jutsus eu ensino diga 'teach'." />
+	</parameters>
+</npc>

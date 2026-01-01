@@ -1,0 +1,8 @@
+<npc name="Ryuu The Monk" script="data/npc/scripts/ryuu the monk.lua" access="5" lookdir="1">
+    <health now="100" max="100"/>
+<look type="108"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Ola jovem, nos viemos do templo de 'Ashar'." />
+	</parameters>
+</npc>  

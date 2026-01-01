@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tsunade[missioes]" script="data/npc/scripts/tsunade[missoes].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="377"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="|PLAYERNAME|, O que voce quer aqui?" />
+	</parameters>
+</npc>

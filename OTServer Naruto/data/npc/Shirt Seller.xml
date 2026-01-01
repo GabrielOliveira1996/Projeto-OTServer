@@ -1,0 +1,9 @@
+<npc name="Shirt Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
+    <health now="100" max="100"/>
+<look type="394" head="134" body="110" legs="84" feet="3" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, how can I help?" />
+		<parameter key="shop_sellable" value="Bandit Shirt,2467,50;Vampire Shirt,2509,2500;Blue Shirt,2650,4000;Black Shirt,2651,300;Shinobazu Shirt,2660,2200;Assassin Armor,2472,2800;Hoshi Armor,2487,4000;Cyborg Armor,2466,2000;Samurai Armor,11295,10000" />
+	</parameters>
+</npc>  

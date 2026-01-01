@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hokage[saga 1]" script="data/npc/scripts/hokage[saga 1].lua" walkinterval="2000" floorchange="0">
+    <look type="392"/>
+    <parameters>
+        <parameter key="module_shop" value="0" />
+    </parameters>
+</npc>

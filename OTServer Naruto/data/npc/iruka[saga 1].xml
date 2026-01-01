@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Iruka[saga 1]" script="data/npc/scripts/iruka[saga 1].lua" walkinterval="2000" floorchange="0">
+    <look type="400"/>
+    <parameters>
+        <parameter key="module_shop" value="0" />
+    </parameters>
+</npc>

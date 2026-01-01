@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="cursed man" nameDescription="a cursed man" race="blood" experience="16000" speed="435" manacost="0">
+  <health now="8000" max="8000"/>
+  <look type="84" corpse="6025"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="100"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="110" attack="100"/> 
+    <attack name="chidori" interval="1000" chance="28" target="0" min="-340" max="-420">
+   </attack>
+
+  </attacks>
+  <defenses armor="40" defense="38"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Cuuuuuurseeeee..."/>
+    <voice sentence="I hate you..."/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="12" chance1="56000" chancemax="0"/>
+    <item id="2434" chance1="8300" chancemax="0"/>
+    <item id="2475" chance1="1000" chancemax="0"/>
+    <item id="5918" chance1="3000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2408" chance1="1000" chancemax="0"/>
+        <item id="2152" countmax="8" chance1="39000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+</monster>

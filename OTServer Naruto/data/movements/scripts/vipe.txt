@@ -1,0 +1,14 @@
+function doCreateMonster(cid, item, pos)
+doCreateMonster(cid, item.itemid)
+return true
+end
+
+function onEquip(cid, item, slot, pos)
+if isPlayer(cid) and getPlayerSlotItem(cid, CONST_SLOT_NECKLACE).itemid == item then
+        local pos = getPlayerPosition(cid)
+        local x = doCreateMonster("Gamakichi", pos)
+        doConvinceCreature(cid, x, item)
+end
+return true
+end
+

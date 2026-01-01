@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="ashar" nameDescription="a ashar" race="blood" experience="450000" speed="845" manacost="0">
+  <health now="1000000" max="1000000"/>
+  <look type="108" corpse="2868"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="0"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="148" attack="142"/> 
+  </attacks>
+  <defenses armor="53" defense="42"/>
+	<summons maxSummons="4">
+		<summon name="monk" interval="1000" chance="30"/>
+	</summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Sua sentenca foi feita, voce ira morrer."/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="47" chance1="56000" chancemax="0"/>
+    <item id="2444" chance1="4500" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2477" chance1="2200" chancemax="0"/>
+        <item id="2195" chance1="3200" chancemax="0"/> 
+        <item id="5909" countmax="5" chance1="1500" chancemax="0"/>
+        <item id="2152" countmax="75" chance1="39000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="mkillm"/>
+</script>
+<script>
+<event name="ryuuthemonk"/>
+</script>
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kabuto[saga 1]" script="data/npc/scripts/kabuto[saga 1].lua" walkinterval="2000" floorchange="0">
+	<mana now="100" max="100"/>
+	<health now="100" max="100"/>
+	<look type="368"/>
+	<parameters>
+		<parameter key="module_shop" value="0" />
+		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu posso te ajudar a chegar ate a torre." />
+	</parameters>
+</npc>

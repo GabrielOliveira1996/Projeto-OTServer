@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Konohamaru[saga 1]" script="data/npc/scripts/konohamaru[saga 1].lua" walkinterval="2000" floorchange="0">
+    <look type="401"/>
+    <parameters>
+        <parameter key="module_shop" value="0" />
+    </parameters>
+</npc>
