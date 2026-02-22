@@ -34,7 +34,7 @@ function onCastSpell(cid, var)
     local damage_min = (skill * 2.5) + (level * 2.0)
     local damage_max = (skill * 3.5) + (level * 2.5)
     if isByakugan then damage_min, damage_max = damage_min * 1.4, damage_max * 1.4 end
-dddddddddddddddddddddddddwwwwwwwwwwwwwwdw
+
     local hit_min = math.max(1, math.floor(damage_min / total_hits))
     local hit_max = math.max(1, math.floor(damage_max / total_hits))
 
