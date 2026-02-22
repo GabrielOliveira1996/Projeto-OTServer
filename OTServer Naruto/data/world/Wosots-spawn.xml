@@ -590,7 +590,7 @@
 <spawn centerx="2952" centery="3112" centerz="7" radius="1">
 <monster name="neji" x="-1" y="1" spawntime="20"/>
 </spawn>
-<spawn centerx="3156" centery="3117" centerz="7" radius="5">
+<spawn centerx="3156" centery="3114" centerz="7" radius="5">
 <monster name="wolf" x="5" y="-4" spawntime="60"/>
 <monster name="wolf" x="-5" y="-2" spawntime="60"/>
 <monster name="wolf" x="2" y="5" spawntime="60"/>
@@ -664,27 +664,20 @@
 <monster name="shinobazu" x="-3" y="0" spawntime="60"/>
 <monster name="shinobazu" x="4" y="5" spawntime="60"/>
 </spawn>
-<spawn centerx="3162" centery="3156" centerz="7" radius="20">
-<monster name="shinobazu" x="3" y="-14" spawntime="60"/>
-<monster name="shinobazu" x="5" y="-8" spawntime="60"/>
-<monster name="shinobazu" x="12" y="-4" spawntime="60"/>
-<monster name="shinobazu" x="19" y="2" spawntime="60"/>
-<monster name="shinobazu" x="-5" y="4" spawntime="60"/>
+<spawn centerx="3172" centery="3158" centerz="7" radius="16">
 <monster name="shinobazu" x="6" y="5" spawntime="60"/>
 <monster name="shinobazu" x="13" y="9" spawntime="60"/>
-<monster name="shinobazu" x="20" y="12" spawntime="60"/>
-<monster name="shinobazu" x="-3" y="17" spawntime="60"/>
-<monster name="shinobazu" x="7" y="17" spawntime="60"/>
-<monster name="shinobazu" x="14" y="17" spawntime="60"/>
-<monster name="shinobazu" x="-9" y="-3" spawntime="60"/>
-<monster name="shinobazu" x="-14" y="20" spawntime="60"/>
-<monster name="shinobazu" x="-16" y="18" spawntime="60"/>
-<monster name="shinobazu" x="9" y="-13" spawntime="60"/>
 <monster name="shinobazu" x="-16" y="14" spawntime="60"/>
-<monster name="shinobazu" x="-11" y="9" spawntime="60"/>
-<monster name="shinobazu" x="-9" y="-8" spawntime="60"/>
+<monster name="shinobazu" x="-16" y="-5" spawntime="60"/>
+<monster name="shinobazu" x="-11" y="4" spawntime="60"/>
+<monster name="shinobazu" x="10" y="-8" spawntime="60"/>
+<monster name="shinobazu" x="9" y="-15" spawntime="60"/>
+<monster name="shinobazu" x="-9" y="-14" spawntime="60"/>
+<monster name="shinobazu" x="-3" y="-12" spawntime="60"/>
+<monster name="shinobazu" x="-16" y="-14" spawntime="60"/>
+<monster name="shinobazu" x="-7" y="15" spawntime="60"/>
 </spawn>
-<spawn centerx="2893" centery="3189" centerz="7" radius="1">
+<spawn centerx="2891" centery="3184" centerz="7" radius="1">
 <monster name="temari" x="-1" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="3187" centery="3163" centerz="7" radius="5">
@@ -694,7 +687,7 @@
 <spawn centerx="3172" centery="3175" centerz="7" radius="5">
 <monster name="shinobazu" x="-3" y="4" spawntime="60"/>
 </spawn>
-<spawn centerx="3146" centery="3177" centerz="7" radius="5">
+<spawn centerx="3149" centery="3177" centerz="7" radius="5">
 <monster name="shinobazu" x="-3" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="3159" centery="3177" centerz="7" radius="5">
@@ -710,7 +703,7 @@
 <monster name="desert jump" x="-4" y="-1" spawntime="60"/>
 <monster name="desert jump" x="-1" y="4" spawntime="60"/>
 </spawn>
-<spawn centerx="2914" centery="3177" centerz="7" radius="1">
+<spawn centerx="2914" centery="3178" centerz="7" radius="1">
 <monster name="kankuro" x="-1" y="0" spawntime="20"/>
 </spawn>
 <spawn centerx="3256" centery="3186" centerz="7" radius="5">
@@ -757,7 +750,7 @@
 <spawn centerx="3094" centery="3209" centerz="7" radius="5">
 <monster name="savager" x="-4" y="-5" spawntime="60"/>
 <monster name="savager" x="4" y="-5" spawntime="60"/>
-<monster name="savager" x="-3" y="3" spawntime="60"/>
+<monster name="savager" x="3" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3109" centery="3211" centerz="7" radius="4">
 <monster name="savager" x="-2" y="-4" spawntime="60"/>
@@ -1029,30 +1022,6 @@
 <spawn centerx="3223" centery="3238" centerz="8" radius="1">
 <monster name="bandit" x="-1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2784" centery="3243" centerz="8" radius="5">
-<monster name="fishman" x="-3" y="-4" spawntime="60"/>
-<monster name="fishman" x="1" y="5" spawntime="60"/>
-</spawn>
-<spawn centerx="2809" centery="3247" centerz="8" radius="5">
-<monster name="fishman" x="2" y="-4" spawntime="60"/>
-<monster name="fishman" x="-3" y="5" spawntime="60"/>
-</spawn>
-<spawn centerx="2779" centery="3259" centerz="8" radius="5">
-<monster name="fishman" x="4" y="-4" spawntime="60"/>
-<monster name="fishman" x="-4" y="4" spawntime="60"/>
-</spawn>
-<spawn centerx="2803" centery="3263" centerz="8" radius="5">
-<monster name="fishman" x="3" y="-5" spawntime="60"/>
-<monster name="fishman" x="-5" y="4" spawntime="60"/>
-</spawn>
-<spawn centerx="2784" centery="3276" centerz="8" radius="5">
-<monster name="fishman" x="3" y="-5" spawntime="60"/>
-<monster name="fishman" x="-4" y="2" spawntime="60"/>
-</spawn>
-<spawn centerx="2805" centery="3277" centerz="8" radius="5">
-<monster name="fishman" x="5" y="-5" spawntime="60"/>
-<monster name="fishman" x="-5" y="2" spawntime="60"/>
-</spawn>
 <spawn centerx="2708" centery="3084" centerz="9" radius="5">
 <monster name="juhi member" x="2" y="-4" spawntime="60"/>
 <monster name="juhi member" x="-2" y="5" spawntime="60"/>
@@ -1097,9 +1066,6 @@
 <monster name="assassin" x="0" y="4" spawntime="60"/>
 <monster name="assassin" x="7" y="5" spawntime="60"/>
 <monster name="assassin" x="0" y="9" spawntime="60"/>
-</spawn>
-<spawn centerx="2736" centery="3092" centerz="10" radius="5">
-<monster name="commander" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2738" centery="3111" centerz="10" radius="5">
 <monster name="assassin" x="-2" y="-5" spawntime="60"/>
@@ -1309,9 +1275,9 @@
 <monster name="shinobazu" x="2" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="3170" centery="3125" centerz="9" radius="5">
-<monster name="kusa shinobi" x="1" y="2" spawntime="60"/>
 <monster name="kusa shinobi" x="2" y="-4" spawntime="60"/>
 <monster name="kusa shinobi" x="-2" y="-1" spawntime="60"/>
+<monster name="kusa shinobi" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3091" centery="3146" centerz="9" radius="5">
 <monster name="shinobazu" x="4" y="-1" spawntime="60"/>
@@ -1824,9 +1790,6 @@
 <spawn centerx="3145" centery="2865" centerz="7" radius="0">
 <npc name="Medic Seller" x="0" y="0"/>
 </spawn>
-<spawn centerx="3007" centery="3019" centerz="7" radius="1">
-<npc name="Tazuna[saga 1]" x="-1" y="-1"/>
-</spawn>
 <spawn centerx="3088" centery="2992" centerz="7" radius="5">
 <monster name="bandit" x="2" y="-2" spawntime="60"/>
 <monster name="bandit" x="-3" y="1" spawntime="60"/>
@@ -2194,7 +2157,7 @@
 <monster name="savager" x="-5" y="2" spawntime="60"/>
 <monster name="savager" x="-4" y="-4" spawntime="60"/>
 </spawn>
-<spawn centerx="3262" centery="3067" centerz="7" radius="1">
+<spawn centerx="3269" centery="3067" centerz="7" radius="1">
 <monster name="zabuza" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2959" centery="3061" centerz="7" radius="1">
@@ -2563,7 +2526,7 @@
 <monster name="elite bandit" x="1" y="-2" spawntime="60"/>
 <monster name="elite bandit" x="2" y="-3" spawntime="60"/>
 </spawn>
-<spawn centerx="3049" centery="3019" centerz="7" radius="1">
+<spawn centerx="3050" centery="3020" centerz="7" radius="1">
 <npc name="Mizuki[saga 1]" x="0" y="1"/>
 </spawn>
 <spawn centerx="3121" centery="3103" centerz="8" radius="5">
@@ -2647,7 +2610,7 @@
 <monster name="elite bandit" x="-2" y="5" spawntime="60"/>
 <monster name="elite bandit" x="2" y="-4" spawntime="60"/>
 </spawn>
-<spawn centerx="3135" centery="3117" centerz="7" radius="5">
+<spawn centerx="3135" centery="3116" centerz="7" radius="5">
 <monster name="ninja" x="-3" y="3" spawntime="60"/>
 <monster name="ninja" x="2" y="-4" spawntime="60"/>
 </spawn>
@@ -2699,5 +2662,96 @@
 <monster name="ninja" x="-2" y="-1" spawntime="60"/>
 <monster name="ninja" x="3" y="-5" spawntime="60"/>
 <monster name="ninja" x="-1" y="5" spawntime="60"/>
+</spawn>
+<spawn centerx="3304" centery="3057" centerz="7" radius="1">
+<npc name="Kaze no Tabibito (Traveler)" x="0" y="-1"/>
+</spawn>
+<spawn centerx="3333" centery="3071" centerz="7" radius="1">
+<npc name="Miamoto Denshi (Traveler)" x="-1" y="1"/>
+</spawn>
+<spawn centerx="3065" centery="3016" centerz="5" radius="0">
+<npc name="Chunnin Examiner" x="0" y="0"/>
+</spawn>
+<spawn centerx="3068" centery="3016" centerz="5" radius="0">
+<npc name="Chunnin Examiner" x="0" y="0"/>
+</spawn>
+<spawn centerx="3071" centery="3016" centerz="5" radius="0">
+<npc name="Chunnin Examiner" x="0" y="0"/>
+</spawn>
+<spawn centerx="3030" centery="3187" centerz="7" radius="5">
+<monster name="elite bandit" x="-1" y="4" spawntime="60"/>
+<monster name="elite bandit" x="3" y="-2" spawntime="60"/>
+<monster name="elite bandit" x="-2" y="-2" spawntime="60"/>
+</spawn>
+<spawn centerx="3030" centery="3194" centerz="6" radius="5">
+<monster name="elite bandit" x="-3" y="0" spawntime="60"/>
+<monster name="elite bandit" x="3" y="3" spawntime="60"/>
+<monster name="elite bandit" x="2" y="-2" spawntime="60"/>
+<monster name="elite bandit" x="-5" y="3" spawntime="60"/>
+</spawn>
+<spawn centerx="3029" centery="3195" centerz="7" radius="3">
+<monster name="elite bandit" x="-2" y="2" spawntime="60"/>
+<monster name="elite bandit" x="3" y="2" spawntime="60"/>
+</spawn>
+<spawn centerx="3030" centery="3195" centerz="5" radius="5">
+<monster name="elite bandit" x="-5" y="0" spawntime="60"/>
+<monster name="elite bandit" x="2" y="3" spawntime="60"/>
+<monster name="elite bandit" x="1" y="-3" spawntime="60"/>
+<monster name="elite bandit" x="-2" y="-1" spawntime="60"/>
+<monster name="elite bandit" x="-3" y="3" spawntime="60"/>
+<monster name="elite bandit" x="4" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3051" centery="3195" centerz="7" radius="5">
+<monster name="assassin" x="-3" y="-2" spawntime="60"/>
+<monster name="assassin" x="3" y="-5" spawntime="60"/>
+<monster name="assassin" x="0" y="5" spawntime="60"/>
+</spawn>
+<spawn centerx="3023" centery="3213" centerz="7" radius="1">
+<monster name="assassin" x="-1" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="3036" centery="3220" centerz="7" radius="1">
+<monster name="assassin" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="3047" centery="3213" centerz="7" radius="5">
+<monster name="assassin" x="3" y="-5" spawntime="60"/>
+<monster name="assassin" x="-1" y="5" spawntime="60"/>
+</spawn>
+<spawn centerx="3026" centery="3231" centerz="7" radius="5">
+<monster name="assassin" x="-4" y="-4" spawntime="60"/>
+<monster name="assassin" x="2" y="4" spawntime="60"/>
+<monster name="assassin" x="-5" y="3" spawntime="60"/>
+</spawn>
+<spawn centerx="3044" centery="3231" centerz="7" radius="1">
+<monster name="assassin" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3036" centery="3238" centerz="7" radius="1">
+<monster name="assassin" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3027" centery="3248" centerz="6" radius="5">
+<monster name="assassin" x="2" y="-3" spawntime="60"/>
+<monster name="assassin" x="-3" y="-2" spawntime="60"/>
+<monster name="assassin" x="0" y="4" spawntime="60"/>
+</spawn>
+<spawn centerx="3026" centery="3231" centerz="6" radius="5">
+<monster name="assassin" x="-4" y="-1" spawntime="60"/>
+<monster name="assassin" x="-2" y="2" spawntime="60"/>
+<monster name="assassin" x="5" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="3041" centery="3231" centerz="6" radius="1">
+<monster name="assassin" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="3048" centery="3232" centerz="6" radius="1">
+<monster name="assassin" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3045" centery="3241" centerz="6" radius="1">
+<monster name="assassin" x="-1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3036" centery="3252" centerz="6" radius="1">
+<monster name="assassin" x="-1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="3046" centery="3252" centerz="6" radius="5">
+<monster name="assassin" x="-5" y="0" spawntime="60"/>
+<monster name="assassin" x="-1" y="-5" spawntime="60"/>
+<monster name="assassin" x="5" y="2" spawntime="60"/>
 </spawn>
 </spawns>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Miamoto Denshi (Traveler)" script="miamoto_denshi.lua"
+    walkinterval="2000" floorchange="0">
+    <health now="100" max="100" />
+    <look type="394" head="114" body="30" legs="94" feet="3" addons="0" />
+    <parameters>
+        <parameter key="message_greet"
+            value="Seja bem-vindo. O vento sopra em direcao o Pais da Folha. Voce deseja viajar?" />
+    </parameters>
+</npc>

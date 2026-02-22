@@ -24,7 +24,7 @@ experienceBar = nil
 soulLabel = nil
 capLabel = nil
 healthTooltip = 'Your character health is %d out of %d.'
-manaTooltip = 'Your character mana is %d out of %d.'
+manaTooltip = 'Your character chakra is %d out of %d.'
 experienceTooltip = 'You have %d%% to advance to level %d.'
 
 overlay = nil

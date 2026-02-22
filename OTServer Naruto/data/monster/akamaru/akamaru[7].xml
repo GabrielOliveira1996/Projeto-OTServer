@@ -1,63 +1,33 @@
-﻿<?xml version="1.0" encoding="UTF-8"?> 
-  <monster name="akamaru[7]" nameDescription="a akamaru[7]" race="blood" experience="0" speed="358" manacost="0"> 
-  <health now="7000" max="7000"/>
-    <look type="45" corpse="0"/> 
-    <targetchange interval="60000" chance="0"/> 
-    <strategy attack="100" defense="0"/> 
-    <flags> 
-      <flag summonable="0"/> 
-      <flag attackable="1"/> 
-      <flag hostile="1"/> 
-      <flag illusionable="0"/> 
-      <flag convinceable="1"/> 
-      <flag pushable="0"/> 
-      <flag canpushitems="1"/> 
-      <flag staticattack="85"/> 
-      <flag lightlevel="0"/> 
-      <flag lightcolor="0"/> 
-      <flag targetdistance="1"/> 
-      <flag runonhealth="1"/> 
-    </flags> 
- <attacks> 
-    <attack name="melee" interval="2000" skill="52" attack="46"/>
- 
-    <attack name="tsuuga" interval="2000" chance="11" radius="3" target="0" min="-100" max="-160"> 
-    </attack> 
- 
- </attacks> 
-    <defenses armor="10" defense="14"> 
-    </defenses>
-	<elements>
-		<element firePercent="20"/>
-		<element earthPercent="75"/>
-		<element icePercent="-5"/>
-		<element deathPercent="-5"/>
-    </elements>
-    <immunities> 
-      <immunity energy="1"/> 
-      <immunity paralyze="1"/> 
-      <immunity invisible="1"/> 
-    </immunities> 
-    <voices interval="3000" chance="5"> 
-      <voice sentence="GRRR!"/> 
-    </voices> 
-    <loot> 
-      <item id="2672" countmax="3" chance1="9000" chancemax="0"/> -- dragon hams
-      <item id="2148" countmax="100" chance1="30000" chancemax="0"/> -- gold coins
-      <item id="2647" chance="2222"/> -- Plate legs
-      <item id="8921" chance="2100"/> -- Wand of Draconia
-	  <item id="7411" chance="1444"/> -- ornamented axe
-      <item id="2546" countmax="10" chance1="6000" chancemax="0"/> -- Burst Arrow
-      <item id="1987" chance="100000">  -- bag
-        <inside> 
-          <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- gold coin
-          <item id="7430" chance="1654"/> -- Dragonbone staff
-          <item id="7588" chance="5332"/>  -- SHP
-		  <item id="8871" chance="2400"/> -- Focus Cape
-        </inside> 
-      </item> 
-    </loot> 
-  </monster>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="akamaru[7]" nameDescription="a akamaru[7]" race="blood" experience="0" speed="0"
+  manacost="0">
+  <health now="400" max="400" />
+  <look type="45" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="1" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="22" attack="20" />
+  </attacks>
+  <defenses armor="7" defense="7">
+    <defense name="healing" interval="1000" chance="100" min="10" max="10" />
+  </defenses>
+  <voices interval="3000" chance="5">
+    <voice sentence="GRRR!" />
+  </voices>
+</monster>
   
   
   

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
-	<globalevent name="save" interval="3600" event="script" value="save.lua"/>
-	<globalevent name="clean" interval="7200" event="script" value="clean.lua"/>
+	<!-- Sakura -->
+	<globalevent name="ChakraNoMesu" interval="2" event="script" value="sakura/chakra_no_mesu.lua" />
 
-	<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
-	<globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
-      <globalevent name="info" interval="600" script="info.lua"   />
-      <globalevent name="teleport" interval="1" event="script" value="summon.lua"/>
+	<!-- Sasuke -->
+	<globalevent name="CursedSeal" interval="2" event="script" value="sasuke/cursed_seal.lua" />
 
-	<!-- <globalevent name="timer_example" time="21:35" event="script" value="my_script.lua"/> -->
+	<!-- Naruto -->
+	<globalevent name="KyuubiForm" interval="2" event="script" value="naruto/kyuubi_form.lua" />
+
+	<!-- Sagas -->
+	<globalevent name="ExameChunin" interval="7" event="script" value="test_saga.lua" />
+
+	<globalevent name="save" interval="3600" event="script" value="save.lua" />
+	<globalevent name="clean" interval="7200" event="script" value="clean.lua" />
+
+	<globalevent name="serverstart" type="start" event="script" value="start.lua" />
+	<globalevent name="playersrecord" type="record" event="script" value="record.lua" />
+	<globalevent name="info" interval="600" script="info.lua" />
+	<globalevent name="teleport" interval="1" event="script" value="summon.lua" />
+
 </globalevents>

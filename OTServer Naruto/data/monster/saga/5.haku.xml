@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Haku" nameDescription="a haku" race="blood" experience="0" speed="250" manacost="0">
+  <health now="1500" max="1500" />
+  <look type="9" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="3" />
+    <flag staticattack="60" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack
+      name="physical" interval="1000" chance="100" range="7" target="1" min="-5" max="-15">
+      <attribute key="areaEffect" value="SMALLCLOUDS" />
+      <attribute key="shootEffect" value="arrow" />
+    </attack>
+  </attacks>
+  <defenses armor="1" defense="1" />
+  <summons maxSummons="6">
+    <summon name="Haku Bunshin" interval="1000" chance="60" />
+  </summons>
+  <immunities>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Can you see my movements?" />
+    <voice sentence="I am Zabuza's tool. I will eliminate his enemies." />
+    <voice sentence="Secret Jutsu: Crystal Ice Mirrors!" />
+    <voice sentence="It's a pity... but you must die here." />
+    <voice sentence="Do you have someone precious to you?" />
+    <voice sentence="You won't be able to keep up with my speed." />
+    <voice sentence="Hidden Jutsu: Thousand Flying Water Needles!" />
+  </voices>
+  <script>
+    <event name="Haku" />
+  </script>
+  <script>
+    <event name="RemoveStorage" />
+  </script>
+</monster>

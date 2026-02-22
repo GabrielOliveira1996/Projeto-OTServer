@@ -7,7 +7,6 @@ function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
 function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
 
--- MODIFICACAO NO ONTHINK: Silencio ao afastar
 function onThink() 
     if npcHandler:isFocused(cid) then
         local coords = getCreaturePosition(cid)
@@ -19,22 +18,26 @@ function onThink()
     npcHandler:onThink() 
 end
 
--- Saudacao Dinamica baseada no progresso
 function onGreet(cid)
     local playerName = getCreatureName(cid)
     local fotoPendente = 11115
     local fotoEntregue = 11116
-    local prontoParaMissao = 11119
+    local statusTazuna = 11120 -- Nossa storage única
 
-    if getPlayerStorageValue(cid, prontoParaMissao) >= 1 then
-        npcHandler:setMessage(MESSAGE_GREET, "Ola " .. playerName .. ". Voce esta pronto para sua {first mission}?")
+    local missionStatus = getPlayerStorageValue(cid, statusTazuna)
+
+    if missionStatus == -1 and getPlayerStorageValue(cid, fotoEntregue) >= 1 then
+        npcHandler:setMessage(MESSAGE_GREET, "Ola " .. playerName .. ". Voce esta pronto para sua {primeira missao}?")
+    elseif missionStatus == 1 then
+        npcHandler:setMessage(MESSAGE_GREET, "Ainda esta aqui, " .. playerName .. "? O Tazuna precisa chegar ao Pais das Ondas!")
+    elseif missionStatus == 2 then
+        npcHandler:setMessage(MESSAGE_GREET, "Bom trabalho na escolta, " .. playerName .. ". O construtor esta seguro.")
     elseif getPlayerStorageValue(cid, fotoEntregue) >= 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Sua foto ja foi registrada. Va encontrar sua equipe.")
     elseif getPlayerStorageValue(cid, fotoPendente) >= 1 then
-        -- FALA CORRIGIDA: Ele apenas reclama da foto e diz que nao aceita.
-        npcHandler:setMessage(MESSAGE_GREET, playerName .. "! Que foto de registro ridicula e essa? Voce pintou o rosto e fez caretas! Eu jamais aceitaria um documento oficial desse jeito! {orioke no jutsu}")
+        npcHandler:setMessage(MESSAGE_GREET, playerName .. "! Que foto de registro ridicula e essa? Eu jamais aceitaria isso! {orioke no jutsu}")
     else
-        npcHandler:setMessage(MESSAGE_GREET, "O que quer aqui? Estou ocupado com os assuntos da vila.")
+        npcHandler:setMessage(MESSAGE_GREET, "O que quer aqui? Estou ocupado.")
     end
 
     npcHandler:addFocus(cid)
@@ -44,37 +47,72 @@ end
 function creatureSayCallback(cid, type, msg)
     if not npcHandler:isFocused(cid) then return false end
 
-    -- Storages da Foto
-    local storagelose1 = 11115 
-    local storageGain1 = 11116 
-    local experienciaFotografia = 6000
+    -- configuracoes
+    local storageFotoPendente = 11115 
+    local storageFotoEntregue = 11116 
+    local statusTazuna = 11120 
+    local statusTazunaPosMatarZabuza = 90908
 
-    -- Storages da Primeira Missao -Tazuna
-    local storagelose2 = 11119 
-    local storageGain2 = 11120 
-    local storageTazuna = 123456 
-
-    -- PARTE 1: Entrega da Foto
+    -- entrega da foto
     if msgcontains(msg, 'orioke no jutsu') then
-        if getPlayerStorageValue(cid, storagelose1) >= 1 then
-            selfSay('MAS O QUE?! Pare com essa tecnica ridicula agora mesmo! *cof cof*... Que audacia a sua me pegar desprevenido... Esta bem, eu registro essa foto so para voce sair da minha sala!', cid)
-            setPlayerStorageValue(cid, storagelose1, -1)
-            setPlayerStorageValue(cid, storageGain1, 1)
-            doPlayerAddExp(cid, experienciaFotografia)
+        if getPlayerStorageValue(cid, storageFotoPendente) >= 1 then
+            selfSay('MAS O QUE?! Pare com isso agora! Esta bem, eu registro essa foto so para voce sair da minha sala!', cid)
+            setPlayerStorageValue(cid, storageFotoPendente, -1)
+            setPlayerStorageValue(cid, storageFotoEntregue, 1)
+            doPlayerAddExp(cid, 6000)
             doSendMagicEffect(getThingPos(cid), 2)
-        else
-            return false
         end
 
-    -- PARTE 2: Primeira Missao - zabuza e tazuna
-    elseif msgcontains(msg, 'first mission') then
-        if getPlayerStorageValue(cid, storagelose2) >= 1 then
-            selfSay('Sua missao sera escoltar um construtor de pontes. Va e encontre um homem chamado Tazuna, voce tera que escoltar ele ate o Pais das Ondas.', cid)
-            setPlayerStorageValue(cid, storagelose2, -1)
-            setPlayerStorageValue(cid, storageGain2, 1)
-            setPlayerStorageValue(cid, storageTazuna, 1)
+    -- missao Tazuna
+    elseif msgcontains(msg, 'primeira missao') or msgcontains(msg, 'tazuna') then
+        local missionStatus = getPlayerStorageValue(cid, statusTazuna)
+        
+        if missionStatus == 2 then
+            selfSay('Voce ja completou esta missao.', cid)
+            return true
+        end
+
+        -- Checar se o jogador já tem a missão liberada (Saga 11 concluída)
+        if getPlayerStorageValue(cid, 11119) < 1 then
+            selfSay('Voce ainda nao tem autorizacao para escoltar o senhor Tazuna.', cid)
+            return true
+        end
+
+        -- Checar se o Tazuna já está vivo/invocado
+        local summons = getCreatureSummons(cid)
+        local hasTazuna = false
+        for _, summon in ipairs(summons) do
+            if getCreatureName(summon) == "Tazuna" then
+                hasTazuna = true
+                break
+            end
+        end
+
+        if hasTazuna then
+            selfSay('O Tazuna ja esta com voce! Va para o Pais das Ondas.', cid)
+            return true
+        end
+
+        -- Se chegou aqui e não tem Tazuna, ele pode pegar (independente de ser status 1 ou -1)
+        local playerPos = getCreaturePosition(cid)
+        local spawnPos = getClosestFreeTile(cid, playerPos)
+
+        if spawnPos then
+            local tazuna = doCreateMonster("Tazuna", spawnPos)
+            if isCreature(tazuna) then
+                doConvinceCreature(cid, tazuna)
+                doChangeSpeed(tazuna, -getCreatureSpeed(tazuna) + getCreatureSpeed(cid))
+                doSendMagicEffect(spawnPos, 10)
+
+                if missionStatus == -1 and getPlayerStorageValue(cid, statusTazunaPosMatarZabuza) < 1 then -- adicionada checagem para nao ganhar a storage se ja matou o Zabuza
+                    selfSay('Sua missao sera escoltar o Tazuna ate o Pais das Ondas. Proteja-o com sua vida!', cid)
+                    setPlayerStorageValue(cid, statusTazuna, 1) 
+                else
+                    selfSay('Vejo que voce perdeu o senhor Tazuna... Tome mais cuidado! Vamos tentar novamente.', cid)
+                end
+            end
         else
-            return false
+            selfSay('Nao ha espaco para o Tazuna aparecer aqui.', cid)
         end
     end
 
@@ -83,9 +121,4 @@ end
 
 npcHandler:setCallback(CALLBACK_GREET, onGreet)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-
--- Garante o silencio ao sair
-npcHandler.messages[MESSAGE_FAREWELL] = ""
-npcHandler.messages[MESSAGE_WALKAWAY] = ""
-
 npcHandler:addModule(FocusModule:new())

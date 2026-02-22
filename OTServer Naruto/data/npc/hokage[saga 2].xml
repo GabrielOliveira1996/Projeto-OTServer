@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Hokage[saga 2]" script="data/npc/scripts/hokage[saga 2].lua" walkinterval="2000" floorchange="0">
-	<mana now="100" max="100"/>
-	<health now="100" max="100"/>
-	<look type="392"/>
+<npc name="Hokage[saga 2]" script="data/npc/scripts/hokage[saga 2].lua" walkinterval="2000"
+	floorchange="0">
+	<mana now="100" max="100" />
+	<health now="100" max="100" />
+	<look type="392" />
 	<parameters>
-		<parameter key="module_shop" value="0" />
-		<parameter key="message_greet" value="|PLAYERNAME|. O que voce quer aqui?" />
 	</parameters>
 </npc>

@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="kusa shinobi" nameDescription="a kusa shinobi" race="blood" experience="3400" speed="265" manacost="1500">
-  <health now="2350" max="2350"/>
-  <look type="119" corpse="2867"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="kusa shinobi" nameDescription="a kusa shinobi" race="blood" experience="3200"
+  speed="265" manacost="1500">
+  <health now="1000" max="1000" />
+  <look type="119" corpse="2867" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="0"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="48" attack="44"/>  
-    <attack name="melee" interval="1000" chance="19" range="7" target="1" min="-80" max="-120">
-	<attribute key="areaEffect" value="mortarea"/>
-	<attribute key="shootEffect" value="fire"/>
-    </attack>  
-
+    <attack name="melee" interval="2000" skill="43" attack="42" />
+    <attack name="melee" interval="1000" chance="19" range="5" target="1" min="-50" max="-90">
+      <attribute key="areaEffect" value="mortarea" />
+      <attribute key="shootEffect" value="fire" />
+    </attack>
   </attacks>
-  <defenses armor="13" defense="9"/>
+  <defenses armor="3" defense="2" />
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="Hahahaha..."/>
+    <voice sentence="Hahahaha..." />
   </voices>
   <loot>
-    <item id="2148" countmax="58" chance1="50000" chancemax="0"/>
-    <item id="2423" chance1="4600" chancemax="0"/>
-    <item id="2493" chance1="5000" chancemax="0"/>
-    <item id="2472" chance1="3000" chancemax="0"/>
+    <item id="2148" countmax="58" chance1="50000" chancemax="0" />
+    <item id="2423" chance1="4600" chancemax="0" />
+    <item id="2493" chance1="5000" chancemax="0" />
+    <item id="2472" chance1="3000" chancemax="0" />
     <item id="1987" chance="100000">
       <inside>
-        <item id="2395" chance1="3000" chancemax="0"/>
-        <item id="2148" countmax="47" chance1="40000" chancemax="0"/>
+        <item id="2395" chance1="3000" chancemax="0" />
+        <item id="2148" countmax="47" chance1="40000" chancemax="0" />
       </inside>
     </item>
   </loot>
-<script>
-<event name="mkillm"/>
-</script>
+  <script>
+    <event name="mkillm" />
+  </script>
 </monster>

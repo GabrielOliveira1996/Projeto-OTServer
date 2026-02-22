@@ -1,34 +1,49 @@
-local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_EFFECT, 40)
-setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, false)
+--configuracoes
+local storage_status = 301 -- 
+local storage_drain = 302 -- storage que guarda a informacao de que a vida esta sendo drenada
+local health_loss_interval = 2000 -- intervalo de perda de vida onde 1000 Ã© igual 1 seg.
+local health_loss_amount = 150 -- quantidade de vida perdida intervalo
 
-arr = {
-{0 ,0, 0, 0, 0, 0, 0},
-{0 ,0, 0, 0, 0, 0, 0},
-{0 ,0, 0, 0, 0, 0, 0},
-{0 ,0, 0, 1, 2, 0, 0},
-{0 ,0, 0, 0, 0, 0, 0},
-{0 ,0, 0, 0, 0, 0, 0},
-{0 ,0, 0, 0, 0, 0, 0},
-}
+function onLossTick(cid)
+    if not isCreature(cid) then return end
+    if getPlayerStorageValue(cid, storage_status) <= 0 then return end
 
-local area = createCombatArea(arr)
-setCombatArea(combat, area)
-local dur = 5 -- spell vai durar 5 segundos
-local delay = 200 -- delay (em ms) entre cada enviada de effect
-function executeCombat(cid, combat, var, time)
-if not isCreature(cid) or time <= os.time() then return end
-local var = var
-var.pos = getThingPos(cid)
-doCombat(cid, combat, var)
-addEvent(executeCombat, delay, cid, combat, var, time)
-end
-function onCastSpell(cid, var)
-local status = getCreatureStorage(cid, 301)
-if status > os.time() then
-    return doPlayerSendCancel(cid, "Susano'o já esta ativado.")
+    local currentHpPercent = getCreatureHealth(cid) / getCreatureMaxHealth(cid)
+    
+    if currentHpPercent <= 0.20 then
+        setPlayerStorageValue(cid, storage_status, -1)
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Your Susano'o has dissipated!") 
+        doSendMagicEffect(getThingPos(cid), 2)
+        return
     end
-    doCreatureSetStorage(cid, 301, os.time() + 5)
-    executeCombat(cid, combat, var, os.time() + dur)
-return true
+
+    setPlayerStorageValue(cid, storage_drain, 1) 
+    doCreatureAddHealth(cid, -health_loss_amount)
+    setPlayerStorageValue(cid, storage_drain, -1) 
+    doSendMagicEffect(getThingPos(cid), 40)
+    addEvent(onLossTick, health_loss_interval, cid)
+end
+
+function onCastSpell(cid, var)
+    -- desativa manualmente
+    if getPlayerStorageValue(cid, storage_status) > 0 then
+        setPlayerStorageValue(cid, storage_status, -1)
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Susano'o Deactivated")
+        return true
+    end
+
+    -- checa a vida esta abaixo de 20% se estiver nao usa susanoo
+    local currentHpPercent = getCreatureHealth(cid) / getCreatureMaxHealth(cid)
+    if currentHpPercent <= 0.20 then
+        doPlayerSendCancel(cid, "You are too weak to summon Susano'o.")
+        return false
+    end
+
+    -- ativa susanoo
+    setPlayerStorageValue(cid, storage_status, 1)
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Susano'o Activated!")
+    doCreatureSay(cid, "SUSANOO!", TALKTYPE_MONSTER)
+    doSendMagicEffect(getThingPos(cid), 40)
+    onLossTick(cid)
+    return true
 end

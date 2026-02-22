@@ -2,9 +2,9 @@ function onCastSpell(cid, var)
 
 
 if getPlayerLevel(cid) >= 100 and getPlayerLevel(cid) <= 149 and getPlayerVocation(cid) == 14 then --- sakura classic cumulated -- arrumado
-doSetCreatureOutfit(cid, {lookType = 2}, -1)
-doPlayerSetVocation(cid, 69)
-doSendMagicEffect(getCreaturePosition(cid), 90)
+    doSetCreatureOutfit(cid, {lookType = 2}, -1)
+    doPlayerSetVocation(cid, 69)
+    doSendMagicEffect(getCreaturePosition(cid), 90)
 end
 
 if getPlayerLevel(cid) >= 200 and getPlayerLevel(cid) <= 299 and getPlayerVocation(cid) == 15 then --- sakura shippuden cumulated -- arrumado

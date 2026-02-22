@@ -1,19 +1,30 @@
 function onUse(cid, item, itemEx)
-local percent = 5 -- Porcentagem de cura
-local type = "mana" -- Tipo de cura (mana)
-local exha = 1.0 -- Tempo de exhaustion em segundos
-local itemid = 2125 -- id do item que tem que ser usado
-
-if exhaustion.check(cid, 7323) then
-doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED) return true
-elseif itemEx.uid == cid then
-doPlayerSendCancel(cid, "Você não pode usar rapido demais.") return true
-end
-
-if getPlayerSlotItem(cid, 2).itemid == itemid and type == "mana" then
-doPlayerAddMana(cid, getPlayerMaxMana(cid)*(percent/100))
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-exhaustion.set(cid, 7323, exha)
-return true
+    local config = {
+        percent = 10, -- porcentagem de cura
+        exhaustionId = 7323, -- id da exaustao
+        exhTime = 1, -- tempo de exaustao em segundos
+        reqItemId = 2125, -- id do item que precisa estar equipado
+        effect = 12 -- efeito visual
+    }
+    -- verifica se o jogador esta exausto
+    if exhaustion.check(cid, config.exhaustionId) then
+        local timeLeft = exhaustion.get(cid, config.exhaustionId)
+        doPlayerSendCancel(cid, "You are exhausted. Wait " .. timeLeft .. "s.")
+        return true
+    end
+    -- verifica se o item especifico esta no slot 2 (colar)
+    if getPlayerSlotItem(cid, CONST_SLOT_NECKLACE).itemid == config.reqItemId then
+        local maxMana = getPlayerMaxMana(cid)
+        local healAmount = math.floor(maxMana * (config.percent / 100))
+        -- adiciona a mana
+        doPlayerAddMana(cid, healAmount)
+        -- efeito visual e mensagem no server log
+        doSendMagicEffect(getThingPos(cid), config.effect)
+        doPlayerSendTextMessage(cid, 23, "You restored " .. healAmount .. " points of chakra.")
+        -- define a exaustÃ£o
+        exhaustion.set(cid, config.exhaustionId, config.exhTime)
+    else
+        doPlayerSendCancel(cid, "You need to have the specific item equipped to use this.")
+    end
+    return true
 end

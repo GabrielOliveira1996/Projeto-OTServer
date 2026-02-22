@@ -1,0 +1,9 @@
+Module
+  name: game_akamaru
+  description: Akamaru System
+  author: Gemini
+  sandboxed: false
+  scripts: [ akamaru ]
+  dependencies: [ game_interface, client_topmenu ]
+  @onLoad: init()
+  @onUnload: terminate()

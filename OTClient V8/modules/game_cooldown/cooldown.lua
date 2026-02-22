@@ -40,6 +40,33 @@ function init()
   end
 end
 
+function onAction(text)
+  if not text or #text == 0 then return end
+  local words = text:trim():lower() -- Limpa e coloca em minúsculo para comparar
+  
+  -- Puxa a lista customizada do outro módulo
+  local customSpells = modules.game_actionbar and modules.game_actionbar.customSpells
+  
+  if customSpells then
+    for name, spell in pairs(customSpells) do
+      -- Compara se o que você digitou na Hotkey é igual ao "words" da magia
+      if spell.words:lower() == words then
+        -- No seu caso, o iconId é o 'id' e a duração é o 'exhaustion'
+        local iconId = spell.id
+        local duration = spell.exhaustion
+        
+        if iconId and duration then
+          print("COOLDOWN CUSTOM: Iniciando para " .. name .. " (" .. duration .. "ms)")
+          onSpellCooldown(iconId, duration)
+          return -- Encontrou, pode parar de procurar
+        end
+      end
+    end
+  end
+
+  print("COOLDOWN ERRO: A palavra '" .. words .. "' nao foi encontrada na lista customSpells.")
+end
+
 function terminate()
   disconnect(g_game, { onGameStart = online,
                        onSpellGroupCooldown = onSpellGroupCooldown,

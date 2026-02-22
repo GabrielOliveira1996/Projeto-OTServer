@@ -1,7 +1,0 @@
-doCreatureAddMana(cid, trasnform, -5)
-addEvent(transform, 1 * 1000, cid)
-
-
-
-
-sasuke shippuden corpse de skeleton

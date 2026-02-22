@@ -1,43 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="kuroari[4]" nameDescription="a kuroari[4]" race="blood" experience="0" speed="1000" manacost="0">
-  <health now="33000" max="33000"/>
-  <look type="101" corpse="0"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="kuroari[4]" nameDescription="a kuroari[4]" race="blood" experience="0" speed="1000"
+  manacost="0">
+  <health now="33000" max="33000" />
+  <look type="101" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="52" attack="62"/> 
-    <attack name="doku" interval="1000" chance="19" range="7" target="7" min="-360" max="-460">  
-   </attack> 
-        <attack name="katon goukakyu no jutsu" interval="1000" chance="20" range="0" target="7" min="-360" max="-460"> 
-   </attack>
-
+    <attack name="melee" interval="2000" skill="52" attack="62" />
+    <attack name="doku" interval="1000" chance="19" range="7" target="7" min="-360" max="-460">
+    </attack>
   </attacks>
-  <defenses armor="33" defense="31"/>
+  <defenses armor="33" defense="31" />
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="0"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="..."/>
+    <voice sentence="..." />
   </voices>
 </monster>

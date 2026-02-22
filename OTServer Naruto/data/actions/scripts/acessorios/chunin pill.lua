@@ -1,24 +1,38 @@
-function onUse(cid, item, itemEx)
-local type = "ambos" -- Tipo de cura (health / mana / ambos)
-local exha = 0.5 -- Tempo de exhaustion em segundos
-local hp = 200
-local chakra = 200
+function onUse(cid, item, fromPosition, itemEx, toPosition)
+    local config = {
+        type = "ambos", -- health / mana / ambos
+        exha = 500, -- tempo em milesegundos
+        hp = 200,
+        chakra = 200,
+        storage = 7321
+    }
 
-if exhaustion.check(cid, 7321) then
-doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED) return true
-elseif itemEx.uid == cid then
-doPlayerSendCancel(cid, "Você não pode usar rápido demais.") return true
-end
-if type == "health" then
-doCreatureAddHealth(cid, hp)
-elseif type == "mana" then
-doPlayerAddMana(cid, chakra)
-elseif type == "ambos" then
-doCreatureAddHealth(cid, hp)
-doPlayerAddMana(cid, chakra)
-doSendMagicEffect(getPlayerPosition(cid), 69)
-end
-exhaustion.set(cid, 7321, exha)
-doRemoveItem(item.uid, 1)
-return true
+    local target = itemEx.uid
+    if target <= 0 or not isCreature(target) then
+        target = cid
+    end
+
+    if getPlayerStorageValue(cid, config.storage) > os.time(t) then
+        return false
+    end
+
+    local targetPos = getThingPos(target)
+
+    if config.type == "health" or config.type == "ambos" then
+        doCreatureAddHealth(target, config.hp)
+    end
+
+    if config.type == "mana" or config.type == "ambos" then
+        if isPlayer(target) then
+            doPlayerAddMana(target, config.chakra)
+        end
+    end
+
+    local effect = (config.type == "ambos") and 69 or 12
+    doSendMagicEffect(targetPos, effect)
+
+    setPlayerStorageValue(cid, config.storage, os.time(t) + 1) 
+    
+    doRemoveItem(item.uid, 1)
+    return true
 end

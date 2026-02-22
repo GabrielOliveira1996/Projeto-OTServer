@@ -10,7 +10,7 @@ function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) 
 function onThink() 
     if npcHandler:isFocused(cid) then
         local coords = getCreaturePosition(cid)
-        local myCoords = getCreaturePosition(getSelf())
+        local myCoords = getThingPos(getNpcCid())
         if (getDistanceBetween(coords, myCoords) > 4) then
             npcHandler:releaseFocus(cid)
         end
@@ -26,7 +26,7 @@ function onGreet(cid)
     if getPlayerStorageValue(cid, storagePassouTeste) >= 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Ola " .. playerName .. ". Va falar com o Hokage para sua primeira missao real.")
     elseif getPlayerStorageValue(cid, storageVenceuEbisu) >= 1 then
-        npcHandler:setMessage(MESSAGE_GREET, "Ola " .. playerName .. ". Voce parece pronto para o teste final. Quer iniciar?")
+        npcHandler:setMessage(MESSAGE_GREET, "Ola " .. playerName .. ". Voce parece pronto para o teste final. Quer {iniciar}?")
     else
         npcHandler:setMessage(MESSAGE_GREET, "Ainda nao e sua hora. Volte quando terminar seus assuntos com o Konohamaru.")
     end
@@ -41,18 +41,18 @@ function creatureSayCallback(cid, type, msg)
     local storagelose = 11118 
     local storageGain = 11119 
     local expBonus = 5000
-    local cloneName = "Kakashi Bunshin" -- Certifique-se que este monstro existe no seu Monster.xml
+    local cloneName = "Kakashi Bunshin"
 
     if msgcontains(msg, 'iniciar') then
         if getPlayerStorageValue(cid, storagelose) >= 1 then
-            selfSay('Muito bem! Mas sera que voce consegue lidar com os meus clones? Kage Bunshin no Jutsu!', cid)
+            selfSay('Muito bem! Mas sera que voce consegue lidar com os meus clones?', cid)
+          
+            local npcPos = getThingPos(getNpcCid())
             
-            -- LOGICA PARA SUMONAR 10 CLONES
-            local pos = getCreaturePosition(getSelf())
             for i = 1, 10 do
-                local spawnPos = {x = pos.x + math.random(-2, 2), y = pos.y + math.random(-2, 2), z = pos.z}
+                local spawnPos = {x = npcPos.x + math.random(-1, 1), y = npcPos.y + math.random(-1, 1), z = npcPos.z}
                 doSummonCreature(cloneName, spawnPos)
-                doSendMagicEffect(spawnPos, 2) -- Efeito de fumaca do clone
+                doSendMagicEffect(spawnPos, 2)
             end
 
             selfSay('Parabens, voce passou no meu teste!', cid)
@@ -60,7 +60,7 @@ function creatureSayCallback(cid, type, msg)
             setPlayerStorageValue(cid, storagelose, -1)
             setPlayerStorageValue(cid, storageGain, 1)
             doPlayerAddExp(cid, expBonus)
-            doSendMagicEffect(getThingPos(cid), 2) 
+            doSendMagicEffect(getThingPos(cid), 14) 
             
         elseif getPlayerStorageValue(cid, storageGain) >= 1 then
             selfSay('Va agora, o Terceiro Hokage esta te esperando.', cid)

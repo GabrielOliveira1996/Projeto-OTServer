@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocation Editor Pro - Dark Mode</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #9b59b6;
+            --input-bg: #252525;
+            --border: #333;
+            --success: #2ecc71;
+            --info: #3498db;
+        }
+
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            margin: 0; padding: 20px; 
+        }
+
+        .container { max-width: 1400px; margin: auto; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .controls { display: flex; gap: 15px; align-items: center; }
+
+        select, input[type="file"] {
+            background: var(--input-bg);
+            color: white;
+            border: 1px solid var(--border);
+            padding: 10px;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .vocation-grid { 
+            display: flex; 
+            overflow-x: auto; 
+            gap: 20px; 
+            padding-bottom: 25px;
+            scroll-behavior: smooth;
+        }
+
+        .vocation-card { 
+            min-width: 380px;
+            background: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 12px; 
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .vocation-card h3 { 
+            color: var(--accent); 
+            border-bottom: 2px solid var(--border); 
+            padding-bottom: 12px; 
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .attr-section { margin-top: 18px; }
+        .section-title { 
+            font-size: 0.75rem; 
+            color: var(--info); 
+            text-transform: uppercase; 
+            font-weight: bold;
+            letter-spacing: 1.5px; 
+            margin-bottom: 12px; 
+            display: block; 
+        }
+
+        .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .field-group { display: flex; flex-direction: column; }
+        
+        label { font-size: 11px; color: #888; margin-bottom: 4px; }
+        input[type="text"] {
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+        
+        input[type="text"]:focus { border-color: var(--accent); }
+
+        button { 
+            background: var(--accent); 
+            color: white; 
+            border: none; 
+            padding: 10px 24px; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        button:hover { opacity: 0.9; transform: translateY(-1px); }
+        .btn-save { background: var(--success); }
+
+        ::-webkit-scrollbar { height: 10px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #444; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div>
+            <h2 style="margin:0">Vocation Editor Pro</h2>
+            <small style="color:#666">Edição de atributos e regeneração</small>
+        </div>
+        <div class="controls">
+            <input type="file" id="fileInput" accept=".xml">
+            <select id="groupSelect" style="display:none;" onchange="renderGroup()">
+                <option value="">Selecione um Personagem</option>
+            </select>
+            <button class="btn-save" onclick="saveXml()">Baixar Novo XML</button>
+        </div>
+    </header>
+
+    <div id="editor" class="vocation-grid">
+        </div>
+</div>
+
+<script>
+    let xmlDoc = null;
+    let vocationsData = [];
+
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const parser = new DOMParser();
+            xmlDoc = parser.parseFromString(e.target.result, "text/xml");
+            processVocations();
+        };
+        reader.readAsText(file);
+    });
+
+    function processVocations() {
+        const vocElements = xmlDoc.getElementsByTagName('vocation');
+        const groups = {};
+        vocationsData = Array.from(vocElements);
+
+        vocationsData.forEach((voc, index) => {
+            const fullName = voc.getAttribute('name') || "Unknown";
+            const baseName = fullName.split(' ')[0];
+            
+            if (!groups[baseName]) groups[baseName] = [];
+            groups[baseName].push(index);
+        });
+
+        const select = document.getElementById('groupSelect');
+        select.innerHTML = '<option value="">Selecione um Personagem</option>';
+        Object.keys(groups).sort().forEach(name => {
+            const opt = document.createElement('option');
+            opt.value = name;
+            opt.textContent = name;
+            select.appendChild(opt);
+        });
+        select.style.display = 'block';
+    }
+
+    function renderGroup() {
+        const selectedBase = document.getElementById('groupSelect').value;
+        const container = document.getElementById('editor');
+        container.innerHTML = '';
+
+        if (!selectedBase) return;
+
+        vocationsData.forEach((voc, index) => {
+            const name = voc.getAttribute('name') || "";
+            if (name.startsWith(selectedBase)) {
+                const card = document.createElement('div');
+                card.className = 'vocation-card';
+                
+                let html = `<h3>${name}</h3>`;
+                
+                // Status Gerais
+                html += renderSection(index, "Geral", ['id', 'gaincap', 'attackspeed', 'manamultiplier'], voc);
+
+                // Regeneração (O que você pediu)
+                html += renderSection(index, "Regeneração (HP/Mana)", [
+                    'gainhpticks', 'gainhpamount', 
+                    'gainmanaticks', 'gainmanaamount',
+                    'gainhp', 'gainmana'
+                ], voc);
+
+                // Formula
+                const formula = voc.getElementsByTagName('formula')[0];
+                if (formula) {
+                    html += `<div class="attr-section"><span class="section-title">Formulas (Dano)</span><div class="fields">`;
+                    Array.from(formula.attributes).forEach(attr => {
+                        html += fieldHtml(index, 'formula', attr.name, attr.value);
+                    });
+                    html += `</div></div>`;
+                }
+
+                // Skills
+                const skill = voc.getElementsByTagName('skill')[0];
+                if (skill) {
+                    html += `<div class="attr-section"><span class="section-title">Skill Multipliers</span><div class="fields">`;
+                    Array.from(skill.attributes).forEach(attr => {
+                        html += fieldHtml(index, 'skill', attr.name, attr.value);
+                    });
+                    html += `</div></div>`;
+                }
+
+                card.innerHTML = html;
+                container.appendChild(card);
+            }
+        });
+    }
+
+    function renderSection(vocIndex, title, attrs, vocElement) {
+        let html = `<div class="attr-section"><span class="section-title">${title}</span><div class="fields">`;
+        attrs.forEach(attr => {
+            const val = vocElement.getAttribute(attr) || "0";
+            html += fieldHtml(vocIndex, null, attr, val);
+        });
+        html += `</div></div>`;
+        return html;
+    }
+
+    function fieldHtml(vocIndex, childTag, attrName, value) {
+        const tagId = childTag ? `'${childTag}'` : 'null';
+        return `
+            <div class="field-group">
+                <label>${attrName}</label>
+                <input type="text" onchange="updateXml(${vocIndex}, ${tagId}, '${attrName}', this.value)" value="${value}">
+            </div>`;
+    }
+
+    function updateXml(vocIndex, childTag, attrName, value) {
+        if (childTag) {
+            xmlDoc.getElementsByTagName('vocation')[vocIndex].getElementsByTagName(childTag)[0].setAttribute(attrName, value);
+        } else {
+            xmlDoc.getElementsByTagName('vocation')[vocIndex].setAttribute(attrName, value);
+        }
+    }
+
+    function saveXml() {
+        if (!xmlDoc) return;
+        const serializer = new XMLSerializer();
+        const xmlString = serializer.serializeToString(xmlDoc);
+        const blob = new Blob([xmlString], {type: "text/xml"});
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "vocations_new.xml";
+        link.click();
+    }
+</script>
+
+</body>
+</html>

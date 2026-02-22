@@ -59,9 +59,10 @@
 		<attribute key="type" value="magicfield" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="3" />
-        </item>
+	</item>
 	<item id="414" article="a" name="tiled floor" />
-	<item id="415" article="a" name="stone tile" />
+	<!-- jutsu -->
+	<item id="415" article="a" name="trigrama" />
 	<item fromid="416" toid="417" article="a" name="stone tile">
 		<attribute key="description" value="It seems to be a switch." />
 	</item>
@@ -803,7 +804,11 @@
 	<item fromid="1578" toid="1581" name="sandstone" />
 	<item fromid="1582" toid="1593" article="a" name="white stone railing" />
 	<item fromid="1594" toid="1601" article="a" name="metal railing" />
-	<item fromid="1602" toid="1614" article="a" name="big table" />
+
+	<item fromid="1602" toid="1614" article="a" name="konoha table">
+		<attribute key="movable" value="0" />
+	</item>
+
 	<item id="1615" article="a" name="square table" />
 	<item id="1616" article="a" name="small round table" />
 	<item fromid="1617" toid="1618" article="a" name="counter" />
@@ -823,15 +828,19 @@
 	<item fromid="1642" toid="1645" article="an" name="altar stone" />
 	<item fromid="1646" toid="1649" article="a" name="throne" />
 	<item id="1650" article="a" name="wooden chair">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1651" />
 	</item>
 	<item id="1651" article="a" name="wooden chair">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1652" />
 	</item>
 	<item id="1652" article="a" name="wooden chair">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1653" />
 	</item>
 	<item id="1653" article="a" name="wooden chair">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1650" />
 	</item>
 	<item fromid="1654" toid="1657" article="a" name="throne" />
@@ -937,18 +946,22 @@
 		<attribute key="containerSize" value="6" />
 	</item>
 	<item id="1714" name="drawers">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1715" />
 		<attribute key="containerSize" value="10" />
 	</item>
 	<item id="1715" name="drawers">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1716" />
 		<attribute key="containerSize" value="10" />
 	</item>
 	<item id="1716" name="drawers">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1717" />
 		<attribute key="containerSize" value="10" />
 	</item>
 	<item id="1717" name="drawers">
+		<attribute key="movable" value="0" />
 		<attribute key="rotateTo" value="1714" />
 		<attribute key="containerSize" value="10" />
 	</item>
@@ -1010,6 +1023,7 @@
 		<attribute key="containerSize" value="15" />
 	</item>
 	<item id="1739" article="a" name="crate">
+		<attribute key="movable" value="0" />
 		<attribute key="weight" value="8000" />
 		<attribute key="containerSize" value="15" />
 	</item>
@@ -1147,6 +1161,7 @@
 		<attribute key="transformTo" value="1757" />
 	</item>
 	<item id="1770" article="a" name="barrel">
+		<attribute key="movable" value="0" />
 		<attribute key="containerSize" value="25" />
 	</item>
 	<item id="1771" article="a" name="water cask">
@@ -1767,7 +1782,9 @@
 	<item id="2100" name="god flowers">
 		<attribute key="weight" value="1100" />
 	</item>
-	<item id="2101" article="an" name="indoor plant" />
+	<item id="2101" article="an" name="indoor plant">
+		<attribute key="movable" value="0" />
+	</item>
 	<item id="2102" article="a" name="flower bowl">
 		<attribute key="weight" value="1100" />
 	</item>
@@ -1833,13 +1850,13 @@
 		<attribute key="weight" value="40" />
 		<attribute key="slotType" value="ring" />
 	</item>
-	<item id="2124" article="a" name="crystal ring">
+	<item id="2124" article="a" name="akatsuki ring (empty)">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
 	</item>
 	<item id="2125" article="a" name="gamakichi pet">
-        <attribute key="weight" value="500" />
-        <attribute key="slotType" value="necklace" />
+		<attribute key="weight" value="500" />
+		<attribute key="slotType" value="necklace" />
 	</item>
 	<item id="2126" article="a" name="bronzen necklace">
 		<attribute key="weight" value="700" />
@@ -1856,20 +1873,21 @@
 		<attribute key="weight" value="330" />
 		<attribute key="slotType" value="necklace" />
 	</item>
-	<item id="2130" article="a" name="golden amulet">
-		<attribute key="description" value="Many gems glitter on the amulet." />
-		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="necklace" />
+	<item id="2130" article="a" name="exam paper">
+		<attribute key="description"
+			value="Use this paper to answer the questions. Make sure the examiner is not looking!" />
+		<attribute key="weight" value="0" />
+		<attribute key="movable" value="0" />
 	</item>
 	<item id="2131" article="a" name="star amulet">
 		<attribute key="weight" value="660" />
 		<attribute key="slotType" value="necklace" />
-<attribute key="charges" value="1" />
+		<attribute key="charges" value="1" />
 		<attribute key="preventDrop" value="1" />
 	</item>
-	<item id="2132" article="a" name="silver necklace">
-		<attribute key="weight" value="550" />
-		<attribute key="slotType" value="necklace" />
+	<item id="2132" article="a" name="empty scroll">
+		<attribute key="weight" value="20000" />
+		<attribute key="slotType" value="ring" />
 	</item>
 	<item id="2133" article="a" name="ruby necklace">
 		<attribute key="weight" value="570" />
@@ -1905,19 +1923,20 @@
 		<attribute key="weight" value="840" />
 	</item>
 	<item id="2142" article="a" name="katsuyo pet">
-        <attribute key="weight" value="500" />
-        <attribute key="slotType" value="necklace" />
+		<attribute key="weight" value="500" />
+		<attribute key="slotType" value="necklace" />
 	</item>
 	<item id="2143" article="a" name="jounin pill" plural="jounin pills">
 		<attribute key="weight" value="20" />
-		<attribute key="description" value="Recupera 300 de chakra e 300 de vida." />
+		<attribute key="description" value="Restores 300 Chakra and 300 HP." />
 	</item>
-	<item id="2144" article="a" name="chunin pill" plural="chunin pills">
+	<item id="2144" article="a" name="bomb paper" plural="bomb papers">
 		<attribute key="weight" value="20" />
-		<attribute key="description" value="Recupera 200 de chakra e 200 de vida." />
+		<attribute key="description" value="Explode!" />
 	</item>
-	<item id="2145" article="a" name="small diamond" plural="small diamonds">
-		<attribute key="weight" value="10" />
+	<item id="2145" article="a" name="chunin pill" plural="chunin pills">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="Restores 200 Chakra and 200 HP." />
 	</item>
 	<item id="2146" article="a" name="small sapphire" plural="small sapphires">
 		<attribute key="weight" value="10" />
@@ -1936,8 +1955,8 @@
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2151" article="a" name="genin pill" plural="genin pills">
+		<attribute key="description" value="Restores 100 Chakra and 100 HP." />
 		<attribute key="weight" value="20" />
-		<attribute key="description" value="Recupera 100 de chakra e 100 de vida." />
 	</item>
 	<item id="2152" article="a" name="green note" plural="green notes">
 		<attribute key="weight" value="10" />
@@ -1961,7 +1980,7 @@
 	<item id="2158" article="a" name="blue gem">
 		<attribute key="weight" value="100" />
 	</item>
-	<item id="2159" article="a" name="scarab coin" plural="scarab coins">
+	<item id="2159" article="a" name="chakra seal" plural="chakra seals">
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="2160" article="a" name="red note" plural="red notes">
@@ -2015,15 +2034,15 @@
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2168" article="a" name="life ring">
-		<attribute key="weight" value="80" />
+	<item id="2168" article="a" name="scroll of healing">
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="transformEquipTo" value="2205" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2169" article="a" name="time ring">
-		<attribute key="weight" value="90" />
+	<item id="2169" article="a" name="scroll of speed">
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="transformEquipTo" value="2206" />
 		<attribute key="stopduration" value="1" />
@@ -2046,7 +2065,7 @@
 	<item id="2172" article="a" name="scroll">
 		<attribute key="weight" value="500" />
 	</item>
-	<item id="2173" article="an" name="akatsuki ring">
+	<item id="2173" article="an" name="akatsuki ring (full)">
 		<attribute key="weight" value="420" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="charges" value="1" />
@@ -2056,7 +2075,8 @@
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="2175" article="a" name="spellbook">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="5800" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
@@ -2084,14 +2104,16 @@
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2182" article="a" name="snakebite rod">
-		<attribute key="description" value="It seems to twitch and quiver as if trying to escape your grip." />
+		<attribute key="description"
+			value="It seems to twitch and quiver as if trying to escape your grip." />
 		<attribute key="weight" value="4300" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2183" article="a" name="hailstorm rod">
-		<attribute key="description" value="It grants you the power of striking your foes with furious hailstorms." />
+		<attribute key="description"
+			value="It grants you the power of striking your foes with furious hailstorms." />
 		<attribute key="weight" value="2700" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
@@ -2132,7 +2154,8 @@
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2189" article="a" name="wand of cosmic energy">
-		<attribute key="description" value="The energy of a radiant star is trapped inside its globe." />
+		<attribute key="description"
+			value="The energy of a radiant star is trapped inside its globe." />
 		<attribute key="weight" value="2500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
@@ -2146,7 +2169,8 @@
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2191" article="a" name="wand of dragonbreath">
-		<attribute key="description" value="Legends say that this wand holds the soul of a young dragon." />
+		<attribute key="description"
+			value="Legends say that this wand holds the soul of a young dragon." />
 		<attribute key="weight" value="2300" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="fire" />
@@ -2239,24 +2263,24 @@
 		<attribute key="showduration" value="1" />
 		<attribute key="manashield" value="1" />
 	</item>
-	<item id="2205" article="a" name="scroll of healing">
-		<attribute key="weight" value="80" />
+	<item id="2205" article="a" name="scroll of healing (active)">
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="transformDeEquipTo" value="2168" />
-		<attribute key="duration" value="4400" />
-		<attribute key="healthGain" value="50" />
+		<attribute key="duration" value="1800" />
+		<attribute key="healthGain" value="10" />
 		<attribute key="healthTicks" value="1000" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2206" article="a" name="time ring">
-		<attribute key="weight" value="90" />
+	<item id="2206" article="a" name="scroll of speed (active)">
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="transformDeEquipTo" value="2169" />
-		<attribute key="duration" value="600" />
+		<attribute key="duration" value="1800" />
 		<attribute key="showduration" value="1" />
-		<attribute key="speed" value="60" />
+		<attribute key="speed" value="50" />
 	</item>
 	<item id="2207" article="a" name="sword ring">
 		<attribute key="weight" value="90" />
@@ -2273,7 +2297,7 @@
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="2209" article="a" name="scroll of healing">
-		<attribute key="weight" value="90" />
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="transformEquipTo" value="2212" />
 		<attribute key="stopduration" value="1" />
@@ -2314,7 +2338,7 @@
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="2214" article="a" name="scroll of chakra">
-		<attribute key="weight" value="80" />
+		<attribute key="weight" value="20000" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="transformEquipTo" value="2216" />
 		<attribute key="stopduration" value="1" />
@@ -2329,12 +2353,12 @@
 		<attribute key="duration" value="3600" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2216" article="a" name="ring of healing">
-		<attribute key="weight" value="100" />
+	<item id="2216" article="a" name="scroll of chakra (active)">
+		<attribute key="weight" value="20000" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="transformDeEquipTo" value="2214" />
-		<attribute key="duration" value="4400" />
-		<attribute key="manaGain" value="4" />
+		<attribute key="duration" value="1800" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="1000" />
 		<attribute key="showduration" value="1" />
 	</item>
@@ -2630,7 +2654,8 @@
 		<attribute key="weight" value="2180" />
 	</item>
 	<item id="2321" article="a" name="giant smithhammer">
-		<attribute key="description" value="This cyclopean hammer seems to be an awesome smithing tool." />
+		<attribute key="description"
+			value="This cyclopean hammer seems to be an awesome smithing tool." />
 		<attribute key="weight" value="6800" />
 		<attribute key="defense" value="14" />
 		<attribute key="attack" value="24" />
@@ -2654,7 +2679,8 @@
 		<attribute key="weight" value="1300" />
 	</item>
 	<item id="2326" article="an" name="annihilation bear">
-		<attribute key="description" value="I braved the Annihilator and all I got is this lousy teddy bear." />
+		<attribute key="description"
+			value="I braved the Annihilator and all I got is this lousy teddy bear." />
 		<attribute key="weight" value="4300" />
 	</item>
 	<item id="2327" article="an" name="ankh">
@@ -2673,7 +2699,8 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="2332" article="a" name="post horn">
-		<attribute key="description" value="It's property of the Postmaster's Guild and only rewarded to loyal members." />
+		<attribute key="description"
+			value="It's property of the Postmaster's Guild and only rewarded to loyal members." />
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="2333" article="a" name="stamped letter">
@@ -2713,7 +2740,8 @@
 		<attribute key="weight" value="180" />
 	</item>
 	<item id="2342" article="a" name="helmet of the ancients">
-		<attribute key="description" value="The gem of the helmet is burned out and should be replaced." />
+		<attribute key="description"
+			value="The gem of the helmet is burned out and should be replaced." />
 		<attribute key="weight" value="2760" />
 		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="head" />
@@ -2739,41 +2767,48 @@
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="2348" article="an" name="ancient rune">
-		<attribute key="description" value="This rune vibrates with ancient powers. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="This rune vibrates with ancient powers. It seems to be rotting rapidly." />
 		<attribute key="weight" value="300" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2349" article="a" name="blue note">
-		<attribute key="description" value="The blue crystal is softly humming a ghostly melody. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="The blue crystal is softly humming a ghostly melody. It seems to be rotting rapidly." />
 		<attribute key="weight" value="250" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2350" article="a" name="sword hilt">
-		<attribute key="description" value="It was once part of a formidable two handed weapon. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="It was once part of a formidable two handed weapon. It seems to be rotting rapidly." />
 		<attribute key="weight" value="900" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2351" article="a" name="cobrafang dagger">
-		<attribute key="description" value="This ritual weapon was forged from the sharp fang of a giant cobra. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="This ritual weapon was forged from the sharp fang of a giant cobra. It seems to be rotting rapidly." />
 		<attribute key="weight" value="600" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2352" article="a" name="confirma missao 1">
-		<attribute key="description" value="Esse item confirma a missão de Ryuu The Monk, entregue a ele esse pergaminho caso você ja tenha enfrentado Ashar." />
+		<attribute key="description"
+			value="Esse item confirma a missão de Ryuu The Monk, entregue a ele esse pergaminho caso você ja tenha enfrentado Ashar." />
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="2353" article="a" name="burning heart">
-		<attribute key="description" value="It is still beating with unholy life. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="It is still beating with unholy life. It seems to be rotting rapidly." />
 		<attribute key="weight" value="400" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2354" article="an" name="ornamented ankh">
-		<attribute key="description" value="This ancient relic shows signs of untold age. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="This ancient relic shows signs of untold age. It seems to be rotting rapidly." />
 		<attribute key="weight" value="200" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
@@ -2867,8 +2902,8 @@
 	</item>
 	<item id="2379" article="a" name="dagger">
 		<attribute key="weight" value="950" />
-		<attribute key="defense" value="6" />
-		<attribute key="attack" value="8" />
+		<attribute key="defense" value="12" />
+		<attribute key="attack" value="25" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2380" article="a" name="hand axe">
@@ -2892,17 +2927,16 @@
 	</item>
 	<item id="2383" article="a" name="spike sword">
 		<attribute key="weight" value="5000" />
-		<attribute key="defense" value="21" />
-		<attribute key="attack" value="24" />
+		<attribute key="defense" value="26" />
+		<attribute key="attack" value="31" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="2" />
 	</item>
 	<item id="2384" article="a" name="rapier">
-		<attribute key="weight" value="1500" />
-		<attribute key="defense" value="8" />
-		<attribute key="attack" value="10" />
+		<attribute key="weight" value="2000" />
+		<attribute key="defense" value="15" />
+		<attribute key="attack" value="18" />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="extradef" value="1" />
 	</item>
 	<item id="2385" article="a" name="sabre">
 		<attribute key="weight" value="2500" />
@@ -2940,11 +2974,11 @@
 		<attribute key="range" value="5" />
 		<attribute key="breakChance" value="3" />
 	</item>
-	<item id="2390" article="a" name="commander sword">		
+	<item id="2390" article="a" name="commander sword">
 		<attribute key="weight" value="2250" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
-		<attribute key="weaponType" value="sword" />		
+		<attribute key="defense" value="41" />
+		<attribute key="attack" value="45" />
+		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2391" article="a" name="furnious gloves">
 		<attribute key="weight" value="6500" />
@@ -2953,12 +2987,14 @@
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2392" article="a" name="raiga swords">
-                <attribute key="weight" value="2300" />
+		<attribute key="description"
+			value="These swords once belonged to Raiga, one of the Seven Ninja Swordsmen. [Kenjutsu: +5, Raiton Resistence: 20%]" />
+		<attribute key="description" value="." />
+		<attribute key="weight" value="2300" />
 		<attribute key="defense" value="20" />
 		<attribute key="attack" value="35" />
 		<attribute key="elementEnergy" value="11" />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="extradef" value="1" />
 	</item>
 	<item id="2393" article="a" name="giant sword">
 		<attribute key="description" value="This sword has been forged by ancient giants." />
@@ -2989,7 +3025,7 @@
 		<attribute key="defense" value="20" />
 		<attribute key="attack" value="22" />
 		<attribute key="weaponType" value="sword" />
-                <attribute key="slotType" value="two-handed" />
+		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="2398" article="a" name="destruction gloves">
 		<attribute key="weight" value="4200" />
@@ -3050,12 +3086,12 @@
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2407" article="a" name="zabuza sword">
-		<attribute key="description" value="Essa espada foi do grande espadachin zabuza." />
+		<attribute key="description"
+			value="Uma das sete laminas lendarias da Nevoa, pertenceu ao temivel Zabuza Momochi, o Demonio da Nevoa Oculta." />
 		<attribute key="weight" value="10000" />
-		<attribute key="defense" value="30" />
+		<attribute key="defense" value="25" />
 		<attribute key="attack" value="48" />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="extradef" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="skillSword" value="5" />
 	</item>
@@ -3083,8 +3119,8 @@
 	</item>
 	<item id="2411" article="a" name="shinobazu sword">
 		<attribute key="weight" value="2200" />
-		<attribute key="defense" value="8" />
-		<attribute key="attack" value="18" />
+		<attribute key="defense" value="16" />
+		<attribute key="attack" value="20" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2412" article="a" name="katana">
@@ -3157,13 +3193,12 @@
 		<attribute key="weight" value="1900" />
 		<attribute key="defense" value="23" />
 		<attribute key="attack" value="34" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2423" article="a" name="iron gloves">
-		<attribute key="weight" value="5800" />
-		<attribute key="defense" value="8" />
-		<attribute key="attack" value="15" />
+		<attribute key="weight" value="8000" />
+		<attribute key="defense" value="20" />
+		<attribute key="attack" value="22" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2424" article="a" name="metal gloves">
@@ -3295,7 +3330,8 @@
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2443" article="a" name="ravager's axe">
-		<attribute key="description" value="A power weapon made only for royal guards of the pharaoh." />
+		<attribute key="description"
+			value="A power weapon made only for royal guards of the pharaoh." />
 		<attribute key="weight" value="5250" />
 		<attribute key="defense" value="14" />
 		<attribute key="attack" value="49" />
@@ -3328,16 +3364,18 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
 	</item>
-	<item id="2448" article="a" name="slaver gloves">
+	<item id="2448" article="a" name="puncher gloves">
 		<attribute key="weight" value="3000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="41" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2449" article="a" name="vampire gloves">
-		<attribute key="weight" value="3900" />
+		<attribute key="description"
+			value="This item is able to drain the life of your opponent. [Life Drain: 10%]" />
+		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
-		<attribute key="attack" value="44" />
+		<attribute key="attack" value="45" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2450" article="a" name="bone sword">
@@ -3388,12 +3426,12 @@
 		<attribute key="range" value="6" />
 	</item>
 	<item id="2457" article="a" name="anbu mask">
-		<attribute key="description" value="Recupera 15ch/2s." />
-                <attribute key="magiclevelpoints" value="1" />
+		<attribute key="description" value="[Chakra Recovery: +5/2s]" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="weight" value="2200" />
-		<attribute key="armor" value="20" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="head" />
-		<attribute key="manaGain" value="15" />
+		<attribute key="manaGain" value="5" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2458" article="a" name="chain helmet">
@@ -3412,12 +3450,12 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2461" article="a" name="anbu mask nuu">
-		<attribute key="description" value="Recupera 30ch/2s." />
-                <attribute key="magiclevelpoints" value="2" />
+		<attribute key="description" value="[Life Recovery: +5/2s]" />
+		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="weight" value="2200" />
-		<attribute key="armor" value="25" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="head" />
-		<attribute key="manaGain" value="30" />
+		<attribute key="healthGain" value="5" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2462" article="a" name="ninja mask">
@@ -3427,7 +3465,7 @@
 	</item>
 	<item id="2472" article="a" name="assassin armor">
 		<attribute key="weight" value="4300" />
-		<attribute key="armor" value="14" />
+		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2464" article="a" name="chain armor">
@@ -3441,11 +3479,11 @@
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2466" article="a" name="cyborg armor">
-		<attribute key="weight" value="8000" />
-		<attribute key="armor" value="23" />
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2467" article="a" name="bandit shirt">
+	<item id="2467" article="a" name="ragged shirt">
 		<attribute key="weight" value="2200" />
 		<attribute key="armor" value="3" />
 		<attribute key="slotType" value="body" />
@@ -3471,14 +3509,15 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2463" article="a" name="rock lee shirt">
-		<attribute key="description" value="Recupera 15hp/2s." />
-		<attribute key="weight" value="4200" />
-		<attribute key="armor" value="23" />
+		<attribute key="description"
+			value="Recupera 15hp/2s. [Life Restoration: +5, Agility: +5, Taijutsu: +5]" />
+		<attribute key="weight" value="20000" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-		<attribute key="healthGain" value="15" />
+		<attribute key="healthGain" value="5" />
 		<attribute key="healthTicks" value="2000" />
-                <attribute key="skillClub" value="1" />
-                <attribute key="skillFist" value="1" />
+		<attribute key="skillClub" value="5" />
+		<attribute key="skillFist" value="5" />
 	</item>
 	<item id="2473" article="a" name="viking helmet">
 		<attribute key="weight" value="3900" />
@@ -3493,7 +3532,7 @@
 	</item>
 	<item id="2475" article="a" name="cursed mask">
 		<attribute key="description" value="Recupera 25ch/2s." />
-                <attribute key="magiclevelpoints" value="2" />
+		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="weight" value="5800" />
 		<attribute key="armor" value="25" />
 		<attribute key="slotType" value="head" />
@@ -3506,12 +3545,9 @@
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2477" name="monk trousers">
-		<attribute key="description" value="Recupera 30ch/2s." />
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="30" />
+		<attribute key="armor" value="25" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="manaGain" value="30" />
-		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2478" name="brass legs">
 		<attribute key="weight" value="3800" />
@@ -3520,7 +3556,7 @@
 	</item>
 	<item id="2479" article="a" name="shinobazu helmet">
 		<attribute key="weight" value="2300" />
-		<attribute key="armor" value="14" />
+		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2480" article="a" name="skeleton helmet">
@@ -3549,44 +3585,45 @@
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2485" article="a" name="kankurou shirt">
-		<attribute key="description" value="Recupera 15ch/2s." />
+		<attribute key="description" value="[Chakra Restoration: +10]" />
 		<attribute key="weight" value="3200" />
-		<attribute key="armor" value="23" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-		<attribute key="manaGain" value="15" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2486" article="a" name="haku shirt">
-		<attribute key="description" value="Recupera 15ch/2s." />
-		<attribute key="weight" value="3100" />
-		<attribute key="armor" value="20" />
+		<attribute key="description"
+			value="Uma tunica leve utilizada pelo prodigio do Cla Yuki. Recupera 15 de chakra a cada 2s." />
+		<attribute key="weight" value="2100" />
+		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="body" />
 		<attribute key="manaGain" value="15" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2487" article="a" name="hoshi armor">
 		<attribute key="weight" value="4800" />
-		<attribute key="armor" value="25" />
+		<attribute key="armor" value="17" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2488" name="nature trousers">
-		<attribute key="description" value="Recupera 50ch/2s." />
+		<attribute key="description" value="[Chakra Restoration: +5/2s]" />
 		<attribute key="weight" value="6500" />
-		<attribute key="armor" value="18" />
+		<attribute key="armor" value="14" />
 		<attribute key="slotType" value="legs" />
-                <attribute key="magiclevelpoints" value="1" />
-		<attribute key="manaGain" value="50" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="manaGain" value="5" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2489" article="a" name="jiraya shirt">
-		<attribute key="description" value="Recupera 50hp/2s." />
+		<attribute key="description" value="[Life Restoration: +5/2s, Ninjutsu: +3, Taijutsu: +3]" />
 		<attribute key="weight" value="5000" />
-		<attribute key="armor" value="40" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-                <attribute key="magiclevelpoints" value="1" />
-                <attribute key="skillClub" value="2" />
-		<attribute key="healthGain" value="100" />
+		<attribute key="healthGain" value="5" />
 		<attribute key="healthTicks" value="2000" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="skillFist" value="3" />
 	</item>
 	<item id="2490" article="a" name="dark helmet">
 		<attribute key="weight" value="4600" />
@@ -3594,27 +3631,26 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2491" article="a" name="tobi mask">
-		<attribute key="description" value="Recupera 100ch/2s." />
+		<attribute key="description" value="[Chakra Restoration: +10/2s, Ninjutsu: +5]" />
 		<attribute key="weight" value="1800" />
-        <attribute key="magiclevelpoints" value="10" />
-		<attribute key="armor" value="23" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="head" />
-		<attribute key="manaGain" value="100" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="2000" />
+		<attribute key="magiclevelpoints" value="5" />
 	</item>
 	<item id="2492" article="a" name="yondaime jacket">
-		<attribute key="description" value="Recupera 100hp/2s." />
+		<attribute key="description" value="[Life Restoration: +10/2s, Speed: +100]" />
 		<attribute key="weight" value="2500" />
-		<attribute key="armor" value="35" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="body" />
-		<attribute key="healthGain" value="100" />
+		<attribute key="healthGain" value="5" />
 		<attribute key="healthTicks" value="2000" />
 		<attribute key="speed" value="100" />
-        <attribute key="magiclevelpoints" value="8" />
 	</item>
 	<item id="2493" article="a" name="assassin mask">
 		<attribute key="weight" value="600" />
-		<attribute key="armor" value="14" />
+		<attribute key="armor" value="5" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2494" article="a" name="demon armor">
@@ -3622,7 +3658,7 @@
 		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2495" name="bandit trousers">
+	<item id="2495" name="ragged trousers">
 		<attribute key="weight" value="2400" />
 		<attribute key="armor" value="3" />
 		<attribute key="slotType" value="legs" />
@@ -3634,7 +3670,7 @@
 	</item>
 	<item id="2497" article="a" name="vampire mask">
 		<attribute key="weight" value="3100" />
-		<attribute key="armor" value="22" />
+		<attribute key="armor" value="13" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2498" article="a" name="royal helmet">
@@ -3649,12 +3685,12 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2500" article="an" name="sasuke classic shirt">
-		<attribute key="description" value="Recupera 15ch/2s." />
+		<attribute key="description" value="[Chakra Restoration: +10, Ninjutsu: +5]" />
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="17" />
+		<attribute key="armor" value="20" />
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="slotType" value="body" />
-		<attribute key="manaGain" value="15" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2501" article="a" name="ceremonial mask">
@@ -3678,10 +3714,13 @@
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2504" name="raiga trousers">
-		<attribute key="weight" value="2200" />
-		<attribute key="armor" value="25" />
+		<attribute key="description"
+			value="These trousers once belonged to Raiga, one of the Seven Ninja Swordsmen. [Kenjutsu: +5, Raiton Resistence: 20%]" />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="absorbPercentPhysical" value="30" />
+		<attribute key="skillSword" value="5" />
+		<attribute key="absorbPercentEnergy" value="20" />
 	</item>
 	<item id="2505" article="an" name="slayer mage armor">
 		<attribute key="weight" value="11400" />
@@ -3724,12 +3763,11 @@
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="2512" article="a" name="tsunade shirt">
-		<attribute key="description" value="Recupera 50hp/2s." />
-		<attribute key="weight" value="4000" />
-		<attribute key="armor" value="45" />
+		<attribute key="description" value="[Chakra Restoration: +10, Chakra Control: +10]" />
+		<attribute key="weight" value="4500" />
+		<attribute key="armor" value="20" />
 		<attribute key="slottype" value="body" />
-                <attribute key="skillClub" value="3" />
-		<attribute key="manaGain" value="100" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2513" article="a" name="mace para substituir vinte">
@@ -3841,12 +3879,9 @@
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="2534" article="a" name="monk robe">
-		<attribute key="description" value="Recupera 30ch/2s." />
-		<attribute key="weight" value="2800" />
-		<attribute key="armor" value="40" />
+		<attribute key="weight" value="2100" />
+		<attribute key="armor" value="25" />
 		<attribute key="slottype" value="body" />
-		<attribute key="manaGain" value="30" />
-		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2535" article="a" name="castle shield">
 		<attribute key="weight" value="4900" />
@@ -4087,7 +4122,9 @@
 	<item id="2600" article="an" name="inkwell">
 		<attribute key="weight" value="200" />
 	</item>
-	<item fromid="2601" toid="2605" article="a" name="coal basin" />
+	<item fromid="2601" toid="2605" article="a" name="coal basin">
+		<attribute key="movable" value="0" />
+	</item>
 	<item fromid="2606" toid="2609" article="an" name="altar" />
 	<item fromid="2610" toid="2613" article="a" name="sacrifical stone" />
 	<item fromid="2614" toid="2615" article="an" name="altar" />
@@ -4158,9 +4195,12 @@
 		<attribute key="weight" value="600" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="2643" name="beatyful shoes">
+	<item id="2643" name="speed shoes">
+		<attribute key="description"
+			value="Infused with chakra-conductive fibers, these shoes are perfect for those who master the Body Flicker Technique.\n[Speed: +10]" />
 		<attribute key="weight" value="900" />
-		<attribute key="armor" value="4" />
+		<attribute key="armor" value="2" />
+		<attribute key="speed" value="10" />
 		<attribute key="slotType" value="feet" />
 	</item>
 	<item id="2644" name="bunny slippers">
@@ -4168,46 +4208,60 @@
 		<attribute key="slotType" value="feet" />
 	</item>
 	<item id="2645" name="cyborg shoes">
-		<attribute key="weight" value="3100" />
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="10" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="2646" name="otogakure shoes">
+		<attribute key="weight" value="2600" />
 		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="2646" name="buskin">
-		<attribute key="weight" value="2600" />
-		<attribute key="armor" value="14" />
-		<attribute key="slotType" value="feet" />
-	</item>
 	<item id="2647" name="rock lee trousers">
+		<attribute key="description"
+			value="The iconic trousers worn by the great ninja, Rock Lee. [Agility: +5, Speed: +30]" />
 		<attribute key="weight" value="10000" />
-		<attribute key="armor" value="26" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="skillClub" value="2" />
+		<attribute key="skillClub" value="5" />
+		<attribute key="speed" value="30" />
 	</item>
-	<item id="2648" name="fat trousers">
+	<item id="2648" name="harem trousers">
+		<attribute key="description"
+			value="Legend has it that a great shinobi named Gabriel Saruel first wore these trousers in battle. [Agility: +1]" />
 		<attribute key="weight" value="1800" />
 		<attribute key="armor" value="5" />
 		<attribute key="slotType" value="legs" />
+		<attribute key="speed" value="5" />
+		<attribute key="skillClub" value="1" />
 	</item>
 	<item id="2649" name="black trousers">
 		<attribute key="weight" value="1800" />
 		<attribute key="armor" value="4" />
 		<attribute key="slotType" value="legs" />
 	</item>
-	<item id="2650" article="a" name="blue shirt">
+	<item id="2650" article="a" name="blue cloak">
+		<attribute key="description"
+			value="A light blue cloak that emanates chakra. [Chakra: +5 every 2s]" />
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="30" />
+		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
+		<attribute key="manaGain" value="5" />
+		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2651" article="a" name="black shirt">
 		<attribute key="weight" value="1000" />
-		<attribute key="armor" value="9" />
+		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2652" article="a" name="naruto shirt">
+	<item id="2652" article="a" name="classic naruto jacket">
+		<attribute key="description"
+			value="The iconic jacket worn by Naruto Uzumaki in his youth. [Taijutsu: +3]" />
 		<attribute key="weight" value="3200" />
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-		<attribute key="skillClub" value="1" />
+		<attribute key="skillFist" value="3" />
 	</item>
 	<item id="2653" article="a" name="red tunic">
 		<attribute key="weight" value="3000" />
@@ -4223,18 +4277,20 @@
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2655" article="a" name="konohamaru shirt">
+		<attribute key="description"
+			value="A shirt that symbolizes the burning desire to learn. Grants a small bonus to experience gain. [Experience Bonus: 10%]" />
 		<attribute key="weight" value="2100" />
-		<attribute key="armor" value="16" />
+		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2656" article="a" name="orochimaru shirt">
-		<attribute key="description" value="Recupera 100Ch/2s." />
-		<attribute key="weight" value="2200" />
-		<attribute key="armor" value="40" />
+		<attribute key="description"
+			value="A lightweight tunic imbued with Orochimaru's dark chakra. It accelerates the user's chakra circulation. [Chakra: +10 every 2s, Ninjutsu: +5]" />
+		<attribute key="weight" value="3100" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-		<attribute key="skillSword" value="1" />
-                <attribute key="magiclevelpoints" value="2" />
-		<attribute key="manaGain" value="100" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="manaGain" value="10" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2657" article="a" name="simple dress">
@@ -4245,15 +4301,19 @@
 		<attribute key="weight" value="2400" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2659" article="a" name="sakura shirt">
+	<item id="2659" article="a" name="classic sakura shirt">
+		<attribute key="description"
+			value="A lightweight tunic imbued with Orochimaru's dark chakra. It accelerates the user's chakra circulation. [Chakra: +10 every 2s, Chakra Control: +5]" />
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="18" />
+		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
-                <attribute key="magiclevelpoints" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="manaGain" value="10" />
+		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2660" article="a" name="shinobazu shirt">
 		<attribute key="weight" value="3800" />
-		<attribute key="armor" value="12" />
+		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2661" article="a" name="scarf">
@@ -4323,7 +4383,7 @@
 	<item id="2676" article="a" name="banana" plural="bananas">
 		<attribute key="weight" value="180" />
 	</item>
-	<item id="2677" article="a" name="blueberry" plural="blueberries">
+	<item id="2677" article="a" name="strawberry" plural="strawberries">
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2678" article="a" name="coconut" plural="coconuts">
@@ -4332,7 +4392,7 @@
 	<item id="2679" article="a" name="cherry" plural="cherries">
 		<attribute key="weight" value="20" />
 	</item>
-	<item id="2680" article="a" name="strawberry" plural="strawberries">
+	<item id="2680" article="a" name="moranga" plural="morangas">
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2681" name="grapes" plural="grapes">
@@ -7076,7 +7136,7 @@
 	<item id="3966" article="a" name="yellow gloves">
 		<attribute key="weight" value="4000" />
 		<attribute key="defense" value="15" />
-		<attribute key="attack" value="23" />
+		<attribute key="attack" value="25" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="3967" article="a" name="tribal mask">
@@ -8774,21 +8834,25 @@
 	<item id="5745" article="a" name="closed door">
 		<attribute key="type" value="door" />
 		<attribute key="blockprojectile" value="1" />
-		<attribute key="description" value="The door seems to be sealed against unwanted intrueders." />
+		<attribute key="description"
+			value="The door seems to be sealed against unwanted intrueders." />
 	</item>
 	<item id="5746" article="an" name="open door">
 		<attribute key="type" value="door" />
-		<attribute key="description" value="The door seems to be sealed against unwanted intrueders." />
+		<attribute key="description"
+			value="The door seems to be sealed against unwanted intrueders." />
 	</item>
 	<item id="5747" name="rocks" />
 	<item id="5748" article="a" name="closed door">
 		<attribute key="type" value="door" />
 		<attribute key="blockprojectile" value="1" />
-		<attribute key="description" value="The door seems to be sealed against unwanted intrueders." />
+		<attribute key="description"
+			value="The door seems to be sealed against unwanted intrueders." />
 	</item>
 	<item id="5749" article="an" name="open door">
 		<attribute key="type" value="door" />
-		<attribute key="description" value="The door seems to be sealed against unwanted intrueders." />
+		<attribute key="description"
+			value="The door seems to be sealed against unwanted intrueders." />
 	</item>
 	<item fromid="5750" toid="5754" name="rocks" />
 	<item fromid="5755" toid="5761" article="a" name="turtle" />
@@ -8851,7 +8915,8 @@
 		<attribute key="weight" value="2500" />
 	</item>
 	<item id="5803" article="an" name="arbalest">
-		<attribute key="description" value="It is a bit heavy due to the iron mounting, but very precise." />
+		<attribute key="description"
+			value="It is a bit heavy due to the iron mounting, but very precise." />
 		<attribute key="weight" value="9500" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="slotType" value="two-handed" />
@@ -8930,7 +8995,8 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="5885" article="a" name="warrior's sweat">
-		<attribute key="description" value="It contains the sweat spilled in many battles and is said to be used for certain perfumes too." />
+		<attribute key="description"
+			value="It contains the sweat spilled in many battles and is said to be used for certain perfumes too." />
 		<attribute key="weight" value="300" />
 	</item>
 	<item id="5886" article="a" name="spool of yarn" plural="spools of yarn">
@@ -8938,20 +9004,24 @@
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="5887" article="a" name="piece of royal steel" plural="pieces of royal steel">
-		<attribute key="description" value="Even the king would be proud to wear an armour made of this refined steel." />
+		<attribute key="description"
+			value="Even the king would be proud to wear an armour made of this refined steel." />
 		<attribute key="weight" value="450" />
 	</item>
 	<item id="5888" article="a" name="piece of hell steel" plural="pieces of hell steel">
-		<attribute key="description" value="This rare metal must have been refined in the depths of Tibia." />
+		<attribute key="description"
+			value="This rare metal must have been refined in the depths of Tibia." />
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="5889" article="a" name="piece of draconian steel" plural="pieces of draconian steel">
-		<attribute key="description" value="An armour made of this steel is said to protect against firy dragon breath." />
+		<attribute key="description"
+			value="An armour made of this steel is said to protect against firy dragon breath." />
 		<attribute key="weight" value="300" />
 	</item>
 	<item id="5890" article="a" name="chicken feather" plural="chicken feathers">
 		<attribute key="weight" value="10" />
-		<attribute key="description" value="Some thousands of these would probably make an extremely comfortable pillow." />
+		<attribute key="description"
+			value="Some thousands of these would probably make an extremely comfortable pillow." />
 	</item>
 	<item id="5891" article="an" name="enchanted chicken wing" plural="enchanted chicken wings">
 		<attribute key="description" value="It is said to make your feet fly." />
@@ -8985,7 +9055,8 @@
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="5900" article="a" name="dwarven beard" plural="dwarven beards">
-		<attribute key="description" value="It was once worn proudly by a dwarfish warrior - or maiden." />
+		<attribute key="description"
+			value="It was once worn proudly by a dwarfish warrior - or maiden." />
 		<attribute key="weight" value="50" />
 	</item>
 	<item id="5901" name="wood">
@@ -8997,7 +9068,8 @@
 		<attribute key="description" value="Some people swear that honey makes excellent glue." />
 	</item>
 	<item id="5903" name="ferumbras' hat">
-		<attribute key="description" value="It is the proof that Ferumbras has fallen. For now. The Edron Academy should be interested in this." />
+		<attribute key="description"
+			value="It is the proof that Ferumbras has fallen. For now. The Edron Academy should be interested in this." />
 		<attribute key="weight" value="850" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="head" />
@@ -9014,16 +9086,17 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="5907" article="a" name="Sling Shot">
-		<attribute key="weight" value="12000"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="weaponType" value="distance"/>
-		<attribute key="ammoType" value="bolt"/>
-		<attribute key="range" value="7"/>
-		<attribute key="hitChance" value="10"/>
-		<attribute key="attack" value="10"/>
+		<attribute key="weight" value="12000" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="7" />
+		<attribute key="hitChance" value="10" />
+		<attribute key="attack" value="10" />
 	</item>
 	<item id="5908" article="an" name="obsidian knife">
-		<attribute key="description" value="Sharp and light, this is a useful tool for tanners, doctors and assassins." />
+		<attribute key="description"
+			value="Sharp and light, this is a useful tool for tanners, doctors and assassins." />
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="5909" article="a" name="white tissue" plural="white tissues">
@@ -9068,7 +9141,8 @@
 		<attribute key="weight" value="250" />
 	</item>
 	<item id="5924" article="a" name="damaged steel helmet">
-		<attribute key="description" value="The words 'Ramsay the Reckless' are engraved inside. It appears to be cracked and broken." />
+		<attribute key="description"
+			value="The words 'Ramsay the Reckless' are engraved inside. It appears to be cracked and broken." />
 		<attribute key="weight" value="4600" />
 	</item>
 	<item id="5925" article="a" name="hardened bone" plural="hardened bones">
@@ -9152,7 +9226,8 @@
 		<attribute key="weight" value="3500" />
 	</item>
 	<item id="5944" article="a" name="soul orb" plural="soul orbs">
-		<attribute key="description" value="This strange object seems to be made of half spirit, half metal. It is unknown by most smiths." />
+		<attribute key="description"
+			value="This strange object seems to be made of half spirit, half metal. It is unknown by most smiths." />
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="5945" article="a" name="mermaid comb">
@@ -9183,7 +9258,8 @@
 		<attribute key="weight" value="0" />
 	</item>
 	<item id="5952" article="a" name="poem scroll">
-		<attribute key="description" value="It contains a love poem, written by an unknown elven poet." />
+		<attribute key="description"
+			value="It contains a love poem, written by an unknown elven poet." />
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="5953" article="a" name="marijuana">
@@ -9199,7 +9275,8 @@
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="5958" article="a" name="winning lottery ticket">
-		<attribute key="description" value="You were lucky! Go claim your prize at the potion store in Edron." />
+		<attribute key="description"
+			value="You were lucky! Go claim your prize at the potion store in Edron." />
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="5960" article="a" name="dead troll">
@@ -10126,7 +10203,8 @@
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="6120" article="a" name="spellbook of dragha">
-		<attribute key="description" value="It apparently belonged to someone called Dragha, the apprentice of a voodoomaster." />
+		<attribute key="description"
+			value="It apparently belonged to someone called Dragha, the apprentice of a voodoomaster." />
 		<attribute key="weight" value="5800" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
@@ -10758,7 +10836,8 @@
 	<item id="6391" article="a" name="nightmare shield">
 		<attribute key="weight" value="3200" />
 		<attribute key="defense" value="37" />
-		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights." />
+		<attribute key="description"
+			value="It was crafted by the ancient order of the nightmare knights." />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="6392" article="a" name="hawser">
@@ -10865,7 +10944,8 @@
 	<item id="6495" article="a" name="firefly" />
 	<item id="6496" article="a" name="bat decoration" />
 	<item id="6497" article="a" name="present bag">
-		<attribute key="description" value="It contains presents which were stolen from Santa. Bring them back to Ruprecht on Vega." />
+		<attribute key="description"
+			value="It contains presents which were stolen from Santa. Bring them back to Ruprecht on Vega." />
 		<attribute key="weight" value="8000" />
 	</item>
 	<item id="6499" article="a" name="diploma">
@@ -10941,7 +11021,8 @@
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="6523" article="a" name="gingerbread recipe">
-		<attribute key="description" value="Use it to learn how to make Gingerbreadman in the christmas bakery." />
+		<attribute key="description"
+			value="Use it to learn how to make Gingerbreadman in the christmas bakery." />
 		<attribute key="weight" value="200" />
 	</item>
 	<item fromid="6524" toid="6525" article="a" name="skeleton decoration">
@@ -10971,7 +11052,8 @@
 		<attribute key="shootType" value="infernalbolt" />
 	</item>
 	<item id="6530" article="a" name="pair of old worn soft boots">
-		<attribute key="description" value="Someone specialised in shoes might be able to repair them for you." />
+		<attribute key="description"
+			value="Someone specialised in shoes might be able to repair them for you." />
 		<attribute key="weight" value="800" />
 	</item>
 	<item id="6531" article="a" name="santa hat">
@@ -11926,7 +12008,8 @@
 		<attribute key="attack" value="35" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="description" value="Barbarian women are said to use it for conjuring beasts." />
+		<attribute key="description"
+			value="Barbarian women are said to use it for conjuring beasts." />
 	</item>
 	<item id="7380" article="a" name="headchopper">
 		<attribute key="weight" value="4500" />
@@ -11940,7 +12023,8 @@
 		<attribute key="defense" value="10" />
 		<attribute key="attack" value="30" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="description" value="Made from a mammoth's legbones, it is one of the favoured weapons among barbarians." />
+		<attribute key="description"
+			value="Made from a mammoth's legbones, it is one of the favoured weapons among barbarians." />
 	</item>
 	<item id="7382" article="a" name="demonrage sword">
 		<attribute key="weight" value="15000" />
@@ -11982,7 +12066,8 @@
 		<attribute key="defense" value="18" />
 		<attribute key="attack" value="34" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="description" value="The beautiful jewel on the top of this sceptre is sharp enough to cut through glass." />
+		<attribute key="description"
+			value="The beautiful jewel on the top of this sceptre is sharp enough to cut through glass." />
 	</item>
 	<item id="7388" article="a" name="vile axe">
 		<attribute key="weight" value="5200" />
@@ -12102,11 +12187,11 @@
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="7410" article="a" name="staff of sceptre">
-		<attribute key="description" value="This holy wand radiates huge ammount of greath light."/>
-		<attribute key="weight" value="5900"/>
-		<attribute key="weaponType" value="wand"/>
-		<attribute key="shootType" value="holy"/>
-		<attribute key="range" value="7"/>
+		<attribute key="description" value="This holy wand radiates huge ammount of greath light." />
+		<attribute key="weight" value="5900" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="holy" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="7411" article="an" name="ornamented axe">
 		<attribute key="weight" value="6150" />
@@ -12151,11 +12236,11 @@
 		<attribute key="extradef" value="-3" />
 	</item>
 	<item id="7417" name="Celestial Blade">
-		<attribute key="weight" value="11000"/>
-		<attribute key="defense" value="55"/>
-		<attribute key="attack" value="75"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="extradef" value="3"/>
+		<attribute key="weight" value="11000" />
+		<attribute key="defense" value="55" />
+		<attribute key="attack" value="75" />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="extradef" value="3" />
 	</item>
 	<item id="7418" article="a" name="nightmare blade">
 		<attribute key="weight" value="5900" />
@@ -12224,7 +12309,8 @@
 		<attribute key="attack" value="44" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="description" value="Only those who have descended to the deepest depths may wield this hammer without it cursing them." />
+		<attribute key="description"
+			value="Only those who have descended to the deepest depths may wield this hammer without it cursing them." />
 	</item>
 	<item id="7428" name="bonebreaker">
 		<attribute key="weight" value="12000" />
@@ -12304,11 +12390,13 @@
 	</item>
 	<item id="7439" article="a" name="berserk potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="Drinking this potion increases temporarily your fighting skill while decreasing your defense." />
+		<attribute key="description"
+			value="Drinking this potion increases temporarily your fighting skill while decreasing your defense." />
 	</item>
 	<item id="7440" article="a" name="mastermind potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="Drinking this is said to increase your magical skills for a while, but to decrease your defense." />
+		<attribute key="description"
+			value="Drinking this is said to increase your magical skills for a while, but to decrease your defense." />
 	</item>
 	<item id="7441" article="an" name="ice cube">
 		<attribute key="weight" value="1000" />
@@ -12318,7 +12406,8 @@
 	</item>
 	<item id="7443" article="a" name="bullseye potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="Drinking this potion increases temporarily your distance skill while decreasing your defense." />
+		<attribute key="description"
+			value="Drinking this potion increases temporarily your distance skill while decreasing your defense." />
 	</item>
 	<item id="7444" article="an" name="ice cube">
 		<attribute key="weight" value="8000" />
@@ -12344,11 +12433,11 @@
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="7450" article="the" name="ThunderRock Hammer">
-		<attribute key="weight" value="11000"/>
-		<attribute key="defense" value="55"/>
-		<attribute key="attack" value="75"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="extradef" value="3"/>
+		<attribute key="weight" value="11000" />
+		<attribute key="defense" value="55" />
+		<attribute key="attack" value="75" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="extradef" value="3" />
 	</item>
 	<item id="7451" article="a" name="ninja gloves">
 		<attribute key="weight" value="2600" />
@@ -12370,11 +12459,11 @@
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="7454" name="Brutal Cutter">
-		<attribute key="weight" value="11000"/>
-		<attribute key="defense" value="55"/>
-		<attribute key="attack" value="75"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="extradef" value="3"/>
+		<attribute key="weight" value="11000" />
+		<attribute key="defense" value="55" />
+		<attribute key="attack" value="75" />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="extradef" value="3" />
 	</item>
 	<item id="7455" article="a" name="mythril axe">
 		<attribute key="weight" value="5500" />
@@ -12394,7 +12483,8 @@
 		<attribute key="weight" value="5000" />
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="feet" />
-		<attribute key="description" value="Essa bota e de concreto, ela é usada para treinamentos, embora tenha uma grande defesa, nao é usada em batalhas." />
+		<attribute key="description"
+			value="Essa bota e de concreto, ela é usada para treinamentos, embora tenha uma grande defesa, nao é usada em batalhas." />
 		<attribute key="speed" value="-40" />
 	</item>
 	<item id="7458" article="a" name="fur cap">
@@ -12433,7 +12523,8 @@
 	<item id="7464" article="a" name="mammoth fur shorts">
 		<attribute key="weight" value="150" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="description" value="They offer little protection but will at least provide some comfort and warmth." />
+		<attribute key="description"
+			value="They offer little protection but will at least provide some comfort and warmth." />
 	</item>
 	<item fromid="7465" toid="7473" article="a" name="searing fire">
 		<attribute key="type" value="magicfield" />
@@ -12563,19 +12654,23 @@
 	</item>
 	<item id="7588" article="a" name="strong health potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="This potion can only be consumed by paladins and knights of level 50 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by paladins and knights of level 50 or higher." />
 	</item>
 	<item id="7589" article="a" name="strong mana potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="This potion can only be consumed by sorcerers, druids and paladins of level 50 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by sorcerers, druids and paladins of level 50 or higher." />
 	</item>
 	<item id="7590" article="a" name="great mana potion">
 		<attribute key="weight" value="220" />
-		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 80 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by sorcerers and druids of level 80 or higher." />
 	</item>
 	<item id="7591" article="a" name="great health potion">
 		<attribute key="weight" value="220" />
-		<attribute key="description" value="This potion can only be consumed by knights of level 80 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by knights of level 80 or higher." />
 	</item>
 	<item fromid="7592" toid="7617" article="a" name="tent" />
 	<item id="7618" article="a" name="health potion">
@@ -12653,10 +12748,11 @@
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="7632" article="a" name="Blue Orb">
-		<attribute key="description" value="Este item pode ser vendido ao npc vip seller por 100k."/>
+		<attribute key="description" value="Este item pode ser vendido ao npc vip seller por 100k." />
 	</item>
 	<item id="7633" article="a" name="Vip Stone">
-		<attribute key="description" value="De use neste item e abra o chest do lugar onde voce ira cair para virar VIP."/>
+		<attribute key="description"
+			value="De use neste item e abra o chest do lugar onde voce ira cair para virar VIP." />
 	</item>
 	<item id="7635" article="an" name="empty potion flask">
 		<attribute key="weight" value="220" />
@@ -12802,7 +12898,7 @@
 	<item fromid="7728" toid="7729" />
 	<item id="7730" name="soldier trousers">
 		<attribute key="weight" value="1900" />
-		<attribute key="armor" value="19" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="legs" />
 	</item>
 	<item id="7731" name="elvenhair rope">
@@ -12810,18 +12906,19 @@
 	</item>
 	<item id="7732" name="seeds">
 		<attribute key="weight" value="50" />
-		<attribute key="description" value="They might be worth keeping, who knows what will happen to them." />
+		<attribute key="description"
+			value="They might be worth keeping, who knows what will happen to them." />
 	</item>
 	<item id="7733" name="flower" />
 	<item id="7734" article="a" name="waterskin">
 		<attribute key="weight" value="800" />
 	</item>
 	<item id="7735" article="the" name="Staff of Starlight">
-		<attribute key="description" value="This holy wand radiates huge ammount of light."/>
-		<attribute key="weight" value="5900"/>
-		<attribute key="weaponType" value="wand"/>
-		<attribute key="shootType" value="holy"/>
-		<attribute key="range" value="7"/>
+		<attribute key="description" value="This holy wand radiates huge ammount of light." />
+		<attribute key="weight" value="5900" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="holy" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="7736" article="a" name="root">
 		<attribute key="weight" value="1500" />
@@ -14175,7 +14272,8 @@
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="8112" article="a" name="scarab cheese">
-		<attribute key="description" value="It smells horrible and should not be in the sun for too long." />
+		<attribute key="description"
+			value="It smells horrible and should not be in the sun for too long." />
 		<attribute key="weight" value="400" />
 	</item>
 	<item fromid="8117" toid="8133" name="earth" />
@@ -14198,7 +14296,8 @@
 	</item>
 	<item id="8189" article="a" name="poem scroll">
 		<attribute key="weight" value="120" />
-		<attribute key="description" value="It contains a love poem, written by an unknown elven poet." />
+		<attribute key="description"
+			value="It contains a love poem, written by an unknown elven poet." />
 	</item>
 	<item id="8190" article="a" name="spellbook" />
 	<item id="8194" article="a" name="birthday cake" />
@@ -14429,11 +14528,13 @@
 	<item fromid="8460" toid="8471" name="earth" />
 	<item id="8472" article="a" name="great spirit potion">
 		<attribute key="weight" value="220" />
-		<attribute key="description" value="This potion can only be consumed by paladins of level 80 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by paladins of level 80 or higher." />
 	</item>
 	<item id="8473" article="an" name="ultimate health potion">
 		<attribute key="weight" value="220" />
-		<attribute key="description" value="This potion can only be consumed by knights of level 130 or higher." />
+		<attribute key="description"
+			value="This potion can only be consumed by knights of level 130 or higher." />
 	</item>
 	<item id="8474" article="an" name="antidote potion">
 		<attribute key="weight" value="175" />
@@ -14645,7 +14746,8 @@
 	</item>
 	<item id="8710" article="a" name="cockroach leg" plural="cockroach legs">
 		<attribute key="weight" value="10" />
-		<attribute key="description" value="This is proof for Santiago that you have killed a cockroach." />
+		<attribute key="description"
+			value="This is proof for Santiago that you have killed a cockroach." />
 	</item>
 	<item id="8711" article="a" name="glowing shovel">
 		<attribute key="weight" value="3500" />
@@ -15065,35 +15167,40 @@
 	</item>
 	<item fromid="8893" toid="8899" />
 	<item id="8900" article="a" name="spellbook of enlightenment">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="4500" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="defense" value="18" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8901" article="a" name="spellbook of warding">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="4500" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="defense" value="22" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8902" article="a" name="spellbook of mind control">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="4500" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="defense" value="16" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8903" article="a" name="spellbook of lost souls">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="4650" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="defense" value="20" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8904" article="a" name="spellscroll of prophecies">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="2850" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="defense" value="12" />
@@ -15106,7 +15213,8 @@
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8906" article="a" name="fiery rainbow shield">
-		<attribute key="description" value="It has been temporarily imbued with fire magic and boosts your shielding skill." />
+		<attribute key="description"
+			value="It has been temporarily imbued with fire magic and boosts your shielding skill." />
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="36" />
 		<attribute key="weaponType" value="shield" />
@@ -15115,7 +15223,8 @@
 		<attribute key="skillShield" value="3" />
 	</item>
 	<item id="8907" article="an" name="icy rainbow shield">
-		<attribute key="description" value="It has been temporarily imbued with ice magic and has a greatly increased shielding value." />
+		<attribute key="description"
+			value="It has been temporarily imbued with ice magic and has a greatly increased shielding value." />
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="39" />
 		<attribute key="weaponType" value="shield" />
@@ -15123,7 +15232,8 @@
 		<attribute key="decayTo" value="8905" />
 	</item>
 	<item id="8908" article="a" name="sparking rainbow shield">
-		<attribute key="description" value="It has been temporarily imbued with energy magic and increases your speed." />
+		<attribute key="description"
+			value="It has been temporarily imbued with energy magic and increases your speed." />
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="36" />
 		<attribute key="weaponType" value="shield" />
@@ -15132,7 +15242,8 @@
 		<attribute key="speed" value="20" />
 	</item>
 	<item id="8909" article="a" name="terran rainbow shield">
-		<attribute key="description" value="It has been temporarily imbued with earth magic and boosts your regeneration." />
+		<attribute key="description"
+			value="It has been temporarily imbued with earth magic and boosts your regeneration." />
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="37" />
 		<attribute key="weaponType" value="shield" />
@@ -15163,14 +15274,16 @@
 	</item>
 	<item fromid="8913" toid="8917" />
 	<item id="8918" article="a" name="spellbook of dark mysteries">
-		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+		<attribute key="description"
+			value="It shows your spells and can also shield against attack when worn." />
 		<attribute key="weight" value="2850" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="defense" value="16" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="8919" article="a" name="spell rune">
-		<attribute key="description" value="It is Yandur's healing rune. You can't remove it from his house, but you may use it." />
+		<attribute key="description"
+			value="It is Yandur's healing rune. You can't remove it from his house, but you may use it." />
 	</item>
 	<item id="8920" article="a" name="wand of starstorm">
 		<attribute key="description" value="It is sparkling with universal energy." />
@@ -15187,7 +15300,8 @@
 		<attribute key="range" value="3" />
 	</item>
 	<item id="8922" article="a" name="wand of voodoo">
-		<attribute key="description" value="It is filled with the dark hatred and rage of a tormented demonic being." />
+		<attribute key="description"
+			value="It is filled with the dark hatred and rage of a tormented demonic being." />
 		<attribute key="weight" value="2850" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
@@ -15519,7 +15633,8 @@
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="8979" article="the" name="tibiahispano emblem">
-		<attribute key="description" value="Only a brave and true hero of TibiaHispano can possess it." />
+		<attribute key="description"
+			value="Only a brave and true hero of TibiaHispano can possess it." />
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="8980" article="the" name="mexcalibur">
@@ -15528,16 +15643,19 @@
 	</item>
 	<item id="8981" />
 	<item id="8982" article="a" name="norseman doll">
-		<attribute key="description" value="It is given to the winners of Tibia Nordic competitions." />
+		<attribute key="description"
+			value="It is given to the winners of Tibia Nordic competitions." />
 		<attribute key="weight" value="1000" />
 	</item>
 	<item id="8983" article="a" name="heavily bound book">
-		<attribute key="description" value="It contains the scribings of many knowledgeable Tibians." />
+		<attribute key="description"
+			value="It contains the scribings of many knowledgeable Tibians." />
 		<attribute key="weight" value="7800" />
 	</item>
 	<item id="8984" />
 	<item id="8985" article="a" name="norseman doll">
-		<attribute key="description" value="It is given to the winners of Tibia Nordic competitions." />
+		<attribute key="description"
+			value="It is given to the winners of Tibia Nordic competitions." />
 		<attribute key="weight" value="1000" />
 	</item>
 	<item fromid="8986" toid="8993" />
@@ -15851,11 +15969,10 @@
 		<attribute key="slotType" value="body" />
 		<attribute key="absorbPercentDeath" value="3" />
 	</item>
-	<item id="9777" article="a" name="commander trousers">
+	<item id="9777" article="a" name="otogakure trousers">
 		<attribute key="weight" value="4300" />
-		<attribute key="armor" value="22" />
+		<attribute key="armor" value="16" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="skillDist" value="2" />
 	</item>
 	<item id="9778" article="a" name="yalahari mask">
 		<attribute key="weight" value="3500" />
@@ -15891,13 +16008,15 @@
 		<attribute key="corpseType" value="venom" />
 	</item>
 	<item fromid="9808" toid="9810" article="a" name="rusty armor">
-		<attribute key="description" value="If you can remove the rust layer and dirt from the armor you will be able to see what it is." />
+		<attribute key="description"
+			value="If you can remove the rust layer and dirt from the armor you will be able to see what it is." />
 		<attribute key="weight" value="10000" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item fromid="9811" toid="9813" article="a" name="rusty legs">
-		<attribute key="description" value="If you can remove the rust layer and dirt from the legs you will be able to see what it is." />
+		<attribute key="description"
+			value="If you can remove the rust layer and dirt from the legs you will be able to see what it is." />
 		<attribute key="weight" value="2800" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="legs" />
@@ -16122,7 +16241,8 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="9932" article="a" name="firewalker boots">
-		<attribute key="description" value="Wearing these boots reduces the damage gotten from fiery ground." />
+		<attribute key="description"
+			value="Wearing these boots reduces the damage gotten from fiery ground." />
 		<attribute key="weight" value="950" />
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="feet" />
@@ -16133,7 +16253,8 @@
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="9933" article="a" name="firewalker boots">
-		<attribute key="description" value="Wearing these boots reduces the damage gotten from fiery ground." />
+		<attribute key="description"
+			value="Wearing these boots reduces the damage gotten from fiery ground." />
 		<attribute key="weight" value="950" />
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="feet" />
@@ -16171,19 +16292,23 @@
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="9941" article="a" name="crystal of focus">
-		<attribute key="description" value="It is said to increase your ability to concentrate and make the right decisions." />
+		<attribute key="description"
+			value="It is said to increase your ability to concentrate and make the right decisions." />
 		<attribute key="weight" value="800" />
 	</item>
 	<item id="9942" article="a" name="crystal of balance">
-		<attribute key="description" value="It is said to to make your calmer and less afflicted by anger and anxiety." />
+		<attribute key="description"
+			value="It is said to to make your calmer and less afflicted by anger and anxiety." />
 		<attribute key="weight" value="850" />
 	</item>
 	<item fromid="9948" toid="9949" article="a" name="dracoyle statue">
-		<attribute key="description" value="This rare treasure is said to protect its owner from misery and curses." />
+		<attribute key="description"
+			value="This rare treasure is said to protect its owner from misery and curses." />
 		<attribute key="weight" value="1500" />
 	</item>
 	<item fromid="9953" toid="9954" article="a" name="dracoyle statue">
-		<attribute key="description" value="This rare treasure is said to protect its owner from misery and curses." />
+		<attribute key="description"
+			value="This rare treasure is said to protect its owner from misery and curses." />
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="9955" article="a" name="vampiric crest">
@@ -16191,7 +16316,8 @@
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="9956" article="a" name="magical torch">
-		<attribute key="description" value="You have a day to light all important locations before the torch stops burning." />
+		<attribute key="description"
+			value="You have a day to light all important locations before the torch stops burning." />
 		<attribute key="weight" value="1500" />
 		<attribute key="defense" value="25" />
 		<attribute key="speed" value="50" />
@@ -16274,19 +16400,23 @@
 		<attribute key="duration" value="9" />
 	</item>
 	<item id="9980" article="a" name="crystal of power">
-		<attribute key="description" value="It is said to make you more resistant to weaknesses and to supply you with energy." />
+		<attribute key="description"
+			value="It is said to make you more resistant to weaknesses and to supply you with energy." />
 		<attribute key="weight" value="850" />
 	</item>
 	<item id="9992" article="a" name="rotworm stew">
-		<attribute key="description" value="It's hot, beefy and delicious. The perfect food for knights." />
+		<attribute key="description"
+			value="It's hot, beefy and delicious. The perfect food for knights." />
 		<attribute key="weight" value="1200" />
 	</item>
 	<item id="9993" article="a" name="hydra tongue salad">
-		<attribute key="description" value="Though the hydra tongue is commonly considered a pest plant it tastes surprisingly aromatic." />
+		<attribute key="description"
+			value="Though the hydra tongue is commonly considered a pest plant it tastes surprisingly aromatic." />
 		<attribute key="weight" value="550" />
 	</item>
 	<item id="9994" article="a" name="roasted dragon wings">
-		<attribute key="description" value="You know why it's called 'dragon' when you feel the fire in your throat." />
+		<attribute key="description"
+			value="You know why it's called 'dragon' when you feel the fire in your throat." />
 		<attribute key="weight" value="850" />
 	</item>
 	<item id="9995" article="a" name="fried tropical terrorbird">
@@ -16298,11 +16428,13 @@
 		<attribute key="weight" value="300" />
 	</item>
 	<item id="9997" article="a" name="veggie casserole">
-		<attribute key="description" value="This one would be quite healthy if it wasn't for all the melted cheese on top." />
+		<attribute key="description"
+			value="This one would be quite healthy if it wasn't for all the melted cheese on top." />
 		<attribute key="weight" value="1100" />
 	</item>
 	<item id="9998" article="a" name="filled jalapeño peppers">
-		<attribute key="description" value="The creamy cheese makes a great combination with spicy peppers." />
+		<attribute key="description"
+			value="The creamy cheese makes a great combination with spicy peppers." />
 		<attribute key="weight" value="650" />
 	</item>
 	<item id="9999" article="a" name="blessed steak">
@@ -16310,7 +16442,8 @@
 		<attribute key="weight" value="950" />
 	</item>
 	<item id="10000" article="a" name="carrot cake">
-		<attribute key="description" value="This spicy-sweet cake will probably put you into a sugar rush." />
+		<attribute key="description"
+			value="This spicy-sweet cake will probably put you into a sugar rush." />
 		<attribute key="weight" value="680" />
 	</item>
 	<item id="10001" article="a" name="northern fishburger">
@@ -16378,7 +16511,8 @@
 		<attribute key="weight" value="1250" />
 	</item>
 	<item id="10021" article="a" name="pair of worn soft boots">
-		<attribute key="description" value="Someone specialised in shoes might be able to repair them for you." />
+		<attribute key="description"
+			value="Someone specialised in shoes might be able to repair them for you." />
 		<attribute key="weight" value="800" />
 	</item>
 	<item id="10022" article="a" name="worn firewalker boots">
@@ -16443,7 +16577,8 @@
 		<attribute key="showcharges" value="1" />
 	</item>
 	<item id="10219" article="a" name="sacred tree amulet">
-		<attribute key="description" value="Its leaves stretch out to cover your whole body if you receive earth damage." />
+		<attribute key="description"
+			value="Its leaves stretch out to cover your whole body if you receive earth damage." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="5" />
@@ -16460,7 +16595,8 @@
 		<attribute key="absorbPercentIce" value="40" />
 	</item>
 	<item id="10221" article="a" name="shockwave amulet">
-		<attribute key="description" value="It tickles your neck in a rather pleasant way and absorbs loads of damage." />
+		<attribute key="description"
+			value="It tickles your neck in a rather pleasant way and absorbs loads of damage." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="5" />
@@ -16558,14 +16694,16 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="10293" article="a" name="stale bread of ancientness">
-		<attribute key="description" value="This bread is so old that it has become unbreakable and a formidable weapon." />
+		<attribute key="description"
+			value="This bread is so old that it has become unbreakable and a formidable weapon." />
 		<attribute key="weight" value="500" />
 		<attribute key="defense" value="8" />
 		<attribute key="attack" value="18" />
 		<attribute key="weaponType" value="club" />
 	</item>
 	<item id="10296" article="a" name="heavy metal t-shirt">
-		<attribute key="description" value="Oddly enough it is not made of metal at all, but years without washing grant it added protection." />
+		<attribute key="description"
+			value="Oddly enough it is not made of metal at all, but years without washing grant it added protection." />
 		<attribute key="weight" value="800" />
 		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="body" />
@@ -16577,7 +16715,8 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="10309" article="a" name="claw of the noxious spawn">
-		<attribute key="description" value="It's like a glove and you can't wear a ring on it. You are not sure if you should really put it on." />
+		<attribute key="description"
+			value="It's like a glove and you can't wear a ring on it. You are not sure if you should really put it on." />
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="10316" article="a" name="mighty helm of green sparks">
@@ -16702,15 +16841,18 @@
 		<attribute key="slotType" value="ring" />
 	</item>
 	<item fromid="10511" toid="10512" name="squeezing gear of girlpower">
-		<attribute key="description" value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
+		<attribute key="description"
+			value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
 		<attribute key="weight" value="300" />
 	</item>
 	<item fromid="10513" toid="10514" name="sneaky stabber of eliteness">
-		<attribute key="description" value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
+		<attribute key="description"
+			value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
 		<attribute key="weight" value="300" />
 	</item>
 	<item fromid="10515" toid="10516" name="whacking driller of fate">
-		<attribute key="description" value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
+		<attribute key="description"
+			value="This nifty gadget can be used for many vital and less vital purposes. If it's not jammed, that is." />
 		<attribute key="weight" value="300" />
 	</item>
 	<item id="10518" article="a" name="demon backpack">
@@ -16768,7 +16910,8 @@
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="10530" article="a" name="the famous golden bug">
-		<attribute key="description" value="It's given to skilled discoverers of extra nasty bugs and to great scholars writing useful reports." />
+		<attribute key="description"
+			value="It's given to skilled discoverers of extra nasty bugs and to great scholars writing useful reports." />
 		<attribute key="weight" value="1250" />
 		<attribute key="writeable" value="1" />
 		<attribute key="maxTextLen" value="64" />
@@ -16790,11 +16933,13 @@
 		<attribute key="rotateTo" value="2581" />
 	</item>
 	<item id="10542" article="a" name="golden lightbearer's trophy">
-		<attribute key="description" value="You read: |PLAYERNAME| helped to keep the fire basins burning and is one of the lightbearers of |YEAR|" />
+		<attribute key="description"
+			value="You read: |PLAYERNAME| helped to keep the fire basins burning and is one of the lightbearers of |YEAR|" />
 		<attribute key="weight" value="900" />
 	</item>
 	<item id="10543" article="a" name="silver lightbearer's trophy">
-		<attribute key="description" value="You read: |PLAYERNAME| helped to keep the fire basins burning and is one of the lightbearers of |YEAR|" />
+		<attribute key="description"
+			value="You read: |PLAYERNAME| helped to keep the fire basins burning and is one of the lightbearers of |YEAR|" />
 		<attribute key="weight" value="900" />
 	</item>
 	<item id="10547" article="a" name="scarab pincers" plural="scarab pincers">
@@ -16949,15 +17094,18 @@
 		<attribute key="weight" value="250" />
 	</item>
 	<item id="10613" name="rare crystal">
-		<attribute key="description" value="An extremely rare crystal you recovered from the Lost Mines." />
+		<attribute key="description"
+			value="An extremely rare crystal you recovered from the Lost Mines." />
 		<attribute key="weight" value="180" />
 	</item>
 	<item id="10614" name="carrying device">
-		<attribute key="description" value="The astronomer Spectulus gave you this device to safely transport the mirror crystal." />
+		<attribute key="description"
+			value="The astronomer Spectulus gave you this device to safely transport the mirror crystal." />
 		<attribute key="weight" value="3500" />
 	</item>
 	<item id="10615" name="filled carrying device">
-		<attribute key="description" value="The special carrying device Spetulus gave you now contains a mirror crystal." />
+		<attribute key="description"
+			value="The special carrying device Spetulus gave you now contains a mirror crystal." />
 		<attribute key="weight" value="3500" />
 	</item>
 	<item id="10774" article="a" name="closed door">
@@ -17058,7 +17206,8 @@
 	</item>
 	<item fromid="11123" toid="11126" name="dragon statue" />
 	<item id="11128" name="tome of knowledge">
-		<attribute key="description" value="Bring this encrypted book to a sage in Farmine to gain wisdom or unlock more of Zao's culture." />
+		<attribute key="description"
+			value="Bring this encrypted book to a sage in Farmine to gain wisdom or unlock more of Zao's culture." />
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="11130" name="crocodile steak">
@@ -17351,7 +17500,8 @@
 	<item id="11326" article="a" name="high guard flag">
 		<attribute key="weight" value="112" />
 	</item>
-	<item id="11327" article="a" name="high guard shoulderplates" plural="high guard's shoulderplates">
+	<item id="11327" article="a" name="high guard shoulderplates"
+		plural="high guard's shoulderplates">
 		<attribute key="weight" value="103" />
 	</item>
 	<item id="11328" article="a" name="legionnaire flags" plural="legionnaire's flags">
@@ -17418,7 +17568,8 @@
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="11388" name="lucky clover amulet">
-		<attribute key="description" value="It is rumoured to bring you good luck! Luck sponsored by TibiaLottery." />
+		<attribute key="description"
+			value="It is rumoured to bring you good luck! Luck sponsored by TibiaLottery." />
 		<attribute key="weight" value="150" />
 		<attribute key="slotType" value="necklace" />
 	</item>

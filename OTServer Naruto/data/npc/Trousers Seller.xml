@@ -1,9 +1,10 @@
 <npc name="Trousers Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
-    <health now="100" max="100"/>
-<look type="394" head="54" body="62" legs="114" feet="54" addons="0"/>
+	<health now="100" max="100" />
+	<look type="394" head="54" body="62" legs="114" feet="54" addons="0" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
 		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu compro trousers." />
-		<parameter key="shop_sellable" value="Skeleton Trousers,2468,3000;Nature Trousers,2488,4000;Bandit Trousers,2495,80;Fat Trousers,2648,100;Black Trousers,2649,200" />
+		<parameter key="shop_sellable"
+			value="Skeleton Trousers,2468,4000;Nature Trousers,2488,4000;Ragged Trousers,2495,40;Harem Trousers,2648,80;Black Trousers,2649,60" />
 	</parameters>
 </npc>  

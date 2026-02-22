@@ -1,50 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="huge insect" nameDescription="a huge insect" race="blood" experience="15500" speed="450" manacost="2500">
-  <health now="10600" max="10600"/>
-  <look type="211" corpse="2864"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="huge insect" nameDescription="a huge insect" race="blood" experience="15500"
+  speed="450" manacost="2500">
+  <health now="10600" max="10600" />
+  <look type="211" corpse="2864" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="78" attack="73"/>  
-    <attack name="doku" interval="1000" chance="22" range="3" target="1" min="-300" max="-600">
-    </attack>  
-
+    <attack name="melee" interval="2000" skill="72" attack="70" />
+    <attack name="doku" interval="1000" chance="22" range="3" target="1" min="-200" max="-250">
+    </attack>
   </attacks>
-  <defenses armor="20" defense="15"/>
-  <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
-  </immunities>
-  <voices interval="5000" chance="10">
-    <voice sentence="..."/>
+  <defenses armor="5" defense="5" />
+  <elements>
+    <element firePercent="120" />
+  </elements>
+  <voices interval="5000" chance="12">
+    <voice sentence="GRRRRZZZZRRRR!" />
+    <voice sentence="CRACK! CLICK!" />
+    <voice sentence="BZZZZZZZZT!" />
+    <voice sentence="ZRRRRR-K-RRRRR!" />
+    <voice sentence="Fissssss..." />
   </voices>
   <loot>
-    <item id="2148" countmax="80" chance1="40000" chancemax="0"/>
-    <item id="2148" countmax="78" chance1="38000" chancemax="0"/>
-    <item id="5910" countmax="1" chance1="300" chancemax="0"/>
-    <item id="2488" chance1="400" chancemax="0"/>
+    <item id="2148" countmax="80" chance1="40000" chancemax="0" />
+    <item id="2148" countmax="78" chance1="38000" chancemax="0" />
+    <item id="5910" countmax="2" chance1="1000" chancemax="0" />
+    <item id="2422" chance1="2000" chancemax="0" />
+    <item id="2488" chance1="700" chancemax="0" />
   </loot>
-<script>
-<event name="mkillm"/>
-</script>
+  <script>
+    <event name="mkillm" />
+  </script>
 </monster>

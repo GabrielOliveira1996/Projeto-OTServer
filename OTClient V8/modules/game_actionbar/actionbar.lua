@@ -28,7 +28,7 @@ local CustomIcons = {
 }
 
 -- Sua lista de Jutsus customizada
-local customSpells = {
+_G.customSpells = {
   ["Kage Bunshin no Jutsu"] = { 
     id = 1, 
     words = "kage bunshin no jutsu", 
@@ -1197,4 +1197,53 @@ function load()
   else
       settings = {}
   end
+end
+
+function startHotkeyCooldown(text)
+    if not text or not actionBars then return end
+    local words = text:trim():lower()
+    local player = g_game.getLocalPlayer()
+    if not player then return end
+
+    for _, actionbar in ipairs(actionBars) do
+        local tabBar = actionbar.tabBar
+        if tabBar then
+            for _, child in ipairs(tabBar:getChildren()) do
+                -- Verifica se é o slot da magia correta
+                if child.type == 2 and child.spellData and child.spellData.words:lower() == words then
+                    
+                    -- 1. BUSCA DADOS DE MANA (Prioriza a tabela customSpells, depois o spellData do slot)
+                    local spellInfo = _G.customSpells and _G.customSpells[words]
+                    local manaRequired = (spellInfo and spellInfo.mana) or (child.spellData and child.spellData.mana) or 0
+
+                    -- 2. TRAVA DE MANA: Se não tem mana, para aqui e não gira
+                    if player:getMana() < manaRequired then
+                        -- Opcional: g_game.talk(words) -- Se quiser que o erro de "insuficiente" apareça no chat
+                        return false
+                    end
+
+                    -- 3. TRAVA DE COOLDOWN (SPAM): Se já estiver girando, ignora o clique
+                    if child.cooldownTill and g_clock.millis() < child.cooldownTill then
+                        return false 
+                    end
+
+                    -- 4. EXECUÇÃO SÍNCRONA
+                    if child.callback then
+                        -- Primeiro enviamos a magia
+                        child.callback() 
+                        
+                        -- Somente se o envio ocorreu, iniciamos o visual
+                        local duration = (spellInfo and spellInfo.exhaustion) or (child.spellData and child.spellData.exhaustion) or 2000
+                        
+                        -- Pequeno delay para sincronizar com o envio (opcional)
+                        scheduleEvent(function() 
+                            startCooldown(child, duration) 
+                        end, 50)
+                        
+                        return true
+                    end
+                end
+            end
+        end
+    end
 end

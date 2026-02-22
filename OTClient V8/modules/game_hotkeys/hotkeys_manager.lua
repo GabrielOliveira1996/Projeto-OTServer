@@ -433,88 +433,40 @@ end
 
 function doKeyCombo(keyCombo, repeated)
   if not g_game.isOnline() then return end
-  if modules.game_console and modules.game_console.isChatEnabled() then
-    if keyCombo:len() == 1 then 
-      return
-    end
-  end
-  if modules.game_walking then
-    modules.game_walking.checkTurn()
-  end
   
+  print("DEBUG: Teclado detectou: " .. tostring(keyCombo))
+
   local hotKey = hotkeyList[keyCombo]
   if not hotKey then return end
 
-  local hotkeyDelay = 100  
-  if hotKey.hotkeyDelayTo == nil or g_clock.millis() > hotKey.hotkeyDelayTo + hotkeyDelay then
-    hotkeyDelay = 200 -- for first use
+  -- TENTATIVA DE CAPTURA DE TEXTO (3 NÍVEIS)
+  local text = ""
+  
+  if hotKey.value and #hotKey.value > 0 then
+      text = hotKey.value
+  elseif hotKey.hotkeyLabel then
+      text = hotKey.hotkeyLabel:getText()
+  elseif hotKey.comboText then -- Alguns clientes usam esse nome
+      text = hotKey.comboText
   end
-  if hotKey.hotkeyDelayTo ~= nil and g_clock.millis() < hotKey.hotkeyDelayTo then
-    return
-  end
-  if hotKey.action then
-    executeExtraHotkey(hotKey.action, repeated)  
-  elseif hotKey.itemId == nil then
-    if not hotKey.value or #hotKey.value == 0 then return end
-    if hotKey.autoSend then
-      modules.game_console.sendMessage(hotKey.value)
-    else
-      modules.game_console.setTextEditText(hotKey.value)
-    end
-    hotKey.hotkeyDelayTo = g_clock.millis() + hotkeyDelay
-  elseif hotKey.useType == HOTKEY_MANAGER_USE then
-    if g_game.getClientVersion() < 780 then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        g_game.use(item)
-      end
-    else
-      g_game.useInventoryItem(hotKey.itemId)
-    end
-    hotKey.hotkeyDelayTo = g_clock.millis() + hotkeyDelay
-  elseif hotKey.useType == HOTKEY_MANAGER_USEONSELF then
-    if g_game.getClientVersion() < 780 then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        g_game.useWith(item, g_game.getLocalPlayer())
-      end
-    else
-      g_game.useInventoryItemWith(hotKey.itemId, g_game.getLocalPlayer(), hotKey.subType or -1)
-    end
-    hotKey.hotkeyDelayTo = g_clock.millis() + hotkeyDelay
-  elseif hotKey.useType == HOTKEY_MANAGER_USEONTARGET then
-    local attackingCreature = g_game.getAttackingCreature()
-    if not attackingCreature then
-      local item = Item.create(hotKey.itemId)
-      if g_game.getClientVersion() < 780 then
-        local tmpItem = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-        if not tmpItem then return end
-        item = tmpItem
-      end
 
-      modules.game_interface.startUseWith(item, hotKey.subType or - 1)
-      return
-    end
+  -- Limpa espaços extras
+  text = text:trim()
 
-    if not attackingCreature:getTile() then return end
-    if g_game.getClientVersion() < 780 then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        g_game.useWith(item, attackingCreature, hotKey.subType or -1)
-      end
-    else
-      g_game.useInventoryItemWith(hotKey.itemId, attackingCreature, hotKey.subType or -1)
+  if text and #text > 0 then 
+    g_game.talk(text)
+    print("DEBUG SUCESSO: Enviando -> " .. tostring(text))
+
+    local bar = modules.actionbar or modules.game_actionbar
+    if bar and bar.startHotkeyCooldown then
+        bar.startHotkeyCooldown(text)
     end
-    hotKey.hotkeyDelayTo = g_clock.millis() + hotkeyDelay
-  elseif hotKey.useType == HOTKEY_MANAGER_USEWITH then
-    local item = Item.create(hotKey.itemId)
-    if g_game.getClientVersion() < 780 then
-      local tmpItem = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if not tmpItem then return true end
-      item = tmpItem
-    end
-    modules.game_interface.startUseWith(item, hotKey.subType or - 1)
+  else
+    -- Se cair aqui, a hotkey realmente não tem nada gravado nela no menu do jogo
+    print("DEBUG ERRO: O sistema nao achou texto no F5. Reconfigure a hotkey no menu do jogo.")
   end
+
+  hotKey.hotkeyDelayTo = g_clock.millis() + 200
 end
 
 function updateHotkeyLabel(hotkeyLabel)

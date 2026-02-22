@@ -1,56 +1,54 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="elite cyborg" nameDescription="a elite cyborg" race="blood" experience="12400" speed="295" manacost="1600">
-  <health now="5150" max="5150"/>
-  <look type="403" corpse="2859"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="elite cyborg" nameDescription="a elite cyborg" race="blood" experience="12400"
+  speed="295" manacost="1600">
+  <health now="5150" max="5150" />
+  <look type="403" corpse="2859" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="150"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="150" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="59" attack="54"/>  
-    <attack name="cumulated chakra strike" interval="1000" chance="26" range="7" target="1" min="-420" max="-540">
-    </attack>  
-
+    <attack name="melee" interval="2000" skill="59" attack="54" />
   </attacks>
-  <defenses armor="28" defense="23"/>
+  <defenses armor="28" defense="23" />
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="1" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="..."/>
+    <voice sentence="..." />
   </voices>
   <loot>
-    <item id="2148" countmax="88" chance1="50000" chancemax="0"/>
-    <item id="2424" chance1="1500" chancemax="0"/>
+    <item id="2148" countmax="88" chance1="50000" chancemax="0" />
+    <item id="2424" chance1="1500" chancemax="0" />
     <item id="1987" chance="100000">
       <inside>
-        <item id="2471" chance1="3500" chancemax="0"/>
-        <item id="2466" chance1="3000" chancemax="0"/> 
-        <item id="2645" chance1="3500" chancemax="0"/>
-        <item id="2148" countmax="92" chance1="40000" chancemax="0"/>
+        <item id="2471" chance1="3500" chancemax="0" />
+        <item id="2466" chance1="3000" chancemax="0" />
+        <item id="2645" chance1="3500" chancemax="0" />
+        <item id="2148" countmax="92" chance1="40000" chancemax="0" />
       </inside>
     </item>
   </loot>
-<script>
-<event name="mkillm"/>
-</script>
+  <script>
+    <event name="mkillm" />
+  </script>
 </monster>

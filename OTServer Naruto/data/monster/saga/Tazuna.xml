@@ -1,42 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<monster name="tazuna" namedescription="a tazuna" race="blood" experience="0" speed="260" manacost="50">
-  <health now="350" max="350"/>
-  <look type="11" corpse="0"/>
-  <targetchange interval="2000" chance="0"/>
-  <strategy attack="100" defense="0"/>
+<monster name="Tazuna" namedescription="a tazuna" race="blood" experience="0" speed="240"
+  manacost="1000000">
+  <health now="80" max="80" />
+  <look type="11" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="0"/>
-    <flag canpushcreatures="0"/>
-    <flag targetdistance="6"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="15"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="6" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
-  <defenses armor="6" defense="6"/>
-    <elements>
-  <element icePercent="0"/>
-  <element holyPerent="0"/>
-  <element earthPercent="0"/>
-  <element deathPercent="0"/>
+  <defenses armor="2" defense="1" />
+  <elements>
+    <element icePercent="0" />
+    <element holyPerent="0" />
+    <element earthPercent="0" />
+    <element deathPercent="0" />
   </elements>
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="Tenho que construir a ponte."/>
-    <voice sentence="Eu tenho um neto ele se chama Inari."/>
+    <voice sentence="I must finish that bridge... it is the only hope for my people." />
+    <voice sentence="My grandson, Inari... I hope he is safe and waiting for me." />
+    <voice sentence="We cannot turn back now! The Land of Waves depends on us." />
   </voices>
 </monster>

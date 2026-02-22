@@ -1,0 +1,40 @@
+function onDeath(cid, corpse, deathList)
+    local storage = 11123
+    local monstName = "Haku"
+    local players = {}
+    local experience = 100000
+    local tunicaId = 2486
+    local tunicaChance = 2 -- 2% de chance de dropar
+
+    -- verifica se quem morreu foi o zabuza
+    if isMonster(cid) and string.lower(getCreatureName(cid)) == string.lower(monstName) then
+        
+        -- filtra a deathList para encontrar jogadores ou donos de summons
+        for _, check in ipairs(deathList) do
+            if isPlayer(check) then
+                table.insert(players, check)
+            elseif isSummon(check) then
+                local master = getCreatureMaster(check)
+                if isPlayer(master) then
+                    table.insert(players, master)
+                end
+            end
+        end
+
+        -- aplica a recompensa para cada jogador que participou da luta
+        for _, var in ipairs(players) do
+            if isPlayer(var) then
+                setPlayerStorageValue(var, storage, 1)
+                doPlayerAddExp(var, experience)
+                doPlayerSendTextMessage(var, 22, "Haku has been defeated!")
+                doSendMagicEffect(getThingPos(var), 12) 
+
+                if math.random(1, 100) <= tunicaChance then
+                    doPlayerAddItem(var, tunicaId, 1)
+                    doPlayerSendTextMessage(var, MESSAGE_EVENT_ORANGE, "You found a light tunic worn by the prodigy Haku.")
+                end
+            end
+        end
+    end 
+    return true
+end

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Mizuki[saga 1]" script="data/npc/scripts/mizuki[saga 1].lua" walkinterval="2000" floorchange="0">
-    <look type="81"/>
+<npc name="Mizuki[saga 1]" script="data/npc/scripts/mizuki[saga 1].lua" walkinterval="0"
+    floorchange="0">
+    <look type="81" />
     <parameters>
         <parameter key="module_shop" value="0" />
     </parameters>

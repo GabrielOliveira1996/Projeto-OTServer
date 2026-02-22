@@ -25,7 +25,7 @@ function onGreet(cid)
     if getPlayerStorageValue(cid, storageGain1) >= 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Voce ainda esta aqui, " .. getCreatureName(cid) .. "? Va praticar, voce precisa dominar o Bunshin se quiser se tornar um ninja!")
     else
-        npcHandler:setMessage(MESSAGE_GREET, "Finalmente voce chegou, " .. getCreatureName(cid) .. "! Os pergaminhos estao prontos. Voce praticou o seu Bunshin? Se estiver pronto para o teste, use o seu {bunshin no jutsu}.")
+        npcHandler:setMessage(MESSAGE_GREET, "Finalmente voce chegou, " .. getCreatureName(cid) .. "! Os pergaminhos estao prontos. Voce praticou o seu Bunshin? Se estiver pronto para o teste, use o seu {bunshin}.")
     end
     npcHandler:addFocus(cid)
     return true
@@ -39,7 +39,7 @@ function creatureSayCallback(cid, type, msg)
     local storageGain1 = 31313 
     local var = 2000
 
-    if msgcontains(msg, 'bunshin no jutsu') then
+    if msgcontains(msg, 'bunshin') then
         if getPlayerStorageValue(cid, storagelose) >= 1 then
             selfSay('Mas o que foi isso?! Voce criou apenas um clone murcho e sem vida... Sinto muito, ' .. getCreatureName(cid) .. ', voce ainda nao esta capacitado para virar genin.', cid)
             setPlayerStorageValue(cid, storagelose, -1)

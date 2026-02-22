@@ -75,7 +75,7 @@
 	stopAttackingAtExit = true
 	oldConditionAccuracy = false
 	loginProtectionPeriod = 10 * 1000
-	deathLostPercent = 5
+	deathLostPercent = 2
 	stairhopDelay = 2 * 1000
 	pushCreatureDelay = 2 * 1000
 	deathContainerId = 1987
@@ -111,17 +111,17 @@
 	-- Database
 	-- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
 	-- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
-	sqlType = "sqlite"
+	sqlType = "mysql" --sqlite
 	sqlHost = "localhost"
 	sqlPort = 3306
 	sqlUser = "root"
-	sqlPass = ""
-	sqlDatabase = "theforgottenserver"
+	sqlPass = "admin3315" -- empty
+	sqlDatabase = "nbbot" --theforgottenserver
 	sqlFile = "forgottenserver.s3db"
 	sqlKeepAlive = 0
 	mysqlReadTimeout = 10
 	mysqlWriteTimeout = 10
-	encryptionType = "plain"
+	encryptionType = "sha1"
 
 	-- Deathlist
 	deathListEnabled = true
@@ -164,7 +164,7 @@
 	-- NOTE: storeTrash costs more memory, but will perform alot faster cleaning.
 	-- useHouseDataStorage usage may be found at README.
 	mapName = "wosots"
-	mapAuthor = "ADM Gostos�o"
+	mapAuthor = "Gavriel"
 	randomizeTiles = true
 	useHouseDataStorage = false
 	storeTrash = true
@@ -176,7 +176,7 @@
 	-- coresUsed are seperated by comma cores ids used by server process,
 	-- default is -1, so it stays untouched (automaticaly assigned by OS).
 	defaultPriority = "high"
-	niceLevel = 5
+	niceLevel = 1
 	coresUsed = "-1"
 	optimizeDatabaseAtStartup = true
 	removePremiumOnInit = true
@@ -234,7 +234,7 @@
 	-- NOTE: experienceStages configuration is located in data/XML/stages.xml.
 	-- rateExperienceFromPlayers 0 to disable.
 	experienceStages = "no"
-	rateExperience = 1
+	rateExperience = 4
 	rateExperienceFromPlayers = 0
 	rateSkill = 1
 	rateMagic = 1

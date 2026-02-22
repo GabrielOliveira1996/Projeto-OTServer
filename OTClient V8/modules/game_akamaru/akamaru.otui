@@ -1,0 +1,238 @@
+MainWindow
+  id: akamaruWindow
+  !text: tr('Akamaru System')
+  size: 450 450
+  @onEscape: AkamaruSystem.toggle()
+
+  Panel
+    id: akamaruOutfit
+    anchors.top: parent.top
+    anchors.left: parent.left
+    size: 74 74
+    margin-top: 10
+    margin-left: 10
+    background-color: #00000055
+    border: 1 #444444
+
+  Label
+    id: levelLabel
+    !text: tr('Nivel: --')
+    anchors.top: parent.top
+    anchors.left: akamaruOutfit.right
+    margin-top: 10
+    margin-left: 15
+    font: verdana-11px-rounded
+
+  Label
+    id: pointsLabel
+    !text: tr('Pontos: --')
+    anchors.top: levelLabel.top
+    anchors.right: parent.right
+    width: 150
+    color: #00FF00
+    font: verdana-11px-rounded
+    text-align: right
+
+  Label
+    id: expLabel
+    !text: tr('Experiencia: -- / --')
+    anchors.top: levelLabel.bottom
+    anchors.left: levelLabel.left
+    margin-top: 8
+    font: verdana-11px-rounded
+
+  ProgressBar
+    id: expBar
+    height: 5
+    background-color: #5555ff
+    anchors.top: expLabel.bottom
+    anchors.left: expLabel.left
+    anchors.right: parent.right
+    margin-top: 5
+    margin-right: 10
+
+  Label
+    id: totalHpLabel
+    !text: tr('Hp: --')
+    width: 150
+    anchors.top: expBar.bottom
+    anchors.left: expBar.left
+    margin-top: 15
+    text-align: left
+
+  Label
+    id: totalSpeedLabel
+    !text: tr('Speed: --')
+    width: 150
+    anchors.top: expBar.bottom
+    anchors.right: expBar.right
+    margin-top: 15
+    text-align: right
+
+  HorizontalSeparator
+    id: horizontalSeparator
+    anchors.top: totalHpLabel.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 10
+
+  Label
+    id: attributeTitle
+    !text: tr('Attributes')
+    font: verdana-11px-rounded
+    anchors.top: horizontalSeparator.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    text-auto-resize: true
+    margin-top: 15
+
+  Label
+    id: attackText
+    !text: tr('Attack:')
+    anchors.top: attributeTitle.bottom
+    anchors.left: parent.left
+    margin-top: 25
+    margin-left: 30
+
+  Label
+    id: attackLabel
+    !text: tr('--')
+    width: 40
+    color: #dfdfdf
+    anchors.verticalCenter: attackText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 100     
+    text-align: center
+
+  Button
+    id: btnAttack
+    !text: tr('+')
+    size: 20 20
+    anchors.verticalCenter: attackText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 145    
+    @onClick: AkamaruSystem.addPoint('attack')
+
+  Label
+    id: agilityText
+    !text: tr('Agility:')
+    anchors.top: attackText.bottom
+    anchors.left: attackText.left
+    margin-top: 15
+
+  Label
+    id: agilityLabel
+    !text: tr('--')
+    width: 40
+    anchors.verticalCenter: agilityText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 100
+    text-align: center
+
+  Button
+    id: btnAgility
+    !text: tr('+')
+    size: 20 20
+    anchors.verticalCenter: agilityText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 145
+    @onClick: AkamaruSystem.addPoint('agility')
+
+  Label
+    id: dodgeText
+    !text: tr('Dodge:')
+    anchors.top: agilityText.bottom
+    anchors.left: attackText.left
+    margin-top: 15
+
+  Label
+    id: dodgeLabel
+    !text: tr('--')
+    width: 40
+    anchors.verticalCenter: dodgeText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 100
+    text-align: center
+
+  Button
+    id: btnDodge
+    !text: tr('+')
+    size: 20 20
+    anchors.verticalCenter: dodgeText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 145
+    @onClick: AkamaruSystem.addPoint('dodge')
+
+  Label
+    id: hpText
+    !text: tr('Hp:')
+    anchors.top: dodgeText.bottom
+    anchors.left: attackText.left
+    margin-top: 15
+
+  Label
+    id: hpLabel
+    !text: tr('--')
+    width: 40
+    anchors.verticalCenter: hpText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 100
+    text-align: center
+
+  Button
+    id: btnHp
+    !text: tr('+')
+    size: 20 20
+    anchors.verticalCenter: hpText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 145
+    @onClick: AkamaruSystem.addPoint('hp')
+
+  Label
+    id: speedText
+    !text: tr('Speed:')
+    anchors.top: hpText.bottom
+    anchors.left: attackText.left
+    margin-top: 15
+
+  Label
+    id: speedLabel
+    !text: tr('--')
+    width: 40
+    anchors.verticalCenter: speedText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 100
+    text-align: center
+
+  Button
+    id: btnSpeed
+    !text: tr('+')
+    size: 20 20
+    anchors.verticalCenter: speedText.verticalCenter
+    anchors.left: parent.left
+    margin-left: 145
+    @onClick: AkamaruSystem.addPoint('speed')
+
+  Label
+    id: itemLabel
+    !text: tr('Equipment')
+    anchors.top: attackText.top
+    anchors.right: parent.right
+    margin-right: 60
+
+  UIItem
+    id: itemSlot
+    size: 34 34
+    anchors.top: itemLabel.bottom
+    anchors.horizontalCenter: itemLabel.horizontalCenter
+    margin-top: 10
+    virtual: true
+    background-color: #00000055
+    border: 1 #555555
+
+  Button
+    id: closeButton
+    !text: tr('Fechar')
+    width: 90
+    anchors.bottom: parent.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    @onClick: AkamaruSystem.toggle()

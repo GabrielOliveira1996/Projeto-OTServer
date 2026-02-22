@@ -21,7 +21,7 @@ local missions = {
         sto = 11112,
         enunciado = "Saga 4 # Entrega na Floresta",
         objetivo = "O plano esta em andamento. Mizuki esta a sua espera na floresta para receber o pergaminho.",
-        reward = "Experience: 10000"
+        reward = "Experience: 25000"
     },
     {
         sto = 11113,
@@ -51,7 +51,7 @@ local missions = {
         sto = 11117,
         enunciado = "Saga 9 # Desafio do Mentor Ebisu",
         objetivo = "Ebisu acha que voce e uma ma influencia para Konohamaru. Mostre a ele que um ninja nao se mede apenas por titulos.",
-        reward = "Experience: 25000"
+        reward = "Experience: 30000"
     },
     {
         sto = 11118,
@@ -62,50 +62,56 @@ local missions = {
     {
         sto = 11119,
         enunciado = "Saga 11 # A Primeira Missao Real",
-        objetivo = "Acabaram os treinos. Va ate a sala do Hokage e solicite sua primeira missao oficial. {Palavra-chave: First Mission}",
+        objetivo = "Acabaram os treinos. Va ate a sala do Hokage e solicite sua primeira missao oficial. {Palavra-chave: Primeira Missao}",
         reward = "Experience: 12000"
     },
     {
-        sto = 11120,
+        sto = 11120, -- ainda está permanecendo com essa
         enunciado = "Saga 12 # Escolta no Pais das Ondas",
         objetivo = "Sua missao e escoltar o mestre de obras Tazuna ate o Pais das Ondas. Proteja-o de qualquer perigo no caminho! {Palavra-chave: Tazuna}",
         reward = "Experience: 30000"
     },
     {
+        sto = 90908,
+        enunciado = "Saga 13 # O Nevoeiro das Ondas",
+        objetivo = "Escolte Tazuna ate o cais e cruze o mar em segredo. O destino e o Pais das Ondas.",
+        reward = "Experience: 12000"
+    },
+    {
         sto = 11121,
         enunciado = "Saga 13 # Emboscada na Ponte",
-        objetivo = "O inimigo esta proximo. Leve Tazuna ate a ponte. Caso o perca, retorne ao Hokage para reorganizar a escolta. {Palavra-chave: Tazuna}",
-        reward = "Experience: 37500"
+        objetivo = "O Demonio do Gas Oculto retornou! Proteja Tazuna em meio ao nevoeiro mortal da Grande Ponte.",
+        reward = "Experience: 100000"
     },
     {
         sto = 11122,
         enunciado = "Saga 14 # O Demonio do Gas Oculto",
         objetivo = "Zabuza e Haku atacaram! Proteja Tazuna e a construcao da ponte com sua vida.",
-        reward = "Experience: 45000"
+        reward = "Experience: 100000"
     },
     {
         sto = 11123,
-        enunciado = "Saga 15 # Relatorio de Batalha",
-        objetivo = "A missao no Pais das Ondas foi concluida. Va ate a casa de Kakashi e relate o ocorrido. {Palavra-chave: Zabuza And Haku Dead}",
-        reward = "Experience: 15000"
+        enunciado = "Saga 15 # O Convite de Kakashi",
+        objetivo = "O time 7 provou seu valor! Encontre o mestre Kakashi Hatake em sua residencia para receber a indicacao oficial para o exame Chunnin. {Palavra-chave: Exame Chunnin}",
+        reward = "Experience: 10000"
     },
     {
         sto = 11124,
         enunciado = "Saga 16 # Inicio do Exame Chunnin",
-        objetivo = "O exame comecou. Va ate a Sala 304 da Academia e prepare-se para a prova escrita.",
-        reward = "Experience: 15000"
+        objetivo = "O exame comecou. Va ate o segundo andar da academia e prepare-se para a prova escrita.",
+        reward = "Experience: 50000"
     },
     {
         sto = 11125,
         enunciado = "Saga 17 # O Portao da Floresta",
-        objetivo = "A segunda etapa sera perigosa. Encontre Anko na entrada da Floresta da Morte. {Palavra-chave: Exam Chunnin}",
+        objetivo = "A segunda etapa sera perigosa. Encontre Anko na entrada da Floresta da Morte. {Palavra-chave: Exame Chunnin/Chunnin Exam}",
         reward = "Experience: -"
     },
     {
         sto = 11000,
         enunciado = "Saga 18 # Encontro com a Serpente",
         objetivo = "Um inimigo terrivel surgiu nas sombras. Enfrente Orochimaru e sobreviva ao seu ataque!",
-        reward = "Experience: 75000"
+        reward = "Experience: 150000"
     },
     {
         sto = 11126,
@@ -332,20 +338,22 @@ local missions = {
 }
 
 function onSay(cid, words, param, channel)
+    local currentMission = nil
 
-local str = ""
-local haveMission = false
-for _, array in ipairs(missions) do
-if getPlayerStorageValue(cid, array.sto) >= 1 then
-str = str..array.enunciado.."\n"..array.objetivo.."\nReward:\n"..array.reward
-doPlayerSendTextMessage(cid, 27, str)
-str = ""
-haveMission = true
-end
-end 
+    -- percorre do fim para o começo para achar a ultima saga que o player iniciou
+    for i = #missions, 1, -1 do
+        if getPlayerStorageValue(cid, missions[i].sto) >= 1 then
+            currentMission = missions[i]
+            break
+        end
+    end 
 
-if not haveMission then
-doPlayerSendTextMessage(cid, 27, "V� at� a academia e fale com Iruka.")
-end	
-return true
+    if currentMission then
+        local str = currentMission.enunciado .. "\n" .. currentMission.objetivo .. "\nReward:\n" .. currentMission.reward
+        doPlayerSendTextMessage(cid, 27, str)
+    else
+        doPlayerSendTextMessage(cid, 27, "Vá até a academia e fale com Iruka.")
+    end 
+
+    return true
 end

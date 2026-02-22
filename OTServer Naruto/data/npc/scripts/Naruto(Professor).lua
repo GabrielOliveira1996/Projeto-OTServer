@@ -7,79 +7,94 @@ function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
 function onThink() npcHandler:onThink() end
 
+-- tabelo de niveis
+local JUTSUS = {
+    {name = "kage bunshin no jutsu", lvl = 10, spell = "kage bunshin no jutsu"},
+    {name = "dai rendan",            lvl = 20, spell = "dai rendan"},
+    {name = "kyuubi form I",         lvl = 30, spell = "kyuubi form i"},
+    {name = "rasengan",              lvl = 40, spell = "rasengan"},
+    {name = "kyuubi form II",        lvl = 50, spell = "kyuubi form ii"},
+    {name = "kyuubi form III",       lvl = 70, spell = "kyuubi form iii"},
+    {name = "oodama rasengan",       lvl = 80, spell = "oodama rasengan"},
+    {name = "rasenshuriken",         lvl = 100, spell = "rasenshuriken"}
+}
+
+local narutoVocs = {37, 39, 40, 64, 65, 66, 67, 81}
+
+function onGreet(cid)
+    if isInArray(narutoVocs, getPlayerVocation(cid)) then
+        npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! I am here to help you. To see the jutsu list, say {teach}. For rank upgrades, ask about {training}.")
+    else
+        npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|. I only train Naruto ninjas.")
+    end
+    return true
+end
+
 function creatureSayCallback(cid, type, msg)
-if not npcHandler:isFocused(cid) then
-return false
+    if not npcHandler:isFocused(cid) then return false end
+
+    local msg = msg:lower()
+
+    -- lista de itens no chat
+    if msgcontains(msg, 'teach') then
+        local message = "I can teach you these techniques: \n"
+        for i = 1, #JUTSUS do
+            local info = JUTSUS[i]
+            message = message .. info.name:upper() .. " (Level " .. info.lvl .. ")" .. (i == #JUTSUS and "." or ", \n")
+        end
+        selfSay(message, cid)
+        selfSay("To learn one, just say 'learn' and the name.", cid)
+
+    -- aprendizado
+    elseif msgcontains(msg, 'learn') then
+        local found = false
+        for i = 1, #JUTSUS do
+            local info = JUTSUS[i]
+            if msgcontains(msg, info.name) then
+                found = true
+                if getPlayerLevel(cid) < info.lvl then
+                    selfSay("You need level " .. info.lvl .. " to learn this jutsu.", cid)
+                elseif getPlayerLearnedInstantSpell(cid, info.spell) then
+                    selfSay("You already know this technique.", cid)
+                else
+                    doPlayerLearnInstantSpell(cid, info.spell)
+                    doSendMagicEffect(getThingPos(cid), 12)
+                    selfSay("Great! You have mastered " .. info.name:upper() .. "!", cid)
+                end
+                break
+            end
+        end
+        if not found then
+            selfSay("I don't know that jutsu. Check the list by saying {teach}.", cid)
+        end
+
+    -- treinamentos
+    elseif msgcontains(msg, 'training') then
+        selfSay("I offer two stages: {shippuden training} (Lv 90) and {third training} (Lv 170).", cid)
+
+    elseif msgcontains(msg, 'shippuden training') then
+        if getPlayerVocation(cid) == 37 and getPlayerLevel(cid) >= 90 then
+            doPlayerSetVocation(cid, 39)
+            setPlayerStorageValue(cid, 20002, 1)
+            doSendMagicEffect(getThingPos(cid), 12)
+            selfSay("Your training is complete! You are now a Shippuden Ninja.", cid)
+        else
+            selfSay("You are not ready yet. Come back when you are level 90.", cid)
+        end
+
+    elseif msgcontains(msg, 'third training') then
+        if getPlayerVocation(cid) == 39 and getPlayerLevel(cid) >= 170 then
+            doPlayerSetVocation(cid, 40)
+            doSendMagicEffect(getThingPos(cid), 12)
+            selfSay("Incredible! You have reached the final stage of training!", cid)
+        else
+            selfSay("This training is only for level 170+ Shippuden Ninjas.", cid)
+        end
+    end
+
+    return true
 end
 
-if msgcontains(msg, 'teach') and getPlayerVocation(cid) == 37 or getPlayerVocation(cid) == 38 or getPlayerVocation(cid) == 39 or getPlayerVocation(cid) == 40 then
-doPlayerSendTextMessage(cid, 27, "Para aprender algum jutsu fale 'learn nome do jutsu'.")
-doPlayerSendTextMessage(cid, 27, "Kage Bunshin no Jutsu(Level 10)")
-doPlayerSendTextMessage(cid, 27, "Naruto Rendan(Level 30)")
-doPlayerSendTextMessage(cid, 27, "Kyuubi Form(Level 40)")
-doPlayerSendTextMessage(cid, 27, "Rasengan(Level 50)")
-doPlayerSendTextMessage(cid, 27, "Tajuu Kage Bunshin no Jutsu(Level 75)")
-doPlayerSendTextMessage(cid, 27, "Kyuubi Form (Level 80) Não prescisa aprender.")
-doPlayerSendTextMessage(cid, 27, "Oodama Rasengan(Level 80)")
-doPlayerSendTextMessage(cid, 27, "Kyuubi Form (Level 120) Não prescisa aprender.")
-doPlayerSendTextMessage(cid, 27, "Treinamento Shippuden(Level 150)")
-doPlayerSendTextMessage(cid, 27, "Rasenshuriken(Level 250)")
-doPlayerSendTextMessage(cid, 27, "Rasen shuriken(Level 300)")
-doPlayerSendTextMessage(cid, 27, "Terceiro Treinamento(Level 300)")
-end
-
-if msgcontains(msg, 'learn kage bunshin no jutsu') and getPlayerLevel(cid) >= 10 then
-doPlayerLearnInstantSpell(cid, "kage bunshin no jutsu")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn naruto rendan') and getPlayerLevel(cid) >= 30 then
-doPlayerLearnInstantSpell(cid, "naruto rendan")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn kyuubi form') and getPlayerLevel(cid) >= 40 then
-doPlayerLearnInstantSpell(cid, "kyuubi form")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn rasengan') and getPlayerLevel(cid) >= 50 then
-doPlayerLearnInstantSpell(cid, "rasengan")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn tajuu kage bunshin no jutsu') and getPlayerLevel(cid) >= 75 then
-doPlayerLearnInstantSpell(cid, "tajuu kage bunshin no jutsu")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn oodama rasengan') and getPlayerLevel(cid) >= 80 then
-doPlayerLearnInstantSpell(cid, "oodama rasengan")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'treinamento shippuden') and getPlayerVocation(cid) == 37 and getPlayerLevel(cid) >= 150 then
-doPlayerSetVocation(cid, 39)
-setPlayerStorageValue(cid, 20002, 1)
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn rasenshuriken') and getPlayerLevel(cid) >= 250 then
-doPlayerLearnInstantSpell(cid, "rasenshuriken")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'learn rasen shuriken') and getPlayerLevel(cid) >= 300 then
-doPlayerLearnInstantSpell(cid, "rasen shuriken")
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-
-if msgcontains(msg, 'terceiro treinamento') and getPlayerVocation(cid) == 39 and getPlayerLevel(cid) >= 300 then
-doPlayerSetVocation(cid, 40)
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-return true
-end
-
+npcHandler:setCallback(CALLBACK_GREET, onGreet)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())

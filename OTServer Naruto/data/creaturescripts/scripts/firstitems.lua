@@ -53,66 +53,11 @@ firstItems[8] =
 2470,
 2483
 }
-firstItems[9] =
-{
-2459,
-2470,
-2483
-}
-firstItems[10] =
-{
-2459,
-2470,
-2483
-}
-firstItems[11] =
-{
-2459,
-2470,
-2483
-}
-firstItems[12] =
-{
-2459,
-2470,
-2483
-}
-firstItems[13] =
-{
-2459,
-2470,
-2445
-}
-firstItems[14] =
-{
-2459,
-2470,
-2445
-}
-firstItems[15] =
-{
-2459,
-2470,
-2445
-}
-firstItems[16] =
-{
-2459,
-2470,
-2445
-}
-firstItems[17] =
-{
-2459,
-2470,
-2445
-}
-firstItems[18] =
-{
-2459,
-2470,
-2445
-}
+
+firstItems[9] = {2459, 2483, 2470, 2445, 3982} -- Kiba
+
+firstItems[13] = {2459, 2483, 2470, 2445, 3982} -- Sakura
+
 firstItems[19] =
 {
 2459,
@@ -219,9 +164,11 @@ firstItems[35] =
 }
 firstItems[36] =
 {
-2459,
-2470,
-2445
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[37] = -- Naruto
 {
@@ -233,57 +180,75 @@ firstItems[37] = -- Naruto
 }
 firstItems[38] =
 {
-2459,
-2470,
-2445
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[39] =
 {
-2459,
-2470,
-2445
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[40] =
 {
-2459,
-2470,
-2445
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
-firstItems[41] =
+firstItems[41] = -- rock lee
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[42] =
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[43] =
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[44] =
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[45] =
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[46] =
 {
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[47] =
 {
@@ -321,29 +286,13 @@ firstItems[52] =
 2470,
 2388
 }
-firstItems[53] =
+firstItems[53] = -- Hinata
 {
-2459,
-2470,
-2388
-}
-firstItems[54] =
-{
-2459,
-2470,
-2388
-}
-firstItems[55] =
-{
-2459,
-2470,
-2388
-}
-firstItems[56] =
-{
-2459,
-2470,
-2388
+    2459,
+    2483,
+    2470,
+    2445,
+    3982
 }
 firstItems[57] =
 {
@@ -402,13 +351,13 @@ firstItems[102] =
 }
 
 function onLogin(cid)
-if getPlayerStorageValue(cid, 30001) == -1 then
-    for i = 1, table.maxn(firstItems[getPlayerVocation(cid)]) do
-        doPlayerAddItem(cid, firstItems[getPlayerVocation(cid)][i], 1)
+    if getPlayerStorageValue(cid, 30001) == -1 then
+        for i = 1, table.maxn(firstItems[getPlayerVocation(cid)]) do
+            doPlayerAddItem(cid, firstItems[getPlayerVocation(cid)][i], 1)
+        end
+        local bag = doPlayerAddItem(cid, 1987, 1)
+        doAddContainerItem(bag, 2666, 2)
+        setPlayerStorageValue(cid, 30001, 1)
     end
-    local bag = doPlayerAddItem(cid, 1987, 1)
-    doAddContainerItem(bag, 2666, 2)
-    setPlayerStorageValue(cid, 30001, 1)
-end
-return true
+    return true
 end

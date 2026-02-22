@@ -1,9 +1,26 @@
-local effect = 2 -- efeito q vai sair quando remover o summon
+local effect = 10 -- efeito que sai ao remover o summon
+
 function onCastSpell(cid, var)
-  summons = getCreatureSummons(cid)
-  for _, summon in pairs(summons) do
-    doSendMagicEffect(getThingPos(summon), effect)
-    doRemoveCreature(summon)
-  end
-  return true
+    local summons = getCreatureSummons(cid)
+    
+    local protegidos = {"gamakichi", "katsuyo"}
+
+    for _, summon in pairs(summons) do
+        local name = getCreatureName(summon):lower()
+        local isProtected = false
+
+        for _, nomeProtegido in ipairs(protegidos) do
+            if name:find(nomeProtegido) then
+                isProtected = true
+                break
+            end
+        end
+
+        if not isProtected then
+            doSendMagicEffect(getThingPos(summon), effect)
+            doRemoveCreature(summon)
+        end
+    end
+    
+    return true
 end

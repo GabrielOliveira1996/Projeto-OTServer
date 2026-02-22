@@ -1,9 +1,10 @@
 <npc name="Weapon Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
-    <health now="100" max="100"/>
-<look type="394" head="24" body="162" legs="154" feet="54" addons="0"/>
+	<health now="100" max="100" />
+	<look type="394" head="24" body="162" legs="154" feet="54" addons="0" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
 		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu compro swords e gloves." />
-		<parameter key="shop_sellable" value="Dagger,2379,50;Rapier,2384,100;Sword,2376,150;Shinobazu Sword,2411,400;Ultra Katana,2395,600;Katanas,2397,1000;Bone Sword,2404,1100;Mystic Sword,2413,1600;Spike Sword,2383,2000;Shark Sword,2400,3500;Suna Sword,2406,2500;Skeleton Sword,2396,3000;Raiga Sword,2409,4000;Samurai Sword,2403,5000;Ninja Gloves,7451,100;Straw Gloves,2417,150;Black Gloves,2382,300;Yellow Gloves,3966,400;Shark Gloves,2439,600;Destruction Gloves,2398,800;Red Gloves,7452,900;Copper Gloves,2434,1200;Nature Gloves,2422,1500;White Gloves,2452,2000;Furnious Gloves,2391,3000;Slaver Gloves,2448,3500;Vampire Gloves,2449,4000;Metal Gloves,2424,4500;Titan Gloves,2444,5000" />
+		<parameter key="shop_sellable"
+			value="Dagger,2379,50;Rapier,2384,40;Sword,2376,150;Shinobazu Sword,2411,400;Ultra Katana,2395,600;Katanas,2397,1000;Bone Sword,2404,1100;Mystic Sword,2413,1600;Spike Sword,2383,2000;Shark Sword,2400,3500;Suna Sword,2406,2500;Skeleton Sword,2396,3000;Raiga Sword,2409,4000;Samurai Sword,2403,5000;Ninja Gloves,7451,100;Straw Gloves,2417,30;Black Gloves,2382,70;Yellow Gloves,3966,400;Shark Gloves,2439,600;Destruction Gloves,2398,800;Red Gloves,7452,900;Copper Gloves,2434,1200;Nature Gloves,2422,1500;White Gloves,2452,2000;Furnious Gloves,2391,3000;Slaver Gloves,2448,3500;Vampire Gloves,2449,4000;Metal Gloves,2424,4500;Titan Gloves,2444,5000" />
 	</parameters>
 </npc>  

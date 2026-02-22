@@ -1,48 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<monster name="rain shinobi clon" namedescription="a rain shinobi clon" race="blood" experience="0" speed="250" manacost="0">
-  <health now="50" max="50"/>
-  <look type="54" corpse="0"/>
-  <targetchange interval="2000" chance="0"/>
-  <strategy attack="100" defense="0"/>
+<monster name="rain shinobi clon" namedescription="a rain shinobi clon" race="blood" experience="0"
+  speed="250" manacost="0">
+  <health now="50" max="50" />
+  <look type="54" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="0"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="0"/>
-    <flag targetdistance="1"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="68" attack="60"/>
+    <attack name="melee" interval="2000" skill="68" attack="60" />
   </attacks>
-  <defenses armor="10" defense="5"/>
-    <elements>
-  <element icePercent="0"/>
-  <element holyPerent="0"/>
-  <element earthPercent="0"/>
-  <element deathPercent="0"/>
+  <defenses armor="10" defense="5" />
+  <elements>
+    <element icePercent="0" />
+    <element holyPerent="0" />
+    <element earthPercent="0" />
+    <element deathPercent="0" />
   </elements>
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="0"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="Huuuuuuuuuuuuuuuh."/>
-    <voice sentence="Muuhahahaha."/>
+    <voice sentence="Huuuuuuuuuuuuuuuh." />
+    <voice sentence="Muuhahahaha." />
   </voices>
-  <loot>
-    <item id="2148" countmax="26" chance1="50000" chancemax="0"/>
-  </loot>
 </monster>

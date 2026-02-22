@@ -9,6 +9,9 @@ function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) 
 
 -- MODIFICACAO NO ONTHINK: Silencio ao afastar
 function onThink() 
+    if getCreatureLookDir(getNpcCid()) ~= 2 then
+        doCreatureSetLookDir(getNpcCid(), 2)
+    end
     if npcHandler:isFocused(cid) then
         local coords = getCreaturePosition(cid)
         local myCoords = getCreaturePosition(getSelf())

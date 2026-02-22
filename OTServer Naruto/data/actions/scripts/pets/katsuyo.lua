@@ -1,18 +1,32 @@
 function onUse(cid, item, itemEx)
-local percent = 5 -- Porcentagem de cura
-local type = "health" -- Tipo de cura (health)
-local exha = 1.0 -- Tempo de exhaustion em segundos
-local itemid = 2142 -- id do item que tem que ser usado
+    local config = {
+        percent = 10, -- porcentagem de cura
+        exhaustionId = 7324, -- id da exaustao 
+        exhTime = 1, -- tempo de exaustao em segundos
+        reqItemId = 2142, -- id do item
+        effect = 12 -- efeito visual
+    }
 
-if exhaustion.check(cid, 7324) then
-doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED) return true
-elseif itemEx.uid == cid then
-doPlayerSendCancel(cid, "Você não pode usar rápido demais.") return true
-end
-if type == "health" and getPlayerSlotItem(cid, 2).itemid == itemid then
-doCreatureAddHealth(cid, getCreatureMaxHealth(cid)*(percent/100))
-doSendMagicEffect(getPlayerPosition(cid), 12)
-end
-exhaustion.set(cid, 7324, exha)
-return true
+    -- verifica se o jogador esta exausto
+    if exhaustion.check(cid, config.exhaustionId) then
+        local timeLeft = exhaustion.get(cid, config.exhaustionId)
+        doPlayerSendCancel(cid, "You are exhausted. Wait " .. timeLeft .. "s.")
+        return true
+    end
+    -- verifica se o item especifico esta equipado no slot do colar
+    if getPlayerSlotItem(cid, CONST_SLOT_NECKLACE).itemid == config.reqItemId then
+        local maxHealth = getCreatureMaxHealth(cid)
+        local healAmount = math.floor(maxHealth * (config.percent / 100))
+        -- adiciona a Vida
+        doCreatureAddHealth(cid, healAmount)
+        doSendMagicEffect(getThingPos(cid), config.effect)
+        doPlayerSendTextMessage(cid, 23, "You restored " .. healAmount .. " health points.")
+        -- define a exaustao
+        exhaustion.set(cid, config.exhaustionId, config.exhTime)
+    else
+        -- caso tente usar o item sem estar com o colar especifico equipado
+        doPlayerSendCancel(cid, "You must equip the specific necklace to use this.")
+    end
+
+    return true
 end

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="3bunshin" nameDescription="a bunshin" race="blood" experience="0" speed="0"
+  manacost="50">
+  <health now="100" max="100" />
+  <look type="352" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="0" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="14" attack="12" />
+    <attack name="melee" interval="1000" chance="19" range="4" target="1" min="-6" max="-9">
+      <attribute key="shootEffect" value="throwingknife" />
+    </attack>
+  </attacks>
+  <defenses armor="3" defense="3" />
+  <immunities>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
+  </immunities>
+</monster>

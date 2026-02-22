@@ -1,47 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<quest name="Ryuu The Monk" startstorageid="76669" startstoragevalue="2">
-		
-<mission name="O Templo" storageid="76669" startvalue="1" endvalue="6">
-			
-<missionstate id="1" description="Você matou 1 de 800 monks."/>
-			
-<missionstate id="2" description="Você matou 2 de 800 monks."/>
-		
-<missionstate id="3" description="Você matou 3 de 800 monks."/>
-					
-<missionstate id="4" description="Você matou 4 de 800 monks."/>
-			
-<missionstate id="5" description="Você matou 5 de 800 monks."/>
-	
-<missionstate id="6" description="Você matou 6 de 800 monks."/>
-		
-</mission>
-	
-</quest>
-
-<?xml version="1.0" encoding="UTF-8"?>
 <quests>
-	
-<quest name="Ryuu The Monk" startstorageid="76669" startstoragevalue="2">
-		
-<mission name="O Templo" storageid="76669" startvalue="1" endvalue="3">
-			
-<missionstate id="1" description="Você matou 1 de 800 monks."/>
-			
-<missionstate id="2" description="Você matou 2 de 800 monks."/>
-		
-<missionstate id="3" description="Você matou 3 de 800 monks."/>
-			
-</mission>
-		
-<mission name="Ruly's Revenge" storageid="30031" startvalue="4" endvalue="6">
-		
-<missionstate id="4" description="You received a document with instructions from Ruly, follow them."/>
-			
-<missionstate id="5" description="Go back to Ruly and tell him that you followed his instructions to the end."/>
-	
-<missionstate id="6" description="You got a reward from Ruly, he was very thankful with that you helped him to take his revenge."/>
+	<quest name="Ryuu The Monk" startstorageid="76669" startstoragevalue="2">
+
+		<mission name="O Templo" storageid="76669" startvalue="1" endvalue="6">
+			<missionstate id="1" description="Voce matou 1 de 800 monks." />
+			<missionstate id="2" description="Voce matou 2 de 800 monks." />
+			<missionstate id="3" description="Voce matou 3 de 800 monks." />
+			<missionstate id="4" description="Voce matou 4 de 800 monks." />
+			<missionstate id="5" description="Voce matou 5 de 800 monks." />
+			<missionstate id="6" description="Voce matou 6 de 800 monks." />
 		</mission>
+
+		<mission name="Ruly's Revenge" storageid="30031" startvalue="4" endvalue="6">
+			<missionstate id="4"
+				description="You received a document with instructions from Ruly, follow them." />
+			<missionstate id="5"
+				description="Go back to Ruly and tell him that you followed his instructions to the end." />
+			<missionstate id="6"
+				description="You got a reward from Ruly, he was very thankful with that you helped him to take his revenge." />
+		</mission>
+
 	</quest>
 </quests>

@@ -5,13 +5,7 @@ efeitos = {
 [12] = 72,
 [67] = 73,
 [20] = 74,
-
-
-
-
-
 [4] = 75,
-[35] = 76,
 [71] = 106,
 [72] = 106,
 [73] = 106,
@@ -22,11 +16,11 @@ efeitos = {
 
 [65] = 73, --- kyuubi 2
 [66] = 73, --- kyuubi 3
-[67] = 73, --- kyuubi 3
+[67] = 73, --- kyuubi shippuden 3
 
 [80] = 75, --- sai 100
-[93] = 75,  --- sai level 200
-[94] = 75,  --- sai level 300
+[93] = 75, --- sai level 200
+[94] = 75, --- sai level 300
 
 [95] = 90,  --- neji cumulated level 100
 [101] = 90,  --- neji cumulated level 100

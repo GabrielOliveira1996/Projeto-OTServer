@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="haku bunshin" nameDescription="a haku bunshin" race="blood" experience="0"
+  speed="0"
+  manacost="0">
+  <health now="20" max="20" />
+  <look type="9" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="2" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="physical" interval="1000" chance="100" range="3" target="1" min="-5" max="-10">
+      <attribute key="areaEffect" value="SMALLCLOUDS" />
+      <attribute key="shootEffect" value="arrow" />
+    </attack>
+  </attacks>
+  <defenses armor="100" defense="100" />
+  <immunities>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Can you see my movements?" />
+    <voice sentence="I am Zabuza's tool. I will eliminate his enemies." />
+    <voice sentence="Secret Jutsu: Crystal Ice Mirrors!" />
+    <voice sentence="It's a pity... but you must die here." />
+    <voice sentence="Do you have someone precious to you?" />
+    <voice sentence="You won't be able to keep up with my speed." />
+    <voice sentence="Hidden Jutsu: Thousand Flying Water Needles!" />
+  </voices>
+</monster>
