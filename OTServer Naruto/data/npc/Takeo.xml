@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Takeo" script="data/npc/scripts/kyokai/takeo.lua" walkinterval="0" floorchange="0">
+	<mana now="100" max="100" />
+	<health now="100" max="100" />
+	<look type="15" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable"
+			value="ramen,2672,50;meat,2666,25;strawberry,2677,30;egg,2695,10;bread,2689,15" />
+	</parameters>
+</npc>

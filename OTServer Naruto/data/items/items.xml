@@ -1410,7 +1410,7 @@
 	</item>
 	<item id="1988" article="a" name="backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="50" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="1989" article="a" name="basket">
@@ -1551,8 +1551,7 @@
 	<item id="2022" article="a" name="broken bottle">
 		<attribute key="weight" value="80" />
 	</item>
-	<item id="2023" article="an" name="amphora">
-		<attribute key="weight" value="9700" />
+	<item id="2023" article="an" name="photo camera">
 	</item>
 	<item id="2024" article="a" name="broken brown glass">
 		<attribute key="weight" value="100" />
@@ -1846,7 +1845,9 @@
 	<item id="2122" article="an" name="elven brooch">
 		<attribute key="weight" value="100" />
 	</item>
-	<item id="2123" article="a" name="ring of the sky">
+	<item id="2123" article="a" name="Blood-Stained Report">
+		<attribute key="description"
+			value="Um documento oficial de Konoha, carimbado com um selo de 'Falha Crítica'. As manchas vermelhas no papel são o único registro restante de Isac e Utaka. Um peso constante em sua mochila. [Bônus de Experiência: 15%]" />
 		<attribute key="weight" value="40" />
 		<attribute key="slotType" value="ring" />
 	</item>
@@ -1932,7 +1933,7 @@
 	</item>
 	<item id="2144" article="a" name="bomb paper" plural="bomb papers">
 		<attribute key="weight" value="20" />
-		<attribute key="description" value="Explode!" />
+		<attribute key="description" value="Use this paper to destroy the Kuroi Hasu supply!" />
 	</item>
 	<item id="2145" article="a" name="chunin pill" plural="chunin pills">
 		<attribute key="weight" value="20" />
@@ -1951,11 +1952,11 @@
 	<item id="2149" article="a" name="small emerald" plural="small emeralds">
 		<attribute key="weight" value="10" />
 	</item>
-	<item id="2150" article="a" name="small amethyst" plural="small amethysts">
+	<item id="2150" article="a" name="soldier pill" plural="soldier pills">
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2151" article="a" name="genin pill" plural="genin pills">
-		<attribute key="description" value="Restores 100 Chakra and 100 HP." />
+		<attribute key="description" value="Recupera 50 de Chakra e 50 de Vida." />
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2152" article="a" name="green note" plural="green notes">
@@ -2075,11 +2076,13 @@
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="2175" article="a" name="spellbook">
-		<attribute key="description"
-			value="It shows your spells and can also shield against attack when worn." />
-		<attribute key="weight" value="5800" />
-		<attribute key="defense" value="14" />
-		<attribute key="weaponType" value="shield" />
+		<attribute key="description" value="[Chakra Restoration: +5/2s]" />
+		<attribute key="weight" value="20000" />
+		<attribute key="defense" value="23" />
+		<attribute key="attack" value="34" />
+		<attribute key="weaponType" value="fist" />
+		<attribute key="manaGain" value="5" />
+		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2176" article="an" name="orb">
 		<attribute key="weight" value="800" />
@@ -2665,12 +2668,13 @@
 		<attribute key="description" value="It looks like a little king." />
 		<attribute key="weight" value="650" />
 	</item>
-	<item id="2323" article="a" name="hat of the mad">
-		<attribute key="description" value="You have a vague feeling that it looks somewhat silly." />
-		<attribute key="weight" value="700" />
-		<attribute key="armor" value="3" />
-		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="slotType" value="head" />
+	<item id="2323" article="a" name="Isac's Worn Bandana"> <!-- old hat of the mad -->
+		<attribute key="description"
+			value="A faded and battle-scarred headband. Isac untied it after the battle at the border, handing it to you as a silent promise: his days of blood are over, and his life now belongs to Utaka's future in the village. [Passive: Grants 20% protection against all elements.]" />
+		<attribute key="weight" value="400" />
+		<attribute key="armor" value="10" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="absorbPercentAll" value="20%" />
 	</item>
 	<item id="2324" article="a" name="broom">
 		<attribute key="weight" value="1100" />
@@ -2966,13 +2970,8 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="range" value="7" />
 	</item>
-	<item id="2389" article="a" name="big shuriken" plural="big shurikens">
-		<attribute key="weight" value="100" />
-		<attribute key="attack" value="40" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="shootType" value="spear" />
-		<attribute key="range" value="5" />
-		<attribute key="breakChance" value="3" />
+	<item id="2389" article="a" name="fuuma shuriken" plural="fuuma shurikens">
+		<attribute key="weight" value="500" />
 	</item>
 	<item id="2390" article="a" name="commander sword">
 		<attribute key="weight" value="2250" />
@@ -3008,9 +3007,11 @@
 		<attribute key="weight" value="10000" />
 		<attribute key="weaponType" value="axe" />
 	</item>
-	<item id="2395" article="a" name="ultra katana">
+	<item id="2395" article="a" name="shinobi-gatana">
+		<attribute key="description"
+			value="Uma lamina reta produzida em massa para equipar as patentes mais baixas das vilas ninjas. Por ser feita de um metal simples, nao possui propriedades especiais, mas serve bem ao seu propósito." />
 		<attribute key="weight" value="4000" />
-		<attribute key="defense" value="15" />
+		<attribute key="defense" value="16" />
 		<attribute key="attack" value="21" />
 		<attribute key="weaponType" value="sword" />
 	</item>
@@ -3032,14 +3033,6 @@
 		<attribute key="defense" value="19" />
 		<attribute key="attack" value="29" />
 		<attribute key="weaponType" value="fist" />
-	</item>
-	<item id="2399" article="a" name="shuriken" plural="shurikens">
-		<attribute key="weight" value="70" />
-		<attribute key="attack" value="20" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="shootType" value="throwingstar" />
-		<attribute key="range" value="5" />
-		<attribute key="ammoAction" value="moveback" />
 	</item>
 	<item id="2400" article="a" name="shark sword">
 		<attribute key="weight" value="4200" />
@@ -3085,12 +3078,12 @@
 		<attribute key="attack" value="32" />
 		<attribute key="weaponType" value="sword" />
 	</item>
-	<item id="2407" article="a" name="zabuza sword">
+	<item id="2407" article="a" name="Kubikiribouchou">
 		<attribute key="description"
 			value="Uma das sete laminas lendarias da Nevoa, pertenceu ao temivel Zabuza Momochi, o Demonio da Nevoa Oculta." />
-		<attribute key="weight" value="10000" />
-		<attribute key="defense" value="25" />
-		<attribute key="attack" value="48" />
+		<attribute key="weight" value="50000" />
+		<attribute key="defense" value="5" />
+		<attribute key="attack" value="60" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="skillSword" value="5" />
@@ -3109,18 +3102,12 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="1" />
 	</item>
-	<item id="2410" article="a" name="kunai" plural="kunais">
-		<attribute key="weight" value="80" />
-		<attribute key="attack" value="25" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="shootType" value="throwingknife" />
-		<attribute key="range" value="5" />
-		<attribute key="ammoAction" value="moveback" />
-	</item>
-	<item id="2411" article="a" name="shinobazu sword">
-		<attribute key="weight" value="2200" />
-		<attribute key="defense" value="16" />
-		<attribute key="attack" value="20" />
+	<item id="2411" article="a" name="ryou no ha">
+		<attribute key="description"
+			value="Uma espada curta comumente entregue a recrutas iniciantes. O nome é uma homenagem à sua ponta curvada, desenhada para perfurar armaduras leves com a precisão de uma presa." />
+		<attribute key="weight" value="2800" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="30" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="2412" article="a" name="katana">
@@ -3130,8 +3117,10 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="1" />
 	</item>
-	<item id="2413" article="a" name="mystic sword">
-		<attribute key="weight" value="5250" />
+	<item id="2413" article="a" name="hakken">
+		<attribute key="description"
+			value="Uma espada de aco brilhante. Sua lamina reflete a luz como um espelho." />
+		<attribute key="weight" value="5300" />
 		<attribute key="defense" value="23" />
 		<attribute key="attack" value="26" />
 		<attribute key="weaponType" value="sword" />
@@ -3190,16 +3179,22 @@
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="2422" article="an" name="nature gloves">
+		<attribute key="description" value="[Chakra Restoration: +5/2s]" />
 		<attribute key="weight" value="1900" />
 		<attribute key="defense" value="23" />
 		<attribute key="attack" value="34" />
 		<attribute key="weaponType" value="fist" />
+		<attribute key="manaGain" value="5" />
+		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2423" article="a" name="iron gloves">
-		<attribute key="weight" value="8000" />
-		<attribute key="defense" value="20" />
-		<attribute key="attack" value="22" />
+		<attribute key="description"
+			value="Pesadas luvas forjadas em ferro puro, projetadas para transformar os punhos de um lutador em verdadeiras marretas de guerra. Embora limitem a agilidade dos dedos, seu impacto é capaz de amassar armaduras e quebrar ossos com facilidade. [Velocidade de Ataque: -1]" />
+		<attribute key="weight" value="10000" />
+		<attribute key="defense" value="22" />
+		<attribute key="attack" value="27" />
 		<attribute key="weaponType" value="fist" />
+		<attribute key="skillClub" value="-1" />
 	</item>
 	<item id="2424" article="a" name="metal gloves">
 		<attribute key="weight" value="6700" />
@@ -3245,13 +3240,13 @@
 		<attribute key="weight" value="10000" />
 		<attribute key="weaponType" value="club" />
 	</item>
-	<item id="2431" article="a" name="stonecutter axe">
-		<attribute key="description" value="You feel the power of this mighty axe." />
-		<attribute key="weight" value="9900" />
+	<item id="2431" article="a" name="Isac's Ivory Tanto">
+		<attribute key="description"
+			value="A short blade with a polished ivory hilt. Isac carried it for years on the northern border, but now it belongs to you. Although its owner is gone, the weight of this blade swears that this shinobi's sacrifice will never be forgotten. [Passive: 20% Damage Recovery]" />
+		<attribute key="weight" value="3300" />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="attack" value="55" />
 		<attribute key="defense" value="45" />
-		<attribute key="attack" value="65" />
-		<attribute key="weaponType" value="axe" />
-		<attribute key="extradef" value="3" />
 	</item>
 	<item id="2432" article="a" name="fire axe">
 		<attribute key="description" value="The blade is a magic flame." />
@@ -3378,7 +3373,7 @@
 		<attribute key="attack" value="45" />
 		<attribute key="weaponType" value="fist" />
 	</item>
-	<item id="2450" article="a" name="bone sword">
+	<item id="2450" article="a" name="bone sword original">
 		<attribute key="weight" value="1900" />
 		<attribute key="defense" value="10" />
 		<attribute key="attack" value="14" />
@@ -3508,9 +3503,9 @@
 		<attribute key="armor" value="19" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item id="2463" article="a" name="rock lee shirt">
+	<item id="2463" article="a" name="jhon lee shirt">
 		<attribute key="description"
-			value="Recupera 15hp/2s. [Life Restoration: +5, Agility: +5, Taijutsu: +5]" />
+			value="Recupera 10hp/2s. [Life Restoration: +5, Agility: +5, Taijutsu: +5]" />
 		<attribute key="weight" value="20000" />
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
@@ -3611,7 +3606,6 @@
 		<attribute key="weight" value="6500" />
 		<attribute key="armor" value="14" />
 		<attribute key="slotType" value="legs" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="manaGain" value="5" />
 		<attribute key="manaTicks" value="2000" />
 	</item>
@@ -3842,10 +3836,7 @@
 		<attribute key="defense" value="0" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="2527" article="a" name="mace para substituir eight">
-		<attribute key="weight" value="2500" />
-		<attribute key="defense" value="0" />
-		<attribute key="weaponType" value="shield" />
+	<item id="2527" article="a" name="ginzo">
 	</item>
 	<item id="2528" article="a" name="mace para substituir seven">
 		<attribute key="weight" value="3000" />
@@ -3933,14 +3924,6 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="shootType" value="bolt" />
 	</item>
-	<item id="2544" article="an" name="sebon" plural="sebons">
-		<attribute key="weight" value="50" />
-		<attribute key="attack" value="15" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="shootType" value="arrow" />
-		<attribute key="range" value="5" />
-		<attribute key="ammoAction" value="moveback" />
-	</item>
 	<item id="2545" article="a" name="poison arrow" plural="poison arrows">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ammo" />
@@ -3950,12 +3933,18 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="shootType" value="poisonarrow" />
 	</item>
-	<item id="2546" article="a" name="explosive kunai" plural="explosive kunais">
+	<!-- distance -->
+	<item id="2544" article="an" name="sebon" plural="sebons">
 		<attribute key="weight" value="50" />
-		<attribute key="attack" value="40" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="shootType" value="burstarrow" />
-		<attribute key="range" value="6" />
+	</item>
+	<item id="2410" article="a" name="kunai" plural="kunais">
+		<attribute key="weight" value="80" />
+	</item>
+	<item id="2399" article="a" name="shuriken" plural="shurikens">
+		<attribute key="weight" value="80" />
+	</item>
+	<item id="2546" article="a" name="explosive kunai" plural="explosive kunais">
+		<attribute key="weight" value="80" />
 	</item>
 	<item id="2547" article="a" name="power bolt" plural="power bolts">
 		<attribute key="weight" value="80" />
@@ -4174,17 +4163,16 @@
 	<item fromid="2638" toid="2639" article="a" name="tic-tac-toe token" plural="tic-tac-toe tokens">
 		<attribute key="weight" value="500" />
 	</item>
-	<item id="2640" article="a" name="pair of soft boots">
-		<attribute key="weight" value="800" />
-		<attribute key="slotType" value="feet" />
-		<attribute key="decayTo" value="10021" />
+	<item id="2640" article="a" name="Scroll of Utaka">
+		<attribute key="description"
+			value="A scroll soiled by cave dust. Within it, the incomplete seals practiced by Utaka still pulse with his lingering Chakra. As you hold it, the boy's energy flows eternally into you. [Restores 50 Chakra and 50 Hit Points every 2s]" />
+		<attribute key="weight" value="20000" />
+		<attribute key="slotType" value="ring" />
 		<attribute key="transformDeEquipTo" value="6132" />
-		<attribute key="duration" value="14400" />
-		<attribute key="healthGain" value="15" />
+		<attribute key="healthGain" value="50" />
 		<attribute key="healthTicks" value="2000" />
 		<attribute key="manaGain" value="50" />
-		<attribute key="manaTicks" value="1000" />
-		<attribute key="showduration" value="1" />
+		<attribute key="manaTicks" value="2000" />
 	</item>
 	<item id="2641" name="traper boots">
 		<attribute key="weight" value="900" />
@@ -4197,7 +4185,7 @@
 	</item>
 	<item id="2643" name="speed shoes">
 		<attribute key="description"
-			value="Infused with chakra-conductive fibers, these shoes are perfect for those who master the Body Flicker Technique.\n[Speed: +10]" />
+			value="Forjados com fibras de alta condução de chakra, estes calçados permitem que o usuário execute movimentos em velocidades imperceptíveis a olho nu, simulando a técnica de teletransporte (Shunshin). É o equipamento definitivo para ninjas que precisam de uma evasão impecável ou um reposicionamento tático quando encurralados. [Velocidade: +10]" />
 		<attribute key="weight" value="900" />
 		<attribute key="armor" value="2" />
 		<attribute key="speed" value="10" />
@@ -4218,9 +4206,9 @@
 		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="2647" name="rock lee trousers">
+	<item id="2647" name="jhon lee trousers">
 		<attribute key="description"
-			value="The iconic trousers worn by the great ninja, Rock Lee. [Agility: +5, Speed: +30]" />
+			value="Forjadas sob o peso de treinamentos sobre-humanos, estas calças pertenceram a Jhon Lee. O tecido parece pulsar com a determinação de quem nunca aceitou a derrota. [Agilidade: +5, Velocidade: +30]" />
 		<attribute key="weight" value="10000" />
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="legs" />
@@ -4229,12 +4217,12 @@
 	</item>
 	<item id="2648" name="harem trousers">
 		<attribute key="description"
-			value="Legend has it that a great shinobi named Gabriel Saruel first wore these trousers in battle. [Agility: +1]" />
+			value="Diz a lenda que um grande shinobi chamado Gabriel Saruel foi o primeiro a usar essas calças em batalha. [Agilidade: +2, Velocidade: +5]" />
 		<attribute key="weight" value="1800" />
 		<attribute key="armor" value="5" />
 		<attribute key="slotType" value="legs" />
 		<attribute key="speed" value="5" />
-		<attribute key="skillClub" value="1" />
+		<attribute key="skillClub" value="5" />
 	</item>
 	<item id="2649" name="black trousers">
 		<attribute key="weight" value="1800" />
@@ -4243,7 +4231,7 @@
 	</item>
 	<item id="2650" article="a" name="blue cloak">
 		<attribute key="description"
-			value="A light blue cloak that emanates chakra. [Chakra: +5 every 2s]" />
+			value="Uma capa azul-clara que emana chakra. [Chakra: +5 a cada 2s]" />
 		<attribute key="weight" value="2000" />
 		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
@@ -4252,14 +4240,14 @@
 	</item>
 	<item id="2651" article="a" name="black shirt">
 		<attribute key="weight" value="1000" />
-		<attribute key="armor" value="8" />
+		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2652" article="a" name="classic naruto jacket">
 		<attribute key="description"
-			value="The iconic jacket worn by Naruto Uzumaki in his youth. [Taijutsu: +3]" />
+			value="A icônica jaqueta usada por Naruto Uzumaki em sua juventude. [Taijutsu: +3]" />
 		<attribute key="weight" value="3200" />
-		<attribute key="armor" value="20" />
+		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
 		<attribute key="skillFist" value="3" />
 	</item>
@@ -4278,14 +4266,14 @@
 	</item>
 	<item id="2655" article="a" name="konohamaru shirt">
 		<attribute key="description"
-			value="A shirt that symbolizes the burning desire to learn. Grants a small bonus to experience gain. [Experience Bonus: 10%]" />
+			value="Uma camisa que simboliza o desejo ardente de aprender. Concede um pequeno bônus de experiência. [Bônus de Experiência: 5%]" />
 		<attribute key="weight" value="2100" />
 		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2656" article="a" name="orochimaru shirt">
 		<attribute key="description"
-			value="A lightweight tunic imbued with Orochimaru's dark chakra. It accelerates the user's chakra circulation. [Chakra: +10 every 2s, Ninjutsu: +5]" />
+			value="Uma túnica leve imbuída com o chakra de Orochimaru. Ela acelera a circulação de chakra do usuário. [Chakra: +10 a cada 2s, Ninjutsu: +5]" />
 		<attribute key="weight" value="3100" />
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="body" />
@@ -4301,11 +4289,11 @@
 		<attribute key="weight" value="2400" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2659" article="a" name="classic sakura shirt">
+	<item id="2659" article="a" name="sakura's classic dress">
 		<attribute key="description"
-			value="A lightweight tunic imbued with Orochimaru's dark chakra. It accelerates the user's chakra circulation. [Chakra: +10 every 2s, Chakra Control: +5]" />
+			value="O icônico vistido usado por Sakura Haruno em sua juventude. [Chakra: +10 every 2s, Chakra Control: +5]" />
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="20" />
+		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="body" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="manaGain" value="10" />
@@ -4351,8 +4339,8 @@
 		<attribute key="weight" value="520" />
 		<attribute key="showcount" value="0" />
 	</item>
-	<item id="2668" article="a" name="salmon">
-		<attribute key="weight" value="320" />
+	<item id="2668" article="a" name="tulip" plural="tulips">
+		<attribute key="weight" value="20" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="2669" article="a" name="northern pike" plural="northern pikes">
@@ -4592,73 +4580,73 @@
 	<item id="2805" article="a" name="troll green" plural="troll greens">
 		<attribute key="weight" value="100" />
 	</item>
-	<item id="2806" article="a" name="dead naruto">
-		<attribute key="weight" value="700" />
+	<item id="2806" article="a" name="dead naruto"> <!-- classic naruto corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2807" article="a" name="dead naruto shippuden">
-		<attribute key="weight" value="700" />
+	<item id="2807" article="a" name="dead naruto shippuden"> <!-- shippuden naruto corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2808" article="a" name="dead naruto sannin">
+	<item id="2808" article="a" name="dead naruto kage"> <!-- hokage naruto corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="decayTo" value="3117" />
-		<attribute key="duration" value="600" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2809" article="a" name="dead sasuke">
-		<attribute key="weight" value="700" />
+	<item id="2809" article="a" name="dead sasuke"> <!-- classic sasuke corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2810" article="a" name="dead sasuke shippuden">
-		<attribute key="weight" value="700" />
+	<item id="2810" article="a" name="dead sasuke shippuden"> <!-- shippuden sasuke corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2811" article="a" name="dead sasuke akatsuki">
-		<attribute key="weight" value="700" />
+	<item id="2811" article="a" name="dead sasuke taka member"> <!-- taka member sasuke corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2813" article="a" name="dead sakura">
-		<attribute key="weight" value="700" />
+	<item id="2813" article="a" name="dead sakura"> <!-- classic sakura corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2814" article="a" name="dead sakura train">
-		<attribute key="weight" value="700" />
+	<item id="2814" article="a" name="dead sakura kunoichi"> <!-- kunoichi sakura corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2815" article="a" name="dead sakura shippuden">
-		<attribute key="weight" value="700" />
+	<item id="2815" article="a" name="dead sakura shippuden"> <!-- shippuden sakura corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
 	<item id="2816" article="a" name="dead gaara">
-		<attribute key="weight" value="700" />
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
@@ -4858,10 +4846,10 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2845" article="a" name="dead kiba">
-		<attribute key="weight" value="700" />
+	<item id="2845" article="a" name="dead kiba"> <!-- classic kiba corpse -->
+		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
@@ -5098,8 +5086,8 @@
 	</item>
 	<item id="2879" article="a" name="dead wolf">
 		<attribute key="weight" value="700" />
-		<attribute key="containerSize" value="10" />
-		<attribute key="duration" value="700" />
+		<attribute key="containerSize" value="4" />
+		<attribute key="duration" value="120" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
@@ -5142,31 +5130,33 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="fire" />
 	</item>
-	<item id="2889" article="a" name="dead lion">
+	<item id="2889" article="a" name="dead kuroi warfan"> <!--add
+		now-->
 		<attribute key="containerSize" value="6" />
-		<attribute key="decayTo" value="2890" />
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2890" article="a" name="dead lion">
-		<attribute key="decayTo" value="2891" />
-		<attribute key="duration" value="600" />
-		<attribute key="corpseType" value="blood" />
-	</item>
-	<item id="2891" article="a" name="dead lion">
-		<attribute key="decayTo" value="2892" />
-		<attribute key="duration" value="600" />
-		<attribute key="corpseType" value="blood" />
-	</item>
-	<item id="2892" article="a" name="dead lion">
-		<attribute key="decayTo" value="0" />
+	<item id="2890" article="a" name="dead kuroi warlord">
+		<attribute key="containerSize" value="6" />
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="2893" article="a" name="dead bear">
-		<attribute key="containerSize" value="10" />
-		<attribute key="decayTo" value="2894" />
+	<item id="2891" article="a" name="dead kuroi infiltrator">
+		<attribute key="containerSize" value="6" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="2892" article="a" name="dead kuroi ascendant">
+		<attribute key="containerSize" value="6" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="2893" article="a" name="dead kuroi scout">
+		<attribute key="containerSize" value="6" />
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
@@ -5186,13 +5176,12 @@
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item id="2897" article="a" name="dead scorpion">
-		<attribute key="weight" value="1000" />
-		<attribute key="containerSize" value="6" />
-		<attribute key="decayTo" value="2898" />
-		<attribute key="duration" value="900" />
-		<attribute key="corpseType" value="venom" />
-		<attribute key="fluidSource" value="slime" />
+	<item id="2897" article="a" name="dead sasuke">
+		<attribute key="weight" value="10000" />
+		<attribute key="containerSize" value="10" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
 	</item>
 	<item id="2898" article="a" name="dead scorpion">
 		<attribute key="weight" value="1000" />
@@ -7133,10 +7122,12 @@
 		<attribute key="range" value="5" />
 		<attribute key="breakChance" value="6" />
 	</item>
-	<item id="3966" article="a" name="yellow gloves">
-		<attribute key="weight" value="4000" />
-		<attribute key="defense" value="15" />
-		<attribute key="attack" value="25" />
+	<item id="3966" article="a" name="taiyou-ken">
+		<attribute key="weight" value="4400" />
+		<attribute key="description"
+			value="Luvas reforçadas construídas com um material estranho e que brilha com uma aura amarelada." />
+		<attribute key="defense" value="20" />
+		<attribute key="attack" value="32" />
 		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="3967" article="a" name="tribal mask">
@@ -8360,7 +8351,7 @@
 	<item fromid="5413" toid="5416" article="a" name="coral reef" />
 	<item id="5417" article="a" name="sea star" />
 	<item id="5418" name="coral" />
-	<item fromid="5419" toid="5420" name="bubbles" />
+	<item fromid="5419" toid="5420" name="mist" />
 	<item id="5421" name="algae" />
 	<item fromid="5422" toid="5423" article="a" name="coral reef" />
 	<item fromid="5424" toid="5425" article="a" name="water wheel" />
@@ -9128,8 +9119,8 @@
 		<attribute key="armor" value="23" />
 		<attribute key="slotType" value="legs" />
 	</item>
-	<item id="5919" article="a" name="dragon claw">
-		<attribute key="weight" value="1250" />
+	<item id="5919" article="a" name="manuscript scroll">
+		<attribute key="weight" value="20000" />
 	</item>
 	<item id="5920" article="a" name="green dragon scale" plural="green dragon scales">
 		<attribute key="weight" value="80" />
@@ -9344,8 +9335,8 @@
 	</item>
 	<item id="5970" article="a" name="dead bandit">
 		<attribute key="containerSize" value="5" />
-		<attribute key="weight" value="8000" />
-		<attribute key="duration" value="400" />
+		<attribute key="weight" value="10000" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
@@ -9367,7 +9358,7 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="5974" article="a" name="dead elite bandit">
+	<item id="5974" article="a" name="dead road outlaw">
 		<attribute key="containerSize" value="10" />
 		<attribute key="weight" value="8000" />
 		<attribute key="duration" value="400" />
@@ -9551,7 +9542,7 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="6002" article="a" name="dead fat ninja">
+	<item id="6002" article="a" name="dead heavy brawler">
 		<attribute key="containerSize" value="10" />
 		<attribute key="weight" value="15000" />
 		<attribute key="duration" value="400" />
@@ -10114,10 +10105,11 @@
 		<attribute key="duration" value="259200" />
 		<attribute key="decayTo" value="6091" />
 	</item>
-	<item id="6093" article="a" name="crystal ring">
+	<!--<item
+	id="6093" article="a" name="crystal ring">
 		<attribute key="description" value="The initials E.S. are engraved on it." />
 		<attribute key="weight" value="90" />
-	</item>
+	</item>-->
 	<item id="6094" article="a" name="tree" />
 	<item id="6095" article="a" name="pirate shirt">
 		<attribute key="weight" value="2000" />
@@ -10228,12 +10220,12 @@
 		<attribute key="defense" value="26" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="6132" article="a" name="pair of soft boots">
-		<attribute key="weight" value="800" />
-		<attribute key="slotType" value="feet" />
+	<item id="6132" article="a" name="Scroll of Utaka">
+		<attribute key="description"
+			value="A scroll soiled by cave dust. Within it, the incomplete seals practiced by Utaka still pulse with his lingering Chakra. As you hold it, the boy's energy flows eternally into you. [Restores 50 Chakra and 50 Hit Points every 2s]" />
+		<attribute key="weight" value="20000" />
+		<attribute key="slotType" value="ring" />
 		<attribute key="transformEquipTo" value="2640" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
 	</item>
 	<item fromid="6133" toid="6137" article="a" name="tree wall" />
 	<item id="6138" article="a" name="roof" />
@@ -14208,10 +14200,9 @@
 	</item>
 	<item id="7963" article="a" name="shark fish" />
 	<item id="7966" article="a" name="birthday cake" />
-	<item id="7969" article="a" name="dead frost dragon hatchling">
-		<attribute key="containerSize" value="10" />
-		<attribute key="decayTo" value="7970" />
-		<attribute key="duration" value="10" />
+	<item id="7969" article="a" name="dead haku">
+		<attribute key="containerSize" value="8" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>

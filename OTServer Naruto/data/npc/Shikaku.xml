@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Shikaku" script="data/npc/scripts/konoha/shikaku.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="14" addons="3" />
+	<parameters>
+	</parameters>
+</npc>

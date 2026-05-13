@@ -19,7 +19,7 @@ function onCastSpell(cid, var)
     end
 
     if currentBunshinCount >= MAX_SUMMONS then
-        doPlayerSendCancel(cid, "You already have an active Bunshin.")
+        doPlayerSendCancel(cid, "Você já possui um Bunshin ativo.")
         doSendMagicEffect(playerPos, 2) 
         return false
     end
@@ -32,7 +32,7 @@ function onCastSpell(cid, var)
 
     local spawnPos = getClosestFreeTile(cid, playerPos)
     if not spawnPos or getTilePzInfo(spawnPos) then
-        doPlayerSendCancel(cid, "There is not enough room to summon your Bunshin.")
+        doPlayerSendCancel(cid, "Você só pode invocar um Bunshin.")
         doSendMagicEffect(playerPos, 2)
         return false
     end
@@ -42,10 +42,10 @@ function onCastSpell(cid, var)
     if isCreature(clone) then
         doConvinceCreature(cid, clone)
         doChangeSpeed(clone, -getCreatureSpeed(clone) + playerSpeed)
-        doSendMagicEffect(spawnPos, 2)
+        doSendMagicEffect(spawnPos, 10)
         return true
     else
-        doPlayerSendCancel(cid, "Summon failed: Monster " .. monsterToSummon .. " not found.")
+        doPlayerSendCancel(cid, "Invocação falhou: Monstro " .. monsterToSummon .. " não encontrado.")
         return false
     end
 end

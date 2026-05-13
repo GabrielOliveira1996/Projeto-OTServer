@@ -1,13 +1,14 @@
 local CONFIG = {
-    [64] = {control = 20, damage = 20}, -- vocacao 64 uma calda.
-    [65] = {control = 30, damage = 25}, -- vocacao 65 duas caldas.
-    [66] = {control = 40, damage = 30},  -- vocacao 66 tres caldas.
-    [67] = {control = 50, damage = 35}  -- vocacao 66 tres caldas.
+    [5] = {control = 10, damage = 10}, -- uma calda.
+    [6] = {control = 15, damage = 15}, -- duas caldas.
+    [7] = {control = 20, damage = 20}, -- tres caldas.
+    [8] = {control = 20, damage = 20}, -- shippuden tres caldas.
+    [9] = {control = 25, damage = 30}, -- shippuden quatro caldas.
 }
 
 function onThink(interval)
     for _, cid in ipairs(getPlayersOnline()) do
-        if getPlayerStorageValue(cid, 99123) == 1 then
+        if getPlayerStorageValue(cid, STORAGE_KYUUBI_FORM) == 1 then
             local voc = getPlayerVocation(cid)
             local check = CONFIG[voc]
             

@@ -1,0 +1,68 @@
+EnterGameWindow
+  id: enterGame
+  height: 250
+  @onEnter: EnterGame.doLogin()
+
+  MenuLabel
+    !text: tr('Account name')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    text-auto-resize: true
+
+  TextEdit
+    id: accountNameTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+
+  MenuLabel
+    !text: tr('Password')
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  PasswordTextEdit
+    id: accountPasswordTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+
+  CheckBox
+    id: rememberPasswordBox
+    !text: tr('Remember password')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 15
+
+  HorizontalSeparator
+    id: sep1
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 10
+
+  Button
+    id: loginButton
+    !text: tr('Login')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: sep1.bottom
+    margin-top: 12
+    margin-left: 50
+    margin-right: 50
+    @onClick: EnterGame.doLogin()
+
+  Button
+    id: createAccountButton
+    !text: tr('Create Account')
+    anchors.left: loginButton.left
+    anchors.right: loginButton.right
+    anchors.top: loginButton.bottom
+    margin-top: 8
+    @onClick: EnterGame.loginManager()
+
+  

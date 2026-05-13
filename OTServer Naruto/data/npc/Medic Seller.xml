@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <npc name="Medic Seller" script="data/npc/scripts/seller.lua" access="5" lookdir="1">
 	<health now="100" max="100" />
 	<look type="393" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
-		<parameter key="message_greet" value="Holla |PLAYERNAME|. Eu vendo Pilulas de Comida." />
+		<parameter key="message_greet" value="Olá. Eu vendo suprimentos médicos." />
 		<parameter key="shop_buyable"
-			value="Genin Pill,2151,100;Chunin Pill,2145,200;Jounin Pill,2143,300" />
+			value="Genin Pill,2151,200;Chunin Pill,2145,300;Jounin Pill,2143,400" />
 	</parameters>
 </npc>  

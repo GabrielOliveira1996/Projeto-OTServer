@@ -3,7 +3,7 @@ local talk_start = 0
 
 -- CONFIGURAÇÃO
 local destination = {x=3302, y=3057, z=7} -- Destino Principal
-local cost = 100 
+local cost = 0 
 
 -- STORAGES PARA O RETORNO (X, Y, Z)
 local STO_X = 15001

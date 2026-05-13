@@ -2,17 +2,372 @@
 <vocations>
 	<vocation id="0" name="None" description="none" needpremium="0" gaincap="5" gainhp="5"
 		gainmana="5" gainhpticks="6" gainhpamount="1" gainmanaticks="6" gainmanaamount="1"
-		manamultiplier="4.0" attackspeed="2000" soulmax="100" gainsoulticks="10" fromvoc="0"
+		manamultiplier="1.1" attackspeed="2000" soulmax="100" gainsoulticks="10" fromvoc="0"
 		attackable="no">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.4" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.1" experience="1.0" />
 	</vocation>
 
-	<vocation id="1" name="Shikamaru" description="a shikamaru" needpremium="0" gaincap="13"
+	<!-- NARUTO -->
+	<vocation id="1" name="Naruto" description="a naruto" needpremium="0" gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
+		manamultiplier="1.1" attackspeed="2000" soulmax="100" gainsoulticks="0" fromvoc="1">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="2" name="Naruto Shippuden" description="a naruto shippuden" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="1800" soulmax="100" gainsoulticks="0"
+		fromvoc="2" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.1" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.1" magDefense="1.1" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="3" name="Naruto War" description="a naruto shippuden" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="1800" soulmax="100" gainsoulticks="0"
+		fromvoc="3" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.2" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="4" name="Naruto Hokage" description="a naruto hokage" needpremium="0"
+		gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="20" gainmanaticks="2"
+		gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="100" gainsoulticks="0"
+		fromvoc="4" manager="0">
+		<formula meleeDamage="1.4" distDamage="1.4" wandDamage="1.0" magDamage="1.4"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- CLASSIC KYUUBI -->
+	<vocation id="5" name="One-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="1"
+		gainmanaamount="5" manamultiplier="1.1" attackspeed="1800" soulmax="100" gainsoulticks="0"
+		fromvoc="1">
+		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.1"
+			magHealingDamage="1.0" defense="1.1" magDefense="1.1" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="6" name="Two-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="10" gainmanaticks="1"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="1600" soulmax="100" gainsoulticks="0"
+		fromvoc="1">
+		<formula meleeDamage="1.2" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="7" name="Three-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="15" gainmanaticks="1"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="1400" soulmax="100" gainsoulticks="0"
+		fromvoc="1">
+		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- Kyuubi Shippuden -->
+	<vocation id="8" name="Three-Tailed Shippuden Kyuubi" description="a kyuubi form"
+		needpremium="0" gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="15"
+		gainmanaticks="1" gainmanaamount="15" manamultiplier="1.1" attackspeed="1400" soulmax="100"
+		gainsoulticks="0" fromvoc="2" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.1" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="9" name="Four-Tailed Shippuden Kyuubi" description="a kyuubi form"
+		needpremium="0" gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="20"
+		gainmanaticks="1" gainmanaamount="20" manamultiplier="1.1" attackspeed="1400" soulmax="100"
+		gainsoulticks="0" fromvoc="2" manager="0">
+		<formula meleeDamage="1.4" distDamage="1.1" wandDamage="1.0" magDamage="1.4"
+			magHealingDamage="1.0" defense="1.4" magDefense="1.4" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="10" name="Kyuubi Chakra Mode" description="a kyuubi form" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="25"
+		gainmanaticks="1" gainmanaamount="25" manamultiplier="1.1" attackspeed="1400" soulmax="100"
+		gainsoulticks="0"
+		fromvoc="3" manager="0">
+		<formula meleeDamage="1.5" distDamage="1.2" wandDamage="1.0" magDamage="1.5"
+			magHealingDamage="1.0" defense="1.5" magDefense="1.5" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- SANINS MODE -->
+	<vocation id="11" name="Sanin Mode" description="a sanin mode"
+		needpremium="0" gaincap="10" gainhp="20" gainmana="10" gainhpticks="1" gainhpamount="20"
+		gainmanaticks="1" gainmanaamount="20" manamultiplier="1.1" attackspeed="1800" soulmax="100"
+		gainsoulticks="0" fromvoc="2" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.1" wandDamage="1.0" magDamage="1.5"
+			magHealingDamage="1.2" defense="1.6" magDefense="1.6" armor="1.3" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="12" name="Shippuden Kyuubi Sanin Mode" description="a shippuden kyuubi sanin mode"
+		needpremium="0" gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="25"
+		gainmanaticks="1" gainmanaamount="30" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="3" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="13" name="Kage Kyuubi Sanin Mode" description="a kage kyuubi sanin mode"
+		needpremium="0" gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="25"
+		gainmanaticks="1" gainmanaamount="30" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="4" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- NARUTO BARION MODE -->
+	<vocation id="14" name="Baryon Mode" description="a baryon mode"
+		needpremium="0" gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="30"
+		gainmanaticks="1" gainmanaamount="35" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="4" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- SASUKE -->
+	<vocation id="15" name="Sasuke" description="a sasuke" needpremium="0" gaincap="10" gainhp="10"
+		gainmana="20" gainhpticks="2" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
+		manamultiplier="1.1" attackspeed="2000" soulmax="100" gainsoulticks="0" fromvoc="15">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="16" name="Sasuke Shippuden" description="a sasuke shippuden" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="100" gainsoulticks="0"
+		fromvoc="16" manager="0">
+		<formula meleeDamage="1.1" distDamage="1.1" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="17" name="Sasuke Taka Member" description="a sasuke taka member"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="15"
+		gainmanaticks="2" gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="17" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.2" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="18" name="Sasuke War" description="a sasuke shippuden"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="20"
+		gainmanaticks="2" gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="18" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.2" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="19" name="Sasuke Sasayaki" description="a sasuke sasayaki"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="25"
+		gainmanaticks="2" gainmanaamount="25" manamultiplier="1.1" attackspeed="2000" soulmax="100"
+		gainsoulticks="0" fromvoc="19" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.3" wandDamage="1.0" magDamage="1.4"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- SASUKE CURSED SEAL -->
+	<vocation id="20" name="Sasuke Cursed Seal One" description="a sasuke cursed" gaincap="10"
+		gainhp="10" gainmana="20" gainhpticks="1" gainhpamount="5" gainmanaticks="1"
+		gainmanaamount="5" manamultiplier="1.1" attackspeed="1800" soulmax="100" gainsoulticks="0"
+		fromvoc="15" manager="0">
+		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.1"
+			magHealingDamage="1.0" defense="1.1" magDefense="1.1" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="21" name="Sasuke Cursed Seal Two" description="a sasuke cursed" gaincap="10"
+		gainhp="10" gainmana="20" gainhpticks="1" gainhpamount="10" gainmanaticks="1"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="1800" soulmax="100" gainsoulticks="0"
+		fromvoc="15" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="22" name="Sasuke Cursed Seal Three" description="a sasuke cursed" gaincap="10"
+		gainhp="10" gainmana="20" gainhpticks="1" gainhpamount="15" gainmanaticks="1"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="1600" soulmax="100" gainsoulticks="0"
+		fromvoc="15" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="23" name="Sasuke Shippuden Cursed" description="a sasuke shippuden cursed"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="1" gainhpamount="10"
+		gainmanaticks="1" gainmanaamount="20" manamultiplier="1.1" attackspeed="1600" soulmax="100"
+		gainsoulticks="0" fromvoc="16" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.1" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!-- Sakura -->
+	<vocation id="24" name="Sakura" description="a sakura" needpremium="0" gaincap="10" gainhp="10"
+		gainmana="20" gainhpticks="2" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
+		manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0" fromvoc="24">
+		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="25" name="Sakura Kunoichi" description="a sakura kunoichi" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="5" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="25" manager="0">
+		<formula meleeDamage="1.1" distDamage="1.1" wandDamage="1.0" magDamage="1.1"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="26" name="Sakura Shippuden" description="a sakura shippuden" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="26" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.2" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="27" name="Sakura War" description="a sakura shippuden" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="27" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="28" name="Sakura Shinsu" description="a sakura shinsu" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="20" gainmanaticks="2"
+		gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="28" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+
+	<!-- Sakura Transforms -->
+	<vocation id="29" name="Sakura Iryou Hei" description="a sakura iryou hei" needpremium="0"
+		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="5" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="25" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.1" wandDamage="1.0" magDamage="1.1"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="30" name="Sakura Shippuden Iryou Hei" description="a sakura shippuden iryou hei"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="10"
+		gainmanaticks="2" gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0"
+		gainsoulticks="0" fromvoc="26" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.2" wandDamage="1.0" magDamage="1.2"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="31" name="Sakura War Iryou Hei" description="a sakura shippuden iryou hei"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="15"
+		gainmanaticks="2" gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="0"
+		gainsoulticks="0" fromvoc="27" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="32" name="Sakura Shinsu Iryou Hei" description="a sakura shinsu iryou hei"
+		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="20"
+		gainmanaticks="2" gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="0"
+		gainsoulticks="0" fromvoc="28" manager="0">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+
+	<!-- Kiba -->
+	<vocation id="33" name="Kiba" description="a kiba" needpremium="0" gaincap="10" gainhp="20"
+		gainmana="10" gainhpticks="2" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
+		manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0" fromvoc="33">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="34" name="Kiba Tracker" description="a kiba" needpremium="0" gaincap="10"
+		gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
+		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="34">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="35" name="Kiba Shippuden" description="a kiba shippuden" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="35" manager="0">
+		<formula meleeDamage="1.2" distDamage="1.2" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="36" name="Kiba War" description="a kiba shippuden" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="20" gainmanaticks="2"
+		gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="36" manager="0">
+		<formula meleeDamage="1.3" distDamage="1.3" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.3" magDefense="1.3" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+	<vocation id="37" name="Kiba Veteran" description="a kiba veteran" needpremium="0"
+		gaincap="10" gainhp="20" gainmana="10" gainhpticks="2" gainhpamount="25" gainmanaticks="2"
+		gainmanaamount="25" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
+		fromvoc="37" manager="0">
+		<formula meleeDamage="1.4" distDamage="1.4" wandDamage="1.0" magDamage="1.0"
+			magHealingDamage="1.0" defense="1.4" magDefense="1.4" armor="1.0" />
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<!--<vocation
+	id="1" name="Shikamaru" description="a shikamaru" needpremium="0" gaincap="13"
 		gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="1" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -21,7 +376,7 @@
 	</vocation>
 	<vocation id="2" name="Shikamaru Train" description="a shikamaru" needpremium="0" gaincap="13"
 		gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="2" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.1" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -30,7 +385,7 @@
 	</vocation>
 	<vocation id="3" name="Shikamaru Shippuden" description="a shikamaru shippuden" needpremium="0"
 		gaincap="13" gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="3" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.4" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -39,7 +394,7 @@
 	</vocation>
 	<vocation id="4" name="Shikamaru Master Of Shadowns" description="a shikamaru" needpremium="0"
 		gaincap="13" gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="4" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.6" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -49,7 +404,7 @@
 
 	<vocation id="5" name="Gaara" description="a gaara" needpremium="0" gaincap="8" gainhp="10"
 		gainmana="40" gainhpticks="2" gainhpamount="5" gainmanaticks="2" gainmanaamount="20"
-		manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="5"
+		manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="5"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -58,7 +413,7 @@
 	</vocation>
 	<vocation id="6" name="Gaara Shippuden" description="a gaara shippuden" needpremium="0"
 		gaincap="8" gainhp="10" gainmana="40" gainhpticks="2" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="20" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="20" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="6" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.4" wandDamage="1.0" magDamage="1.8"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -67,141 +422,57 @@
 	</vocation>
 	<vocation id="7" name="Gaara Kazekage" description="a gaara shippuden" needpremium="0"
 		gaincap="8" gainhp="10" gainmana="40" gainhpticks="2" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="20" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="20" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="7" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.6" wandDamage="1.0" magDamage="2.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="2.0" club="1.4" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
 			fishing="1.1" experience="1.0" />
-	</vocation>
+	</vocation>-->
 
-	<!-- Kiba -->
-	<vocation id="9" name="Kiba" description="a kiba" needpremium="0" gaincap="10" gainhp="15"
-		gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="9">
-		<formula meleeDamage="0.5" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="10" name="Kiba Shippuden" description="a kiba shippuden" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
-		fromvoc="10" manager="0">
-		<formula meleeDamage="1.2" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="11" name="Kiba Stronger" description="a kiba shippuden" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="300" gainsoulticks="10"
-		fromvoc="11" manager="0">
-		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="2.0"
-			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-
-	<!-- Sakura -->
-	<vocation id="13" name="Sakura" description="a sakura" needpremium="0" gaincap="10" gainhp="10"
-		gainmana="15" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="5"
-		manamultiplier="1.1" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="13">
-		<formula meleeDamage="0.2" distDamage="0.2" wandDamage="0.1" magDamage="0.1"
-			magHealingDamage="0.2" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
-			fishing="1.0" experience="1.0" />
-	</vocation>
-	<vocation id="14" name="Sakura Shippuden" description="a sakura shippuden" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.1" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="14" manager="0">
-		<formula meleeDamage="1.1" distDamage="1.1" wandDamage="0.1" magDamage="0.1"
-			magHealingDamage="1.2" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
-			fishing="1.0" experience="1.0" />
-	</vocation>
-	<vocation id="15" name="Sakura Stronger" description="a sakura shippuden" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="10" gainmanaticks="1"
-		gainmanaamount="15" manamultiplier="1.1" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="15" manager="0">
-		<formula meleeDamage="1.5" distDamage="1.4" wandDamage="0.1" magDamage="1.4"
-			magHealingDamage="1.7" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
-			fishing="1.0" experience="1.0" />
-	</vocation>
-
-	<!-- Sakura Transforms -->
-	<vocation id="16" name="Sakura Iryou Hei" description="a sakura" needpremium="0" gaincap="10"
-		gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.1" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="13" manager="0">
-		<formula meleeDamage="0.6" distDamage="0.6" wandDamage="0.1" magDamage="0.6"
+	<!--
+	<vocation
+		id="19" name="Shino" description="a shino" needpremium="0" gaincap="10" gainhp="15"
+		gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1" gainmanaamount="5"
+		manamultiplier="1.1" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="19">
+		<formula meleeDamage="0.1" distDamage="0.3" wandDamage="0.1" magDamage="0.3"
 			magHealingDamage="0.7" defense="0.1" magDefense="0.1" armor="0.1" />
 		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
 	</vocation>
-	<vocation id="17" name="Sakura Iryou Hei" description="a sakura shippuden"
-		needpremium="0" gaincap="10" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="10"
-		gainmanaticks="1" gainmanaamount="15" manamultiplier="1.2" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="14" manager="0">
-		<formula meleeDamage="1.3" distDamage="1.2" wandDamage="0.1" magDamage="1.2"
-			magHealingDamage="1.5" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
-			fishing="1.0" experience="1.0" />
-	</vocation>
-	<vocation id="18" name="Sakura Stronger Iryou Hei" description="a sakura stronger"
-		needpremium="0" gaincap="10" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="15"
-		gainmanaticks="1" gainmanaamount="20" manamultiplier="1.2" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="15" manager="0">
-		<formula meleeDamage="1.6" distDamage="1.5" wandDamage="1.0" magDamage="1.6"
-			magHealingDamage="1.9" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
-			fishing="1.0" experience="1.0" />
-	</vocation>
-
-
-	<!--<vocation
-	id="17" name="Shino" description="a shino" needpremium="0" gaincap="13" gainhp="25"
-		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="0">
-		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
-			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="18" name="Shino Train" description="a shino" needpremium="0" gaincap="13"
-		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="18" manager="0">
-		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
-			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="19" name="Shino Shippuden" description="a shino shippuden" needpremium="0"
-		gaincap="13" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
-		fromvoc="19" manager="0">
-		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
-			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="20" name="Shino Master Of Insects" description="a shino shippuden" needpremium="0"
-		gaincap="13" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="300" gainsoulticks="10"
+	<vocation id="20" name="Shino Train" description="a shino" needpremium="0" gaincap="10"
+		gainhp="15" gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1"
+		gainmanaamount="5" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="20" manager="0">
-		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="2.0"
-			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
+		<formula meleeDamage="0.1" distDamage="0.6" wandDamage="0.1" magDamage="0.6"
+			magHealingDamage="0.7" defense="0.1" magDefense="0.1" armor="0.1" />
+		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="21" name="Shino Shippuden" description="a shino shippuden" needpremium="0"
+		gaincap="10" gainhp="15" gainmana="15" gainhpticks="2" gainhpamount="10" gainmanaticks="1"
+		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
+		fromvoc="21" manager="0">
+		<formula meleeDamage="0.1" distDamage="0.9" wandDamage="0.1" magDamage="0.9"
+			magHealingDamage="0.7" defense="0.1" magDefense="0.1" armor="0.1" />
+		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
+	</vocation>
+	<vocation id="22" name="Shino Master Of Insects" description="a shino shippuden" needpremium="0"
+		gaincap="10" gainhp="15" gainmana="15" gainhpticks="2" gainhpamount="15" gainmanaticks="1"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
+		fromvoc="22" manager="0">
+		<formula meleeDamage="0.1" distDamage="1.4" wandDamage="0.1" magDamage="1.4"
+			magHealingDamage="0.7" defense="0.1" magDefense="0.1" armor="0.1" />
+		<skill fist="1.1" club="2.0" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
+			fishing="1.0" experience="1.0" />
 	</vocation>-->
 
 
+	<!--
 	<vocation id="21" name="Kankuro" description="a kankuro" needpremium="0" gaincap="8" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="21"
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="21"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -210,7 +481,7 @@
 	</vocation>
 	<vocation id="22" name="Kankuro Train" description="a kankuro" needpremium="0" gaincap="8"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="22" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.1" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -219,7 +490,7 @@
 	</vocation>
 	<vocation id="23" name="Kankuro Shippuden" description="a kankuro shippuden" needpremium="0"
 		gaincap="8" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="23" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.3" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -228,18 +499,18 @@
 	</vocation>
 	<vocation id="24" name="Kankuro Master Of Puppets" description="a kankuro shippuden"
 		needpremium="0" gaincap="8" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12"
-		gainmanaticks="2" gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="300"
-		gainsoulticks="10" fromvoc="24" manager="0">
+		gainmanaticks="2" gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100"
+		gainsoulticks="0" fromvoc="24" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.6" wandDamage="1.0" magDamage="1.8"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="2.0" club="1.4" sword="2.0" axe="2.0" distance="1.1" shielding="1.1"
 			fishing="1.1" experience="1.0" />
-	</vocation>
+	</vocation>-->
 
-
+	<!--
 	<vocation id="25" name="Temari" description="a temari" needpremium="0" gaincap="13" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="25"
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="25"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="2.0" armor="1.0" />
@@ -248,7 +519,7 @@
 	</vocation>
 	<vocation id="26" name="Temari Train" description="a temari" needpremium="0" gaincap="13"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="26" manager="0">
 		<formula meleeDamage="1.2" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="2.0" armor="1.0" />
@@ -257,7 +528,7 @@
 	</vocation>
 	<vocation id="27" name="Temari Shippuden" description="a temari shippuden" needpremium="0"
 		gaincap="13" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="27" manager="0">
 		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="2.0" armor="1.0" />
@@ -266,18 +537,18 @@
 	</vocation>
 	<vocation id="28" name="Temari Stronger" description="a temari shippuden" needpremium="0"
 		gaincap="13" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="300" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="28" manager="0">
 		<formula meleeDamage="1.8" distDamage="1.0" wandDamage="1.0" magDamage="1.8"
 			magHealingDamage="2.0" defense="1.0" magDefense="2.0" armor="1.0" />
 		<skill fist="2.0" club="1.4" sword="2.0" axe="1.1" distance="2.0" shielding="1.1"
 			fishing="1.1" experience="1.0" />
-	</vocation>
+	</vocation>-->
 
-
+	<!--
 	<vocation id="29" name="Neji" description="a neji" needpremium="0" gaincap="15" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="0">
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
@@ -285,7 +556,7 @@
 	</vocation>
 	<vocation id="31" name="Neji Shippuden" description="a neji shippuden" needpremium="0"
 		gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="31" manager="0">
 		<formula meleeDamage="1.4" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -294,159 +565,19 @@
 	</vocation>
 	<vocation id="32" name="Neji Stronger" description="a neji shippuden" needpremium="0"
 		gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="32" manager="0">
 		<formula meleeDamage="1.8" distDamage="1.0" wandDamage="1.0" magDamage="2.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
 			fishing="1.1" experience="1.0" />
-	</vocation>
+	</vocation>-->
 
-	<!-- Sasuke & Cursed Seal -->
-	<vocation id="33" name="Sasuke" description="a sasuke" needpremium="0" gaincap="10" gainhp="10"
-		gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1" gainmanaamount="5"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="33">
-		<formula meleeDamage="0.1" distDamage="0.1" wandDamage="0.1" magDamage="0.2"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="35" name="Sasuke Shippuden" description="a sasuke shippuden" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="35" manager="0">
-		<formula meleeDamage="0.9" distDamage="0.1" wandDamage="0.1" magDamage="1.4"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="36" name="Sasuke Akatsuki Member" description="a sasuke akatsuki member"
-		needpremium="0" gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="10"
-		gainmanaticks="1" gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="36" manager="0">
-		<formula meleeDamage="1.3" distDamage="0.1" wandDamage="0.1" magDamage="1.9"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-
-	<!-- Sasuke Cursed Seal -->
-	<vocation id="92" name="Sasuke Cursed Seal One" description="a sasuke cursed" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="33" manager="0">
-		<formula meleeDamage="0.3" distDamage="0.1" wandDamage="0.1" magDamage="0.5"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="61" name="Sasuke Cursed Seal Two" description="a sasuke cursed" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="33" manager="0">
-		<formula meleeDamage="0.5" distDamage="0.1" wandDamage="0.1" magDamage="0.8"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="62" name="Sasuke Cursed Seal Three" description="a sasuke cursed" needpremium="0"
-		gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="5" gainmanaticks="1"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="33" manager="0">
-		<formula meleeDamage="0.7" distDamage="0.1" wandDamage="0.1" magDamage="1.1"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="63" name="Sasuke Shippuden Cursed" description="a sasuke shippuden cursed"
-		needpremium="0" gaincap="10" gainhp="10" gainmana="15" gainhpticks="2" gainhpamount="5"
-		gainmanaticks="1" gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="35" manager="0">
-		<formula meleeDamage="1.1" distDamage="0.1" wandDamage="0.1" magDamage="1.7"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="2.0" club="1.4" sword="1.1" axe="2.0" distance="1.3" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-
-	<!-- NARUTO & KYUUBI -->
-	<vocation id="37" name="Naruto" description="a naruto" needpremium="0" gaincap="10" gainhp="15"
-		gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
-		manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="37">
-		<formula meleeDamage="0.2" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="39" name="Naruto Shippuden" description="a naruto shippuden" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="39" manager="0">
-		<formula meleeDamage="1.1" distDamage="0.1" wandDamage="0.1" magDamage="1.1"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="40" name="Naruto Sannin" description="a naruto shippuden" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="20" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="40" manager="0">
-		<formula meleeDamage="1.5" distDamage="0.1" wandDamage="0.1" magDamage="1.4"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<!-- Kyuubi Clássico -->
-	<vocation id="64" name="One-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="5" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="37" manager="0">
-		<formula meleeDamage="0.5" distDamage="0.1" wandDamage="0.1" magDamage="0.3"
-			magHealingDamage="0.1" defense="0.2" magDefense="0.2" armor="0.2" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="65" name="Two-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="37" manager="0">
-		<formula meleeDamage="0.7" distDamage="0.1" wandDamage="0.1" magDamage="0.6"
-			magHealingDamage="0.1" defense="0.3" magDefense="0.3" armor="0.3" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="66" name="Three-Tailed Kyuubi" description="a kyuubi form" needpremium="0"
-		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="20" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="37" manager="0">
-		<formula meleeDamage="0.9" distDamage="0.1" wandDamage="0.1" magDamage="0.8"
-			magHealingDamage="0.1" defense="0.4" magDefense="0.4" armor="0.4" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<!-- Kyuubi Shippuden -->
-	<vocation id="67" name="Three-Tailed Shippuden Kyuubi" description="a kyuubi form"
-		needpremium="0" gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="20"
-		gainmanaticks="2" gainmanaamount="15" manamultiplier="2.0" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="39" manager="0">
-		<formula meleeDamage="1.3" distDamage="0.1" wandDamage="0.1" magDamage="1.2"
-			magHealingDamage="0.1" defense="0.4" magDefense="0.4" armor="0.4" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
-	<vocation id="81" name="Sage Mode" description="a sage mode" needpremium="0" gaincap="10"
-		gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="25" gainmanaticks="1"
-		gainmanaamount="25" manamultiplier="2.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
-		fromvoc="40" manager="0">
-		<formula meleeDamage="1.7" distDamage="0.1" wandDamage="0.1" magDamage="1.6"
-			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
-		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
-			fishing="1.1" experience="1.0" />
-	</vocation>
 
 	<!-- Rock Lee -->
 	<vocation id="41" name="Rock Lee" description="a rock lee" needpremium="0" gaincap="20"
 		gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="41" manager="0">
 		<formula meleeDamage="0.3" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -455,7 +586,7 @@
 	</vocation>
 	<vocation id="43" name="Rock Lee Shippuden" description="a rock lee shippuden" needpremium="0"
 		gaincap="20" gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="43" manager="0">
 		<formula meleeDamage="1.4" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -464,7 +595,7 @@
 	</vocation>
 	<vocation id="44" name="Rock Lee Stronger" description="a rock lee shippuden" needpremium="0"
 		gaincap="20" gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="25" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="44" manager="0">
 		<formula meleeDamage="1.4" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -475,7 +606,7 @@
 
 	<vocation id="45" name="Ino" description="a ino" needpremium="0" gaincap="8" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="45"
+		manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="45"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.2" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -484,7 +615,7 @@
 	</vocation>
 	<vocation id="47" name="Ino Shippuden" description="a ino shippuden" needpremium="0" gaincap="8"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.2" attackspeed="1000" soulmax="200" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="47" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.4" wandDamage="1.0" magDamage="2.0"
 			magHealingDamage="2.4" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -493,7 +624,7 @@
 	</vocation>
 	<vocation id="48" name="Ino Stronger" description="a ino shippuden" needpremium="0" gaincap="8"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.2" attackspeed="1000" soulmax="300" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="48" manager="0">
 		<formula meleeDamage="1.0" distDamage="1.6" wandDamage="1.0" magDamage="2.5"
 			magHealingDamage="2.6" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -503,7 +634,7 @@
 
 	<vocation id="49" name="Chouji" description="a chouji" needpremium="0" gaincap="20" gainhp="30"
 		gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2" gainmanaamount="10"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="49"
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="49"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -512,7 +643,7 @@
 	</vocation>
 	<vocation id="51" name="Chouji Shippuden" description="a chouji shippuden" needpremium="0"
 		gaincap="20" gainhp="30" gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
+		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="51" manager="0">
 		<formula meleeDamage="1.4" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -521,7 +652,7 @@
 	</vocation>
 	<vocation id="52" name="Chouji Stronger" description="a chouji shippuden" needpremium="0"
 		gaincap="20" gainhp="30" gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="300" gainsoulticks="10"
+		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="52" manager="0">
 		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="2.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -531,7 +662,7 @@
 
 	<vocation id="53" name="Hinata" description="a hinata" needpremium="0" gaincap="10" gainhp="15"
 		gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="53">
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="53">
 		<formula meleeDamage="0.5" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
 		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
@@ -539,7 +670,7 @@
 	</vocation>
 	<vocation id="54" name="Hinata Train" description="a hinata" needpremium="0" gaincap="10"
 		gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="5" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="5" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="54" manager="0">
 		<formula meleeDamage="0.7" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -548,18 +679,18 @@
 	</vocation>
 	<vocation id="55" name="Hinata Shippuden" description="a hinata shippuden" needpremium="0"
 		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="10" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="55" manager="0">
-		<formula meleeDamage="1.2" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
+		<formula meleeDamage="1.0" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
 		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
 			fishing="1.1" experience="1.0" />
 	</vocation>
 	<vocation id="56" name="Hinata Stronger" description="a hinata shippuden" needpremium="0"
 		gaincap="10" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="56" manager="0">
-		<formula meleeDamage="1.8" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
+		<formula meleeDamage="1.5" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
 		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
 			fishing="1.1" experience="1.0" />
@@ -567,7 +698,7 @@
 
 	<vocation id="57" name="Sai" description="a sai" needpremium="0" gaincap="10" gainhp="20"
 		gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2" gainmanaamount="15"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="0">
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="1.1" axe="2.0" distance="2.0" shielding="1.1"
@@ -575,7 +706,7 @@
 	</vocation>
 	<vocation id="59" name="Sai Shippuden" description="a sai shippuden" needpremium="0"
 		gaincap="10" gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="59" manager="0">
 		<formula meleeDamage="1.4" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -584,7 +715,7 @@
 	</vocation>
 	<vocation id="60" name="Sai Stronger" description="a sai shippuden" needpremium="0" gaincap="10"
 		gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="60" manager="0">
 		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="2.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -595,7 +726,7 @@
 
 	<vocation id="70" name="Open Gate One" description="a rock lee" needpremium="0" gaincap="20"
 		gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="900" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="900" soulmax="100" gainsoulticks="0"
 		fromvoc="41" manager="0">
 		<formula meleeDamage="0.6" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -604,7 +735,7 @@
 	</vocation>
 	<vocation id="71" name="Open Gate Two" description="a rock lee" needpremium="0" gaincap="20"
 		gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="800" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="800" soulmax="100" gainsoulticks="0"
 		fromvoc="41" manager="0">
 		<formula meleeDamage="0.9" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -613,7 +744,7 @@
 	</vocation>
 	<vocation id="72" name="Open Gate Three" description="a rock lee" needpremium="0" gaincap="20"
 		gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="5" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="700" soulmax="100" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="700" soulmax="100" gainsoulticks="0"
 		fromvoc="41" manager="0">
 		<formula meleeDamage="1.1" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -622,7 +753,7 @@
 	</vocation>
 	<vocation id="73" name="Open Gate Four" description="a rock lee shippuden" needpremium="0"
 		gaincap="20" gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="600" soulmax="200" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="600" soulmax="100" gainsoulticks="0"
 		fromvoc="43" manager="0">
 		<formula meleeDamage="1.7" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
 			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
@@ -633,7 +764,7 @@
 
 	<vocation id="74" name="Shukaku Form One" description="a shukaku form" needpremium="0"
 		gaincap="8" gainhp="10" gainmana="40" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="30" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="30" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="5" manager="0">
 		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -642,7 +773,7 @@
 	</vocation>
 	<vocation id="75" name="Shukaku Form Two" description="a shukaku form" needpremium="0"
 		gaincap="8" gainhp="10" gainmana="40" gainhpticks="2" gainhpamount="25" gainmanaticks="2"
-		gainmanaamount="40" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="40" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="5" manager="0">
 		<formula meleeDamage="1.2" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -653,7 +784,7 @@
 
 	<vocation id="76" name="Tenten" description="a tenten" needpremium="0" gaincap="10" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="76"
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="76"
 		manager="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -662,7 +793,7 @@
 	</vocation>
 	<vocation id="77" name="Tenten Train" description="a tenten" needpremium="0" gaincap="10"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="77" manager="0">
 		<formula meleeDamage="1.1" distDamage="1.2" wandDamage="1.0" magDamage="1.3"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -691,7 +822,7 @@
 
 	<vocation id="80" name="Sai Cumulated One" description="a sai" needpremium="0" gaincap="10"
 		gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="58" manager="0">
 		<formula meleeDamage="1.1" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -702,7 +833,7 @@
 
 	<vocation id="82" name="Open Gate Five" description="a rock lee shippuden" needpremium="0"
 		gaincap="20" gainhp="20" gainmana="0" gainhpticks="1" gainhpamount="25" gainmanaticks="2"
-		gainmanaamount="0" manamultiplier="5.0" attackspeed="500" soulmax="300" gainsoulticks="10"
+		gainmanaamount="0" manamultiplier="5.0" attackspeed="500" soulmax="100" gainsoulticks="0"
 		fromvoc="44" manager="0">
 		<formula meleeDamage="2.5" distDamage="1.0" wandDamage="1.0" magDamage="1.8"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -713,7 +844,7 @@
 
 	<vocation id="83" name="Shukaku Form Three" description="a shukaku form" needpremium="0"
 		gaincap="8" gainhp="10" gainmana="40" gainhpticks="2" gainhpamount="35" gainmanaticks="2"
-		gainmanaamount="50" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="50" manamultiplier="1.2" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="5" manager="0">
 		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -724,7 +855,7 @@
 
 	<vocation id="93" name="Sai Cumulated Two" description="a sai" needpremium="0" gaincap="10"
 		gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="58" manager="0">
 		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -733,7 +864,7 @@
 	</vocation>
 	<vocation id="94" name="Sai Cumulated Stronger" description="a sai shippuden" needpremium="0"
 		gaincap="10" gainhp="20" gainmana="30" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
-		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="15" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="60" manager="0">
 		<formula meleeDamage="1.8" distDamage="1.0" wandDamage="1.0" magDamage="2.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -744,7 +875,7 @@
 
 	<vocation id="95" name="Neji Cumulated" description="a neji" needpremium="0" gaincap="15"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="29" manager="0">
 		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -755,7 +886,7 @@
 
 	<vocation id="96" name="Chouji Cumulated" description="a chouji" needpremium="0" gaincap="15"
 		gainhp="30" gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
-		gainmanaamount="25" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="25" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="49" manager="0">
 		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -765,7 +896,7 @@
 	<vocation id="97" name="Chouji Cumulated Stronger" description="a chouji shippuden"
 		needpremium="0" gaincap="15" gainhp="30" gainmana="20" gainhpticks="2" gainhpamount="15"
 		gainmanaticks="2" gainmanaamount="50" manamultiplier="1.3" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="52" manager="0">
+		gainsoulticks="0" fromvoc="52" manager="0">
 		<formula meleeDamage="2.0" distDamage="1.0" wandDamage="1.0" magDamage="2.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="1.4" shielding="1.1"
@@ -776,7 +907,7 @@
 	<vocation id="100" name="Neji Shippuden Cumulated" description="a neji shippuden"
 		needpremium="0" gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12"
 		gainmanaticks="2" gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100"
-		gainsoulticks="10" fromvoc="31" manager="0">
+		gainsoulticks="0" fromvoc="31" manager="0">
 		<formula meleeDamage="1.6" distDamage="1.0" wandDamage="1.0" magDamage="1.8"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
@@ -785,7 +916,7 @@
 
 	<vocation id="101" name="Neji Stronger Cumulated" description="a neji shippuden" needpremium="0"
 		gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="32" manager="0">
 		<formula meleeDamage="2.0" distDamage="1.0" wandDamage="1.0" magDamage="2.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -796,7 +927,7 @@
 
 	<vocation id="102" name="Minato" description="a minato" needpremium="0" gaincap="15" gainhp="25"
 		gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2" gainmanaamount="12"
-		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10" fromvoc="0">
+		manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0" fromvoc="0">
 		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
@@ -804,7 +935,7 @@
 	</vocation>
 	<vocation id="103" name="Minato Train" description="a minato train" needpremium="0" gaincap="15"
 		gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="103" manager="0">
 		<formula meleeDamage="1.3" distDamage="1.0" wandDamage="1.0" magDamage="1.2"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -813,7 +944,7 @@
 	</vocation>
 	<vocation id="104" name="Minato Shippuden" description="a minato shippuden" needpremium="0"
 		gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="200" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="104" manager="0">
 		<formula meleeDamage="1.5" distDamage="1.0" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
@@ -822,11 +953,21 @@
 	</vocation>
 	<vocation id="105" name="Minato Yondaime" description="a minato yondaime" needpremium="0"
 		gaincap="15" gainhp="25" gainmana="25" gainhpticks="2" gainhpamount="12" gainmanaticks="2"
-		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="300" gainsoulticks="10"
+		gainmanaamount="12" manamultiplier="1.3" attackspeed="1000" soulmax="100" gainsoulticks="0"
 		fromvoc="105" manager="0">
 		<formula meleeDamage="2.1" distDamage="1.0" wandDamage="1.0" magDamage="1.6"
 			magHealingDamage="2.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.4" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
+			fishing="1.1" experience="1.0" />
+	</vocation>
+
+	<vocation id="1000" name="Monster" description="a monster" needpremium="0" gaincap="10"
+		gainhp="15"
+		gainmana="10" gainhpticks="1" gainhpamount="5" gainmanaticks="2" gainmanaamount="5"
+		manamultiplier="1.3" attackspeed="1000" soulmax="0" gainsoulticks="0" fromvoc="1000">
+		<formula meleeDamage="0.5" distDamage="0.1" wandDamage="0.1" magDamage="0.1"
+			magHealingDamage="0.1" defense="0.1" magDefense="0.1" armor="0.1" />
+		<skill fist="1.1" club="1.3" sword="2.0" axe="2.0" distance="2.0" shielding="1.1"
 			fishing="1.1" experience="1.0" />
 	</vocation>
 </vocations>

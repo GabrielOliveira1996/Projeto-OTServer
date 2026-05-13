@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Iruka" script="data/npc/scripts/sagas/iruka.lua" walkinterval="0" floorchange="0">
+    <look type="400" />
+</npc>

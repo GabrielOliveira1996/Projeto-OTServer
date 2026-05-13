@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zaku" nameDescription="a zaku" race="blood" experience="0" speed="300" manacost="0">
+  <health now="7000" max="7000" />
+  <look type="62" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="1" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="62" attack="57" />
+    <attack name="melee" interval="2000" chance="22" radius="4" target="0" min="-200" max="-320">
+      <attribute key="areaEffect" value="yellowenergy" />
+    </attack>
+  </attacks>
+  <defenses armor="18" defense="20" />
+  <voices interval="5000" chance="10">
+    <voice sentence="..." />
+  </voices>
+  <script>
+    <event name="Zaku" />
+  </script>
+</monster>

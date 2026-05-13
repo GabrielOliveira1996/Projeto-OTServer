@@ -1,56 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="fuuton shinobi" nameDescription="a fuuton shinobi" race="blood" experience="17500" speed="345" manacost="3900">
-  <health now="9000" max="9000"/>
-  <look type="106" corpse="2862"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="fuuton shinobi" nameDescription="a fuuton shinobi" race="blood" experience="17500"
+  speed="345" manacost="3900">
+  <health now="9000" max="9000" />
+  <look type="106" corpse="2862" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="79" attack="73"/>  
-    <attack name="Renkuudan no jutsu" interval="1000" chance="36" range="0" target="0" min="-680" max="-870">
-    </attack>  
+    <attack name="melee" interval="2000" skill="79" attack="73" />
+    <attack name="renkuudan - monster" interval="1000" chance="36" range="0" target="0" min="-680"
+      max="-870">
+    </attack>
 
   </attacks>
-  <defenses armor="28" defense="25"/>
+  <defenses armor="28" defense="25" />
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="1" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="Fuutoooooooooon Destruction..."/>
+    <voice sentence="Fuutoooooooooon Destruction..." />
   </voices>
   <loot>
-    <item id="2152" countmax="11" chance1="50000" chancemax="0"/>
-    <item id="7456" chance1="3600" chancemax="0"/>
-    <item id="2444" chance1="2000" chancemax="0"/>
-    <item id="7730" chance1="3000" chancemax="0"/>
+    <item id="2152" countmax="11" chance1="50000" chancemax="0" />
+    <item id="7456" chance1="3600" chancemax="0" />
+    <item id="2444" chance1="2000" chancemax="0" />
+    <item id="7730" chance1="3000" chancemax="0" />
     <item id="1987" chance="100000">
       <inside>
-        <item id="2650" chance1="2300" chancemax="0"/>
-        <item id="2152" countmax="7" chance1="40000" chancemax="0"/>
+        <item id="2650" chance1="2300" chancemax="0" />
+        <item id="2152" countmax="7" chance1="40000" chancemax="0" />
       </inside>
     </item>
   </loot>
-<script>
-<event name="mkillm"/>
-</script>
+  <script>
+    <event name="mkillm" />
+  </script>
 </monster>

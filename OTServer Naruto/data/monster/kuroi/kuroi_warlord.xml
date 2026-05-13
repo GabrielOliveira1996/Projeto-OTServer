@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kuroi Warlord" nameDescription="a kuroi warlord" race="blood" experience="32000"
+  speed="365"
+  manacost="0">
+  <health now="5000" max="5000" />
+  <look type="26" corpse="2890" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="64" attack="66" />
+    <attack name="destruction on the line" interval="1000" chance="30" target="0"
+      min="-50"
+      max="-100" />
+  </attacks>
+  <defenses armor="10" defense="8" />
+  <voices interval="5000" chance="10">
+    <voice sentence="Kuroi forces, annihilate them!" />
+    <voice sentence="You are facing a General of the Kuroi. Know your place." />
+    <voice sentence="The shadows of the Kuroi will swallow this world." />
+    <voice sentence="Retreat is not an option!" />
+    <voice sentence="Your blood will stain my armor." />
+  </voices>
+  <loot>
+    <item id="2403" chance1="2300" chancemax="0" />
+    <item id="11295" chance1="2000" chancemax="0" />
+    <item id="2424" chance1="1900" chancemax="0" />
+    <item id="2649" chance1="3000" chancemax="0" />
+    <item id="2195" chance1="2500" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="100" chance1="50000" chancemax="0" />
+        <item id="2148" countmax="88" chance1="56000" chancemax="0" />
+        <item id="2148" countmax="93" chance1="39000" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+    <event name="mkillm" />
+  </script>
+  <script>
+    <event name="KuroiHasuDeath" />
+  </script>
+  <script>
+    <event name="TaitoKillMission" />
+  </script>
+</monster>

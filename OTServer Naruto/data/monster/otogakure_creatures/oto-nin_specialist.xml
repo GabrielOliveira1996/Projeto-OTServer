@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Oto-Nin Specialist" nameDescription="an oto-nin specialist" race="blood"
+  experience="9500" speed="420" manacost="0">
+  <health now="4500" max="4500" />
+  <look type="74" corpse="2853" />
+  <targetchange interval="4000" chance="15" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="4" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="70" attack="80" />
+    <attack name="Zankuuha" interval="2500" chance="10" range="7" min="-150" max="-250" />
+    <attack name="Oto-Paralyze" interval="4000" chance="25" range="7" />
+  </attacks>
+  <defenses armor="2" defense="3">
+    <defense name="speed" interval="3000" chance="20" speedchange="100" duration="2000">
+      <attribute key="areaEffect" value="poff" />
+    </defense>
+  </defenses>
+  <voices interval="5000" chance="10">
+    <voice sentence="You cannot escape the sound!" />
+    <voice sentence="Kawarimi no Jutsu!" />
+    <voice sentence="Feel the pressure of my Zankuuha!" />
+    <voice sentence="Your vibrations are slowing down..." />
+    <voice sentence="Drown in the resonance!" />
+  </voices>
+  <script>
+    <event name="mkillm" />
+  </script>
+  <script>
+    <event name="IsacDungeonMonsterDeathCount" />
+  </script>
+</monster>

@@ -20,7 +20,8 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" skill="72" attack="70" />
-    <attack name="doku" interval="1000" chance="22" range="3" target="1" min="-200" max="-250">
+    <attack name="doku insect poison" interval="1000" chance="22" range="3" target="1" min="-200"
+      max="-250">
     </attack>
   </attacks>
   <defenses armor="5" defense="5" />

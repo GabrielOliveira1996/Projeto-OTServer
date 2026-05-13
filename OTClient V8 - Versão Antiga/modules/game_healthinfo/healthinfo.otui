@@ -1,0 +1,88 @@
+HealthOverlay < UIWidget
+  anchors.fill: parent
+  phantom: true
+  focusable: false
+
+  UIWidget
+    id: healthCircle
+    image-source: /images/game/circle/left_empty
+    size: 63 208
+    anchors.right: parent.horizontalCenter
+    anchors.verticalCenter: parent.verticalCenter
+    margin-right: 60
+    phantom: true
+
+  UIWidget
+    id: healthCircleFront
+    image-source: /images/game/circle/left_full
+    size: 63 208
+    anchors.fill: healthCircle
+    phantom: true
+
+  UIWidget
+    id: manaCircle
+    image-source: /images/game/circle/right_empty
+    size: 63 208
+    anchors.left: parent.horizontalCenter
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 60
+    phantom: true
+
+  UIWidget
+    id: manaCircleFront
+    image-source: /images/game/circle/right_full
+    size: 63 208
+    anchors.fill: manaCircle
+    phantom: true
+
+UIWidget
+  id: healthInfoWindow
+  size: 250 120
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-top: 25
+  margin-left: 25
+  phantom: true
+  visible: false
+
+  Label
+    id: playerName
+    anchors.top: parent.top
+    anchors.left: parent.left
+    font: verdana-11px-rounded
+    color: #FFFFFF
+    text-auto-resize: true
+    background-color: #00000066
+    text-offset: 2 0
+
+  ProgressBar
+    id: healthBar
+    background-color: #ff0000
+    size: 200 15
+    anchors.top: playerName.bottom
+    anchors.left: parent.left
+    margin-top: 5
+
+  ProgressBar
+    id: manaBar
+    background-color: #0000ff
+    size: 200 15
+    anchors.top: healthBar.bottom
+    anchors.left: parent.left
+    margin-top: 5
+
+  ProgressBar
+    id: soulBar
+    background-color: #ffffff
+    size: 200 12
+    anchors.top: manaBar.bottom
+    anchors.left: parent.left
+    margin-top: 5
+
+  UIWidget
+    id: conditionPanel
+    layout: horizontalBox
+    anchors.top: soulBar.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    size: 200 20

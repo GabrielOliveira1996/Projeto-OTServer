@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kakashi Bunshin" nameDescription="a kakashi bunshin" race="blood" experience="0"
+  speed="320"
+  manacost="0">
+  <health now="15" max="15" />
+  <look type="369" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="0" />
+    <flag staticattack="0" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="8" attack="6" />
+    <attack name="melee" interval="1000" chance="19" range="4" target="1" min="-2" max="-5">
+      <attribute key="shootEffect" value="throwingknife" />
+    </attack>
+  </attacks>
+  <defenses armor="5" defense="8" />
+  <voices interval="5000" chance="10">
+    <voice sentence="Come on, I'm ready." />
+    <voice sentence="Let's finish him off." />
+  </voices>
+</monster>

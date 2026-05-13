@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<houses>
+<house name="Konoha 1" houseid="13" entryx="3063" entryy="3044" entryz="7" rent="0" townid="1" size="39"/>
+<house name="Konoha 2" houseid="15" entryx="3067" entryy="3069" entryz="7" rent="0" townid="1" size="35"/>
+<house name="Konoha 3" houseid="16" entryx="3067" entryy="3076" entryz="7" rent="0" townid="1" size="35"/>
+<house name="Konoha 4" houseid="17" entryx="3067" entryy="3090" entryz="7" rent="0" townid="1" size="47"/>
+<house name="Konoha 5" houseid="18" entryx="3035" entryy="3062" entryz="7" rent="0" townid="1" size="27"/>
+<house name="Konoha 6" houseid="19" entryx="2995" entryy="3042" entryz="7" rent="0" townid="1" size="71"/>
+<house name="Konoha 7" houseid="20" entryx="2982" entryy="3073" entryz="7" rent="0" townid="1" size="51"/>
+<house name="Konoha 8" houseid="21" entryx="2994" entryy="3074" entryz="6" rent="0" townid="1" size="51"/>
+<house name="Konoha 9" houseid="22" entryx="2994" entryy="3074" entryz="5" rent="0" townid="1" size="51"/>
+<house name="Konoha 10" houseid="23" entryx="2982" entryy="3088" entryz="7" rent="0" townid="1" size="74"/>
+<house name="Konoha 11" houseid="24" entryx="2974" entryy="3142" entryz="7" rent="0" townid="1" size="0" guildhall="1"/>
+<house name="Konoha 12" houseid="25" entryx="2957" entryy="3083" entryz="7" rent="0" townid="1" size="104"/>
+<house name="Konoha 13" houseid="26" entryx="3020" entryy="3018" entryz="7" rent="0" townid="1" size="29"/>
+<house name="Konoha 14" houseid="27" entryx="3020" entryy="3018" entryz="6" rent="0" townid="1" size="29"/>
+<house name="Konoha 15" houseid="28" entryx="3020" entryy="3018" entryz="5" rent="0" townid="1" size="29"/>
+</houses>

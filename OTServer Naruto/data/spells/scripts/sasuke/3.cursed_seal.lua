@@ -1,47 +1,38 @@
-local SKILL_CONTROL = 6 
-local STORAGE_TRANSFORM = 99124 
-
--- lista de vocacoes transformadas para o script reverter
-local transformVocs = {92, 61, 62, 63}
+local SPEED_ADDITION = 50 
+local SPEED_REDUCTION = -50 
 
 function onCastSpell(cid, var)
     local playerLevel = getPlayerLevel(cid) 
     local control = getPlayerSkillLevel(cid, SKILL_CONTROL)
     local vocation = getPlayerVocation(cid)
-    
-    -- configuracoes de looktype e vocacao base
-    local lookClassic = 358
-    local lookShippuden = 359
-    local vocClassic = 33
-    local vocShippuden = 35
 
     -- transformacao classico
-    if vocation == vocClassic then
+    if vocation == SASUKE_CLASSIC_VOCATION then
         if playerLevel >= 30 and playerLevel <= 49 then
-            cursedSeal(cid, 117, 92, 20, control)
+            cursedSeal(cid, 117, 20, 10, control)
         elseif playerLevel >= 50 and playerLevel <= 69 then
-            cursedSeal(cid, 118, 61, 40, control)
-        elseif playerLevel >= 70 then
-            cursedSeal(cid, 118, 62, 60, control)
+            cursedSeal(cid, 118, 21, 15, control)
+        elseif playerLevel >= 70 and playerLevel <= 89 then
+            cursedSeal(cid, 118, 22, 20, control)
         else
-            doPlayerSendCancel(cid, "You need level 30 to start using the Cursed Seal.")
+            doPlayerSendCancel(cid, "Você precisa estar no nível 30 para começar a usar o Selo Amaldiçoado.")
         end
 
     -- transformacao shippuden
-    elseif vocation == vocShippuden then
-        if playerLevel >= 100 then
-            cursedSeal(cid, 166, 63, 80, control)
+    elseif vocation == SASUKE_SHIPPUDEN_VOCATION then
+        if playerLevel >= 100 and playerLevel <= 129 then
+            cursedSeal(cid, 166, 23, 20, control)
         else
-            doPlayerSendCancel(cid, "You need level 100 to use the Cursed Seal in Shippuden form.")
+            doPlayerSendCancel(cid, "Você precisa estar no nível 100 para usar o Selo Amaldiçoado na forma Shippuden.")
         end
 
     -- reverter
-    elseif isInArray(transformVocs, vocation) then
+    elseif isInArray(SASUKE_LIST_OF_CURSED_VOCATIONS, vocation) then
         -- se o level for maior ou igual a 90, ele Ã© shippuden
         if playerLevel >= 90 then
-            cursedSealRevert(cid, lookShippuden, vocShippuden)
+            cursedSealRevert(cid, SASUKE_SHIPPUDEN_OUTFIT, SASUKE_SHIPPUDEN_VOCATION)
         else
-            cursedSealRevert(cid, lookClassic, vocClassic)
+            cursedSealRevert(cid, SASUKE_CLASSIC_OUTFIT, SASUKE_CLASSIC_VOCATION)
         end
     end
 
@@ -52,9 +43,10 @@ function cursedSeal(cid, lookType, vocation, reqControl, currentControl)
     doSetCreatureOutfit(cid, {lookType = lookType}, -1)
     doPlayerSetVocation(cid, vocation)
     doSendMagicEffect(getCreaturePosition(cid), 76)
-    setPlayerStorageValue(cid, STORAGE_TRANSFORM, 1) 
+    doChangeSpeed(cid, SPEED_ADDITION)
+    setPlayerStorageValue(cid, STORAGE_CURSED_FORM, 1) 
     if currentControl < reqControl then
-        doPlayerSendTextMessage(cid, MSG_STATUS_WARNING, "Your chakra control is only " .. currentControl .. ". The Seal is consuming your body!") 
+        doPlayerSendTextMessage(cid, MSG_STATUS_WARNING, "Seu controle de chakra é apenas " .. currentControl .. ". O selo está consumindo seu corpo!") 
     end
 end
 
@@ -62,5 +54,6 @@ function cursedSealRevert(cid, lookType, vocation)
     doSetCreatureOutfit(cid, {lookType = lookType}, -1)
     doPlayerSetVocation(cid, vocation)
     doSendMagicEffect(getCreaturePosition(cid), 76)
-    setPlayerStorageValue(cid, STORAGE_TRANSFORM, -1) 
+    doChangeSpeed(cid, SPEED_REDUCTION) 
+    setPlayerStorageValue(cid, STORAGE_CURSED_FORM, -1) 
 end

@@ -1,0 +1,15 @@
+<npc name="Nagami" script="data/npc/scripts/kyokai/nagami.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="10" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable"
+			value="senbon,2544,10;shuriken,2399,30;kunai,2410,50;big shuriken,2389,100" />
+		<parameter key="message_sendtrade"
+			value="Aqui esta o que tenho disponivel. Escolha com sabedoria." />
+		<parameter key="message_notenoughmoney"
+			value="A qualidade tem um preco, e voce nao tem ouro suficiente." />
+		<parameter key="message_notenoughcap"
+			value="Suas bolsas estao cheias demais. Livre-se de carga inutil primeiro." />
+	</parameters>
+</npc>  

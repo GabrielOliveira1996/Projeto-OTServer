@@ -1,48 +1,48 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="kikaichu[25]" nameDescription="a kikaichu[25]" race="blood" experience="0" speed="758" manacost="300">
-  <health now="5500" max="5500"/>
-  <look type="169" head="0" body="0" legs="0" feet="0" corpse="0"/>
-  <targetchange interval="2000" chance="0"/>
-  <strategy attack="100" defense="0"/>
+<monster name="kikaichu[25]" nameDescription="a kikaichu" race="blood" experience="0" speed="0"
+  manacost="300">
+  <health now="580" max="580" />
+  <look type="169" head="0" body="0" legs="0" feet="0" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="1"/>
-    <flag canpushitems="0"/>
-    <flag canpushcreatures="0"/>
-    <flag targetdistance="1"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
+
   <attacks>
-    <attack name="melee" interval="2000" skill="78" attack="68"/>
-    <attack name="manadrain" interval="2000" chance="30" range="1" min="0" max="-700"/>
+    <attack name="melee" interval="2000" skill="68" attack="68" />
+    <attack name="manadrain" interval="2000" chance="100" range="1" min="-80" max="-100" />
   </attacks>
-  <defenses armor="30" defense="30"/>
-	<elements>
-		<element energyPercent="0"/>
-		<element icePercent="0"/>
-		<element firePercent="0"/>
-		<element holyPercent="0"/>
-		<element earthPercent="0"/>
-		<element physicalPercent="90"/>
-		<element deathPercent="90"/>
-	</elements>
+
+  <defenses armor="10" defense="15">
+    <defense name="healing" interval="2000" chance="100" min="10" max="10" />
+  </defenses>
+
+  <elements>
+    <element physicalPercent="70" />
+    <element deathPercent="20" />
+    <element firePercent="-10" />
+  </elements>
+
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="0"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity paralyze="1" />
+    <immunity invisible="1" />
+    <immunity lifedrain="0" />
   </immunities>
+
   <voices interval="5000" chance="10">
-    <voice sentence="Ssssssh..."/>
+    <voice sentence="Zzzzzzz..." />
+    <voice sentence="Bzzzt!" />
   </voices>
 </monster>

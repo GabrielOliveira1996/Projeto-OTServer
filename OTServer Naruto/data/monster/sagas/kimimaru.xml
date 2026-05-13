@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kimimaru" nameDescription="a kimimaru" race="blood" experience="0" speed="355"
+  manacost="0">
+  <health now="90000" max="90000" />
+  <look type="367" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="160" attack="155" />
+    <attack name="ossos um" interval="1000" target="1" range="2" chance="19" min="-1600" max="-2100">
+    </attack>
+    <attack name="ossos dois" interval="1000" chance="19" min="-1200" max="-1400">
+    </attack>
+  </attacks>
+  <defenses armor="40" defense="30" />
+  <voices interval="5000" chance="10">
+    <voice sentence="..." />
+  </voices>
+  <script>
+    <event name="Kimimaru" />
+  </script>
+</monster>

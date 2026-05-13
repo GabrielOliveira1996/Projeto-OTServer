@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^cd \"c:\\\\Users\\\\Gavriel\\\\Documents\\\\Naruto Battle Begin\\\\Projeto-OTServer\\\\otcv8-dev-master\" ; git --version$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

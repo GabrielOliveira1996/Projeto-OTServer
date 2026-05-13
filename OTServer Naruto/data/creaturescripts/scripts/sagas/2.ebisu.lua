@@ -1,37 +1,58 @@
 function onDeath(cid, corpse, deathList)
-    local storage = 11118
     local monstName = "Ebisu"
-    local players = {}
     local experience = 30000
     local konohamaruShirt = 2655
-    local tunicaChance = 1 -- 1% de chance de dropar
+    local tunicaChance = 10
+    local players = {}
 
-    -- Verifica se quem morreu foi o Ebisu
-    if isMonster(cid) and string.lower(getCreatureName(cid)) == string.lower(monstName) then
+    if isMonster(cid) and getCreatureName(cid):lower() == monstName:lower() then
         
-        -- Filtra a deathList para encontrar jogadores ou donos de summons
+        -- Identifica os jogadores/mestres no deathList
         for _, check in ipairs(deathList) do
-            if isPlayer(check) then
-                table.insert(players, check)
-            elseif isSummon(check) then
-                local master = getCreatureMaster(check)
-                if isPlayer(master) then
-                    table.insert(players, master)
+            local master = getCreatureMaster(check)
+            local target = (master ~= nil and master ~= check) and master or check
+            
+            if isPlayer(target) then
+                -- Evita duplicar o mesmo jogador na tabela caso ele e o pet batam
+                local jaExiste = false
+                for _, p in ipairs(players) do
+                    if p == target then jaExiste = true break end
+                end
+                
+                if not jaExiste then
+                    table.insert(players, target)
                 end
             end
         end
 
-        -- aplica a recompensa para cada jogador que participou da luta
-        for _, var in ipairs(players) do
-            if isPlayer(var) then
-                setPlayerStorageValue(var, storage, 1)
-                doPlayerAddExp(var, experience)
-                doPlayerSendTextMessage(var, 22, "You have bested Ebisu! Make your way to the forest and find your Jounin.")
-                doSendMagicEffect(getThingPos(var), 12) 
-                -- chance de dropar 
+        for _, player in ipairs(players) do
+            if isPlayer(player) then
+                -- Seta a storage para a próxima etapa: Encontrar o Jounin
+                setPlayerStorageValue(player, SAGA_STORAGE, SAGA_STAGE_MEET_JOUNIN)
+                doPlayerAddExp(player, experience)
+                doPlayerSendTextMessage(player, 22, "Voce derrotou o Ebisu! Va para a floresta encontrar seu Jounin responsavel.")
+                doSendMagicEffect(getThingPos(player), 12) 
+                
+                -- Chance de drop direto no inventário (Caminho da Força)
                 if math.random(1, 100) <= tunicaChance then
-                    doPlayerAddItem(var, konohamaruShirt, 1)
-                    doPlayerSendTextMessage(var, MESSAGE_EVENT_ORANGE, "You found Konohamaru's shirt.")
+                    doPlayerAddItem(player, konohamaruShirt, 1)
+                    doPlayerSendTextMessage(player, MESSAGE_EVENT_ORANGE, "Voce ganhou a Camisa do Konohamaru.")
+                end
+
+                -- [LOGICA DO KONOHAMARU SUMIR]
+                local summons = getCreatureSummons(player)
+                if summons and #summons > 0 then
+                    for _, summon in ipairs(summons) do
+                        if getCreatureName(summon):lower() == "konohamaru" then
+                            doCreatureSay(summon, "Incrivel, Chefe! Voce derrotou o Ebisu! Eu vou continuar meu treinamento sozinho por enquanto. Se precisar de mim, estarei na sala do vovo! Ate logo!", TALKTYPE_SAY)
+                            addEvent(function() 
+                                if isCreature(summon) then 
+                                    doSendMagicEffect(getThingPos(summon), 10)
+                                    doRemoveCreature(summon) 
+                                end 
+                            end, 3000)
+                        end
+                    end
                 end
             end
         end

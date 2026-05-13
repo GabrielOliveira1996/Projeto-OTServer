@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Oto-Nin Mutant" nameDescription="an oto-nin mutant" race="blood" experience="12000"
+  speed="150" manacost="0">
+  <health now="15000" max="15000" />
+  <look type="198" corpse="2875" />
+  <targetchange interval="5000" chance="10" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="120" attack="200" />
+    <attack name="Oto-Nin Vibration" interval="3000" chance="30" range="7" />
+  </attacks>
+  <defenses armor="45" defense="40">
+    <defense name="healing" interval="3000" chance="20" min="200" max="500">
+      <attribute key="areaEffect" value="blueshimmer" />
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="0" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="1" />
+    <immunity drunk="1" />
+    <immunity invisible="0" />
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Gwaaaaaah..." />
+    <voice sentence="T-this pain, it's driving me crazy..." />
+    <voice sentence="Aaaargh!" />
+  </voices>
+  <loot>
+    <item id="2148" countmax="150" chance="60000" />
+    <item id="2160" countmax="2" chance="5000" />
+    <item id="2409" chance="3000" />
+    <item id="5918" chance="4000" />
+  </loot>
+  <script>
+    <event name="mkillm" />
+  </script>
+  <script>
+    <event name="IsacDungeonMonsterDeathCount" />
+  </script>
+</monster>

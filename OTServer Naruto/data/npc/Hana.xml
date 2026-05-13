@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hana" script="data/npc/scripts/kyokai/hana.lua" walkinterval="0"
+	floorchange="0">
+	<health now="100" max="100" />
+	<look type="76" />
+</npc>

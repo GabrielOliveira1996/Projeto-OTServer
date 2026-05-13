@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kabuto" nameDescription="a kabuto" race="blood" experience="0" speed="345"
+  manacost="0">
+  <health now="40000" max="40000" />
+  <look type="368" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="85" attack="80" />
+    <attack name="chakra veil" interval="1000" range="3" target="1" chance="24" min="-600"
+      max="-900">
+    </attack>
+    <attack name="chakra cut" interval="1000" range="3" target="1" chance="22" min="-400" max="-600">
+    </attack>
+  </attacks>
+  <defenses armor="34" defense="30" />
+  <voices interval="5000" chance="10">
+    <voice sentence="..." />
+  </voices>
+  <script>
+    <event name="Kabuto" />
+  </script>
+</monster>

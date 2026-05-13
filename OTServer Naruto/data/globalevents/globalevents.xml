@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
 	<!-- Sakura -->
-	<globalevent name="ChakraNoMesu" interval="2" event="script" value="sakura/chakra_no_mesu.lua" />
+	<!--<globalevent
+	name="ChakraNoMesu" interval="1" event="script" value="sakura/chakra_no_mesu.lua" />-->
+	<globalevent name="SozoSazei" interval="1" event="script" value="sakura/sozo_sazei.lua" />
 
 	<!-- Sasuke -->
 	<globalevent name="CursedSeal" interval="2" event="script" value="sasuke/cursed_seal.lua" />
 
 	<!-- Naruto -->
 	<globalevent name="KyuubiForm" interval="2" event="script" value="naruto/kyuubi_form.lua" />
+	<globalevent name="BunshinMeditate" interval="1" event="script"
+		value="naruto/bunshin_meditate.lua" />
 
 	<!-- Sagas -->
 	<globalevent name="ExameChunin" interval="7" event="script" value="test_saga.lua" />
@@ -19,5 +23,7 @@
 	<globalevent name="playersrecord" type="record" event="script" value="record.lua" />
 	<globalevent name="info" interval="600" script="info.lua" />
 	<globalevent name="teleport" interval="1" event="script" value="summon.lua" />
+
+	<globalevent name="BanditTile" interval="2" event="script" value="bandit_tile.lua" />
 
 </globalevents>

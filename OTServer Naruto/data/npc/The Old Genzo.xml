@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="The Old Genzo" script="data/npc/scripts/kyokai/the_old_genzo.lua" walkinterval="0"
+	floorchange="0">
+	<health now="100" max="100" />
+	<look type="76" />
+</npc>

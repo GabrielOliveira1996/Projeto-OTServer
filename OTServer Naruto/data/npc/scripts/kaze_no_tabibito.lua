@@ -1,9 +1,9 @@
 local focus = 0
 local talk_start = 0
 
--- CONFIGURAÇÃO
+-- CONFIGURACAO DE DESTINO
 local destination = {x = 3335, y = 3072, z = 7} -- Vila das Ondas
-local cost = 100 
+local cost = 20 
 
 -- STORAGES PARA O RETORNO
 local STO_X, STO_Y, STO_Z = 15001, 15002, 15003
@@ -19,31 +19,46 @@ end
 
 function onCreatureSay(cid, type, msg)
     local msg = string.lower(msg)
+    
+    -- Forca a leitura como numero para evitar erros de comparacao
+    local playerStorage = tonumber(getPlayerStorageValue(cid, SAGA_STORAGE)) or -1
 
     -- INICIAR CONVERSA
     if (msgcontains(msg, 'hi') or msgcontains(msg, 'ola')) and (focus == 0) and getDistanceToCreature(cid) < 4 then
-        -- Adicionado 'cid' no final para falar no canal correto
-        selfSay('Seja bem-vindo, jovem ninja. O vento sopra para a Vila das Ondas. Voce deseja seguir o fluxo por ' .. cost .. ' gold coins? {sim} / {nao}', cid)
+        
+        -- 1. BLOQUEIO (Se a storage for menor que o valor definido)
+        if playerStorage < SAGA_STAGE_FINALLY_A_BREAK then
+            selfSay('Eu sinto muito... as aguas para a Vila das Ondas estao tomadas por uma nevoa assassina. Dizem que o Demonio da Nevoa esta cacando quem tenta cruzar o mar. E perigoso demais para voce agora.', cid)
+            return true
+        end
+
+        -- 2. VIAGEM GRATUITA (Se for exatamente o valor)
+        if playerStorage == SAGA_STAGE_FINALLY_A_BREAK then
+            selfSay('Seja bem-vindo. Como voce enfrentou grandes perigos, eu o levarei a Vila das Ondas de graca desta vez. Deseja partir? {sim} / {nao}', cid)
+        
+        -- 3. VIAGEM PAGA (Se for maior que o valor)
+        else
+            selfSay('Seja bem-vindo. O vento sopra em direcao a {Vila das Ondas}. Voce deseja seguir o fluxo por ' .. cost .. ' moedas? {sim} / {nao}', cid)
+        end
+
         focus = cid
         talk_start = os.clock()
-        -- Faz o NPC parar e olhar para o player
         doNpcSetCreatureFocus(focus)
 
     elseif focus == cid then
         talk_start = os.clock()
 
-        -- ACEITAR VIAGEM
         if msgcontains(msg, 'sim') or msgcontains(msg, 'yes') then
-            if doPlayerRemoveMoney(cid, cost) then
+            local isFree = (playerStorage == SAGA_STAGE_FINALLY_A_BREAK)
+            
+            if isFree or doPlayerRemoveMoney(cid, cost) then
                 selfSay('Siga o seu caminho ninja. Que o vento o proteja!', cid)
                 
-                -- SALVA A POSIÇÃO ATUAL ANTES DE IR
                 local pPos = getThingPos(cid)
                 setPlayerStorageValue(cid, STO_X, pPos.x)
                 setPlayerStorageValue(cid, STO_Y, pPos.y)
                 setPlayerStorageValue(cid, STO_Z, pPos.z)
 
-                -- TELEPORTE E EFEITOS
                 doSendMagicEffect(pPos, 2)
                 doTeleportThing(cid, destination)
                 doSendMagicEffect(destination, 10)
@@ -52,10 +67,9 @@ function onCreatureSay(cid, type, msg)
                 talk_start = 0
                 doNpcSetCreatureFocus(0)
             else
-                selfSay('Suas moedas nao sao suficientes.', cid)
+                selfSay('Suas moedas nao sao suficientes para a travessia.', cid)
             end
 
-        -- RECUSAR
         elseif msgcontains(msg, 'nao') or msgcontains(msg, 'no') then
             selfSay('Entendo. As raizes as vezes sao mais fortes que as asas.', cid)
             focus = 0
@@ -67,12 +81,10 @@ end
 
 function onThink()
     if focus ~= 0 then
-        -- Tempo de espera (30 segundos)
         if (os.clock() - talk_start) > 30 then
             selfSay('Proximo...', focus)
             focus = 0
             doNpcSetCreatureFocus(0)
-        -- Se o player se afastar
         elseif getDistanceToCreature(focus) > 5 then
             selfSay('Ate logo.', focus)
             focus = 0

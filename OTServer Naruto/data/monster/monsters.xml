@@ -3,10 +3,19 @@
 
     <monster name="Xp" file="xp.xml" />
 
+    <monster name="Mushi Bunshin" file="bunshins/shino/mushi_bunshin.xml" />
 
     <monster name="Akamaru" file="akamaru/akamaru.xml" />
 
+    <!-- Kurois -->
+    <monster name="Kuroi Warfan" file="kuroi/kuroi_warfan.xml" />
+    <monster name="Kuroi Warlord" file="kuroi/kuroi_warlord.xml" />
+    <monster name="Kuroi Infiltrator" file="kuroi/kuroi_infiltrator.xml" />
+    <monster name="Kuroi Scout" file="kuroi/kuroi_scout.xml" />
+    <monster name="Kuroi Ascendant" file="kuroi/kuroi_ascendant.xml" />
+
     <!-- Naruto Bunshins -->
+    <monster name="Bunshin Meditate" file="bunshins/naruto/1.bunshin_meditate.xml" />
     <monster name="1Bunshin" file="bunshins/naruto/1.bunshin.xml" />
     <monster name="2Bunshin" file="bunshins/naruto/2.bunshin.xml" />
     <monster name="3Bunshin" file="bunshins/naruto/3.bunshin.xml" />
@@ -22,56 +31,93 @@
     <monster name="Gamakichi" file="pets/gamakichi.xml" />
     <monster name="Katsuyo" file="pets/katsuyo.xml" />
 
+    <!-- Sagas -->
+
     <!-- Monstros adicionais de saga -->
-    <monster name="Kakashi Bunshin" file="saga/kakashi_bunshin.xml" />
-    <monster name="Zabuza Bunshin" file="saga/4.second_zabuza_bunshin.xml" />
-    <monster name="Haku Bunshin" file="saga/5.haku_bunshin.xml" />
+    <monster name="Kakashi Bunshin" file="sagas/1.introduction/3.kakashi_bunshin.xml" />
+    <monster name="Zabuza Bunshin" file="sagas/2.road_to_waves/2.zabuza_bunshin.xml" />
+    <monster name="Haku Bunshin" file="sagas/3.the_battle_on_the_bridge/2.haku_bunshin.xml" />
+    <monster name="Haku Glass" file="sagas/3.the_battle_on_the_bridge/2.haku_glass.xml" />
 
-    <!-- Saga -->
-    <monster name="Mizuki" file="saga/1.mizuki.xml" />
-    <monster name="Ebisu" file="saga/2.ebisu.xml" />
-    <monster name="Zabuza" file="saga/3.zabuza.xml" />
-    <monster name="Second Zabuza" file="saga/4.second_zabuza.xml" />
-    <monster name="Haku" file="saga/5.haku.xml" />
-    <monster name="Orochimaru" file="saga/6.orochimaru.xml" />
+    <!-- Monstros auxiliares de saga -->
+    <monster name="Failed Bunshin" file="sagas/helper_monsters/1.failed_bunshin.xml" />
+    <monster name="Iruka Protectors" file="sagas/helper_monsters/2.iruka_protectors.xml" />
+    <monster name="Konohamaru" file="sagas/helper_monsters/3.konohamaru.xml" />
+    <monster name="Tazuna" file="sagas/helper_monsters/4.tazuna.xml" />
 
-    <monster name="Kimimaru Cursed" file="saga/kimimaru cursed.xml" />
-    <monster name="Kimimaru" file="saga/kimimaru.xml" />
-    <monster name="Doki" file="saga/doki.xml" />
-    <monster name="Tayuya Cursed" file="saga/tayuya cursed.xml" />
-    <monster name="Tayuya" file="saga/tayuya.xml" />
-    <monster name="Sakon And Ukon Cursed" file="saga/sakon and ukon cursed.xml" />
-    <monster name="Sakon And Ukon" file="saga/sakon and ukon.xml" />
-    <monster name="Spider" file="saga/spider.xml" />
-    <monster name="Kidomaru Cursed" file="saga/kidomaru cursed.xml" />
-    <monster name="Kidomaru" file="saga/kidomaru.xml" />
-    <monster name="Jiroubou Cursed" file="saga/jiroubou cursed.xml" />
-    <monster name="Jiroubou" file="saga/jiroubou.xml" />
-    <monster name="Sasuke" file="saga/sasuke.xml" />
-    <monster name="Kabuto" file="saga/kabuto.xml" />
-    <monster name="Gaara" file="saga/gaara.xml" />
-    <monster name="Shukaku One" file="saga/shukaku one.xml" />
-    <monster name="Shukaku Two" file="saga/shukaku two.xml" />
-    <monster name="Temari" file="saga/temari.xml" />
-    <monster name="Kuroari" file="saga/kuroari.xml" />
-    <monster name="Karasu" file="saga/karasu.xml" />
-    <monster name="Kankuro" file="saga/kankuro.xml" />
-    <monster name="Neji" file="saga/neji.xml" />
-    <monster name="Kiba" file="saga/kiba.xml" />
-    <monster name="Rain Shinobi Clon" file="saga/rain shinobi clon.xml" />
-    <monster name="Rain Shinobi" file="saga/rain shinobi.xml" />
-    <monster name="Manda" file="saga/manda.xml" />
-    <monster name="Zaku" file="saga/zaku.xml" />
-    <monster name="Kin" file="saga/kin.xml" />
-    <monster name="Dosu" file="saga/dosu.xml" />
+    <!-- Introduction -->
+    <monster name="Mizuki" file="sagas/1.introduction/1.mizuki.xml" />
+    <monster name="Ebisu" file="sagas/1.introduction/2.ebisu.xml" />
+
+    <!-- O caminho para as ondas (Escolta de Tazuna) -->
+    <monster name="Gozu" file="sagas/2.road_to_waves/1.gozu.xml" />
+    <monster name="Meizu" file="sagas/2.road_to_waves/1.meizu.xml" />
+    <monster name="Zabuza Momochi [Hidden Mist]" file="sagas/2.road_to_waves/2.zabuza.xml" />
+
+    <!-- A batalha na ponto (Final do arco das ondas) -->
+    <monster name="Zabuza Momochi [The Final Mist]"
+        file="sagas/3.the_battle_on_the_bridge/1.zabuza.xml" />
+    <monster name="Haku" file="sagas/3.the_battle_on_the_bridge/2.haku.xml" />
+
+    <!-- A floresta da morte -->
+    <monster name="Orochimaru" file="sagas/6.orochimaru.xml" />
+    <monster name="Kimimaru Cursed" file="sagas/kimimaru cursed.xml" />
+    <monster name="Kimimaru" file="sagas/kimimaru.xml" />
+    <monster name="Doki" file="sagas/doki.xml" />
+    <monster name="Tayuya Cursed" file="sagas/tayuya cursed.xml" />
+    <monster name="Tayuya" file="sagas/tayuya.xml" />
+    <monster name="Sakon And Ukon Cursed" file="sagas/sakon and ukon cursed.xml" />
+    <monster name="Sakon And Ukon" file="sagas/sakon and ukon.xml" />
+    <monster name="Spider" file="sagas/spider.xml" />
+    <monster name="Kidomaru Cursed" file="sagas/kidomaru cursed.xml" />
+    <monster name="Kidomaru" file="sagas/kidomaru.xml" />
+    <monster name="Jiroubou Cursed" file="sagas/jiroubou cursed.xml" />
+    <monster name="Jiroubou" file="sagas/jiroubou.xml" />
+    <monster name="Sasuke" file="sagas/sasuke.xml" />
+    <monster name="Kabuto" file="sagas/kabuto.xml" />
+    <monster name="Gaara" file="sagas/gaara.xml" />
+    <monster name="Shukaku One" file="sagas/shukaku one.xml" />
+    <monster name="Shukaku Two" file="sagas/shukaku two.xml" />
+    <monster name="Temari" file="sagas/temari.xml" />
+    <monster name="Kuroari" file="sagas/kuroari.xml" />
+    <monster name="Karasu" file="sagas/karasu.xml" />
+    <monster name="Kankuro" file="sagas/kankuro.xml" />
+    <monster name="Neji" file="sagas/neji.xml" />
+    <monster name="Kiba" file="sagas/kiba.xml" />
+    <monster name="Rain Shinobi Clon" file="sagas/rain shinobi clon.xml" />
+    <monster name="Rain Shinobi" file="sagas/rain shinobi.xml" />
+    <monster name="Manda" file="sagas/manda.xml" />
+    <monster name="Zaku" file="sagas/zaku.xml" />
+    <monster name="Kin" file="sagas/kin.xml" />
+    <monster name="Dosu" file="sagas/dosu.xml" />
 
 
-    <monster name="Tazuna" file="saga/Tazuna.xml" />
+    <!-- missions -->
+    <monster name="Jhon Lee" file="missions/kuroi_hasu/jhon_lee_and_natalia/jhon_lee.xml" />
+    <monster name="Natalia Prisoner"
+        file="missions/kuroi_hasu/jhon_lee_and_natalia/natalia_prisoner.xml" />
+    <monster name="Kuroi's Henchman"
+        file="missions/kuroi_hasu/jhon_lee_and_natalia/kurois_henchman.xml" />
+    <monster name="Isac" file="missions/isac.xml" />
+    <monster name="Utaka" file="missions/utaka.xml" />
 
 
     <!--Bosses-->
-    <monster name="Sasuke Uchiha" file="sasuke uchiha.xml" />
+    <!--<monster
+    name="Sasuke Uchiha" file="sasuke uchiha.xml" />-->
 
+    <!-- animals -->
+    <monster name="Wolf" file="animals/wolf.xml" />
+    <monster name="Snake" file="animals/snake.xml" />
+
+    <!-- humans -->
+    <monster name="Bandit" file="humans/bandit.xml" />
+    <monster name="Road Outlaw" file="humans/road_outlaw.xml" />
+    <monster name="Heavy Brawler" file="humans/heavy_brawler.xml" />
+    <monster name="Ninja" file="humans/ninja.xml" />
+    <monster name="Assassin" file="humans/assassin.xml" />
+    <monster name="Shinobazu" file="humans/shinobazu.xml" />
+    <monster name="Savager" file="humans/savager.xml" />
 
     <!--world
     shinobi monsters-->
@@ -82,12 +128,14 @@
     <monster name="Kusa Shinobi" file="kusa shinobi.xml" />
     <monster name="Huge Insect" file="huge insect.xml" />
     <monster name="Shadown Man" file="shadown man.xml" />
-    <monster name="Sound Beast" file="sound beast.xml" />
+    <monster
+        name="Oto-Nin Mutant" file="otogakure_creatures/oto-nin_mutant.xml" />
+    <monster
+        name="Oto-Nin Specialist" file="otogakure_creatures/oto-nin_specialist.xml" />
     <monster name="Fishman" file="fishman.xml" />
     <monster name="White Ninja" file="white ninja.xml" />
     <monster name="Water Shinobi" file="water shinobi.xml" />
     <monster name="Vampire" file="vampire.xml" />
-    <monster name="Snake" file="snake.xml" />
     <monster name="Nervous Wolf" file="cursed_wolf.xml" />
     <monster name="Monk" file="monk.xml" />
     <monster name="Ashar" file="ashar.xml" />
@@ -97,21 +145,14 @@
     <monster name="Desert Jump" file="desert jump.xml" />
     <monster name="Cyborg" file="cyborg.xml" />
     <monster name="Cursed Man" file="cursed man.xml" />
-    <monster name="Otogakure Shinobi" file="otogakure_shinobi.xml" />
     <monster name="Bandit Hunter" file="bandit hunter.xml" />
-    <monster name="Wolf" file="wolf.xml" />
-    <monster name="Bandit" file="bandit.xml" />
-    <monster name="Ninja" file="ninja.xml" />
-    <monster name="Elite Bandit" file="elite bandit.xml" />
-    <monster name="Assassin" file="assassin.xml" />
     <monster name="Cursed Skeleton" file="cursed skeleton.xml" />
-    <monster name="Fat Ninja" file="fat ninja.xml" />
-    <monster name="Shinobazu" file="shinobazu.xml" />
-    <monster name="Savager" file="savager.xml" />
     <monster name="Samurai" file="samurai.xml" />
 
-    <monster name="Uchiha Elite Renegade" file="uchiha elite renegade.xml" />
-    <monster name="Uchiha Anbu Renegade" file="uchiha anbu renegade.xml" />
+    <monster
+        name="Uchiha Elite Renegade" file="uchiha elite renegade.xml" />
+    <monster
+        name="Uchiha Anbu Renegade" file="uchiha anbu renegade.xml" />
 
     <monster name="Paralize Snake" file="paralize snake.xml" />
     <monster name="Juujin Bunshin" file="juujin bunshin.xml" />
@@ -150,10 +191,12 @@
     <monster name="Kikaichu[30]" file="Kikaichu/Kikaichu[30].xml" />
 
     <!--sanshouou-->
+    <!--
     <monster name="Sasori[1]" file="sasori/sasori[1].xml" />
     <monster name="Sasori[2]" file="sasori/sasori[2].xml" />
-
+    -->
     <!--sanshouou-->
+    <!--
     <monster name="Sanshouou[1]" file="sanshouou/sanshouou[1].xml" />
     <monster name="Sanshouou[2]" file="sanshouou/sanshouou[2].xml" />
     <monster name="Sanshouou[3]" file="sanshouou/sanshouou[3].xml" />
@@ -175,8 +218,9 @@
     <monster name="Sanshouou[19]" file="sanshouou/sanshouou[19].xml" />
     <monster name="Sanshouou[20]" file="sanshouou/sanshouou[20].xml" />
     <monster name="Sanshouou[21]" file="sanshouou/sanshouou[21].xml" />
-
+-->
     <!--kuroari-->
+    <!--
     <monster name="Kuroari[1]" file="kuroari/kuroari[1].xml" />
     <monster name="Kuroari[2]" file="kuroari/kuroari[2].xml" />
     <monster name="Kuroari[3]" file="kuroari/kuroari[3].xml" />
@@ -217,9 +261,10 @@
     <monster name="Kuroari[38]" file="kuroari/kuroari[20].xml" />
     <monster name="Kuroari[39]" file="kuroari/kuroari[20].xml" />
     <monster name="Kuroari[40]" file="kuroari/kuroari[20].xml" />
-
+-->
 
     <!--karasu-->
+    <!--
     <monster name="Karasu[1]" file="karasu/karasu[1].xml" />
     <monster name="Karasu[2]" file="karasu/karasu[2].xml" />
     <monster name="Karasu[3]" file="karasu/karasu[3].xml" />
@@ -260,10 +305,10 @@
     <monster name="Karasu[38]" file="karasu/karasu[38].xml" />
     <monster name="Karasu[39]" file="karasu/karasu[39].xml" />
     <monster name="Karasu[40]" file="karasu/karasu[40].xml" />
-
+-->
 
     <!--akamaru-->
-
+    <!--
     <monster name="Akamaru[1]" file="akamaru/akamaru[1].xml" />
     <monster name="Akamaru[2]" file="akamaru/akamaru[2].xml" />
     <monster name="Akamaru[3]" file="akamaru/akamaru[3].xml" />
@@ -304,6 +349,6 @@
     <monster name="Akamaru[38]" file="akamaru/akamaru[38].xml" />
     <monster name="Akamaru[39]" file="akamaru/akamaru[39].xml" />
     <monster name="Akamaru[40]" file="akamaru/akamaru[40].xml" />
-
+    -->
 
 </monsters>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mizuki" script="data/npc/scripts/sagas/mizuki.lua" walkinterval="0"
+    floorchange="0">
+    <look type="81" />
+    <parameters>
+        <parameter key="respawn_delay" value="60" />
+        <parameter key="spawn_interval" value="60" />
+    </parameters>
+</npc>

@@ -1,39 +1,35 @@
 local config = {
     type = COMBAT_PHYSICALDAMAGE,
-    storage = 23004,
-    cooldown = 2,
     invisibleOutfit = 0 
 }
 
-local effects = {
-    [0] = 29, [1] = 27, [2] = 30, [3] = 28
-}
+-- Efeitos normais e efeitos de Fusão (Super Gatsuuga)
+local effectsNormal = { [0] = 29, [1] = 27, [2] = 30, [3] = 28 }
+local effectsFusion = { [0] = 46, [1] = 47, [2] = 45, [3] = 35 }
 
+-- Funções de suporte
 local function canWalk(pos)
-    local tile = getTileInfo(pos)
-    if not tile or tile.thingID == 0 then return false end
+    if not pos or pos.x <= 0 then return false end
+    local status, tile = pcall(getTileInfo, pos)
+    if not status or not tile or tile.thingID == 0 then return false end
     local item = getThingFromPos({x=pos.x, y=pos.y, z=pos.z, stackpos=0})
-    if item.uid > 0 and hasProperty(item.uid, CONST_PROP_BLOCKSOLID) then 
-        return false 
-    end
+    if item.uid > 0 and hasProperty(item.uid, CONST_PROP_BLOCKSOLID) then return false end
     return true
 end
 
 local function getLateralPos(pos, dir)
     local left, right = {x=pos.x, y=pos.y, z=pos.z}, {x=pos.x, y=pos.y, z=pos.z}
     if dir == 0 or dir == 2 then
-        left.x = pos.x - 1
-        right.x = pos.x + 1
+        left.x, right.x = pos.x - 1, pos.x + 1
     else
-        left.y = pos.y - 1
-        right.y = pos.y + 1
+        left.y, right.y = pos.y - 1, pos.y + 1
     end
     return left, right
 end
 
 local function doSafeDamage(cid, targetPos, type, min, max)
-    local tile = getTileInfo(targetPos)
-    if tile and tile.creatures > 0 then
+    local status, tile = pcall(getTileInfo, targetPos)
+    if status and tile and tile.creatures > 0 then
         local hitCreatures = {} 
         for i = 0, 255 do
             local thing = getThingfromPos({x=targetPos.x, y=targetPos.y, z=targetPos.z, stackpos=i})
@@ -48,87 +44,102 @@ local function doSafeDamage(cid, targetPos, type, min, max)
     end
 end
 
--- funcao que executa a logica do golpe
 local function executeTsuuga(cid)
     if not isCreature(cid) then return end
 
     local dir = getCreatureLookDirection(cid)
-    local pos = getCreaturePosition(cid)
     local level, fist
+    local isFused = getPlayerStorageValue(cid, STORAGE_IS_FUSED) > 0
 
     if isPlayer(cid) then
-        level = getPlayerLevel(cid)
-        fist = getPlayerSkillLevel(cid, SKILL_FIST)
+        level, fist = getPlayerLevel(cid), getPlayerSkillLevel(cid, SKILL_FIST)
     else
         local master = getCreatureMaster(cid)
         level = isPlayer(master) and getPlayerLevel(master) or 50
         fist = isPlayer(master) and getPlayerSkillLevel(master, SKILL_FIST) or 50
     end
 
-    local distance = (level >= 100 and 7) or (level >= 50 and 5) or 3
+    local distance = (level >= 120 and 5) or (level >= 80 and 4) or 3
     local originalOutfit = getCreatureOutfit(cid)
     
     doSetCreatureOutfit(cid, {lookType = config.invisibleOutfit}, -1)
     doCreatureSetNoMove(cid, true)
 
+    local stopMovement = false
     for i = 1, distance do
         addEvent(function()
-            if not isCreature(cid) then return end
+            if not isCreature(cid) or stopMovement then return end
             
             local currentPos = getCreaturePosition(cid)
             local nextPos = getPosByDir(currentPos, dir)
             
             if canWalk(nextPos) then
-                local minDmg = -((fist * 1.5) + (level * 1.5))
-                local maxDmg = -((fist * 2.0) + (level * 2.0))
+                -- FÓRMULA DE DANO (Normal vs Fusão)
+                local minDmg, maxDmg
+                if isFused then
+                    minDmg = -((fist * 6.0) + (level * 3.0)) 
+                    maxDmg = -((fist * 9.0) + (level * 5.0))
+                else
+                    minDmg = -((fist * 3.5) + (level * 2.0)) 
+                    maxDmg = -((fist * 5.0) + (level * 3.5))
+                end
                 
                 doSafeDamage(cid, nextPos, config.type, minDmg, maxDmg)
-                
                 local posL, posR = getLateralPos(nextPos, dir)
                 doSafeDamage(cid, posL, config.type, minDmg, maxDmg)
                 doSafeDamage(cid, posR, config.type, minDmg, maxDmg)
 
                 doTeleportThing(cid, nextPos, true)
-                doSendMagicEffect(nextPos, effects[dir] or 29)
+
+                -- EFEITOS COM OFFSET
+                if isFused then
+                    local effectPos = {x = nextPos.x, y = nextPos.y, z = nextPos.z}
+                    local offsets = {
+                        [0] = {x = 1, y = 1}, -- Cima
+                        [1] = {x = 0, y = 1}, -- Direita
+                        [2] = {x = 1, y = 1}, -- Baixo
+                        [3] = {x = 0, y = 1}  -- Esquerda
+                    }
+                    local off = offsets[dir]
+                    effectPos.x, effectPos.y = effectPos.x + off.x, effectPos.y + off.y
+                    doSendMagicEffect(effectPos, effectsFusion[dir] or 45)
+                else
+                    doSendMagicEffect(nextPos, effectsNormal[dir] or 29)
+                end
             else
-                distance = i
+                stopMovement = true
             end
 
-            if i == distance then
+            if i == distance or stopMovement then
                 if isCreature(cid) then
-                    doSetCreatureOutfit(cid, originalOutfit, 0)
                     doCreatureSetNoMove(cid, false)
+                    if isFused then
+                        doSetCreatureOutfit(cid, {lookType = FIRST_FUSION_OUTFIT}, -1)
+                    else
+                        doSetCreatureOutfit(cid, originalOutfit, 0)
+                    end
                 end
             end
-        end, i * 60)
+        end, i * 70)
     end
 end
 
 function onCastSpell(cid, var)
-    if isPlayer(cid) then
-        if exhaustion.check(cid, config.storage) then
-            doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED)
-            return false
-        end
-        exhaustion.set(cid, config.storage, config.cooldown)
-    end
-
-    -- executa para quem usou a spell o player
     executeTsuuga(cid)
 
-    -- combo com summon (akamaru)
-    if isPlayer(cid) then
+    -- Combo com Bunshin (Só acontece se NÃO estiver fundido)
+    if isPlayer(cid) and getPlayerStorageValue(cid, STORAGE_IS_FUSED) <= 0 then
         local summons = getCreatureSummons(cid)
         local dir = getCreatureLookDirection(cid)
+        local playerName = getPlayerName(cid):lower()
+
         for _, summon in ipairs(summons) do
             local sName = getCreatureName(summon):lower()
-            if sName:find("akamaru") or sName == getPlayerName(cid):lower() then
+            if sName == playerName then
                 doCreatureSetLookDirection(summon, dir)
-                -- chama a funcao local diretamente para o summon
                 executeTsuuga(summon)
             end
         end
     end
-
     return true
 end

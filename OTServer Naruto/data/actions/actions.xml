@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <actions>
 
 	<action itemid="7588-7591;8472-8473;7618;7620;8704" event="script" value="liquids/potions.lua" />
@@ -174,11 +174,10 @@
 	<action itemid="3678"
 		script="other/teleport.lua" />
 	<action itemid="5543" script="other/teleport.lua" />
+	
 	<action
-		fromid="2376" toid="2404" script="other/destroy.lua" />
-	<action fromid="2406" toid="2419"
+		fromid="2421" toid="2453"
 		script="other/destroy.lua" />
-	<action fromid="2421" toid="2453" script="other/destroy.lua" />
 	<action
 		fromid="5792" toid="5797" script="other/dice.lua" />
 	<action itemid="2692"
@@ -466,10 +465,17 @@
 
 	<!-- Sagas -->
 	<action
-		itemid="2302" script="saga/photography_saga.lua" />
-	<action itemid="2172"
+		actionid="3800"
 		script="saga/scroll_saga.lua" />
-	<action itemid="2130" script="saga/test_saga.lua" />
+	<action actionid="3801"
+		script="saga/scroll_saga.lua" />
+	<action
+		actionid="3802" script="saga/photo_camera_saga.lua" />
+	<action
+		actionid="3803" script="saga/guinzos_saga.lua" /> <!-- guinzo verdadeiro -->
+	<action
+		actionid="3804" script="saga/guinzos_saga.lua" />
+
 
 	<action
 		itemid="8306" script="other/upgrade.lua" />
@@ -483,7 +489,7 @@
 
 	<!-- Acessorioes ninjas -->
 	<action itemid="2151"
-		allowfaruse="0"
+		allowfaruse="1" allowMovement="1"
 		script="acessorios/genin_pill.lua" />
 	<action itemid="2145"
 		script="acessorios/chunin pill.lua" />
@@ -505,4 +511,63 @@
 	<action
 		uniqueid="1601" script="quest2.lua" />
 	<action actionid="12369" script="sunabossteleport.lua" />
+
+	<!-- shizuka village -->
+	 <action
+		actionid="3415" event="script" value="shizuka_village/fonte.lua" />
+		<action actionid="3501"
+		script="shizuka_village/secret_scroll.lua" />
+	<action actionid="10001-10005"
+		script="shizuka_village/secret_passage.lua" />
+	<action itemid="2144" allowfaruse="1"
+		blockwalls="1"
+		script="shizuka_village/taito_mission_bomb_paper.lua" />
+
+	<!-- Colheitas -->
+	 <action itemid="4170" event="script"
+		value="mechanics/harvesting_items.lua" />
+	<action itemid="4155" event="script"
+		value="mechanics/harvesting_items.lua" />
+	<action itemid="4171" event="script"
+		value="mechanics/harvesting_items.lua" />
+
+	<!-- Armas de Distância -->
+	<action
+		itemid="2544" event="script" allowfaruse="1" allowMovement="1"
+		value="weapons/sebon.lua" />
+	<action
+		itemid="2410" event="script" allowfaruse="1" allowMovement="1"
+		value="weapons/kunai.lua" />
+	<action
+		itemid="2399" event="script" allowfaruse="1" allowMovement="1"
+		value="weapons/shuriken.lua" />
+	<action
+		itemid="2546" event="script" allowfaruse="1" allowMovement="1"
+		value="weapons/explosive_kunai.lua" />
+	<action
+		itemid="2389" event="script" allowfaruse="1" allowMovement="1"
+		value="weapons/fuuma_shuriken.lua" />
+	<!--<action
+	fromid="2406" toid="2419"
+		script="other/destroy.lua" />
+	<action
+		fromid="2376" toid="2404" script="other/destroy.lua" />
+		-->
+
+	<!-- Daizou Missions -->
+	<action
+		actionid="15501-15505" event="script" value="daizou_missions/trash.lua" />
+	<action
+		actionid="12032-12035"
+		event="script" value="daizou_missions/mailbox.lua" />
+	<action actionid="15700" event="script"
+		value="daizou_missions/box_of_scroll.lua" />
+
+	<!-- Quests -->
+	<action uniqueid="9000" event="script"
+		value="quests/bandit_cave.lua" />
+	<action uniqueid="9500" event="script"
+		value="quests/stone_assassin_cave.lua" />
+	<action uniqueid="9501" event="script"
+		value="quests/reward_assassin_cave.lua" />
 </actions>

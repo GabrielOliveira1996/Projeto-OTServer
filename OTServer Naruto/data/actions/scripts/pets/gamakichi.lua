@@ -6,6 +6,7 @@ function onUse(cid, item, itemEx)
         reqItemId = 2125, -- id do item que precisa estar equipado
         effect = 12 -- efeito visual
     }
+    
     -- verifica se o jogador esta exausto
     if exhaustion.check(cid, config.exhaustionId) then
         local timeLeft = exhaustion.get(cid, config.exhaustionId)

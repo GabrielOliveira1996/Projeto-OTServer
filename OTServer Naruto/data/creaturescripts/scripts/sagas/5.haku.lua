@@ -1,40 +1,95 @@
-function onDeath(cid, corpse, deathList)
-    local storage = 11123
-    local monstName = "Haku"
-    local players = {}
-    local experience = 100000
-    local tunicaId = 2486
-    local tunicaChance = 2 -- 2% de chance de dropar
+-- [CONFIGURAÇÃO LOCAL PARA O SPAWN]
+local cfg = {
+    zabuza_fight_time = 300,
+    bridge_center = {x = 3431, y = 3063, z = 6}, -- COLOQUE AQUI A COORDENADA CENTRAL DA PONTE
+}
 
-    -- verifica se quem morreu foi o zabuza
-    if isMonster(cid) and string.lower(getCreatureName(cid)) == string.lower(monstName) then
+-- Função para limpar a arena de forma GLOBAL e GARANTIDA
+local function clearHakuStageGlobal()
+    -- 1. Limpeza por Tabela (Segurança para monstros específicos registrados)
+    if BridgeMonsters then
+        for _, mid in ipairs(BridgeMonsters) do
+            if isCreature(mid) then 
+                doRemoveCreature(mid) 
+            end
+        end
+    end
+    BridgeMonsters = {}
+
+    -- 2. Limpeza por área Massiva (Substitui o getMonsters)
+    -- Varre um raio de 150 SQMs (praticamente a ponte toda e arredores)
+    local spectators = getSpectators(cfg.bridge_center, 150, 150, false)
+    if spectators then
+        for _, spec in ipairs(spectators) do
+            if isMonster(spec) then
+                local mName = getCreatureName(spec):lower()
+                if mName == "haku glass" or mName == "haku" then
+                    doRemoveCreature(spec)
+                end
+            end
+        end
+    end
+end
+
+-- Função para spawnar o Zabuza
+local function spawnZabuza(cid)
+    if not isPlayer(cid) then return end
+    
+    -- Limpeza Global antes de nascer o Zabuza
+    clearHakuStageGlobal() 
+    
+    setGlobalStorageValue(SAGA_AUX_BRIDGE_LOCK_STORAGE, os.time() + cfg.zabuza_fight_time)
+    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Haku recua... A nevoa se dissipa e Zabuza aparece!")
+    
+    local pPos = getThingPos(cid)
+    local zabuzaPos = {x = pPos.x + 2, y = pPos.y, z = pPos.z}
+    local zabuza = doCreateMonster("Zabuza Momochi [The Final Mist]", zabuzaPos)
+    
+    if zabuza then
+        if not BridgeMonsters then BridgeMonsters = {} end
+        table.insert(BridgeMonsters, zabuza)
+        doSendMagicEffect(zabuzaPos, 2)
+        doCreatureSay(zabuza, "Parece que voce se divertiu com meu subordinado. Agora o assunto e comigo!", TALKTYPE_MONSTER_SAY)
         
-        -- filtra a deathList para encontrar jogadores ou donos de summons
-        for _, check in ipairs(deathList) do
-            if isPlayer(check) then
-                table.insert(players, check)
-            elseif isSummon(check) then
-                local master = getCreatureMaster(check)
-                if isPlayer(master) then
-                    table.insert(players, master)
+        --registerCreatureEvent(zabuza, "ZabuzaDeath")
+
+        addEvent(function()
+            if isCreature(zabuza) then
+                doRemoveCreature(zabuza)
+                setGlobalStorageValue(SAGA_AUX_BRIDGE_LOCK_STORAGE, 0)
+                BridgeMonsters = {}
+                if isPlayer(cid) then
+                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Zabuza fugiu na nevoa. Voce falhou!")
                 end
+            end
+        end, cfg.zabuza_fight_time * 1000)
+    end
+end
+
+function onDeath(cid, corpse, killer)
+    if not isMonster(cid) then return true end
+    local name = getCreatureName(cid):lower()
+
+    if name == "haku" then
+        local eventTriggered = false 
+        
+        for i = 1, #killer do
+            local targetPlayer = killer[i]
+            if isPlayer(targetPlayer) then
+                if not eventTriggered then
+                    spawnZabuza(targetPlayer) 
+                    eventTriggered = true 
+                end
+                doPlayerSendTextMessage(targetPlayer, MESSAGE_EVENT_ADVANCE, "Sua equipe derrotou Haku! Preparem-se para o Zabuza!")
             end
         end
 
-        -- aplica a recompensa para cada jogador que participou da luta
-        for _, var in ipairs(players) do
-            if isPlayer(var) then
-                setPlayerStorageValue(var, storage, 1)
-                doPlayerAddExp(var, experience)
-                doPlayerSendTextMessage(var, 22, "Haku has been defeated!")
-                doSendMagicEffect(getThingPos(var), 12) 
-
-                if math.random(1, 100) <= tunicaChance then
-                    doPlayerAddItem(var, tunicaId, 1)
-                    doPlayerSendTextMessage(var, MESSAGE_EVENT_ORANGE, "You found a light tunic worn by the prodigy Haku.")
-                end
-            end
+        -- Remove o Haku que morreu imediatamente para não dar erro de "Creature not found"
+        if isCreature(cid) then
+            doRemoveCreature(cid)
         end
-    end 
-    return true
+        return false -- Retorna false para o Haku não deixar corpo no chão
+    end
+
+    return true 
 end

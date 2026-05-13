@@ -86,7 +86,7 @@
 
 	-- Connection config
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "26.238.18.62"
 	bindOnlyConfiguredIpAddress = false
 	loginPort = 7171
 	gamePort = 7172
@@ -101,7 +101,7 @@
 	onePlayerOnlinePerAccount = true
 	allowClones = false
 	serverName = "NBBOT"
-	loginMessage = "Ao pegar alguma missao, digite !nomedonpc, para saber o status da mesma."
+	loginMessage = "Seja bem-vindo ao NBBOT!"
 	statusTimeout = 5 * 60 * 1000
 	replaceKickOnLogin = true
 	forceSlowConnectionsToDisconnect = false
@@ -154,8 +154,8 @@
 	guildHalls = false
 
 	-- Item usage
-	timeBetweenActions = 200
-	timeBetweenExActions = 1000
+	timeBetweenActions = 100
+	timeBetweenExActions = 100
 	checkCorpseOwner = true
 	hotkeyAimbotEnabled = true
 	maximumDoorLevel = 500
@@ -234,10 +234,10 @@
 	-- NOTE: experienceStages configuration is located in data/XML/stages.xml.
 	-- rateExperienceFromPlayers 0 to disable.
 	experienceStages = "no"
-	rateExperience = 4
+	rateExperience = 25 -- 6 é a base
 	rateExperienceFromPlayers = 0
-	rateSkill = 1
-	rateMagic = 1
+	rateSkill = 0
+	rateMagic = 0
 	rateLoot = 1
 	rateSpawn = 1
 
@@ -297,8 +297,8 @@
 
 	-- Summons
 	maxPlayerSummons = 10
-	teleportAllSummons = true
-	teleportPlayerSummons = true
+	teleportAllSummons = false
+	teleportPlayerSummons = false
 
 	-- Status
 	ownerName = ""

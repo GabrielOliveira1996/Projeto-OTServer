@@ -1,5 +1,7 @@
 local BYA_STORAGE = 45001
-local EFFECT_TRIGRAMA = 58 
+local JUKEN_STORAGE = 45003
+local LION_STORAGE = 45005
+local EFFECT_TRIGRAM = 58 
 local cooldownStorage = 23010
 local cooldownTime = 4
 
@@ -23,7 +25,11 @@ function onCastSpell(cid, var)
 
     local skill = getPlayerSkillLevel(cid, 6)
     local level = getPlayerLevel(cid)
+    
+    -- Checagem das Storages
     local isByakugan = getPlayerStorageValue(cid, BYA_STORAGE) > 0
+    local isJuken = getPlayerStorageValue(cid, JUKEN_STORAGE) > 0
+    local isLion = getPlayerStorageValue(cid, LION_STORAGE) > 0
     
     doCreatureSetNoMove(cid, true)
     doCreatureSetNoMove(target, true)
@@ -31,9 +37,18 @@ function onCastSpell(cid, var)
     local total_hits = 32
     local interval = 125 
 
+    -- dano Base
     local damage_min = (skill * 2.5) + (level * 2.0)
     local damage_max = (skill * 3.5) + (level * 2.5)
-    if isByakugan then damage_min, damage_max = damage_min * 1.4, damage_max * 1.4 end
+
+    -- bônus para cada jutsu ativo.
+    local multiplier = 1.0
+    if isByakugan then multiplier = multiplier + 0.25 end -- 25% do byakugan
+    if isJuken then multiplier = multiplier + 0.50 end    -- +50% do juken
+    if isLion then multiplier = multiplier + 1.25 end     -- +125% do soshiken
+
+    damage_min = damage_min * multiplier
+    damage_max = damage_max * multiplier
 
     local hit_min = math.max(1, math.floor(damage_min / total_hits))
     local hit_max = math.max(1, math.floor(damage_max / total_hits))
@@ -47,13 +62,15 @@ function onCastSpell(cid, var)
             end
 
             local playerPos = getThingPos(cid)
+            -- ajuste o centerPos conforme a necessidade do seu mapa/efeito
             local centerPos = {x = playerPos.x + 1, y = playerPos.y + 1, z = playerPos.z}
 
             if i % 4 == 1 then 
-                doSendMagicEffect(centerPos, EFFECT_TRIGRAMA)
+                doSendMagicEffect(centerPos, EFFECT_TRIGRAM)
             end
 
-            doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -hit_min, -hit_max, 31)
+            -- Aplica o dano com o efeito dinâmico
+            doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -hit_min, -hit_max, 24)
             
             if i == 2 then doSendAnimatedText(getThingPos(cid), "2 PALMS", 215)
             elseif i == 4 then doSendAnimatedText(getThingPos(cid), "4 PALMS", 215)
@@ -61,7 +78,6 @@ function onCastSpell(cid, var)
             elseif i == 16 then doSendAnimatedText(getThingPos(cid), "16 PALMS", 215)
             elseif i == 32 then 
                 doSendAnimatedText(getThingPos(cid), "32 PALMS!", 180)
-                
                 doCreatureSetNoMove(cid, false)
                 doCreatureSetNoMove(target, false)
                 doAddCondition(target, t_slow)

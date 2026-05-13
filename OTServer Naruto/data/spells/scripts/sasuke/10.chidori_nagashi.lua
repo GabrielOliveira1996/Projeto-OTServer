@@ -28,8 +28,8 @@ end
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 function onCastSpell(cid, var)
-    if exhaustion.check(cid, 20012) == false then
-        exhaustion.set(cid, 20012, 2)
+    if exhaustion.check(cid, 23010) == false then
+        exhaustion.set(cid, 23010, 2)
         
         doCombat(cid, combat, var)
         
@@ -41,7 +41,7 @@ function onCastSpell(cid, var)
         
         return true
     else
-        doPlayerSendCancel(cid, "Cooldown[" .. exhaustion.get(cid, 20012) .. "]")
+        doPlayerSendCancel(cid, "Cooldown[" .. exhaustion.get(cid, 23010) .. "]")
         return false
     end
 end

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shinobazu" nameDescription="a shinobazu" race="blood"
+  experience="2800" speed="290" manacost="0">
+  <health now="1000" max="1000" />
+  <look type="65" corpse="2872" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="50" attack="45" />
+    <!-- Corte de Vento (Troquei 'scythe' por 'spear' para evitar o erro) -->
+    <attack name="physical" interval="1500" chance="10" range="3" min="-70" max="-100">
+      <attribute key="shootEffect" value="spear" />
+      <attribute key="areaEffect" value="greenspark" />
+    </attack>
+    <!-- Ataque Giratório -->
+    <attack name="physical" interval="1500" chance="10" range="1" radius="2" target="1" min="-80"
+      max="-120">
+      <attribute key="areaEffect" value="smoke" />
+    </attack>
+  </attacks>
+  <defenses armor="15" defense="25">
+    <defense name="speed" interval="5000" chance="15" speedchange="320" duration="3000">
+      <attribute key="areaEffect" value="poff" />
+    </defense>
+  </defenses>
+  <voices interval="5000" chance="10">
+    <voice sentence="Sinta o poder da minha lâmina!" />
+    <voice sentence="Ninguém sobrevive aos Shinoazus!" />
+    <voice sentence="Você é fraco demais!" />
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0" />
+    <item id="2479" chance1="2800" chancemax="0" />
+    <item id="2643" chance1="2500" chancemax="0" />
+    <item id="3966" chance1="2000" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2660" chance1="2000" chancemax="0" />
+        <item id="2413" chance1="2800" chancemax="0" />
+        <item id="2411" chance1="3200" chancemax="0" />
+        <item id="2148" countmax="90" chance1="55000" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+        <event name="mkillm" />
+    </script>
+</monster>

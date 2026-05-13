@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Yomogi" script="data/npc/scripts/kyokai/yomogi.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="56" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="strawberry,2677,2;brown mushroom,2789,5;tulip,2668,3;" />
+		<parameter key="message_greet"
+			value="Ola. Procura por artigos medicinais?" />
+		<parameter key="message_farewell" value="Que as raizes segurem seus passos nas descidas." />
+	</parameters>
+</npc>

@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+        <!-- Daizou missions -->
+        <event type="kill" name="DaizouKillCount" event="script"
+                value="daizou_missions/kill_count.lua" />
+
+        <!-- taito missions -->
+        <event type="kill" name="TaitoKillMission" event="script"
+                value="shizuka_village/taito_kill_mission.lua" />
+
+        <!-- missions -->
+        <event type="death" name="KuroiHasuDeath" event="script" value="missions/jhon_protect.lua" />
+
+        <!-- Isac Dungeon Battle -->
+        <event type="death" name="IsacDungeonMonsterDeathCount" event="script"
+                value="missions/isac/isac_dungeon.lua" />
+        <event type="death" name="IsacAndUtakaDeathCondition" event="script"
+                value="missions/isac/isac_and_utaka_death_condition.lua" />
+        <event type="preparedeath" name="PlayerDeathInMission" event="script"
+                value="missions/isac/player_death_in_mission.lua" />
+
+        <!-- itens -->
+        <!-- contagem de combo da espada de isac -->
+        <event type="statschange" name="IsacsSwordProtect" event="script"
+                value="itens/isacs_sword_protect.lua" />
+
         <!-- Funcionalidades Diversas -->
+        <event type="logout" name="Logout" event="script" value="others/logout.lua" />
+        <event type="login" name="PlayerLogin" event="script" value="others/login.lua" />
+        <event type="login" name="FirstItems" event="script" value="others/firstitems.lua" />
+        <event type="advance" name="CharacterProgression" event="script"
+                value="others/character_progression.lua" />
         <event type="statschange" name="AllyProtect" event="script" value="others/ally_protect.lua" />
 
         <!-- Sasuke -->
@@ -10,18 +39,27 @@
         <!-- Hyuuga -->
         <event type="statschange" name="byakugan" script="hyuuga/byakugan.lua" />
 
+        <!-- Shino -->
+        <event type="statschange" name="MushiExplosion" event="script"
+                value="shino/mushi_bunshin.lua" />
+
+        <!-- Kiba -->
+        <event type="death" name="AkamaruDeath" event="script" value="kiba/akamaru_death.lua" />
+        <!--<event
+        type="extendedopcode" name="Akamaru" event="script" value="kiba/akamaru.lua" />-->
+        <!--<event
+        type="attack" name="ShinoAutoAttack" event="script"
+                value="shino/shino_auto_attack.lua" />-->
+
         <event type="death" name="ryuuthemonk" event="script" value="ryuuthemonk.lua" />
-        <event type="login" name="PlayerLogin" event="script" value="login.lua" />
         <event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua" />
         <event type="receivemail" name="Mail" event="script" value="mail.lua" />
         <event type="reportbug" name="SaveReportBug" script="reportbug.lua" />
         <event type="think" name="Idle" event="script" value="idle.lua" />
         <event type="think" name="SkullCheck" event="script" value="skullcheck.lua" />
         <event type="death" name="PlayerDeath" event="script" value="playerdeath.lua" />
-        <event type="login" name="FirstItems" event="script" value="firstitems.lua" />
         <event type="PrepareDeath" name="pvparena" script="pvparena.lua" />
         <event type="attack" name="attackguild" script="attackguild.lua" />
-        <event type="login" name="LookTypes" event="script" value="vocation outfit.lua" />
         <event type="StatsChange" name="mkillm" event="script" value="mkillm.lua" />
         <event type="death" name="akatsukiring" event="script" value="akatsuki ring.lua" />
         <event type="StatsChange" name="Susanoo" event="script" value="susanoo.lua" />
@@ -32,20 +70,21 @@
         <event type="combat" name="summon1" event="script" value="summon1.lua" />
         <event type="combat" name="summon2" event="script" value="summon2.lua" />
         <event type="Think" name="Buff" event="script" value="buff.lua" />
-        <event type="advance" name="shippuden" script="shippuden.lua" />
+        <!--<event
+        type="advance" name="shippuden" script="shippuden.lua" />-->
 
-        <event type="death" name="RemoveStorageOne" event="script" value="remove storage1.lua" />
-
-        <event type="login" name="VocationHpeMana" event="script" value="vocation hp e mana.lua" />
-        <event type="login" name="VocationHpeManaOne" event="script" value="vocation hp e mana1.lua" />
-        <event type="login" name="VocationHpeManaTwo" event="script" value="vocation hp e mana2.lua" />
 
         <!-- Remove o acesso a storage das Sagas -->
-        <event type="death" name="RemoveStorage" event="script" value="remove storage.lua" />
+        <!--<event
+        type="death" name="RemoveStorage" event="script" value="remove storage.lua" />
+        <event
+        type="death" name="RemoveStorageOne" event="script" value="remove storage1.lua" />-->
 
         <!-- Sagas -->
         <event type="death" name="Mizuki" event="script" value="sagas/1.mizuki.lua" />
         <event type="death" name="Ebisu" event="script" value="sagas/2.ebisu.lua" />
+        <event type="death" name="DemonBrothersDeath" event="script"
+                value="sagas/3.gozu_and_meizu.lua" />
         <event type="death" name="Zabuza" event="script" value="sagas/3.zabuza.lua" />
         <event type="death" name="SecondZabuza" event="script" value="sagas/4.second_zabuza.lua" />
         <event type="death" name="Haku" event="script" value="sagas/5.haku.lua" />

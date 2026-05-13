@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hayan [Anbu Guard]" script="data/npc/scripts/anbus/hayan_anbu_guard.lua"
+    walkinterval="2000"
+    speed="650"
+    floorchange="0">
+    <health now="100" max="100" />
+    <look type="47" />
+</npc>

@@ -1,56 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="samurai" nameDescription="a samurai" race="blood" experience="65500" speed="365" manacost="4500">
-  <health now="10000" max="10000"/>
-  <look type="21" head="40" body="30" legs="40" feet="50" corpse="2870"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="samurai" nameDescription="a samurai" race="blood" experience="65500" speed="365"
+  manacost="4500">
+  <health now="10000" max="10000" />
+  <look type="21" head="40" body="30" legs="40" feet="50" corpse="2870" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="1"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="0"/>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="88" attack="82"/> 
+    <attack name="melee" interval="2000" skill="88" attack="82" />
   </attacks>
-  <defenses armor="23" defense="18"/>
-  <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
-  </immunities>
+  <defenses armor="23" defense="18" />
   <voices interval="5000" chance="10">
-    <voice sentence="..."/>
-    <voice sentence="..."/>
+    <voice sentence="..." />
+    <voice sentence="..." />
   </voices>
   <loot>
-    <item id="2403" chance1="2300" chancemax="0"/>
-    <item id="11295" chance1="2000" chancemax="0"/>
-    <item id="2424" chance1="1900" chancemax="0"/>
-    <item id="2649" chance1="3000" chancemax="0"/>
-    <item id="2195" chance1="2500" chancemax="0"/>
+    <item id="2403" chance1="2300" chancemax="0" />
+    <item id="11295" chance1="2000" chancemax="0" />
+    <item id="2424" chance1="1900" chancemax="0" />
+    <item id="2649" chance1="3000" chancemax="0" />
+    <item id="2195" chance1="2500" chancemax="0" />
     <item id="1987" chance="100000">
       <inside>
-    <item id="2148" countmax="100" chance1="50000" chancemax="0"/>
-    <item id="2148" countmax="88" chance1="56000" chancemax="0"/>
-        <item id="2148" countmax="93" chance1="39000" chancemax="0"/>
+        <item id="2148" countmax="100" chance1="50000" chancemax="0" />
+        <item id="2148" countmax="88" chance1="56000" chancemax="0" />
+        <item id="2148" countmax="93" chance1="39000" chancemax="0" />
       </inside>
     </item>
   </loot>
-<script>
-<event name="mkillm"/>
-</script>
+  <script>
+    <event name="mkillm" />
+  </script>
 </monster>

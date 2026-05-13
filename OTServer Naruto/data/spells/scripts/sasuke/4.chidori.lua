@@ -1,31 +1,47 @@
-local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_RAITON_DAMAGE)
-setCombatParam(combat, COMBAT_PARAM_EFFECT, 11)
+-- 1. Combate para Sasuke Normal
+local combatNormal = createCombatObject()
+setCombatParam(combatNormal, COMBAT_PARAM_TYPE, COMBAT_RAITON_DAMAGE)
+setCombatParam(combatNormal, COMBAT_PARAM_EFFECT, 11) -- Efeito 11 fixo aqui
 
--- funcao da formula personalizada
-function onGetFormulaValues(cid, level, maglevel)
-    local min = (level * 1.5) + (maglevel * 3.5) + 250
-    local max = (level * 2.0) + (maglevel * 5.5) + 300
+-- 2. Combate para Sasuke Maldição
+local combatCursed = createCombatObject()
+setCombatParam(combatCursed, COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
+setCombatParam(combatCursed, COMBAT_PARAM_EFFECT, 88) -- Efeito 88 fixo aqui
+
+-- 3. Fórmulas com nomes EXCLUSIVOS para este script
+function onGetFormulaHousenkaNormal(cid, level, maglevel)
+    local fist = getPlayerSkillLevel(cid, 0)
+    local min = (level * 2.5) + (maglevel * 15.0) + (fist * 1.5) + 50
+    local max = (level * 4.0) + (maglevel * 20.5) + (fist * 2.5) + 100
     return -min, -max
 end
 
--- define que o combate usara a funcao acima para calcular o dano
-setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+function onGetFormulaHousenkaCursed(cid, level, maglevel)
+    local fist = getPlayerSkillLevel(cid, 0)
+    local min = (level * 2.5) + (maglevel * 15.0) + (fist * 1.5) + 100
+    local max = (level * 4.0) + (maglevel * 20.5) + (fist * 2.5) + 200
+    return -min, -max
+end
 
-local arr = {
-    {3},
-}
+setCombatCallback(combatNormal, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaHousenkaNormal")
+setCombatCallback(combatCursed, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaHousenkaCursed")
 
-local area = createCombatArea(arr)
-setCombatArea(combat, area)
+-- 4. Áreas (definidas separadamente para cada objeto)
+local areaHousenka = createCombatArea({{0, 3, 0}})
+setCombatArea(combatNormal, areaHousenka)
+setCombatArea(combatCursed, areaHousenka)
 
+-- 5. Função Principal
 function onCastSpell(cid, var)
-    if exhaustion.check(cid, 20012) == false then
-        exhaustion.set(cid, 20012, 2)
-        doCombat(cid, combat, var)
-        doCombat(cid, combat, var)
-        return true
+    local vocation = getPlayerVocation(cid)
+    print(vocation)
+    
+    -- Executa apenas UM dos combates. O efeito visual sairá automático no alvo.
+    if vocation >= 20 and vocation <= 23 then
+        print("maldição!")
+        return doCombat(cid, combatCursed, var)
     else
-        doPlayerSendCancel(cid, "Cooldown[" .. exhaustion.get(cid, 20012) .. "]")
+        print("normal!")
+        return doCombat(cid, combatNormal, var)
     end
 end

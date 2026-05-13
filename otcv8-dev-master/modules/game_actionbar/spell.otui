@@ -1,0 +1,200 @@
+SpellPreview < UICheckBox
+  height: 34
+  text-wrap: true
+  multi-line: true
+  focusable: true
+  text-offset: 38 2
+  image-source:
+  change-cursor-image: false
+
+  $hover !disabled:
+    color: #ffffff
+
+  $!checked:
+    background-color: alpha
+
+  $checked:
+    background-color: #ffffff22
+
+  $disabled:
+    image-color: #dfdfdf88
+    color: #dfdfdf88
+    opacity: 0.8
+
+  UIItem
+    id: image
+    anchors.left: parent.left
+    anchors.top: parent.top
+    phantom: true
+    padding: 1
+    size: 34 34
+
+MainWindow
+  id: assignSpellWindow
+  size: 640 520
+  @onEscape: self:destroy()
+
+  Label
+    id: title
+    anchors.top: parent.top
+    anchors.left: parent.left
+    text: "Jutsus"
+    font: cipsoftFont
+    color: #ffffff
+    margin-top: 8
+
+  ScrollablePanel
+    id: spellList
+    anchors.top: title.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    width: 270
+    height: 320
+    padding: 3
+    clipping: true
+    background-color: #484848
+    border-width: 1
+    border-color: #666666
+    vertical-scrollbar: listScrollBar
+    layout:
+      type: verticalBox
+      spacing: 2
+
+  VerticalSeparator
+    anchors.top: spellList.top
+    anchors.left: spellList.right
+    anchors.bottom: spellList.bottom
+    margin-left: 8
+    width: 2
+    background-color: #303030
+
+  Panel
+    id: spellDetails
+    anchors.top: spellList.top
+    anchors.left: spellList.right
+    anchors.right: parent.right
+    anchors.bottom: spellList.bottom
+    margin-left: 14
+    background-color: #2f2f2f
+    border-width: 1
+    border-color: #666666
+    padding: 8
+
+    Label
+      id: spellName
+      anchors.top: parent.top
+      anchors.left: parent.left
+      color: #d8d8d8
+      text-offset: 0 2
+      text-auto-resize: true
+
+    Label
+      id: spellLevel
+      anchors.top: parent.top
+      anchors.left: spellName.right
+      margin-left: 5
+      color: #d8d8d8
+      font: cipsoftFont
+      text-offset: 0 2
+      text-auto-resize: true
+
+    Label
+      id: spellDescription
+      anchors.top: spellName.bottom
+      margin-top: 5
+      anchors.left: parent.left
+      anchors.right: parent.right
+      text: "Descrição:"
+      color: #d8d8d8
+      text-wrap: true
+      text-offset: 0 2
+      text-auto-resize: true
+
+    Label
+      id: spellChakra
+      anchors.top: spellDescription.bottom
+      margin-top: 5
+      anchors.left: parent.left
+      text: "Chakra:"
+      color: #d8d8d8
+      text-auto-resize: true
+
+    Label
+      id: spellCooldown
+      anchors.top: spellChakra.bottom
+      margin-top: 5
+      anchors.left: parent.left
+      text: "Cooldown:"
+      color: #d8d8d8
+      text-auto-resize: true
+
+    Label
+      id: spellVideo
+      anchors.top: spellCooldown.bottom
+      margin-top: 8
+      anchors.left: parent.left
+      anchors.right: parent.right
+      text: "Video: [not configured]"
+      color: #d8d8d8
+      text-wrap: true
+      text-offset: 0 2
+      height: 60
+
+  VerticalScrollBar
+    id: listScrollBar
+    anchors.top: spellList.top
+    anchors.right: spellList.right
+    margin-right: 1
+    anchors.bottom: spellList.bottom
+    step: 14
+    pixels-scroll: true
+
+  Label
+    id: paramLabel
+    anchors.top: spellList.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    text: tr('Parâmetro (ex: nome do alvo):')
+    color: #ffffff
+    font: cipsoftFont
+
+  TextEdit
+    id: paramText
+    anchors.top: paramLabel.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 4
+    height: 22
+    enabled: true
+
+  HorizontalSeparator
+    anchors.top: paramText.bottom
+    margin-top: 10
+    anchors.left: parent.left
+    anchors.right: parent.right
+
+  Button
+    id: buttonClose
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    size: 45 21
+    font: cipsoftFont
+    text: Close
+
+  Button
+    id: buttonApply
+    anchors.right: buttonClose.left
+    margin-right: 5
+    anchors.bottom: parent.bottom
+    size: 45 21
+    font: cipsoftFont
+    text: Apply
+
+  Button
+    id: buttonOk
+    anchors.right: buttonApply.left
+    margin-right: 5
+    anchors.bottom: parent.bottom
+    size: 45 21
+    font: cipsoftFont
+    text: Ok

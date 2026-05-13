@@ -1,0 +1,5 @@
+<npc name="Kendo [ANBU]" script="data/npc/scripts/Konoha/kendo_anbu.lua" walkinterval="0"
+	lookdir="1">
+	<health now="100" max="100" />
+	<look type="38" addons="0" />
+</npc>  

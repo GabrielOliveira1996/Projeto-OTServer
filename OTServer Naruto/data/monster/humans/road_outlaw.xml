@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Road Outlaw" nameDescription="an road outlaw" race="blood" experience="280"
+  speed="235" manacost="0">
+  <health now="450" max="450" />
+  <look type="36" corpse="2858" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="30" attack="27" />
+    <attack name="melee" interval="1000" chance="33" range="4" target="1" min="-10" max="-15">
+      <attribute key="shootEffect" value="throwingknife" />
+    </attack>
+  </attacks>
+  <defenses armor="10" defense="9" />
+  <voices interval="5000" chance="10">
+    <voice sentence="Você cometeu um erro ao cruzar meu caminho!" />
+    <voice sentence="Entregue seus pertences!" />
+  </voices>
+  <loot>
+    <item id="2148" countmax="26" chance1="50000" chancemax="0" />
+    <item id="2148" countmax="14" chance1="90000" chancemax="0" />
+    <item id="2410" countmax="3" chance1="60000" chancemax="0" />
+    <item id="2417" chance1="11000" chancemax="0" />
+    <item id="2382" chance1="5000" chancemax="0" /> <!-- black gloves -->
+    <item id="2395" chance1="5000" chancemax="0" /> <!-- gatana -->
+    <item id="2495" chance1="10000" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2467" chance1="9200" chancemax="0" />
+        <item id="2384" chance1="9400" chancemax="0" />
+        <item id="2649" chance1="6100" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+    <event name="mkillm" />
+  </script>
+</monster>

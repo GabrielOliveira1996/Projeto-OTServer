@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Giichi" script="data/npc/scripts/Naminosato (Tazuna Village)/giichi.lua"
+	walkinterval="2000"
+	floorchange="0">
+	<health now="100" max="100" />
+	<look type="86" />
+</npc>

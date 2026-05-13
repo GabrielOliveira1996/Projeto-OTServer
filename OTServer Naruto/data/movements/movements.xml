@@ -1,7 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <movements>
 
 	<movevent type="StepIn" itemid="4825" event="script" value="chakra_control_training.lua" />
+
+	<!-- randoms -->
+	<movevent type="StepIn" actionid="16000" event="script" value="bandit_tile.lua" />
+
+	<!-- missions -->
+	<movevent type="StepIn" actionid="34000" event="script"
+		value="missions/natalia_prisoner.lua" />
+	<movevent type="StepIn" actionid="5945" event="script"
+		value="missions/isac_dungeon_stair_blocked.lua" />
+	<movevent type="StepIn" actionid="2702" event="script"
+		value="missions/isac_dungeon_stair_blocked.lua" />
+
+	<!-- scroll of utaka -->
+	<movevent type="Equip" itemid="6132" slot="ring" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="6132" slot="ring" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2640" slot="ring" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2640" slot="ring" event="function" value="onDeEquipItem" />
+
+	<!-- blood-stained report -->
+	<movevent type="Equip" itemid="2123" slot="ring" event="script"
+		value="items/blood-stained_report.lua" />
+	<movevent type="DeEquip" itemid="2123" slot="ring" event="script"
+		value="items/blood-stained_report.lua" />
 
 	<!-- Efeitos de Itens -->
 	<movevent type="Equip" itemid="2655" slot="armor" event="script"
@@ -17,8 +40,34 @@
 	<movevent type="DeEquip" itemid="2503" slot="armor" event="script"
 		value="items/tsunade_shirt.lua" />
 
+	<!-- itens com bônus -->
+	<!-- jhon lee trousers -->
+	<movevent type="Equip" itemid="2647" slot="legs" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2647" slot="legs" event="function" value="onDeEquipItem" />
+	<!-- harem trousers -->
+	<movevent type="Equip" itemid="2648" slot="legs" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2648" slot="legs" event="function" value="onDeEquipItem" />
+	<!-- blue cloak -->
+	<movevent type="Equip" itemid="2650" slot="armor" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2650" slot="armor" event="function" value="onDeEquipItem" />
+	<!-- naruto classic shirt -->
+	<movevent type="DeEquip" itemid="2652" slot="armor" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2652" slot="armor" event="function" value="onEquipItem" />
+	<!-- uchiha jacket -->
+	<movevent type="DeEquip" itemid="2654" slot="armor" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2654" slot="armor" event="function" value="onEquipItem" />
+	<!-- orochimaru shirt -->
+	<movevent type="DeEquip" itemid="2656" slot="armor" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2656" slot="armor" event="function" value="onEquipItem" />
+	<!-- speed shoes -->
+	<movevent type="DeEquip" itemid="2643" slot="feet" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2643" slot="feet" event="function" value="onEquipItem" />
+
 	<!-- Sagas -->
 	<movevent type="StepIn" actionid="45000" event="script" value="sagas/tazuna_tile.lua" />
+	<movevent type="StepIn" actionid="45001" event="script" value="sagas/ebisu_battle_tile.lua" />
+	<movevent type="StepIn" actionid="1001-1020" event="script" value="sagas/road_to_waves.lua" />
+	<movevent type="StepIn" actionid="1070" event="script" value="sagas/tazuna_bridge_battle.lua" />
 
 	<!-- Pets -->
 	<movevent type="Equip" itemid="2142" slot="necklace" event="script"
@@ -301,10 +350,6 @@
 	<movevent type="DeEquip" itemid="5462" slot="feet" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2195" slot="feet" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2195" slot="feet" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="6132" slot="feet" event="function" value="onEquipItem" />
-	<movevent type="DeEquip" itemid="6132" slot="feet" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2640" slot="feet" event="function" value="onEquipItem" />
-	<movevent type="DeEquip" itemid="2640" slot="feet" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="7886" slot="feet" event="function" value="onEquipItem">
 
 	</movevent>
@@ -452,8 +497,6 @@
 	<movevent type="DeEquip" itemid="10016" slot="head" event="function" value="onDeEquipItem" />
 
 	<!-- Armors -->
-	<movevent type="DeEquip" itemid="2654" slot="armor" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2654" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2463" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2463" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2486" slot="armor" event="function" value="onDeEquipItem" />
@@ -464,12 +507,8 @@
 	<movevent type="Equip" itemid="2534" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2512" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2512" slot="armor" event="function" value="onEquipItem" />
-	<movevent type="DeEquip" itemid="2652" slot="armor" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2652" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2489" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2489" slot="armor" event="function" value="onEquipItem" />
-	<movevent type="DeEquip" itemid="2656" slot="armor" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2656" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2505" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2505" slot="armor" event="function" value="onEquipItem">
 	</movevent>
@@ -626,8 +665,6 @@
 	<!-- Legs -->
 	<movevent type="Equip" itemid="8923" slot="legs" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="8923" slot="legs" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2647" slot="legs" event="function" value="onEquipItem" />
-	<movevent type="DeEquip" itemid="2647" slot="legs" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2477" slot="legs" event="function" value="onEquipItem">
 
 	</movevent>

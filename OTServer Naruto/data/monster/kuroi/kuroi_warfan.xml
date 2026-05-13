@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kuroi Warfan" nameDescription="a kuroi warfan" race="blood" experience="1200"
+  speed="255"
+  manacost="0">
+  <health now="520" max="520" />
+  <look type="20" corpse="2889" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="16" attack="20" />
+    <attack name="fuuton base" interval="1500" chance="90" range="3" min="-10" max="-20" />
+  </attacks>
+  <defenses armor="2" defense="1" />
+  <loot>
+    <item id="2148" countmax="58" chance1="50000" chancemax="0" />
+    <item id="2423" chance1="4600" chancemax="0" />
+    <item id="2493" chance1="5100" chancemax="0" />
+    <item id="2472" chance1="3200" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2395" chance1="3000" chancemax="0" />
+        <item id="2148" countmax="47" chance1="40000" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+    <event name="mkillm" />
+  </script>
+  <script>
+    <event name="KuroiHasuDeath" />
+  </script>
+  <script>
+    <event name="TaitoKillMission" />
+  </script>
+</monster>

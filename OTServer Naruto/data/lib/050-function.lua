@@ -651,3 +651,28 @@ function getMonsterSummonList(name)
 	local monster = getMonsterInfo(name)
 	return monster and monster.summons or false
 end
+
+function doAkamaruAddPoint(cid, attr)
+    -- ESSE PRINT É OBRIGATÓRIO PARA O TESTE
+    print(">> [Akamaru DEBUG] Recebi pedido do CID: " .. cid .. " para o Atributo: " .. tostring(attr))
+
+    if not isPlayer(cid) then 
+        print(">> [Akamaru DEBUG] Erro: CID nao e um player valido!")
+        return false 
+    end
+
+    local points = getPlayerAkamaruPoints(cid)
+    print(">> [Akamaru DEBUG] Pontos atuais: " .. points)
+
+    if points <= 0 then
+        doPlayerSendCancel(cid, "Voce nao tem pontos de atributo disponiveis.")
+        return false
+    end
+
+    -- Lógica de soma... (mantenha a que você já tem)
+    -- ...
+    
+    -- MUITO IMPORTANTE: Verifique se essa função abaixo existe ou se o nome é outro
+    doSendAkamaruData(cid) 
+    return true
+end

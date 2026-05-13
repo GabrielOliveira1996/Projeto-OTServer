@@ -16,10 +16,11 @@ local JUTSUS = {
     {name = "kyuubi form II",        lvl = 50, spell = "kyuubi form ii"},
     {name = "kyuubi form III",       lvl = 70, spell = "kyuubi form iii"},
     {name = "oodama rasengan",       lvl = 80, spell = "oodama rasengan"},
-    {name = "rasenshuriken",         lvl = 100, spell = "rasenshuriken"}
+    {name = "kyuubi form IV",       lvl = 110, spell = "kyuubi form iv"},
+    {name = "rasenshuriken",         lvl = 140, spell = "rasenshuriken"}
 }
 
-local narutoVocs = {37, 39, 40, 64, 65, 66, 67, 81}
+local narutoVocs = {37, 39, 40, 64, 65, 66, 67, 68, 81}
 
 function onGreet(cid)
     if isInArray(narutoVocs, getPlayerVocation(cid)) then
@@ -72,7 +73,7 @@ function creatureSayCallback(cid, type, msg)
     elseif msgcontains(msg, 'training') then
         selfSay("I offer two stages: {shippuden training} (Lv 90) and {third training} (Lv 170).", cid)
 
-    elseif msgcontains(msg, 'shippuden training') then
+    elseif msgcontains(msg, 'shippuden') then
         if getPlayerVocation(cid) == 37 and getPlayerLevel(cid) >= 90 then
             doPlayerSetVocation(cid, 39)
             setPlayerStorageValue(cid, 20002, 1)
@@ -82,7 +83,7 @@ function creatureSayCallback(cid, type, msg)
             selfSay("You are not ready yet. Come back when you are level 90.", cid)
         end
 
-    elseif msgcontains(msg, 'third training') then
+    elseif msgcontains(msg, 'third') then
         if getPlayerVocation(cid) == 39 and getPlayerLevel(cid) >= 170 then
             doPlayerSetVocation(cid, 40)
             doSendMagicEffect(getThingPos(cid), 12)

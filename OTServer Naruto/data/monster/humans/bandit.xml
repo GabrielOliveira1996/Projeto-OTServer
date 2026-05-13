@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Bandit" nameDescription="a bandit" race="blood" experience="145" speed="220"
+  manacost="800">
+  <health now="220" max="220" />
+  <look type="31" corpse="2851" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="22" attack="19" />
+  </attacks>
+  <defenses armor="6" defense="8" />
+  <voices interval="5000" chance="10">
+    <voice sentence="Suas coisas agora são minhas!" />
+    <voice sentence="Você não pode fugir de nós!" />
+    <voice sentence="Pague pelo pedágio!" />
+  </voices>
+  <loot>
+    <item id="2148" countmax="15" chance="40000" />
+    <item id="2417" chance1="4400" chancemax="0" />
+    <item id="2495" chance1="5000" chancemax="0" />
+    <item id="2467" chance1="5200" chancemax="0" />
+    <item id="2384" chance1="4400" chancemax="0" />
+  </loot>
+  <script>
+    <event name="mkillm" />
+  </script>
+</monster>

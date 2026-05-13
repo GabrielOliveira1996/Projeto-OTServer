@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Gozu" namedescription="a gozu" race="blood" experience="0" speed="280" manacost="0">
+  <health now="1000" max="1000" />
+  <look type="84" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="30" attack="29" />
+    <attack name="Demon Poison" interval="2000" chance="25" range="1" />
+  </attacks>
+  <defenses armor="2" defense="1">
+    <defense name="speed" interval="2000" chance="15" speedchange="320" duration="2000">
+      <attribute key="areaEffect" value="blueshimmer" />
+    </defense>
+  </defenses>
+  <script>
+    <event name="DemonBrothersDeath" />
+  </script>
+</monster>

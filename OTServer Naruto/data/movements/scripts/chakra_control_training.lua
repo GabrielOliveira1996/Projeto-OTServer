@@ -7,7 +7,7 @@ function onStepIn(cid, item, position, fromPosition)
     if item.itemid == 4825 then
         if getCreatureMana(cid) >= 10 then
             -- adiciona progresso na skill 6.
-            doPlayerAddSkillTry(cid, 6, 1)
+            --doPlayerAddSkillTry(cid, 6, 1)
             -- remove a mana.
             doCreatureAddMana(cid, -20)
             -- efeito visual na posição do jogador

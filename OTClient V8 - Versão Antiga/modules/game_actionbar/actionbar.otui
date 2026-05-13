@@ -1,0 +1,85 @@
+ActionButton < UIButton
+  font: cipsoftFont
+  size: 34 50
+  padding: 0
+  
+  Item
+    id: item
+    anchors.top: parent.top
+    anchors.horizontalCenter: parent.horizontalCenter
+    size: 34 34
+    &selectable: true
+    virtual: true
+    border-width: 0
+
+  UIWidget
+    id: hotkeyDisplay
+    anchors.top: item.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-top: 2
+    size: 18 14
+    background-color: #000000cc
+    border-width: 1
+    border-color: #333333
+    phantom: true
+
+  Label
+    id: hotkeyLabel
+    anchors.centerIn: hotkeyDisplay
+    font: cipsoftFont
+    color: #dfdfdf
+    phantom: true
+
+  Label
+    id: text
+    visible: false
+  Label
+    id: parameterText
+    visible: false
+  UIProgressRect
+    id: cooldown
+    anchors.fill: item
+    visible: false
+
+Panel
+  id: actionBar
+  focusable: false
+  size: 450 60
+  layout: anchor
+
+  UIWidget
+    id: prevPanel
+    size: 0 0
+    visible: false
+    Button
+      id: prev
+      UIWidget
+        id: image
+    Button
+      id: first
+      UIWidget
+        id: image
+
+  Panel
+    id: tabBar
+    anchors.fill: parent
+    layout:
+      type: horizontalBox
+      spacing: 2
+
+  UIWidget
+    id: nextPanel
+    size: 0 0
+    visible: false
+    Button
+      id: next
+      UIWidget
+        id: image
+    Button
+      id: last
+      UIWidget
+        id: image
+    Button
+      id: lock
+      UIWidget
+        id: image

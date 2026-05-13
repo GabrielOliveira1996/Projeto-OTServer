@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Zun" script="data/npc/scripts/green_village/zun.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="391" />
+	<parameters>
+		<parameter key="module_shop" value="0" />
+	</parameters>
+</npc>

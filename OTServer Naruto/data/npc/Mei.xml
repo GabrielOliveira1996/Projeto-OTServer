@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mei" script="data/npc/scripts/Shizuka/mei.lua" walkinterval="0" speed="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="58" />
+	<parameters>
+		<parameter key="message_greet"
+			value="Seja bem-vindo, querido. Sente-se e descanse um pouco. O que posso servir para você hoje?" />
+		<parameter key="message_farewell"
+			value="Vá com cuidado, jovem ninja. Estarei aqui caso sinta fome novamente." />
+
+		<parameter key="message_buy" value="Aqui está, querido. Coma bem!" />
+		<parameter key="message_onbuy" value="Excelente escolha! É o preferido de muitos por aqui." />
+		<parameter key="message_missing_money"
+			value="Oh, parece que você não tem moedas suficientes... Não se preocupe, eu entendo." />
+		<parameter key="message_missing_cap"
+			value="Você está carregando coisas demais! Guarde isso e volte aqui." />
+		<parameter key="message_need_space"
+			value="Não tenho espaço para colocar isso, tente organizar sua mochila." />
+		<parameter key="message_not_have_item"
+			value="Sinto muito, mas eu não compro esse tipo de coisa." />
+		<parameter key="message_send_trade" value="Aqui está o que eu tenho preparado hoje." />
+	</parameters>
+</npc>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zabuza Momochi [Hidden Mist]" nameDescription="a zabuza momochi" race="blood"
+  experience="0"
+  speed="260"
+  manacost="0">
+  <health now="2000" max="2000" />
+  <look type="85" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="0" />
+    <flag staticattack="50" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="40" attack="38" />
+    <attack name="Water Dragon" interval="1000" chance="3" target="0" min="-150" max="-250">
+    </attack>
+    <attack name="Zabuza Bunshin" interval="1000" chance="30" />
+  </attacks>
+  <defenses armor="3" defense="2">
+    <defense name="invisible" interval="3000" chance="20" duration="3000">
+      <attribute key="areaEffect" value="blueshimmer" />
+    </defense>
+  </defenses>
+  <voices interval="5000" chance="15">
+    <voice sentence="Can you hear it? The sound of your own heartbeat... stopping." />
+    <voice sentence="The Demon of the Hidden Mist has arrived!" />
+    <voice sentence="You're already within my killing range." />
+    <voice sentence="In the mist, there is only one thing you can be sure of... death." />
+    <voice sentence="Look into my eyes... do you see your end?" />
+  </voices>
+  <script>
+    <event name="Zabuza" />
+  </script>
+</monster>

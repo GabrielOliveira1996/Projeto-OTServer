@@ -6,12 +6,12 @@ setConditionParam(chakra_bonus, CONDITION_PARAM_SUBID, 100) -- ID Ãºnico para nÃ
 
 function onEquip(cid, item, slot)
     doAddCondition(cid, chakra_bonus)
-    doPlayerSendTextMessage(cid, 22, "You have equipped the Classic Sakura Shirt. Your Chakra Control has increased!")
+    doPlayerSendTextMessage(cid, 22, "Você equipou o sakura's classic dress. Seu Controle de Chakra aumentou!")
     return true
 end
 
 function onDeEquip(cid, item, slot)
     doRemoveCondition(cid, CONDITION_ATTRIBUTES, 100) -- Remove a condiÃ§Ã£o pelo SUBID 100
-    doPlayerSendTextMessage(cid, 22, "You have removed the Classic Sakura Shirt.")
+    doPlayerSendTextMessage(cid, 22, "Você removeu o sakura's classic dress.")
     return true
 end

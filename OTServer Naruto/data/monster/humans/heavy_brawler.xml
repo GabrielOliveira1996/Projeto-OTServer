@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Heavy Brawler" nameDescription="a heavy brawler" race="blood" experience="450"
+  speed="180" manacost="0">
+  <health now="680" max="680" />
+  <look type="61" head="20" body="30" legs="40" feet="50" corpse="2860" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="30" attack="34" />
+    <attack name="physical" interval="3000" chance="10" range="3" radius="1" target="1" min="-35"
+      max="-60">
+      <attribute key="areaEffect" value="groundshaker" />
+    </attack>
+  </attacks>
+  <defenses armor="15" defense="12" />
+  <voices interval="5000" chance="10">
+    <voice sentence="Vou te esmagar!" />
+    <voice sentence="Voce parece um inseto na minha frente. Haha." />
+  </voices>
+  <loot>
+    <item id="2148" countmax="26" chance1="50000" chancemax="0" />
+    <item id="2148" countmax="14" chance1="90000" chancemax="0" />
+    <item id="2417" chance1="3500" chancemax="0" />
+    <item id="2495" chance1="2600" chancemax="0" />
+    <item id="2382" chance1="2800" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2467" chance1="2900" chancemax="0" />
+        <item id="2384" chance1="3600" chancemax="0" />
+        <item id="2649" chance1="3400" chancemax="0" />
+        <item id="2648" chance1="1000" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+        <event name="mkillm" />
+    </script>
+</monster>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mushi Bunshin" nameDescription="a mushi bunshin" race="blood" experience="0"
+  speed="0" manacost="0">
+  <health now="1" max="1" />
+  <look type="169" corpse="0" />
+  <flags>
+    <flag summonable="1" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="0" />
+    <flag runonhealth="0" />
+  </flags>
+  <script>
+    <event name="MushiExplosion" />
+  </script>
+</monster>

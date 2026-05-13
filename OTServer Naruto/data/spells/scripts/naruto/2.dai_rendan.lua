@@ -2,31 +2,32 @@ local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 
 function onCastSpell(cid, var)
-    local getSkill = getPlayerSkillLevel(cid, 6) -- skill de fist/taijutsu
+    local level = getPlayerLevel(cid)
+    local taijutsu = getPlayerSkillLevel(cid, SKILL_TAIJUTSU) -- skill de fist/taijutsu
     local getMana = getCreatureMana(cid)
     
     local target = getCreatureTarget(cid)
     local playerName = getCreatureName(cid)
-    local narutoVocations = {37, 39, 40}
-    local cooldownStorage = 23001
-    local cooldownTime = 2 -- tempo em segundos
+    local narutoVocations = {1,5,6,7}
+
+    -- quarta calda nÃ£o permite usar esse jutsu
+    local playerVoc = getPlayerVocation(cid)
+    local fourthTailVocations = 68
+    if playerVoc == fourthTailVocations then
+        doPlayerSendCancel(cid, "Esta forma não permite o uso deste jutsu.")
+        doSendMagicEffect(getThingPos(cid), 2)
+        return false
+    end
 
     -- verifica alvo
     if target == 0 then
-        doPlayerSendCancel(cid, "You need a target.")
+        doPlayerSendCancel(cid, "Você precisa de um alvo.")
         return false
     end
 
     -- verifica vocacao
     if not isInArray(narutoVocations, getPlayerVocation(cid)) then
-        doPlayerSendCancel(cid, "You cannot use this jutsu in Kyuubi form.")
-        return false
-    end
-
-    -- verificacao de Cooldown
-    if getPlayerStorageValue(cid, cooldownStorage) > os.time() then
-        local remaining = getPlayerStorageValue(cid, cooldownStorage) - os.time()
-        doPlayerSendCancel(cid, "Wait " .. remaining .. " seconds.")
+        doPlayerSendCancel(cid, "Você não pode usar este jutsu.")
         return false
     end
 
@@ -47,20 +48,18 @@ function onCastSpell(cid, var)
     end
 
     if not hasClone then
-        doPlayerSendCancel(cid, "You need an active Bunshin.")
+        doPlayerSendCancel(cid, "Você precisa invocar um Bunshin.")
         return false
     end
 
-    -- cxecucao do dano e efeito
+    -- execução do dano e efeito
     local effectPos = {x = targetPos.x + 1, y = targetPos.y, z = targetPos.z}
     doSendMagicEffect(effectPos, 80)
 
     -- Formula de dano baseada no taijutsu
-    local min = (getSkill * 1.0) + 45
-    local max = (getSkill * 1.7) + 60
+    local min = (level * 1.5) + (taijutsu * 3.0)
+    local max = (level * 2.5) + (taijutsu * 4.5)
     doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -min, -max, 1)
-    -- define o cooldown
-    setPlayerStorageValue(cid, cooldownStorage, os.time() + cooldownTime)
 
     return true
 end

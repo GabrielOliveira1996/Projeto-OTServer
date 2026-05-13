@@ -1,0 +1,120 @@
+GameSidePanel < UIMiniWindowContainer
+  background-color: alpha
+  padding: 0
+  width: 198
+  focusable: false
+  on: true
+  layout:
+    type: verticalBox
+
+GameMapPanel < UIGameMap
+  padding: 0
+
+UIWidget
+  id: gameRootPanel
+  anchors.fill: parent
+
+  GameMapPanel
+    id: gameMapPanel
+    anchors.fill: parent
+    focusable: false
+    on-geometry-change: updateSize()
+    margin-top: -35
+    margin-bottom: -35
+
+  Panel
+    id: gameLeftPanels
+    focusable: false
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    layout:
+      type: horizontalBox
+      fit-children: true
+
+  Panel
+    id: gameRightPanels
+    focusable: false
+    anchors.right: parent.right
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    layout:
+      type: horizontalBox
+      fit-children: true
+
+  Panel
+    id: gameBottomPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    height: 1
+    background-color: alpha
+
+  Panel
+    id: gameBottomActionPanel
+    anchors.horizontalCenter: parent.horizontalCenter
+    anchors.bottom: parent.bottom
+    height: 1
+    phantom: true
+
+  Panel
+    id: gameLeftActionPanel
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    width: 1
+    phantom: true
+
+  Panel
+    id: gameRightActionPanel
+    anchors.right: parent.right
+    anchors.verticalCenter: parent.verticalCenter
+    width: 1
+    phantom: true
+
+  Panel
+    id: gameTopBar
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    height: 1
+    background-color: alpha
+
+  Panel
+    id: gameLeftActions
+    anchors.left: parent.left
+    anchors.top: parent.top
+    width: 1
+    visible: false
+
+  Splitter
+    id: bottomSplitter
+    anchors.fill: parent
+    visible: false
+
+  UIWidget
+    id: mouseGrabber
+    focusable: false
+    visible: false
+
+  Button
+    id: chatMobileButton
+    size: 34 34
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-left: 10
+    margin-bottom: 20
+    focusable: false
+    phantom: false
+
+    UIWidget
+      image-source: /images/game/npcicons/icon_chat
+      anchors.centerIn: parent
+      size: 20 20
+      phantom: true
+
+    @onClick: |
+      local panel = modules.game_console.consolePanel
+      if panel then
+        panel:setVisible(not panel:isVisible())
+        if panel:isVisible() then panel:raise() panel:focus() end
+      end

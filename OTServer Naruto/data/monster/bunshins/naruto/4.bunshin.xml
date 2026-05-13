@@ -19,8 +19,8 @@
     <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="14" attack="12" />
-    <attack name="melee" interval="1000" chance="19" range="4" target="1" min="-6" max="-9">
+    <attack name="melee" interval="2000" skill="35" attack="35" />
+    <attack name="melee" interval="1000" chance="33" range="4" target="1" min="-25" max="-30">
       <attribute key="shootEffect" value="throwingknife" />
     </attack>
   </attacks>
@@ -36,4 +36,7 @@
     <immunity drunk="0" />
     <immunity invisible="0" />
   </immunities>
+  <script>
+    <event name="mkillm"/>
+  </script>
 </monster>

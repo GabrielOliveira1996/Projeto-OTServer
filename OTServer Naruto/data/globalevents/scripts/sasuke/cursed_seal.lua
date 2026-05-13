@@ -1,13 +1,13 @@
 local CONFIG = {
-    [92] = {control = 20, damage = 20}, -- vocacao 64 primeiro selo.
-    [61] = {control = 30, damage = 25}, -- vocacao 65 segundo selo.
-    [62] = {control = 40, damage = 30},  -- vocacao 66 terceiro selo.
-    [63] = {control = 50, damage = 35}  -- vocacao 66 terceiro selo shippuden.
+    [20] = {control = 10, damage = 10}, -- primeiro selo.
+    [21] = {control = 15, damage = 15}, -- segundo selo.
+    [22] = {control = 20, damage = 20}, -- terceiro selo.
+    [23] = {control = 20, damage = 20}  -- terceiro selo shippuden.
 }
 
 function onThink(interval)
     for _, cid in ipairs(getPlayersOnline()) do
-        if getPlayerStorageValue(cid, 99124) == 1 then
+        if getPlayerStorageValue(cid, STORAGE_CURSED_FORM) == 1 then
             local voc = getPlayerVocation(cid)
             local check = CONFIG[voc]
             

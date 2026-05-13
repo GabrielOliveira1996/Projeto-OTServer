@@ -513,6 +513,10 @@ void Creature::onCreatureMove(const Creature *creature, const Tile *newTile, con
 			std::list<Creature *> despawnList;
 			for (cit = summons.begin(); cit != summons.end(); ++cit)
 			{
+				if ((*cit)->getSpeed() == 0)
+				{
+					continue;
+				}
 				const Position pos = (*cit)->getPosition();
 				if ((std::abs(pos.z - newPos.z) > 2) || (std::max(std::abs((
 																			   newPos.x) -
@@ -669,6 +673,22 @@ bool Creature::onDeath()
 
 	if (deny)
 		return false;
+
+	// Verifica se esta criatura é um summon e se o dono é um Player
+	if (isSummon() && master)
+	{
+		Player *playerMaster = master->getPlayer();
+		if (playerMaster)
+		{
+			std::string akamaruValue;
+			if (getStorage(STORAGE_AKAMARU_IDENTIFIER, akamaruValue) && atoi(akamaruValue.c_str()) == 1)
+			{
+				playerMaster->updateAkamaruStatus(0, true);
+				playerMaster->sendTextMessage(MSG_EVENT_ADVANCE, "Seu parceiro Akamaru foi derrotado e precisa descansar.");
+			}
+		}
+	}
+	// --- FIM DA LÓGICA DO AKAMARU ---
 
 	int32_t i = 0, size = deathList.size(), limit = g_config.getNumber(ConfigManager::DEATH_ASSISTS) + 1;
 	if (limit > 0 && size > limit)
@@ -842,14 +862,17 @@ void Creature::changeHealth(int32_t healthChange)
 {
 	if (healthChange < 0)
 	{
-		if (getName() == "Akamaru" && isSummon() && master)
+		// Verifica se é um summon, se tem mestre e se tem a storage de "ser o Akamaru"
+		std::string akamaruValue = "";
+		if (isSummon() && master && getStorage(STORAGE_AKAMARU_IDENTIFIER, akamaruValue) && atoi(akamaruValue.c_str()) == 1)
 		{
 			Player *playerMaster = master->getPlayer();
 			if (playerMaster)
 			{
 				uint32_t dodgePts = playerMaster->akamaruDodge;
-				// calcula a chance e limita em 80%
-				uint32_t dodgeChance = std::min((uint32_t)80, (uint32_t)(dodgePts / 10));
+				// Chance de esquiva: 1% a cada 10 pontos, máximo de 35%
+				uint32_t dodgeChance = std::min((uint32_t)35, (uint32_t)(dodgePts / 10));
+
 				if ((uint32_t)random_range(1, 100) <= dodgeChance)
 				{
 					g_game.addMagicEffect(getPosition(), MAGIC_EFFECT_POFF);
@@ -857,39 +880,33 @@ void Creature::changeHealth(int32_t healthChange)
 				}
 			}
 		}
-	}
-	if (healthChange < 0)
-	{
-		extern bool canPlayerAttackMonster(const Player *player, const Creature *target);
-		Creature *attacker = g_game.getCreatureByID(lastHitCreature);
-		if (attacker)
-		{
-			Player *attackerPlayer = attacker->getPlayer();
-			if (attackerPlayer)
-			{
-				if (!canPlayerAttackMonster(attackerPlayer, this))
-				{
-					g_game.addMagicEffect(getPosition(), MAGIC_EFFECT_POFF);
-					return;
-				}
-			}
-		}
-		else
-		{
-			extern std::map<std::string, uint32_t> monsterProtections;
-			if (monsterProtections.find(getName()) != monsterProtections.end())
-			{
-				return;
-			}
-		}
+		// REMOVIDO A TRAVA DE SAGAS DAQUI, ATENÇÃO, NÃO REFAÇA A MERDA!!
 	}
 
+	// Aplicação do dano ou cura
 	if (healthChange > 0)
-		health += std::min(healthChange, getMaxHealth() - health);
+		health += std::min(healthChange, (int32_t)(getMaxHealth() - health));
 	else
 		health = std::max((int32_t)0, health + healthChange);
 
 	g_game.addCreatureHealth(this);
+
+	// --- SINCRONIZAÇÃO DO HP DO AKAMARU ---
+	// se o HP mudou, atualizamos a variável no player logo
+	if (isSummon() && master)
+	{
+		Player *playerMaster = master->getPlayer();
+		if (playerMaster)
+		{
+			std::string akamaruCheck = "";
+			if (getStorage(STORAGE_AKAMARU_IDENTIFIER, akamaruCheck) && atoi(akamaruCheck.c_str()) == 1)
+			{
+				// atualiza a vida na memória do jogador para o próximo save
+				playerMaster->akamaruCurrentHp = (uint32_t)health;
+				playerMaster->sendAkamaruData();
+			}
+		}
+	}
 }
 
 void Creature::changeMana(int32_t manaChange)
@@ -936,22 +953,9 @@ void Creature::gainHealth(Creature *caster, int32_t healthGain)
 
 void Creature::drainHealth(Creature *attacker, CombatType_t combatType, int32_t damage)
 {
-	if (damage > 0 && getName() == "Akamaru" && isSummon() && master)
-	{
-		Player *playerMaster = master->getPlayer();
-		if (playerMaster)
-		{
-			// Aplica uma trava de 80% de chance de esquiva
-			uint32_t dodgeChance = std::min((uint32_t)80, (uint32_t)(playerMaster->akamaruDodge / 10));
-			if ((uint32_t)random_range(1, 100) <= dodgeChance)
-			{
-				g_game.addMagicEffect(getPosition(), MAGIC_EFFECT_POFF);
-				return;
-			}
-		}
-	}
 	extern bool canPlayerAttackMonster(const Player *player, const Creature *target);
 	Creature *targetAttacker = attacker;
+
 	if (!targetAttacker)
 	{
 		targetAttacker = g_game.getCreatureByID(lastHitCreature);
@@ -965,19 +969,19 @@ void Creature::drainHealth(Creature *attacker, CombatType_t combatType, int32_t 
 			if (!canPlayerAttackMonster(attackerPlayer, this))
 			{
 				g_game.addMagicEffect(getPosition(), MAGIC_EFFECT_POFF);
-				return; // Bloqueia o drain de vida
+				return;
 			}
 		}
 	}
-	// Se nï¿½o hï¿½ atacante direto, verificamos se o monstro atual estï¿½ na lista de protegidos
 	else
 	{
 		extern std::map<std::string, uint32_t> monsterProtections;
 		if (monsterProtections.find(getName()) != monsterProtections.end())
 		{
-			return; // Bloqueia danos de fontes desconhecidas para monstros da lista
+			return;
 		}
 	}
+
 	lastDamageSource = combatType;
 	onAttacked();
 
@@ -1334,10 +1338,59 @@ void Creature::onGainExperience(double &gainExp, bool fromMonster, bool multipli
 	{
 		gainExp = gainExp / 2;
 		master->onGainExperience(gainExp, fromMonster, multiplied);
+		// Retornamos aqui para que o summon não execute o addAnimatedText padrão,
+		// já que o mestre (Kiba) controlará a exibição para ambos abaixo.
+		return;
 	}
 	else if (!multiplied)
+	{
 		gainExp *= g_config.getDouble(ConfigManager::RATE_EXPERIENCE);
+	}
 
+	// --- LÓGICA ESPECIAL PARA KIBA & AKAMARU ---
+	Player *player = this->getPlayer();
+	if (player && (player->getVocationId() >= 33 && player->getVocationId() <= 37))
+	{
+		bool isAkamaruSummoned = false;
+		Creature *akamaruPtr = NULL;
+		std::list<Creature *> summons = player->getSummons();
+
+		for (std::list<Creature *>::iterator it = summons.begin(); it != summons.end(); ++it)
+		{
+			Creature *summon = *it;
+			if (summon && !summon->isRemoved())
+			{
+				std::string storageValue = "";
+				if (summon->getStorage(STORAGE_AKAMARU_IDENTIFIER, storageValue) && atoi(storageValue.c_str()) == 1)
+				{
+					isAkamaruSummoned = true;
+					akamaruPtr = summon;
+					break;
+				}
+			}
+		}
+
+		if (isAkamaruSummoned && akamaruPtr)
+		{
+			// Divide o XP que será exibido e processado
+			gainExp = gainExp / 2;
+
+			// Cor da experiência
+			int16_t color = g_config.getNumber(ConfigManager::EXPERIENCE_COLOR);
+			if (color < 0)
+				color = random_range(0, 255);
+
+			// 1. Manda o texto de 135 para o Akamaru
+			std::stringstream ssAkamaru;
+			ssAkamaru << (uint64_t)gainExp;
+			g_game.addAnimatedText(akamaruPtr->getPosition(), (uint8_t)color, ssAkamaru.str());
+
+			// O código abaixo continuará e mandará o texto de 135 para o Player (Mestre)
+		}
+	}
+	// -------------------------------------------
+
+	// Lógica padrão de exibição de texto (agora com gainExp possivelmente dividido)
 	int16_t color = g_config.getNumber(ConfigManager::EXPERIENCE_COLOR);
 	if (color < 0)
 		color = random_range(0, 255);

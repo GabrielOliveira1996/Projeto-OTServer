@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Taito [ANBU Leader]" script="data/npc/scripts/taito.lua" walkinterval="0" speed="2000"
+    floorchange="0">
+    <health now="100" max="100" />
+    <look type="14" head="79" body="86" legs="114" feet="0" addons="3" />
+</npc>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Temari" nameDescription="a temari" race="blood" experience="0" speed="315"
+  manacost="0">
+  <health now="25000" max="25000" />
+  <look type="82" corpse="0" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="78" attack="73" />
+    <attack name="renkuudan - monster" interval="2000" chance="30" min="-560" max="-720">
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="20" />
+  <voices interval="5000" chance="10">
+    <voice sentence="..." />
+  </voices>
+  <script>
+    <event name="Temari" />
+  </script>
+</monster>

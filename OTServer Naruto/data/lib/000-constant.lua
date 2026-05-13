@@ -7,6 +7,312 @@ SOUTHEAST = 5
 NORTHWEST = 6
 NORTHEAST = 7
 
+-- [QUESTS] 
+STORAGE_BANDIT_CAVE = 50001
+STORAGE_ASSASSIN_CAVE = 50002
+STORAGE_REWARD_ASSASSIN_CAVE = 50003
+
+-- [NARUTO]
+STORAGE_KYUUBI_FORM = 99123
+NARUTO_CLASSIC_VOCATION = 1
+NARUTO_CLASSIC_OUTFIT = 352
+NARUTO_SHIPPUDEN_VOCATION = 2
+NARUTO_SHIPPUDEN_OUTFIT = 352
+NARUTO_WAR_VOCATION = 3
+
+STORAGE_COOLDOWN_WEAPON_DISTANCE = 12435
+STORAGE_COOLDOWN_PILL = 7321
+
+-- [SASUKE]
+STORAGE_SHARINGAN = 312345
+STORAGE_CURSED_FORM = 99124
+SASUKE_CLASSIC_VOCATION = 15
+SASUKE_CLASSIC_OUTFIT = 358
+SASUKE_SHIPPUDEN_VOCATION = 16
+SASUKE_SHIPPUDEN_OUTFIT = 359
+SASUKE_LIST_OF_CURSED_VOCATIONS = {20, 21, 22, 23}
+
+-- [SAKURA]
+SAKURA_KUNOICHI_VOCATION = 25
+SAKURA_KUNOICHI_OUTFIT = 387
+SAKURA_KUNOICHI_CHAKRA_NO_MESU_VOCATION = 29
+SAKURA_KUNOICHI_CHAKRA_NO_MESU_OUTFIT = 2
+CONTROL_NECESSARY_TO_KUNOICHI_CHAKRA_NO_MESU = 15
+------
+SAKURA_SHIPPUDEN_VOCATION = 26
+SAKURA_SHIPPUDEN_OUTFIT = 69
+SAKURA_SHIPPUDEN_CHAKRA_NO_MESU_VOCATION = 30
+SAKURA_SHIPPUDEN_CHAKRA_NO_MESU_OUTFIT = 168
+CONTROL_NECESSARY_TO_SHIPPUDEN_CHAKRA_NO_MESU = 20
+------
+SAKURA_WAR_VOCATION = 27
+SAKURA_WAR_OUTFIT = 346
+SAKURA_WAR_CHAKRA_NO_MESU_VOCATION = 31
+SAKURA_WAR_CHAKRA_NO_MESU_OUTFIT = 345
+CONTROL_NECESSARY_TO_WAR_CHAKRA_NO_MESU = 25
+------
+SAKURA_SHINSU_VOCATION = 28
+SAKURA_SHINSU_OUTFIT = 343
+SAKURA_SHINSU_CHAKRA_NO_MESU_VOCATION = 32
+SAKURA_SHINSU_CHAKRA_NO_MESU_OUTFIT = 343
+CONTROL_NECESSARY_TO_SHINSU_CHAKRA_NO_MESU = 30
+
+-- [KIBA]
+STORAGE_AKAMARU_ORIGINAL_NAME = 98765 -- guarda o nome do akamaru
+STORAGE_AKAMARU_IDENTIFIER = 85220 -- identificador do akamaru
+-- KIBA E AKAMARU FUSÃO
+FIRST_FUSION_OUTFIT = 41
+STORAGE_IS_FUSED = 16000 
+STORAGE_BONUS_SPEED = 16004
+
+-- [SKILLS]
+SKILL_TAIJUTSU = 0      -- fist origalmente
+SKILL_ATACK_SPEED = 1   -- club origalmente
+SKILL_KENJUTSU = 2      -- sword origalmente
+SKILL_DISTANCE = 4      -- distance originalmente
+SKILL_DODGE = 5         -- shield originalmente
+SKILL_CONTROL = 6       -- fishing originalmente
+
+-- [STORAGES CHARACTER PROGRESSION]
+EVOLUTION_LEVEL_30 = 65498
+EVOLUTION_LEVEL_90 = 65499
+EVOLUTION_LEVEL_130 = 65500
+EVOLUTION_LEVEL_170 = 65501
+EVOLUTION_LEVEL_250 = 65502
+
+-- [MISSOES DE DAIZOU]
+
+-- COLETA DE LIXO RANK D
+PLAYER_PRESTIGE_POINTS = 12000 -- Pontos de prestigio acumulados
+MISSION_TRASH_STATUS = 12001   -- Status da missao (0: disponivel, 1: ativa, 2: completa)
+MISSION_TRASH_COUNT = 12002    -- Contador de lixos coletados (0 a 3)
+-- reserva posição dos lixos
+MISSION_TRASH_ID1 = 12003
+MISSION_TRASH_ID2 = 12004
+MISSION_TRASH_ID3 = 12005
+
+
+-- [ MISSAO: THE DESTINY OF ISAC AND UTAKA ]
+STORAGE_MISSION_ISAC = 2701  
+STORAGE_MISSION_ISAC_WAVES = 2705 -- Contador de hordas/waves
+STORAGE_MISSION_ISAC_READ = 2710 
+STORAGE_NPC_YOMOGI_READ = 2711 -- Controle de diï¿½logos lidos da Yomogi
+
+-- [ STATUS / PROGRESSION ]
+ISAC_STATUS_START = 1        -- Met Isac / Shikaku Sent Player
+ISAC_STATUS_FIND_UTAKA = 2   -- Isac asked to find Utaka in the north
+ISAC_STATUS_UTAKA_KIDNAPPED = 3 -- Utaka is kidnapped, Isac asks for help
+ISAC_STATUS_SAVING_UTAKA = 4 -- Player and Isac are going to rescue (Summon mode)
+ISAC_STATUS_FAILED_RESCUE = 5 -- Player refused to help Isac
+
+-- [ STATUS / ENDINGS ]
+ISAC_STATUS_HERO = 7       -- BOTH SURVIVED (Reward: Bandana)
+ISAC_STATUS_ISAC_DEAD = 8  -- ONLY ISAC DIED (Reward: Tanto)
+ISAC_STATUS_UTAKA_DEAD = 9 -- ONLY UTAKA DIED (Reward: Scroll)
+ISAC_STATUS_BOTH_DEAD = 10 -- BOTH DIED (Reward: Report)
+ISAC_STATUS_COMPLETE = 20  -- Missão entregue e finalizada no Shikaku
+
+-- [ SAGA SYSTEM ]
+-- Main Storage
+SAGA_STORAGE = 11000
+SAGA_AUX_CLEAN_FACE = 11001 -- Controla se o player tirou a foto formal
+SAGA_KASHI_TEST = 11002 -- Controla se pode iniciar a captura dos guinzos
+SAGA_AUX_DEMON_BROS_EVENT = 11003 -- Controle da emboscada (Gozu/Meizu)
+SAGA_AUX_DEMON_BROS_KILLCOUNT = 11004 -- Contagem de mortes (Gozu + Meizu)
+SAGA_AUX_ZABUZA_EVENT = 11005 -- Controle da emboscada do Zabuza
+SAGA_AUX_WAVES_ROAD_TALKSTATE = 11006 -- Controla as falas durante a escolta das ondas
+SAGA_AUX_BRIDGE_LOCK_STORAGE = 11007 -- controla o lock global da ponte, para evitar que outros jogadores interfiram
+
+-- Saga Stages Mapping
+SAGA_STAGE_ACADEMIC_EXAM = 1
+SAGA_STAGE_MIZUKI_PROPOSAL = 2
+SAGA_STAGE_SCROLL_THEFT = 3
+SAGA_STAGE_FOREST_DELIVERY = 4 
+SAGA_STAGE_REGISTRATION_PHOTO = 5 
+SAGA_STAGE_HOKAGE_CONFRONTATION = 6
+SAGA_STAGE_HOKAGE_GRANDSON = 7 
+SAGA_STAGE_MEET_JOUNIN = 8
+SAGA_STAGE_FIRST_MISSION = 9 
+SAGA_STAGE_WAVES_ESCORT = 10 -- escolta de tazuna, batalhas com gozu, meizu e zabuza
+SAGA_STAGE_WAVES_MIST = 11 -- final de escolta, travessia do mar e chegada nas ondas
+SAGA_STAGE_FINALLY_A_BREAK = 12 -- um pequeno descanso antes de continuar
+SAGA_STAGE_CHAKRA_CONTROL_TRAINING = 13 -- treinamento de controle de chakra com o kakashi
+SAGA_STAGE_CLIMP_THE_TREE = 14 -- teste de escalada da ï¿½rvore com o kakashi
+SAGA_STAGE_PROTECT_THE_TAZUNA_ON_THE_BRIDGE = 15 -- defesa de tazuna na ponte
+SAGA_STAGE_FIRST_REAL_MISSION_COMPLETED = 16 -- finalizou o primeiro arco
+SAGA_STAGE_KAKASHI_INVITATION = 17 -- falar com kakashi sobrbe o exame chunin
+
+SAGA_STAGE_CHUNNIN_EXAM_START = 18
+SAGA_STAGE_FOREST_GATE = 19
+SAGA_STAGE_SERPENT_ENCOUNTER = 20
+SAGA_STAGE_SAKURA_CONCERN = 21
+SAGA_STAGE_DEFENSE_ZAKU = 22
+SAGA_STAGE_DEFENSE_KIN = 23
+SAGA_STAGE_DEFENSE_DOSU = 24
+SAGA_STAGE_SUNA_ALLY = 25
+SAGA_STAGE_RAIN_AMBUSH = 26
+SAGA_STAGE_TOWER_SENSOR = 27
+SAGA_STAGE_PRELIMINARY_KIBA = 28
+SAGA_STAGE_TOAD_MASTER = 29
+SAGA_STAGE_ARENA_BOUND = 30
+SAGA_STAGE_DESTINY_VS_EFFORT = 31
+SAGA_STAGE_INVASION_START = 32
+SAGA_STAGE_PURSUIT_KANKURO = 33
+SAGA_STAGE_PURSUIT_TEMARI = 34
+SAGA_STAGE_JINCHUURIKI_AWAKENING = 35
+SAGA_STAGE_SHUKAKU_FORM1 = 36
+SAGA_STAGE_BEAST_CONFRONTATION = 37
+SAGA_STAGE_TSUNADE_SEARCH = 38
+SAGA_STAGE_LOCATING_SANNIN = 39
+SAGA_STAGE_KABUTO_ESPIONAGE = 40
+SAGA_STAGE_OROCHIMARU_RIGHT_HAND = 41
+SAGA_STAGE_HOSPITAL_CRISIS = 42
+SAGA_STAGE_EXPLOSIVE_RIVALRY = 43
+SAGA_STAGE_SASUKE_DEPARTURE = 44
+SAGA_STAGE_RESCUE_SQUAD = 45
+SAGA_STAGE_SOUND_JIROUBOU = 46
+SAGA_STAGE_CURSE_MARK_POWER = 47
+SAGA_STAGE_SOUND_KIDOMARU = 48
+SAGA_STAGE_SHADOW_HUNTER = 49
+SAGA_STAGE_TWINS_SAKON_UKON = 50
+SAGA_STAGE_TWO_HEADED_NIGHTMARE = 51
+SAGA_STAGE_DEATH_MELODY = 52
+SAGA_STAGE_CURSED_SYMPHONY = 53
+SAGA_STAGE_LEADER_KIMIMARO = 54
+SAGA_STAGE_CLEMATIS_DANCE = 55
+SAGA_STAGE_VALLEY_OF_THE_END = 56
+SAGA_STAGE_FINAL_BOND = 57 -- The last classic saga
+
+-- [ SAGA INFO ]
+SAGA_DATA = {
+    [SAGA_STAGE_ACADEMIC_EXAM] = {
+        title = "Saga 1 # O Exame Acadêmico", 
+        goal = "Encontre Iruka-Sensei na Academia e prove seu valor realizando o exame de graduação. {Palavra-chave: bunshin}", 
+        reward = "2000 EXP"
+    },
+    [SAGA_STAGE_MIZUKI_PROPOSAL] = {
+        title = "Saga 2 # A Proposta de Mizuki", 
+        goal = "Vá até a entrada da Academia e procure pelo Mizuki. Ele tem instruções importantes para você. {Palavra-chave: ajuda}", 
+        reward = "2000 EXP"
+    },
+    [SAGA_STAGE_SCROLL_THEFT] = {
+        title = "Saga 3 # O Roubo do Pergaminho", 
+        goal = "Seu destino é o Prédio Principal de Konoha. Entre sorrateiramente e roube o lendário pergaminho do jutsu proibido.", 
+        reward = "5000 EXP"
+    },
+    [SAGA_STAGE_FOREST_DELIVERY] = {
+        title = "Saga 4 # Entrega na Floresta", 
+        goal = "Rápido! Mizuki está ao sul, na densa floresta, aguardando o Pergaminho dos Selos. Não o faça esperar mais tempo. {Palavra-chave: pergaminho}", 
+        reward = "30000 EXP"
+    },
+    [SAGA_STAGE_REGISTRATION_PHOTO] = {
+        title = "Saga 5 # A Foto de Registro", 
+        goal = "Vá até o prédio principal no primeiro andar. Lá, você tirará a foto oficial para sua documentação ninja. Não se atrase!", 
+        reward = "2000 EXP"
+    },
+    [SAGA_STAGE_HOKAGE_CONFRONTATION] = {
+        title = "Saga 6 # Confrontando o Terceiro Hokage", 
+        goal = "Leve sua foto ao Hokage. Se ele recusar o registro, mostre que você domina técnicas... nada convencionais.", 
+        reward = "500 EXP"
+    },
+    [SAGA_STAGE_HOKAGE_GRANDSON] = {
+        title = "Saga 7 # O Neto do Hokage", 
+        goal = "Konohamaru quer que você seja o sensei dele. Aceite treiná-lo e leve-o para a sauna; ele precisa conhecer as curvas de uma mulher para aprender essa técnica. {Palavra-chave: Sensei}", 
+        reward = "0 EXP"
+    },
+    [SAGA_STAGE_MEET_JOUNIN] = {
+        title = "Saga 8 # Conheça o Seu Jounin", 
+        goal = "Encontre seu mentor Kakashi Hatake na floresta. {Palavra-chave: Iniciar}", 
+        reward = "10000 EXP"
+    },
+    [SAGA_STAGE_FIRST_MISSION] = {
+        title = "Saga 9 # O Despertar de um Shinobi", 
+        goal = "O teste de Kakashi acabou. Vá até a sala do Hokage e reivindique sua primeira missão real. Sua jornada ninja começa agora! {Palavra-chave: Missão}", 
+        reward = "0 EXP"
+    },
+    [SAGA_STAGE_WAVES_ESCORT] = {
+        title = "Saga 10 # Sangue e Névoa: O Caminho das Ondas", 
+        goal = "Escolte o construtor Tazuna. Mantenha os olhos abertos: assassinos espreitam nas sombras e o perigo é real. Não deixe Tazuna morrer! {Palavra-chave: Tazuna}", 
+        reward = "30000 EXP"
+    },
+    [SAGA_STAGE_WAVES_MIST] = {
+        title = "Saga 11 # A Névoa Baixou: A Chegada no Cais", 
+        goal = "Zabuza Momochi foi derrotado, mas algo não faz sentido... Aquele ninja mascarado levou o corpo antes mesmo que pudéssemos reagir. Não baixe a guarda! Sua missão agora é escoltar Tazuna até o cais para que ele possa rever sua família.", 
+        reward = "40.000 EXP"
+    },
+    [SAGA_STAGE_FINALLY_A_BREAK] = {
+        title = "Saga 12 # Terra de Desolação: A Vila do Velho Tazuna", 
+        goal = "A travessia foi exaustiva. Agora que chegaram à vila, acompanhe o construtor até sua casa para planejar os próximos passos da missão. Mas cuidado: até as paredes parecem ter ouvidos aqui. Fale com Tazuna. {Palavra-chave: ponte}", 
+        reward = "0 EXP"
+    },
+    [SAGA_STAGE_CHAKRA_CONTROL_TRAINING] = {
+        title = "Saga 13 # Determinação Ninja: O Domínio do Chakra", 
+        goal = "O desabafo de Inari ecoa em sua mente. Para enfrentar Zabuza e proteger o construtor, você deve superar seus limites. Encontre Kakashi-sensei na floresta ao sul e inicie um rigoroso treinamento. {Palavra-chave: treinar}", 
+        reward = "0 EXP"
+    },
+    [SAGA_STAGE_CLIMP_THE_TREE] = {
+        title = "Saga 14 # Kinobori no Jutsu: Superando a Gravidade", 
+        goal = "Kakashi-sensei ensinou a técnica de concentrar chakra nos pés. Encontre uma árvore na floresta e utilize a técnica 'kinobori' para subir. Treine exaustivamente até que seu controle de chakra seja perfeito. {Objetivo: Alcance o nível 15 de Controle de Chakra}", 
+        reward = "10 Pontos de Controle de Chakra"
+    },
+    [SAGA_STAGE_PROTECT_THE_TAZUNA_ON_THE_BRIDGE] = {
+        title = "Saga 15 # O Confronto Final: Névoa na Ponte", 
+        goal = "Seu treinamento foi concluído, mas o perigo não espera. Tazuna seguiu para a ponte para terminar sua construção. Corra até lá imediatamente e proteja-o de qualquer ameaça.", 
+        reward = "200000 EXP"
+    },
+    [SAGA_STAGE_FIRST_REAL_MISSION_COMPLETED] = {
+        title = "Saga 16 # O Fim da Névoa: Lições de um Shinobi", 
+        goal = "A ponte finalmente está terminada e, em homenagem aos seus feitos, recebeu o nome de 'Grande Ponte |PLAYERNAME|'. Zabuza e Haku partiram como guerreiros, deixando para trás mais do que apenas sangue, mas uma lição sobre o que significa ser um ninja. Agora, retorne a Konoha para relatar ao Hokage o sucesso de sua primeira grande missão. {Palavra-chave: Relatório}", 
+        reward = "0 EXP"
+    },
+    [SAGA_STAGE_KAKASHI_INVITATION] = {
+        title = "Saga 17 # A Prova Chunin: Um Desafio Maior", 
+        goal = "Seu desempenho na Terra das Ondas foi notável e Sarutobi recomendou falar com Kakashi sobre a prova chunin. Se estiver pronto para subir de nível, vá até a residência de Kakashi e mostre sua determinação para participar do exame. {Palavra-chave: Exame Chunin}",
+        reward = "0 EXP"
+    },
+
+    [SAGA_STAGE_CHUNNIN_EXAM_START] = {title = "Saga 17 # Inicio do Exame Chunnin", goal = "Va ate o segundo andar da academia para a prova escrita.", reward = "50000 EXP"},
+    [SAGA_STAGE_FOREST_GATE] = {title = "Saga 18 # O Portao da Floresta", goal = "Encontre Anko na entrada da Floresta da Morte. {Palavra-chave: Exame Chunnin}", reward = "N/A"},
+    [SAGA_STAGE_SERPENT_ENCOUNTER] = {title = "Saga 19 # Encontro com a Serpente", goal = "Enfrente Orochimaru e sobreviva ao seu ataque!", reward = "150000 EXP"},
+    [SAGA_STAGE_SAKURA_CONCERN] = {title = "Saga 20 # A Preocupacao de Sakura", goal = "Fale com Sakura sobre o estado do time. {Palavra-chave: Talk}", reward = "15000 EXP"},
+    [SAGA_STAGE_DEFENSE_ZAKU] = {title = "Saga 21 # Defesa Desesperada: Zaku", goal = "Voce e a unica linha de defesa contra Zaku!", reward = "90000 EXP"},
+    [SAGA_STAGE_DEFENSE_KIN] = {title = "Saga 22 # Defesa Desesperada: Kin", goal = "O ataque continua. Nao deixe Kin se aproximar!", reward = "112500 EXP"},
+    [SAGA_STAGE_DEFENSE_DOSU] = {title = "Saga 23 # Defesa Desesperada: Dosu", goal = "Derrote Dosu e garanta a seguranca da equipe.", reward = "127500 EXP"},
+    [SAGA_STAGE_SUNA_ALLY] = {title = "Saga 24 # O Aliado de Suna", goal = "Siga Kabuto para alcancar a torre no centro da floresta. {Palavra-chave: Talk}", reward = "22500 EXP"},
+    [SAGA_STAGE_RAIN_AMBUSH] = {title = "Saga 25 # Emboscada da Chuva", goal = "Elimine os ninjas da Vila da Chuva no caminho.", reward = "150000 EXP"},
+    [SAGA_STAGE_TOWER_SENSOR] = {title = "Saga 26 # O Sensor da Torre", goal = "Entregue os pergaminhos ao Sensor da prova. {Palavra-chave: Talk}", reward = "22500 EXP"},
+    [SAGA_STAGE_PRELIMINARY_KIBA] = {title = "Saga 27 # Preliminares: Contra Kiba", goal = "Derrote Kiba Inuzuka para avancar para as finais!", reward = "195000 EXP"},
+    [SAGA_STAGE_TOAD_MASTER] = {title = "Saga 28 # O Mestre dos Sapos", goal = "Encontre Jiraiya na sauna. {Palavra-chave: Oiroke no Jutsu}", reward = "22500 EXP"},
+    [SAGA_STAGE_ARENA_BOUND] = {title = "Saga 29 # Rumo a Arena", goal = "Konohamaru te ajudara a chegar na arena. {Palavra-chave: Talk}", reward = "15000 EXP"},
+    [SAGA_STAGE_DESTINY_VS_EFFORT] = {title = "Saga 30 # O Destino vs Esforco", goal = "Derrote Neji Hyuuga e prove seu valor!", reward = "240000 EXP"},
+    [SAGA_STAGE_INVASION_START] = {title = "Saga 31 # A Invasao Comeca", goal = "Encontre Kakashi no portao da vila. {Palavra-chave: Talk}", reward = "22500 EXP"},
+    [SAGA_STAGE_PURSUIT_KANKURO] = {title = "Saga 32 # Perseguicao: Kankuro", goal = "Nao deixe os ninjas de Suna escaparem. Derrote Kankuro!", reward = "300000 EXP"},
+    [SAGA_STAGE_PURSUIT_TEMARI] = {title = "Saga 33 # Perseguicao: Temari", goal = "Supere os ventos de Temari e prossiga!", reward = "350000 EXP"},
+    [SAGA_STAGE_JINCHUURIKI_AWAKENING] = {title = "Saga 34 # O Despertar do Jinchuuriki", goal = "Dete Gaara antes que a transformacao seja concluida!", reward = "600000 EXP"},
+    [SAGA_STAGE_SHUKAKU_FORM1] = {title = "Saga 35 # Shukaku: Primeira Forma", goal = "Derrote a manifestacao inicial do Shukaku!", reward = "750000 EXP"},
+    [SAGA_STAGE_BEAST_CONFRONTATION] = {title = "Saga 36 # O Confronto de Bestas", goal = "Derrote o Shukaku desperto completamente!", reward = "900000 EXP"},
+    [SAGA_STAGE_TSUNADE_SEARCH] = {title = "Saga 37 # A Busca pela Quinta Hokage", goal = "Encontre Jiraiya na sauna. {Palavra-chave: Hokage}", reward = "22500 EXP"},
+    [SAGA_STAGE_LOCATING_SANNIN] = {title = "Saga 38 # Localizando a Lendaria Sannin", goal = "Va ate a cidade ao norte e convenca Tsunade. {Palavra-chave: Talk}", reward = "25000 EXP"},
+    [SAGA_STAGE_KABUTO_ESPIONAGE] = {title = "Saga 39 # Espionagem de Kabuto", goal = "Interrogue Kabuto antes que ele escape. {Palavra-chave: Talk}", reward = "25000 EXP"},
+    [SAGA_STAGE_OROCHIMARU_RIGHT_HAND] = {title = "Saga 40 # O Braco Direito de Orochimaru", goal = "Derrote Kabuto agora mesmo!", reward = "1000000 EXP"},
+    [SAGA_STAGE_HOSPITAL_CRISIS] = {title = "Saga 41 # Crise no Hospital", goal = "Fale com Sakura no hospital sobre Sasuke. {Palavra-chave: Talk}", reward = "25000 EXP"},
+    [SAGA_STAGE_EXPLOSIVE_RIVALRY] = {title = "Saga 42 # Rivalidade Explosiva", goal = "Enfrente Sasuke no terraco do hospital!", reward = "1250000 EXP"},
+    [SAGA_STAGE_SASUKE_DEPARTURE] = {title = "Saga 43 # A Partida de Sasuke", goal = "Fale com Sakura no portao principal. {Palavra-chave: Talk}", reward = "30000 EXP"},
+    [SAGA_STAGE_RESCUE_SQUAD] = {title = "Saga 44 # O Esquadrao de Resgate", goal = "Encontre Shikamaru ao norte da vila. {Palavra-chave: Talk}", reward = "30000 EXP"},
+    [SAGA_STAGE_SOUND_JIROUBOU] = {title = "Saga 45 # O Quarteto do Som: Jiroubou", goal = "Derrote Jiroubou e abra caminho!", reward = "1500000 EXP"},
+    [SAGA_STAGE_CURSE_MARK_POWER] = {title = "Saga 46 # A Forca Bruta: Selo Amaldicoado", goal = "Derrote Jiroubou no Selo Nivel 2!", reward = "1750000 EXP"},
+    [SAGA_STAGE_SOUND_KIDOMARU] = {title = "Saga 47 # O Quarteto do Som: Kidomaru", goal = "Elimine Kidomaru para libertar o grupo das teias.", reward = "1750000 EXP"},
+    [SAGA_STAGE_SHADOW_HUNTER] = {title = "Saga 48 # O Cacador das Sombras", goal = "Sobreviva aos ataques de Kidomaru Nivel 2!", reward = "2000000 EXP"},
+    [SAGA_STAGE_TWINS_SAKON_UKON] = {title = "Saga 49 # Os Gemeos Sakon e Ukon", goal = "Enfrente os gemeos e recupere o caixao.", reward = "2250000 EXP"},
+    [SAGA_STAGE_TWO_HEADED_NIGHTMARE] = {title = "Saga 50 # Pesadelo de Duas Cabecas", goal = "Derrote os gemeos em sua forma demoniaca!", reward = "2500000 EXP"},
+    [SAGA_STAGE_DEATH_MELODY] = {title = "Saga 51 # A Melodia da Morte: Tayuya", goal = "Derrote Tayuya e resista ao som da flauta!", reward = "2750000 EXP"},
+    [SAGA_STAGE_CURSED_SYMPHONY] = {title = "Saga 52 # Sinfonia Amaldicoada", goal = "Venca a ilusao e os demonios de Tayuya Nivel 2!", reward = "3000000 EXP"},
+    [SAGA_STAGE_LEADER_KIMIMARO] = {title = "Saga 53 # O Lider do Quarteto: Kimimaro", goal = "Enfrente a Kekkei Genkai de Kimimaro!", reward = "3250000 EXP"},
+    [SAGA_STAGE_CLEMATIS_DANCE] = {title = "Saga 54 # A Danca das Clematis", goal = "Sobreviva a danca final de ossos de Kimimaro!", reward = "3500000 EXP"},
+    [SAGA_STAGE_VALLEY_OF_THE_END] = {title = "Saga 55 # O Vale do Fim", goal = "Tente trazer Sasuke de volta a qualquer custo!", reward = "3500000 EXP"},
+    [SAGA_STAGE_FINAL_BOND] = {title = "Saga 56 # O Ultimo Laco", goal = "Derrote Sasuke na batalha final do Vale do Fim!", reward = "4000000 EXP"}
+}
+
 COMBAT_FORMULA_UNDEFINED = 0
 COMBAT_FORMULA_LEVELMAGIC = 1
 COMBAT_FORMULA_SKILL = 2
@@ -267,15 +573,15 @@ CONST_ME_NOVOFOURTYEIGHT = 116
 CONST_ME_NONE = 255
 CONST_ME_LAST = CONST_ME_NOVOFOURTYEIGHT
 
-CONST_ANI_SPEAR = 0
+CONST_FUUMA_SHURIKEN_THROW = 0
 CONST_ANI_BOLT = 1
-CONST_ANI_ARROW = 2
+CONST_SEBON_THROW = 2
 CONST_ANI_FIRE = 3
 CONST_ANI_ENERGY = 4
 CONST_ANI_POISONARROW = 5
-CONST_ANI_BURSTARROW = 6
-CONST_ANI_THROWINGSTAR = 7
-CONST_ANI_THROWINGKNIFE = 8
+CONST_EXPLOSIVE_KUNAI_THROW = 6
+CONST_SHURIKEN_THROW = 7
+CONST_KUNAI_THROW = 8
 CONST_ANI_SMALLSTONE = 9
 CONST_ANI_DEATH = 10
 CONST_ANI_LARGEROCK = 11
@@ -300,7 +606,7 @@ CONST_ANI_EARTH = 29
 CONST_ANI_HOLY = 30
 CONST_ANI_SUDDENDEATH = 31
 CONST_ANI_FLASHARROW = 32
-CONST_ANI_FLAMMINGARROW = 33
+CONST_FIRE_THROW = 33
 CONST_ANI_SHIVERARROW = 34
 CONST_ANI_ENERGYBALL = 35
 CONST_ANI_SMALLICE = 36

@@ -1,7 +1,7 @@
 function onCastSpell(cid, var)
     local materials = {
         {id = 2132, count = 1}, -- Empty Scroll
-        {id = 2159, count = 1}, -- Chakra Seal
+        {id = 2789, count = 10}, -- Brown Mushrooms
         {id = 2677, count = 30} -- Fruits
     }
     

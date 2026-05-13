@@ -1,781 +1,635 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <spells>
 
-	<!-- Criaturas de Sagas -->
-	<instant name="Katon Goukakyu No Jutsu - Monster" words="katon goukakyu no jutsu - monster"
-		lvl="0" mana="0"
-		exhaustion="0" direction="1" needlearn="0" event="script"
-		value="saga/katon_goukakyu_no_jutsu.lua">
-	</instant>
-
-	<!-- Summon Runes -->
-	<rune name="Desintegrate" id="2310" allowfaruse="0" charges="3" lvl="21" maglv="4"
-		exhaustion="2000" range="1" event="script" value="support/desintegrate rune.lua">
-	</rune>
-	<rune name="Shinteshin No Jutsu" id="2290" allowfaruse="1" charges="1" lvl="30" maglv="0"
-		exhaustion="2000" needtarget="1" blocktype="solid" event="function" value="convince">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" showInDescription="0" />
-	</rune>
-	<rune name="sajin sougeki" id="2295" allowfaruse="1" charges="1" lvl="40" maglv="0"
-		exhaustion="2000" blocktype="all" event="script" value="gaara/sunna wall.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" showInDescription="0" />
-	</rune>
-	<rune name="Wild Growth" id="2269" allowfaruse="1" charges="2" lvl="27" maglv="8"
-		exhaustion="1000" blocktype="all" event="script" value="support/wild growth rune.lua">
-	</rune>
-
-	<!-- Jutsus de Monstros-->
-	<instant name="Ossos Um" words="ossos um" lvl="0" mana="0" exhaustion="2000" range="4"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/ossos1.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Ossos Dois" words="ossos dois" lvl="0" mana="280" exhaustion="2000" needlearn="0"
-		event="script" value="monster/ossos2.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Water Dragon" words="water dragon" lvl="0" mana="0" exhaustion="2000" range="4"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/water dragon.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Stone Destruction" words="stone destruction" lvl="0" mana="280" exhaustion="2000"
-		range="4" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="stone destruction.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Stone Combusted" words="stone combusted" lvl="0" mana="280" exhaustion="2000"
-		needlearn="0" event="script" value="stone combusted.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Chakra Veil" words="chakra veil" lvl="0" mana="0" exhaustion="2000" range="3"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/chakra veil.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Chakra Cut" words="chakra cut" lvl="0" mana="0" exhaustion="2000" range="3"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/chakra cut.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="shadown" words="shadown" lvl="0" mana="0" exhaustion="2000" needlearn="0"
-		event="script" value="shadown.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="monster kaiten" words="monster kaiten" lvl="0" mana="0" exhaustion="2000"
-		needlearn="0" event="script" value="saga/monster kaiten.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Dragao de Agua" words="dragao de agua" lvl="0" mana="0" exhaustion="2000"
-		needlearn="0" event="script" value="saga/dragao de agua.lua">
-		<vocation id="0" />
-	</instant>
-
-	<!--  -->
-	<instant name="Byakugan" words="byakugan" lvl="10" mana="0" exhaustion="1000" needlearn="0"
-		event="script" value="hinata/1.byakugan.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Cumulated Chakra" words="cumulated chakra" lvl="50" mana="0" exhaustion="2000"
-		needlearn="0" event="script" value="cumulated chakra.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-	</instant>
-	<instant name="Chakra Balance" words="chakra balance" lvl="0" mana="0" exhaustion="1000"
-		needlearn="0" event="script" value="chakra balance.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-	</instant>
-
-	<!-- Jutsus de Hinata-->
-	<instant name="Hakke Kusho" words="hakke kusho" lvl="30" mana="150"
-		exhaustion="0" needlearn="0" event="script" value="hinata/3.hakke_kusho.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Shugohakke" words="shugohakke" lvl="60" mana="350"
-		exhaustion="0" needlearn="0" event="script" value="hinata/6.shugohakke.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Mizu Hari" words="mizu hari" lvl="70" mana="580" exhaustion="2000" range="3"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="hinata/Mizu Hari.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Hakke Sanjuni Sho" words="hakke sanjuni sho" lvl="100" mana="10" exhaustion="0"
-		needlearn="0" event="script" value="hinata/10.hakke_sanjuni_sho.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Hakke Soshiken Sho" words="hakke soshiken sho" lvl="150" mana="1200"
-		exhaustion="2000" needlearn="0" event="script" value="hinata/hakke soshiken Sho.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Shugohakke Rokujuyon Sho" words="shugohakke rokujuyon sho" lvl="200" mana="3600"
-		exhaustion="2000" needlearn="0" event="script" value="hinata/Shugohakke Rokujuyon Sho.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-	<instant name="Juuho Soshiken" words="juuho soshiken" lvl="250" mana="2000" exhaustion="2000"
-		range="1" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="hinata/Juho Soshiken.lua">
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
-	</instant>
-
-	<!-- Jutsus de Sai-->
-	<instant name="Paralize" words="paralize" lvl="0" mana="0" range="1" casterTargetOrDirection="1"
-		exhaustion="2000" needlearn="0" event="script" value="sai/paralize.lua">
-		<vocation id="0" />
-	</instant>
-	<instant name="Cumulated Choju" words="cumulated choju" lvl="100" mana="100" exhaustion="2000"
-		needlearn="0" event="script" value="sai/cumulated choju.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Kireme" words="kireme" lvl="30" mana="400" direction="1" exhaustion="0"
-		needlearn="0" event="script" value="sai/kireme.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Sumi Nagashi" words="Sumi Nagashi" lvl="50" mana="400" exhaustion="1000"
-		needlearn="0" event="script" value="sai/sumi nagashi.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Choju Giga" words="choju giga" lvl="70" mana="680" exhaustion="0" needlearn="0"
-		event="script" value="sai/Choju Giga.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Sumigasumi No Jutsu" words="sumigasumi no jutsu" lvl="150" mana="1750"
-		exhaustion="0" needlearn="0" event="script" value="sai/Sumigasumi No Jutsu.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Choju Shoo" words="choju shoo" lvl="200" mana="2400" exhaustion="0" needlearn="0"
-		event="script" value="sai/choju shoo.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-	<instant name="Koshi Shoo No Tandan" words="koshi shoo no tandan" lvl="250" mana="2800"
-		exhaustion="0" needlearn="0" event="script" value="sai/Koshi Shoo No Tandan.lua">
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="80" />
-		<vocation id="93" />
-		<vocation id="94" />
-	</instant>
-
-	<!-- Jutsus de Chouji-->
-	<instant name="Nikudan Sensha" words="nikudan sensha" lvl="30" mana="250" direction="1"
-		exhaustion="2000" needlearn="0" event="script" value="chouji/Nikudan Sensha.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Bubun Baika no Jutsu" words="Bubun Baika no Jutsu" lvl="50" mana="400"
-		exhaustion="2000" range="3" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="chouji/Bubun Baika no Jutsu.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Choudan Bakugeki" words="Choudan Bakugeki" lvl="80" mana="660" exhaustion="2000"
-		range="1" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="chouji/Choudan Bakugeki.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Harite Chou" words="harite chou" lvl="130" mana="1050" exhaustion="2000"
-		needlearn="0" event="script" value="chouji/Harite Chou.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Nikudan Sensha Chou" words="nikudan sensha chou" lvl="170" mana="1400"
-		direction="1" exhaustion="2000" needlearn="0" event="script"
-		value="chouji/Nikudan Sensha chou.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Harite Nikudan" words="harite nikudan" lvl="220" mana="1810" exhaustion="2000"
-		needlearn="0" event="script" value="chouji/Harite Nikudan.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-	<instant name="Nikudan Mizudan Senshanse" words="nikudan mizudan senshanse" lvl="250"
-		mana="2050" direction="1" exhaustion="3000" needlearn="0" event="script"
-		value="chouji/Nikudan Mizudan Senshanse.lua">
-		<vocation id="49" />
-		<vocation id="51" />
-		<vocation id="52" />
-	</instant>
-
-	<!-- Jutsus de Tenten-->
-	<instant name="Dai Shoo No Me" words="dai shoo no me" lvl="30" mana="250" exhaustion="2000"
-		range="3" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="tenten/Dai Shoo no me.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-	<instant name="Dai Senkai" words="dai senkai" lvl="50" mana="420" exhaustion="2000" range="3"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="tenten/Dai Senkai.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-	<instant name="Sou Shuu Jin" words="sou shuu jin" lvl="70" mana="560" exhaustion="2000"
-		needlearn="0" event="script" value="tenten/Sou Shuu Jin.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-	<instant name="Shou Shuu Destruction" words="shou shuu destruction" lvl="130" mana="1020"
-		exhaustion="2000" range="3" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="tenten/shou shuu destruction.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-	<instant name="Nekate Shuu Deki" words="nekate shuu deki" lvl="170" mana="1400"
-		exhaustion="2000" needlearn="0" event="script" value="tenten/nekate Shuu deki.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-	<instant name="Sou Choju Shuu" words="sou choju shuu" lvl="220" mana="1800" exhaustion="2000"
-		needlearn="0" event="script" value="tenten/sou choju shuu.lua">
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-	</instant>
-
-	<!-- Jutsus de Ino-->
-	<instant name="Ninpou Hanna Kaishin" words="ninpou hanna kaishin" lvl="50" mana="730"
-		exhaustion="2000" range="5" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="ino/ninpou hanna kaishin.lua">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-	</instant>
-	<instant name="Ninpou Kaito" words="ninpou kaito" lvl="100" mana="1300" exhaustion="2000"
-		direction="1" needlearn="0" event="script" value="ino/ninpou kaito.lua">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-	</instant>
-	<instant name="Shinteshin" words="shinteshin" lvl="150" mana="2320" exhaustion="4000" range="8"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="ino/shinteshin.lua">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-	</instant>
-	<instant name="Ninpou Kikaite No Jutsu" words="ninpou kikaite no jutsu" lvl="200" mana="3380"
-		exhaustion="2000" needlearn="0" event="script" value="ino/ninpou kikaite no jutsu.lua">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-	</instant>
-	<instant name="Ninpou Tenkatsu No Jutsu" words="ninpou tenkatsu no jutsu" lvl="250" mana="3700"
-		exhaustion="3000" needlearn="0" event="script" value="ino/ninpou tenkatsu no jutsu.lua">
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-	</instant>
-
-	<!-- Jutsus de Shino-->
-	<!--<instant
-	name="Kikaichuu No Jutsu" words="kikaichuu no jutsu" lvl="10" mana="0"
-		exhaustion="1000" needlearn="0" event="script" value="shino/kikaichu no jutsu.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>
-	<instant name="Shunshin No Jutsu" words="shunshin no jutsu" lvl="30" mana="320" exhaustion="0"
-		range="5" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="shino/shunshin no jutsu.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>
-	<instant name="Kikai Sabaki no Jutsu" words="kikai sabaki no jutsu" lvl="50" mana="460"
-		exhaustion="0" needlearn="0" event="script" value="shino/Kikai Sabaki no Jutsu.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>
-	<instant name="Suzumebachi Tei" words="suzumebachi tei" lvl="100" mana="850" exhaustion="0"
-		needlearn="0" event="script" value="shino/Suzumebachi Tei.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>
-	<instant name="Kikai Shunshin Tei" words="kikai shunshin tei" lvl="150" mana="1250"
-		exhaustion="0" needlearn="0" event="script" value="shino/Kikai Shunshin Tei.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>
-	<instant name="Kikaichu Shokachu" words="kikaichu shokachu" lvl="200" mana="1950" exhaustion="0"
-		needlearn="0" event="script" value="shino/Kikaichu shokachu.lua">
-		<vocation id="17" />
-		<vocation id="18" />
-		
-	</instant>-->
-
-	<!-- Jutsus de Rock Lee-->
-	<instant name="Close Gate" words="close gate" lvl="0" mana="0" exhaustion="1000" needlearn="0"
-		event="script" value="rock lee/close gate.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Gouken" words="gouken" lvl="10" mana="20" exhaustion="1000" needlearn="0"
-		event="script" value="rock lee/gouken.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Konoha Senpuu" words="konoha senpuu" lvl="30" mana="140" exhaustion="0"
-		direction="1" needlearn="0" event="script" value="rock lee/konoha senpuu.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Open Gate" words="open gate" lvl="40" mana="0" exhaustion="1000" needlearn="0"
-		event="script" value="rock lee/open gate.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Konoha Renpuu" words="konoha renpuu" lvl="50" mana="240" exhaustion="0"
-		direction="1" needlearn="0" event="script" value="rock lee/konoha renpuu.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Konoha Dai Senpuu" words="konoha dai senpuu" lvl="80" mana="380" exhaustion="0"
-		direction="1" needlearn="0" event="script" value="rock lee/konoha dai senpuu.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Omote Renge" words="omote renge" lvl="150" mana="800" range="7"
-		casterTargetOrDirection="1" exhaustion="0" needlearn="0" event="script"
-		value="rock lee/omote renge.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Ura Renge" words="ura renge" lvl="200" mana="1000" exhaustion="0" selftarget="1"
-		needlearn="0" event="script" value="rock lee/ura renge.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-	<instant name="Reverse Lotus" words="reverse lotus" lvl="250" mana="1250" exhaustion="0"
-		selftarget="1" needlearn="0" event="script" value="rock lee/reverse lotus.lua">
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="82" />
-	</instant>
-
 	<!-- Jutsus de Naruto-->
-	<instant name="Kage Bunshin No Jutsu" words="kage bunshin no jutsu" lvl="10" mana="90"
-		exhaustion="1000" needlearn="0" event="script" value="naruto/1.kage_bunshin_no _jutsu.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+	<instant spellid="1" name="Kage Bunshin No Jutsu" words="kage bunshin no jutsu" lvl="10"
+		mana="30" exhaustion="1000" icon="3147"
+		description="Invoca até 4 clones do usuário. Os clones possuem as mesmas caracteristicas visuais que o invocador, servindo como distração e suporte ofensivo ou para realizar fugas."
+		needlearn="0" event="script" value="naruto/1.kage_bunshin_no_jutsu.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<instant name="Dai Rendan" words="dai rendan" lvl="20" mana="90" exhaustion="0" range="2"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="naruto/2.dai_rendan.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+
+	<instant spellid="2"
+		name="Dai Rendan" words="dai rendan" lvl="20" mana="90" exhaustion="2000"
+		icon="3154"
+		description="Um ataque coordenado de alta velocidade que utiliza a força numérica para atingir o oponente. Requisito: É necessário possuir ao menos 1 Kage Bunshin invocado. Efeito Extra: Cada clone adicional presente no campo de batalha potencializa o impacto final, aumentando o dano total do combo de forma cumulativa."
+		range="2" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="naruto/2.dai_rendan.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<instant name="Kyuubi Form" words="kyuubi form" lvl="30" mana="0" exhaustion="1000"
+
+	<instant spellid="3"
+		name="Kyuubi Form" words="kyuubi form" lvl="30" mana="0" exhaustion="1000"
+		icon="3149"
+		description="O manto de chakra vermelho protege e ao mesmo tempo consome o usuário. Para dominar as caudas sem que o chakra corrosivo queime sua própria vitalidade, o ninja deve possuir um alto nível de Controle de Chakra (15 a 30 dependendo da forma). Apenas na forma máxima, em total sintonia com a Kurama, o controle deixa de ser uma barreira, permitindo o uso pleno do poder sem sacrifício de vida ou restrição de Bunshins. 1ª Cauda: Level. 30 (Requer: 15 Controle de chakra) 2ª Cauda: Level. 50 (Requer: 20 Controle de controle de chakra) 3ª Cauda: Level. 70 classic/100 shippuden (Requer: 25 Controle de chakra) 4ª Cauda: Level. 140 (Req: 30 Controle) Forma Máxima: Level. 180 (Livre de Requisitos) Aviso: Se o controle for insuficiente, o usuário perderá vida continuamente e o mesmo não conseguirá usar o Kage Bunshin. Use novamente para destransformar."
 		needlearn="0" event="script" value="naruto/3.kyuubi_form.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<instant name="Rasengan" words="rasengan" lvl="40" mana="200" range="1"
-		casterTargetOrDirection="1" exhaustion="0" needlearn="0" event="script"
+
+	<instant spellid="4"
+		name="Rasengan" words="rasengan" lvl="40" mana="250" exhaustion="2000"
+		icon="3150"
+		description="Uma técnica de alto nível que condensa o chakra em uma esfera rotativa na palma da mão. Ao atingir o oponente, o Rasengan libera uma força centrifuga devastadora que tritura o alvo e o repele com violência. Por ser uma técnica de contato direto, exige que o usuário esteja adjacente ao inimigo para desferir o golpe."
+		direction="1" needlearn="0" event="script"
 		value="naruto/4.rasengan.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<!-- Level 60 (kyuubi form 2) -->
-	<instant name="Daihoko" words="daihoko" lvl="70" mana="620" range="5" exhaustion="0"
-		needlearn="0" event="script" value="naruto/7.daihoko.lua">
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
+
+	<instant spellid="5"
+		name="Daihoko" words="daihoko" lvl="60" mana="10" exhaustion="3000"
+		icon="3157"
+		description="Utilizando o chakra da Kyuubi, o usuário projeta um braço de chakra denso que se estende instantaneamente. Este golpe devastador alcança inimigos a uma distância de até 5 metros (SQMs), permitindo atingir alvos recuados."
+		range="5" needlearn="0" event="script" value="naruto/6.daihoko.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<instant name="Oodama Rasengan" words="oodama rasengan" lvl="80" mana="780" direction="1"
-		exhaustion="0" needlearn="0" event="script" value="naruto/8.oodama_rasengan.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+
+	<instant spellid="6"
+		name="Oodama Rasengan" words="oodama rasengan" lvl="80" mana="780"
+		exhaustion="2000"
+		icon="3151"
+		description="Uma versão amplificada e devastadora do Rasengan. Ao infundir uma quantidade massiva de chakra, o usuário cria uma esfera espiral gigante. O impacto é tão poderoso que oblitera as defesas do alvo e gera uma onda de choque secundária, causando danos em quem se manter dentro da área."
+		direction="1" needlearn="0" event="script" value="naruto/8.oodama_rasengan.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<!-- Level 90 Shippuden -->
-	<instant name="Rasenshuriken" words="rasenshuriken" lvl="100" mana="930" range="5"
-		exhaustion="0" needlearn="0" event="script" value="naruto/10.rasenshuriken.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
+
+	<instant spellid="7"
+		name="Rasenshuriken" words="rasenshuriken" lvl="110" mana="860"
+		exhaustion="3000"
+		icon="3153"
+		description="O usuário arremessa uma shuriken de chakra rotativo que avança em linha reta por até 5 metros (SQMs). A técnica detona uma explosão massiva ao atingir sua distância máxima ou ao colidir com qualquer obstáculo, monstro ou jogador no caminho. Ideal para atingir grupos de inimigos ou interceptar alvos em movimento."
+		needlearn="0" event="script" value="naruto/11.rasenshuriken.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
-	<instant name="Chou Oodama Rasengan" words="chou oodama rasengan" lvl="150" mana="1200"
-		exhaustion="2000" range="1" casterTargetOrDirection="1" needlearn="0" event="script"
-		value="naruto/shoo oodama rasengan.lua">
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="81" />
+
+	<instant spellid="8"
+		name="Meditate" words="meditate" lvl="110" mana="0" exhaustion="1000"
+		icon="3158"
+		description="O usuário entra em um estado de quietude absoluta para harmonizar seu chakra interno com a energia da natureza. Ao manter a meditação, o ninja acumula Chakra da Natureza, permitindo a ativação do lendário Modo Sannin (Sennin Modo). Durante o processo, qualquer movimento ou interrupção cessará o processo de meditação."
+		needlearn="0" event="script" value="naruto/12.meditate.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
+	</instant>
+
+	<instant spellid="9"
+		name="Bunshin Meditate" words="bunshin meditate" lvl="110" mana="0"
+		exhaustion="1000"
+		icon="3159"
+		description="Uma tática avançada de gerenciamento de Chakra da Natureza. Ao ativar esta técnica, todos os Kage Bunshins ativos entram em estado de meditação profunda para acumular Chakra da Natureza. Efeito: Cada clone meditando gera +1 de Chakra da Natureza por segundo, permitindo que o usuário original acumule energia passivamente enquanto se mantém em combate."
+		needlearn="0" event="script" value="naruto/12.bunshin_meditate.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
+	</instant>
+
+	<instant spellid="10"
+		name="Sanin Mode" words="sanin mode" lvl="110" mana="0" exhaustion="1000"
+		icon="3161"
+		description="O despertar do poder da natureza. Ao entrar neste estado, o corpo de Naruto é fortalecido pelo Chakra da Natureza, aumentando drasticamente sua força fí­sica, defesa e o poder de seus jutsus. Enquanto ativo, consome gradualmente o Chakra da Natureza acumulado através da meditação. O modo se encerra automaticamente quando a energia natural se esgota."
+		needlearn="0" event="script" value="naruto/12.modo_sanin.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
+	</instant>
+
+	<instant spellid="11"
+		name="Bijudama" words="bijudama" lvl="150" mana="720" exhaustion="3000"
+		icon="3155"
+		description="O usuário projeta uma esfera de chakra negro e denso que avança em linha reta por até 6 metros (SQMs) à frente. A Bijudama detona uma explosão de energia destrutiva ao atingir sua distância máxima ou ao colidir com qualquer obstáculo, monstro ou jogador no caminho. Requisito: Necessário estar na Forma da Kyuubi (4 Caudas ou superior)."
+		needlearn="0" event="script" value="naruto/15.bijudama.lua">
+		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
 
 	<!-- Jutsus de Sasuke -->
-	<instant name="Katon Daiendan No Jutsu" words="katon daiendan no jutsu" lvl="10" needmana="0"
-		mana="100" exhaustion="0" range="3" casterTargetOrDirection="1" needlearn="0"
-		event="script" value="sasuke/1.katon_daiendan _no_jutsu.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Sharingan" words="sharingan" lvl="20" mana="0" exhaustion="1000" needlearn="0"
-		event="script" value="sasuke/2.sharingan.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Katon Goukakyu No Jutsu" words="katon goukakyu no jutsu" lvl="20" mana="180"
-		exhaustion="0" direction="1" needlearn="0" event="script"
-		value="sasuke/2.katon_goukakyu_no_jutsu.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Cursed Seal" words="cursed seal" lvl="30" mana="0" exhaustion="2000"
-		needlearn="0" event="script" value="sasuke/3.cursed_seal.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Chidori" words="chidori" lvl="40" mana="300" exhaustion="0" range="1"
-		direction="1" needlearn="0" event="script" value="sasuke/4.chidori.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Katon Ryuuka" words="katon ryuuka" lvl="60" mana="350" exhaustion="0"
-		needlearn="0" event="script" value="sasuke/6.katon_ryuuka.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Chidori Nagashi" words="chidori nagashi" lvl="100" mana="940" selftarget="1"
-		exhaustion="0" needlearn="0" event="script" value="sasuke/10.chidori_nagashi.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Kirin" words="kirin" lvl="160" mana="1000" exhaustion="0" range="7"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="sasuke/kirin.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Susanoo" words="susanoo" lvl="180" mana="700" exhaustion="2000" needlearn="0"
-		event="script" value="sasuke/susanoo.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation
-			id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-	</instant>
-	<instant name="Amaterasu" words="amaterasu" lvl="180" mana="1000" exhaustion="2000" range="7"
-		casterTargetOrDirection="1" needlearn="0" event="script" value="sasuke/amaterasu.lua">
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="92" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
+	<instant
+		spellid="100" name="Katon Goukakyu No Jutsu" words="katon goukakyu no jutsu" lvl="10"
+		mana="100"
+		exhaustion="2000" icon="3162"
+		description="O usuário converte o chakra dentro do corpo em fogo e o expele em uma esfera massiva.
+	A bola de fogo viaja em linha reta por até 5 metros (SQMs). Ao atingir o limite de alcance ou
+	colidir com um obstáculo ou inimigo, ela detona em uma explosão de 3x3, incinerando todos os
+	alvos na área de impacto."
+		direction="1" needlearn="0" event="script" value="sasuke/1.katon_goukakyu_no_jutsu.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
 	</instant>
 
+
+	<instant spellid="101"
+		name="Sharingan" words="sharingan" lvl="20" mana="10" exhaustion="3000"
+		icon="3166"
+		description="Desperta a percepção visual aguçada dos Uchiha. Ao ativar este Dojutsu, o usuário passa a prever os golpes adversários com precisão sobre-humana, concedendo 100% de chance de esquiva (Dodge) no próximo ataque recebido. Ideal para virar o jogo em combates de curta distância ou realizar fugas."
+		needlearn="0" event="script" value="sasuke/2.sharingan.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="103"
+		name="Cursed Seal" words="cursed seal" lvl="30" mana="0"
+		exhaustion="1000" icon="3167"
+		description="Libera a marca amaldiçoada para aumentar exponencialmente o poder do usuário. O selo evolui conforme o nível, mas exige Controle de Chakra para não consumir a vida do ninja: Nível 1: Level. 30 (Requer: 10 Controle) Nível 2: Level. 50 (Requer: 15 Controle) Nível 3: Level. 70 (Req: 20 Controle) Nível 3 (Shippuden): Level. 100 (Req: 20 Controle) Aviso: Se o controle for insuficiente, o selo causará dano contínuo ao usuário. Use novamente para suprimir a marca."
+		needlearn="0" event="script" value="sasuke/3.cursed_seal.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="104"
+		name="Chidori" words="chidori" lvl="40" mana="50" exhaustion="2000"
+		icon="3168"
+		description="Uma técnica de assassinato de alta concentração que transforma o chakra em eletricidade pura. O usuário ataca com um golpe perfurante devastador que causa Dano de Raiton massivo. Requisito: Devido à natureza do ataque, o usuário deve estar adjacente ao alvo (1 SQM) para conseguir desferir o golpe com sucesso."
+		range="1" direction="1" needlearn="0" event="script" value="sasuke/4.chidori.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="102"
+		name="Katon Housenka No Jutsu" words="katon housenka no jutsu" lvl="60"
+		mana="180"
+		exhaustion="1000" icon="3163"
+		description="O ninja projeta uma rajada de chamas intensas no oponente. É possível acertar o target a uma distância de até de 5 metros (SQMs). É a técnica perfeita para utilizar enquanto se distancia do oponente."
+		range="5" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="sasuke/5.katon_housenka_no_jutsu.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="105"
+		name="Katon Ryuuka No Jutsu" words="katon ryuuka no jutsu" lvl="70"
+		mana="350"
+		exhaustion="2000" icon="3165" description="" needlearn="0" event="script"
+		value="sasuke/6.katon_ryuuka.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="106"
+		name="Chidori Nagashi" words="chidori nagashi" lvl="100" mana="940"
+		exhaustion="2000"
+		icon="3169" description="Corrente elÃ©trica em Ã¡rea" selftarget="1" needlearn="0"
+		event="script" value="sasuke/10.chidori_nagashi.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="107"
+		name="Katon Gouryuuka No Jutsu" words="katon gouryuuka no jutsu" lvl="110"
+		mana="350"
+		exhaustion="2000" icon="3170" description="DragÃ£o de fogo queima inimigos" needlearn="0"
+		event="script" value="sasuke/11.katon_gouryuuka_no_jutsu.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="108"
+		name="Kirin" words="kirin" lvl="120" mana="1000" exhaustion="3000"
+		icon="3171"
+		description="Raio de relÃ¢mpago de altÃ­ssimo nÃ­vel" range="7" casterTargetOrDirection="1"
+		needlearn="0" event="script" value="sasuke/12.kirin.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="109"
+		name="Susanoo" words="susanoo" lvl="130" mana="700" exhaustion="3000"
+		icon="3173"
+		description="Escudo/besta gigante protetora" needlearn="0" event="script"
+		value="sasuke/13.susanoo_i.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<instant spellid="110"
+		name="Amaterasu" words="amaterasu" lvl="130" mana="1000"
+		exhaustion="3000" icon="3172"
+		description="Chamas negras impossÃ­veis de apagar" range="7" casterTargetOrDirection="1"
+		needlearn="0" event="script" value="sasuke/13.amaterasu.lua">
+		<vocation id="15;16;17;18;19;20;21;22;23" />
+	</instant>
+
+	<!-- Jutsus de Sakura -->
+	<instant spellid="200"
+		name="Bunshin No Jutsu" words="bunshin no jutsu" lvl="10" mana="50"
+		exhaustion="1000"
+		icon="3174"
+		description="Invoca 1 clone do usuário. O clone possui as mesmas características visuais que o invocador, servindo como distração e suporte ofensivo."
+		aggressive="0" needlearn="0" event="script" value="sakura/1.bunshin_no_jutsu.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+	<!-- mana 160 -->
+	<instant spellid="201"
+		name="Shannaro" words="shannaro" lvl="20" mana="160" exhaustion="2000"
+		icon="3175"
+		description="Golpe de força sobre-humana que atinge alvos em até 3 SQMs de distância linear. Além do dano de impacto, a brutalidade do ataque inflige uma penalidade de -100 de velocidade por 2 segundos."
+		direction="1" needlearn="0" event="script" value="sakura/2.shannaro.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="202"
+		name="Chiyute" words="chiyute" lvl="30" mana="160" exhaustion="1000"
+		icon="3176"
+		description="Uma técnica de manipulação de chakra medicinal que restaura os pontos de vida do alvo. Pode ser conjurada em si mesmo ou em aliados próximos. Para utilizar, declare o nome do alvo no campo parâmetro abaixo."
+		aggressive="0" needtarget="1" params="1" needlearn="0" event="script"
+		value="sakura/3.chiyute_no_jutsu.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="203"
+		name="Doku Chiyo" words="doku chiyo" lvl="30" mana="100"
+		exhaustion="1000" icon="3177"
+		description="Uma técnica médica specializada em purificação. Neutraliza toxinas e remove o estado de envenenamento (Poison) do usuário ou de um aliado. Para tratar um companheiro, utilize o nome dele como parâmetro após o comando do jutsu."
+		aggressive="0" needtarget="1" params="1" needlearn="0" event="script"
+		value="sakura/3.doku_chiyo.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="204"
+		name="Chakra Gan No Seizou" words="chakra gan no seizou" lvl="40"
+		mana="400"
+		exhaustion="1000" icon="3178"
+		description="Uma técnica de manipulação de substâncias orgânicas que utiliza o chakra para destilar propriedades curativas. Ao consumir 3 Strawberries, o usuário sintetiza uma Genin Pill, um poderoso revigorante de chakra. Certifique-se de ter os ingredientes necessÃ¡rios em sua mochila antes de iniciar o processo."
+		aggressive="0" selftarget="1" needlearn="0" event="script"
+		value="sakura/5.chakra_gan_no_seizou.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="205"
+		name="Chakra no Mesu" words="chakra no mesu" lvl="50" mana="0"
+		exhaustion="1000"
+		icon="3181"
+		description="O usuário converte seu chakra em láminas invisí­veis e extremamente afiadas ao redor das mãos. Esta técnica de nível avançado aumenta drasticamente o dano desferido contra pontos vitais e acelera o metabolismo do usuário, resultando em uma regeneração de vida muito mais rápida durante o uso."
+		aggressive="0" selftarget="1" needlearn="0" event="script"
+		value="sakura/6.chakra_no_mesu.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="206"
+		name="Chiyute Koumou" words="chiyute koumou" lvl="60" mana="400"
+		exhaustion="1000"
+		icon="3179"
+		description="Uma tÃ©cnica mÃ©dica de alta complexidade que expande o chakra curativo em uma rede invisÃ­vel. Ao ser ativada, restaura instantaneamente a vitalidade de todos os aliados que fazem parte da sua Party (Grupo) em um raio de atÃ© 7 metros (SQMs). Ideal para manter a equipe estÃ¡vel durante confrontos intensos contra chefes ou em guerras."
+		aggressive="0" selftarget="1" needlearn="0" event="script"
+		value="sakura/7.chiyute_koumou.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="207"
+		name="Create Scroll Of Healing" words="create scroll of healing" lvl="70"
+		mana="400"
+		exhaustion="1000" icon="3183"
+		description="AtravÃ©s da caligrafia imbuÃ­da de chakra, o usuÃ¡rio transcreve essÃªncias medicinais em um pergaminho virgem. Esta tÃ©cnica consome 1 Empty Scroll e 30 Strawberries para selar propriedades curativas de alto nÃ­vel. O pergaminho resultante pode ser utilizado posteriormente para restauraÃ§Ã£o instantÃ¢nea de vitalidade em campo de batalha."
+		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_healing.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="208"
+		name="Create Scroll Of Chakra" words="create scroll of chakra" lvl="70"
+		mana="400"
+		exhaustion="1000" icon="3184"
+		description="Uma tÃ©cnica avanÃ§ada de selamento que funde a energia natural de cogumelos e frutas com o chakra do usuÃ¡rio. Requer 1 Empty Scroll, 10 Mushrooms e 30 Strawberries. O processo cria um pergaminho de chakra concentrado, permitindo que qualquer ninja recupere suas reservas de energia rapidamente em situaÃ§Ãµes crÃ­ticas."
+		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_chakra.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="209"
+		name="Create Scroll Of Speed" words="create scroll of speed" lvl="70"
+		mana="400"
+		exhaustion="1000" icon="3185"
+		description="Utilizando as propriedades estimulantes de fungos raros, o ninja mÃ©dico sela um encantamento de agilidade em papel special. Ao consumir 1 Empty Scroll e 10 Mushrooms, o usuÃ¡rio cria um pergaminho capaz de aumentar temporariamente a velocidade de movimento de quem o romper, ideal para fugas ou perseguiÃ§Ãµes tÃ¡ticas."
+		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_speed.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="210"
+		name="Jinshin" words="jinshin" lvl="110" mana="450" exhaustion="2000"
+		icon="3188"
+		description="O usuÃ¡rio golpeia o chÃ£o com criando uma onda de choque que se propaga em uma zona retangular devastadora. As fendas abertas no solo engolem a estabilidade dos adversÃ¡rios, convertendo a energia do impacto em puro dano destrutivo. Uma demonstraÃ§Ã£o de forÃ§a que redefine o campo de batalha."
+		needlearn="0" event="script" value="sakura/10.jinshin.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="211"
+		name="Sozo Sazei" words="sozo sazei" lvl="120" mana="0" exhaustion="1000"
+		icon="3187"
+		description="A tÃ©cnica definitiva de regeneraÃ§Ã£o celular. Ao liberar o selo de chakra, o usuÃ¡rio forÃ§a a divisÃ£o celular instantÃ¢nea, curando ferimentos fatais a cada segundo. Enquanto estiver ativa, esta tÃ©cnica consome suas reservas de Chakra continuamente para manter o corpo em um estado de quase imortalidade."
+		aggressive="0" selftarget="1" needlearn="0" event="script" value="sakura/12.sozo_sazei.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<instant spellid="212"
+		name="Oukashou" words="oukashou" lvl="140" mana="600" exhaustion="2000"
+		icon="3186"
+		description="O Ã¡pice do controle de forÃ§a bruta da Sakura. Diferente do Shannaro convencional, o Oukashou permite que o chakra seja projetado para muito alÃ©m do ponto de impacto, criando um rastro de destruiÃ§Ã£o que alcanÃ§a atÃ© 6 SQMs. A forÃ§a Ã© tÃ£o extrema que a pressÃ£o do ar e os detritos esmagam qualquer oponente em seu caminho."
+		aggressive="0" needlearn="0" event="script" value="sakura/14.oukashou.lua">
+		<vocation id="24;25;26;27;28;29;30;31;32" />
+	</instant>
+
+	<!-- Jutsus de Kiba -->
+	<instant spellid="300" icon="3190"
+		name="Akamaru" words="akamaru" description="&#10;Utilizado para chamar o Akamaru." lvl="0"
+		mana="0" exhaustion="1000" needlearn="0"
+		event="script" value="kiba/0.akamaru.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="301" icon="3191" name="Tsuuga"
+		description="&#10;O usuario gira avançando em linha reta, o avanço causa dano no centro e dos lados.&#10; &#10;Distância:&#10;Level 10 avança 3 SQMS.&#10;Level 50 avança 4 SQMS.&#10;Level 100 avança 5 SQMS.&#10; &#10;Dano: Baseado em Taijutsu e Level."
+		words="tsuuga" lvl="10" mana="90"
+		exhaustion="2000" needlearn="0"
+		event="script" value="kiba/1.tsuuga.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="302" icon="3192" name="Juujin Bunshin"
+		words="juujin bunshin"
+		description="&#10;Transforma o Akamaru em uma cópia exata do usuário. Este estado de transformação combinada permite a execução de ataques coordenados de alto nível, como o Gatsuuga e outras técnicas Inuzuka."
+		lvl="20" mana="50" exhaustion="1000"
+		needlearn="0"
+		event="script" value="kiba/2.juujin_bunshin.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="303" icon="3196" name="Kizu"
+		words="kizu"
+		description="&#10;Ordena que o Akamaru avance instantaneamente sobre o inimigo selecionado. Teleporta o Akamaru ate a posição do alvo para desferir um golpe físico e causar redução de velocidade de movimento."
+		lvl="30" mana="180"
+		range="3" casterTargetOrDirection="1"
+		blockwalls="1" exhaustion="3000" needlearn="0" event="script" value="kiba/3.kizu.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="304" icon="3194" name="Gatsuuga"
+		description="&#10;O usuario gira avançando em linha reta junto com o Akamaru, o avanço causa dano no centro e dos lados.&#10; &#10;Distância:&#10;Level 40 avança 3 SQMS.&#10;Level 80 avança 4 SQMS.&#10;Level 120 avança 5 SQMS.&#10; &#10;Dano: Baseado em Taijutsu e Level."
+		words="gatsuuga" lvl="40"
+		mana="250" exhaustion="0" needlearn="0"
+		event="script" value="kiba/4.gatsuuga.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="305" icon="3195" name="Tsuigeki No Ko"
+		description="&#10;Rastreia um alvo específico. Para utilizá-lo, insira o nome do jogador no campo de parâmetro da barra de ações."
+		words="tsuigeki no ko"
+		lvl="50" mana="50" exhaustion="2000"
+		params="1" needlearn="0" event="function" value="searchPlayer">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="306" icon="3197" name="Bakudan" words="bakudan" lvl="60"
+		mana="250" exhaustion="2000"
+		description="&#10;O Akamaru some liberando uma explosão de kunais ao seu redor, atingindo todos os inimigos próximos. Ideal para tirar o foco dos inimigos do akamaru.&#10; &#10;Dano: Baseado em Taijutsu e Level."
+		event="script" value="kiba/6.bakudan.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+	<instant spellid="307" icon="3198" name="manjuu" words="manjuu" lvl="70"
+		mana="0" exhaustion="1000"
+		description="&#10;O Akamaru se funde ao Kiba se transformando em um cachorro de duas cabeças, pegando métade dos atributos dele e somando aos do Kiba."
+		event="script" value="kiba/7.manjuu.lua">
+		<vocation id="33" /> <!-- kiba classic -->
+		<vocation id="34" /> <!-- kiba tracker -->
+		<vocation id="35" /> <!-- kiba shippuden -->
+		<vocation id="36" /> <!-- kiba war -->
+		<vocation id="37" /> <!-- kiba veteran-->
+	</instant>
+
+
+	<!--<rune
+	name="sajin sougeki" id="2295"
+		allowfaruse="1" charges="1" lvl="40" maglv="0"
+		exhaustion="2000" blocktype="all" event="script" value="gaara/sunna wall.lua">
+	</rune>
+	<rune name="Wild Growth" id="2269"
+		allowfaruse="1" charges="2" lvl="27" maglv="8"
+		exhaustion="1000" blocktype="all" event="script" value="support/wild growth rune.lua">
+	</rune>-->
+
+
+	<!-- Hyuuga -->
+	<!--<instant
+	spellid="100012" name="Byakugan" words="byakugan" lvl="10" mana="0"
+		exhaustion="1000" needlearn="0"
+		event="script" value="hinata/1.byakugan.lua">
+	</instant>-->
+	<!--<instant
+	name="Chakra Balance" words="chakra balance"
+		lvl="0" mana="0" exhaustion="1000"
+		needlearn="0" event="script" value="chakra balance.lua">
+	</instant>-->
+
+	<!-- Jutsus de Hinata-->
+	<!--<instant
+	name="Hakke Kusho" words="hakke kusho" lvl="30"
+		mana="150"
+		exhaustion="0" needlearn="0" event="script" value="hinata/3.hakke_kusho.lua">
+	</instant>
+	<instant name="Juken" words="juken" lvl="10" mana="0"
+		exhaustion="1000" needlearn="0" event="script" value="hinata/4.juken.lua">
+	</instant>
+	<instant name="Shugohakke" words="shugohakke" lvl="60"
+		mana="350"
+		exhaustion="0" needlearn="0" event="script" value="hinata/6.shugohakke.lua">
+	</instant>
+	<instant name="Hakke Sanjuni Sho"
+		words="hakke sanjuni sho" lvl="100" mana="600" exhaustion="0"
+		needlearn="0" event="script" value="hinata/10.hakke_sanjuni_sho.lua">
+	</instant>
+	<instant name="Jusho Soshiken" words="jusho soshiken"
+		lvl="140" mana="0" exhaustion="1000"
+		needlearn="0" event="script" value="hinata/14.jusho_soshiken.lua">
+	</instant>-->
+
+	<!-- Jutsus de Sai-->
+	<!--<instant
+	<instant name="Cumulated Choju" words="cumulated choju"
+		lvl="100" mana="100" exhaustion="2000"
+		needlearn="0" event="script" value="sai/cumulated choju.lua">
+	</instant>
+	<instant name="Kireme" words="kireme" lvl="30" mana="400"
+		direction="1" exhaustion="0"
+		needlearn="0" event="script" value="sai/kireme.lua">
+	</instant>
+	<instant name="Sumi Nagashi" words="Sumi Nagashi" lvl="50"
+		mana="400" exhaustion="1000"
+		needlearn="0" event="script" value="sai/sumi nagashi.lua">
+	</instant>
+	<instant name="Choju Giga" words="choju giga" lvl="70"
+		mana="680" exhaustion="0" needlearn="0"
+		event="script" value="sai/Choju Giga.lua">
+	</instant>
+	<instant name="Sumigasumi No Jutsu"
+		words="sumigasumi no jutsu" lvl="150" mana="1750"
+		exhaustion="0" needlearn="0" event="script" value="sai/Sumigasumi No Jutsu.lua">
+	</instant>
+	<instant name="Choju Shoo" words="choju shoo" lvl="200"
+		mana="2400" exhaustion="0" needlearn="0"
+		event="script" value="sai/choju shoo.lua">
+	</instant>
+	<instant name="Koshi Shoo No Tandan"
+		words="koshi shoo no tandan" lvl="250" mana="2800"
+		exhaustion="0" needlearn="0" event="script" value="sai/Koshi Shoo No Tandan.lua">
+	</instant>-->
+
+	<!-- Jutsus de Chouji-->
+	<!--<instant
+	name="Nikudan Sensha" words="nikudan sensha"
+		lvl="30" mana="250" direction="1"
+		exhaustion="2000" needlearn="0" event="script" value="chouji/Nikudan Sensha.lua">
+	</instant>
+	<instant name="Bubun Baika no Jutsu"
+		words="Bubun Baika no Jutsu" lvl="50" mana="400"
+		exhaustion="2000" range="3" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="chouji/Bubun Baika no Jutsu.lua">
+	</instant>
+	<instant name="Choudan Bakugeki" words="Choudan Bakugeki"
+		lvl="80" mana="660" exhaustion="2000"
+		range="1" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="chouji/Choudan Bakugeki.lua">
+	</instant>
+	<instant name="Harite Chou" words="harite chou" lvl="130"
+		mana="1050" exhaustion="2000"
+		needlearn="0" event="script" value="chouji/Harite Chou.lua">
+	</instant>
+	<instant name="Nikudan Sensha Chou"
+		words="nikudan sensha chou" lvl="170" mana="1400"
+		direction="1" exhaustion="2000" needlearn="0" event="script"
+		value="chouji/Nikudan Sensha chou.lua">
+	</instant>
+	<instant name="Harite Nikudan" words="harite nikudan"
+		lvl="220" mana="1810" exhaustion="2000"
+		needlearn="0" event="script" value="chouji/Harite Nikudan.lua">
+	</instant>
+	<instant name="Nikudan Mizudan Senshanse"
+		words="nikudan mizudan senshanse" lvl="250"
+		mana="2050" direction="1" exhaustion="3000" needlearn="0" event="script"
+		value="chouji/Nikudan Mizudan Senshanse.lua">
+	</instant>-->
+
+	<!-- Jutsus de Tenten-->
+	<!--<instant
+	name="Dai Shoo No Me" words="dai shoo no me"
+		lvl="30" mana="250" exhaustion="2000"
+		range="3" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="tenten/Dai Shoo no me.lua">
+	</instant>
+	<instant name="Dai Senkai" words="dai senkai" lvl="50"
+		mana="420" exhaustion="2000" range="3"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="tenten/Dai Senkai.lua">
+	</instant>
+	<instant name="Sou Shuu Jin" words="sou shuu jin" lvl="70"
+		mana="560" exhaustion="2000"
+		needlearn="0" event="script" value="tenten/Sou Shuu Jin.lua">
+	</instant>
+	<instant name="Shou Shuu Destruction"
+		words="shou shuu destruction" lvl="130" mana="1020"
+		exhaustion="2000" range="3" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="tenten/shou shuu destruction.lua">
+	</instant>
+	<instant name="Nekate Shuu Deki" words="nekate shuu deki"
+		lvl="170" mana="1400"
+		exhaustion="2000" needlearn="0" event="script" value="tenten/nekate Shuu deki.lua">
+	</instant>
+	<instant name="Sou Choju Shuu" words="sou choju shuu"
+		lvl="220" mana="1800" exhaustion="2000"
+		needlearn="0" event="script" value="tenten/sou choju shuu.lua">
+	</instant>-->
+
+	<!-- Jutsus de Ino-->
+	<!--<instant
+	name="Ninpou Hanna Kaishin"
+		words="ninpou hanna kaishin" lvl="50" mana="730"
+		exhaustion="2000" range="5" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="ino/ninpou hanna kaishin.lua">
+	</instant>
+	<instant name="Ninpou Kaito" words="ninpou kaito"
+		lvl="100" mana="1300" exhaustion="2000"
+		direction="1" needlearn="0" event="script" value="ino/ninpou kaito.lua">
+	</instant>
+	<instant name="Shinteshin" words="shinteshin" lvl="150"
+		mana="2320" exhaustion="4000" range="8"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="ino/shinteshin.lua">
+	</instant>
+	<instant name="Ninpou Kikaite No Jutsu"
+		words="ninpou kikaite no jutsu" lvl="200" mana="3380"
+		exhaustion="2000" needlearn="0" event="script" value="ino/ninpou kikaite no jutsu.lua">
+	</instant>
+	<instant name="Ninpou Tenkatsu No Jutsu"
+		words="ninpou tenkatsu no jutsu" lvl="250" mana="3700"
+		exhaustion="3000" needlearn="0" event="script" value="ino/ninpou tenkatsu no jutsu.lua">
+	</instant>-->
+
+	<!-- Jutsus de Shino-->
+	<!--<instant
+		name="Kikaichu" words="kikaichu" lvl="10" mana="0"
+		exhaustion="1000" needlearn="0" event="script" value="shino/1.kikaichu.lua">
+	</instant>
+	<instant
+		name="Mushi Bunshin" words="mushi bunshin" lvl="20" mana="100"
+		exhaustion="0" needlearn="0" event="script" value="shino/3.mushi_bunshin.lua">
+	</instant>
+	<instant
+		name="Mushi Dama" words="mushi dama" lvl="40" mana="200"
+		exhaustion="0" needlearn="0" event="script" value="shino/4.mushi_dama.lua">
+	</instant>
+	<instant
+		name="Kikaichu Ganseki" words="kikaichu ganseki" lvl="50" mana="280"
+		exhaustion="0" needlearn="0" event="script" value="shino/5.kikaichu_ganseki.lua">
+	</instant>
+	<instant
+		name="Mushi Kabe" words="mushi kabe" lvl="70" mana="250"
+		exhaustion="0" needlearn="0" event="script" value="shino/7.mushi_kabe.lua">
+	</instant>
+	<instant
+		name="Kikaichu Chokusen" words="kikaichu chokusen" lvl="100" mana="450"
+		exhaustion="0" needlearn="0" event="script" value="shino/10.kikaichu_chokusen.lua">
+	</instant>-->
+
+	<!-- Jutsus de Rock Lee-->
+	<!--<instant
+	name="Close Gate" words="close gate" lvl="0"
+		mana="0" exhaustion="1000" needlearn="0"
+		event="script" value="rock lee/close gate.lua">
+	</instant>
+	<instant name="Gouken" words="gouken" lvl="10" mana="20"
+		exhaustion="1000" needlearn="0"
+		event="script" value="rock lee/gouken.lua">
+	</instant>
+	<instant name="Konoha Senpuu" words="konoha senpuu"
+		lvl="30" mana="140" exhaustion="0"
+		direction="1" needlearn="0" event="script" value="rock lee/konoha senpuu.lua">
+	</instant>
+	<instant name="Open Gate" words="open gate" lvl="40"
+		mana="0" exhaustion="1000" needlearn="0"
+		event="script" value="rock lee/open gate.lua">
+	</instant>
+	<instant name="Konoha Renpuu" words="konoha renpuu"
+		lvl="50" mana="240" exhaustion="0"
+		direction="1" needlearn="0" event="script" value="rock lee/konoha renpuu.lua">
+	</instant>
+	<instant name="Konoha Dai Senpuu"
+		words="konoha dai senpuu" lvl="80" mana="380" exhaustion="0"
+		direction="1" needlearn="0" event="script" value="rock lee/konoha dai senpuu.lua">
+	</instant>
+	<instant name="Omote Renge" words="omote renge" lvl="150"
+		mana="800" range="7"
+		casterTargetOrDirection="1" exhaustion="0" needlearn="0" event="script"
+		value="rock lee/omote renge.lua">
+	</instant>
+	<instant name="Ura Renge" words="ura renge" lvl="200"
+		mana="1000" exhaustion="0" selftarget="1"
+		needlearn="0" event="script" value="rock lee/ura renge.lua">
+	</instant>
+	<instant name="Reverse Lotus" words="reverse lotus"
+		lvl="250" mana="1250" exhaustion="0"
+		selftarget="1" needlearn="0" event="script" value="rock lee/reverse lotus.lua">
+	</instant>-->
+
 	<!-- Jutsus de Kankuro -->
-	<instant name="Karasu" words="karasu" lvl="10" mana="0" exhaustion="1000" needlearn="0"
+	<!--<instant
+	name="Karasu" words="karasu" lvl="10" mana="0" exhaustion="1000" needlearn="0"
 		event="script" value="kankurou/karasu.lua">
 		<vocation id="21" />
 		<vocation id="22" />
@@ -853,365 +707,123 @@
 		<vocation id="22" />
 		<vocation id="23" />
 		<vocation id="24" />
-	</instant>
+	</instant>-->
 
 
 	<!-- Jutsus de Neji -->
-	<instant name="Hakke Hiasangi" words="hakke hiasangi" lvl="30" mana="250" selftarget="1"
+	<!--<instant
+	name="Hakke Hiasangi" words="hakke hiasangi"
+		lvl="30" mana="250" selftarget="1"
 		exhaustion="0" needlearn="0" event="script" value="neji/Hakke Hiasangi.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="53" />
-		<vocation id="54" />
-		<vocation id="55" />
-		<vocation id="56" />
 	</instant>
-	<instant name="Hakeshou Kaiten" words="hakeshou kaiten" lvl="50" mana="420" selftarget="1"
+	<instant name="Hakeshou Kaiten" words="hakeshou kaiten"
+		lvl="50" mana="420" selftarget="1"
 		exhaustion="0" needlearn="0" event="script" value="neji/hakeshou kaiten.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
-	<instant name="Hakke Fujin No Jutsu" words="hakke fujin no jutsu" lvl="75" mana="580" range="1"
+	<instant name="Hakke Fujin No Jutsu"
+		words="hakke fujin no jutsu" lvl="75" mana="580" range="1"
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="0" needlearn="0" event="script"
 		value="neji/hakke fujin no jutsu.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
-	<instant name="Hakke Hiasangi Fujin" words="hakke hiasangi fujin" lvl="100" mana="900"
+	<instant name="Hakke Hiasangi Fujin"
+		words="hakke hiasangi fujin" lvl="100" mana="900"
 		selftarget="1" exhaustion="0" needlearn="0" event="script"
 		value="neji/Hakke hiasangi fujin.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
-	<instant name="Hakke Hasangeki" words="hakke hasangeki" lvl="150" mana="1320" blockwalls="0"
+	<instant name="Hakke Hasangeki" words="hakke hasangeki"
+		lvl="150" mana="1320" blockwalls="0"
 		exhaustion="0" needlearn="0" event="script" value="neji/Hakke Hasangeki.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
-	<instant name="Hakke Fujin Hari" words="hakke fujin hari" lvl="200" mana="1800" selftarget="1"
+	<instant name="Hakke Fujin Hari" words="hakke fujin hari"
+		lvl="200" mana="1800" selftarget="1"
 		exhaustion="0" needlearn="0" event="script" value="neji/Hakke fujin hari.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
-	<instant name="Hakke Hyaku Nijuhachi Sho" words="hakke hyaku nijuhachi sho" lvl="250"
+	<instant name="Hakke Hyaku Nijuhachi Sho"
+		words="hakke hyaku nijuhachi sho" lvl="250"
 		mana="3100" blockwalls="0" exhaustion="0" needlearn="0" event="script"
 		value="neji/Hakke Hyaku Nijuhachi Sho.lua">
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-	</instant>
+	</instant>-->
 
 	<!-- Jutsus de Temari -->
-	<instant name="Fuusajin No Jutsu" words="fuusajin no jutsu" lvl="30" mana="250" range="3"
+	<!--<instant
+	name="Fuusajin No Jutsu"
+		words="fuusajin no jutsu" lvl="30" mana="250" range="3"
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="temari/Fuusajin no jutsu.lua">
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
 	</instant>
-	<instant name="Reppushou No Jutsu" words="reppushou no jutsu" lvl="50" mana="360"
+	<instant name="Reppushou No Jutsu"
+		words="reppushou no jutsu" lvl="50" mana="360"
 		exhaustion="2000" needlearn="0" event="script" value="temari/Reppushou no jutsu.lua">
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
 	</instant>
-	<instant name="Renkuudan No Jutsu" words="renkuudan no jutsu" lvl="90" mana="640" direction="1"
+	<instant name="Renkuudan No Jutsu"
+		words="renkuudan no jutsu" lvl="90" mana="640" direction="1"
 		exhaustion="2000" needlearn="0" event="script" value="temari/Renkuudan no jutsu.lua">
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
 	</instant>
-	<instant name="Fuuton Ninpou" words="fuuton ninpou" lvl="130" mana="530" range="5"
+	<instant name="Fuuton Ninpou" words="fuuton ninpou"
+		lvl="130" mana="530" range="5"
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="temari/Fuuton Ninpou.lua">
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
 	</instant>
-	<instant name="Fuuton Sensha" words="fuuton sensha" lvl="170" mana="830" blockwalls="1"
+	<instant name="Fuuton Sensha" words="fuuton sensha"
+		lvl="170" mana="830" blockwalls="1"
 		exhaustion="2000" needlearn="0" event="script" value="temari/Fuuton Sensha.lua">
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-	</instant>
-
-	<!-- Jutsus de Sakura -->
-	<instant name="Bunshin No Jutsu" words="bunshin no jutsu" lvl="10" mana="90" aggressive="0"
-		exhaustion="1000" needlearn="0" event="script"
-		value="sakura/1.bunshin_no_jutsu.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Shannaro" words="shannaro" lvl="20" mana="160" direction="1"
-		exhaustion="0" needlearn="0" event="script" value="sakura/2.shannaro.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Chiyute" words="chiyute" lvl="30" mana="180" aggressive="0"
-		exhaustion="1000" needtarget="1" params="1" needlearn="0" event="script"
-		value="sakura/3.chiyute_no_jutsu.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Doku Chiyo" words="doku chiyo" lvl="30" mana="100" aggressive="0" selftarget="1"
-		exhaustion="1000" needlearn="0" event="script" value="sakura/doku_chiyo.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Chakra Gan No Seizou" words="chakra gan no seizou" lvl="40" mana="400"
-		aggressive="0" selftarget="1"
-		exhaustion="1000" needlearn="0" event="script" value="sakura/5.chakra_gan_no_seizou.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Chakra no Mesu" words="chakra no mesu" lvl="50" mana="0" aggressive="0"
-		selftarget="1" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/6.chakra_no_mesu.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Chiyute Koumou" words="chiyute koumou" lvl="60" mana="400"
-		aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/7.chiyute_koumou.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Create Scroll Of Healing" words="create scroll of healing" lvl="70" mana="400"
-		aggressive="0" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/8.scroll_of_healing.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Create Scroll Of Chakra" words="create scroll of chakra" lvl="70" mana="400"
-		aggressive="0" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/8.scroll_of_chakra.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Create Scroll Of Speed" words="create scroll of speed" lvl="70" mana="400"
-		aggressive="0" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/8.scroll_of_speed.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Oukashou" words="oukashou" lvl="100" mana="800" aggressive="0"
-		exhaustion="2000" needlearn="0" event="script" value="sakura/10.oukashou.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-	<instant name="Sozo Sazei" words="sozo sazei" lvl="120" mana="0" aggressive="0"
-		selftarget="1" exhaustion="1000" needlearn="0" event="script"
-		value="sakura/12.sozo_sazei.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="45" />
-		<vocation id="47" />
-	</instant>
-	<instant name="Jinshin" words="jinshin" lvl="150" mana="2500" exhaustion="0" needlearn="0"
-		event="script" value="sakura/jinshin no jutsu.lua">
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-	</instant>
-
-	<!-- Jutsus de Kiba -->
-	<instant name="Akamaru" words="akamaru" lvl="0" mana="0" exhaustion="1000" needlearn="0"
-		event="script" value="kiba/0.akamaru.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Tsuuga" words="tsuuga" lvl="10" mana="90" exhaustion="0" needlearn="0"
-		event="script" value="kiba/1.tsuuga.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Juujin Bunshin" words="juujin bunshin" lvl="20" mana="50" exhaustion="0"
-		needlearn="0"
-		event="script" value="kiba/2.juujin_bunshin.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Kizu" words="kizu" lvl="30" mana="100" range="3" casterTargetOrDirection="1"
-		blockwalls="1" exhaustion="0" needlearn="0" event="script" value="kiba/3.kizu.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Gatsuuga" words="gatsuuga" lvl="40" mana="200" exhaustion="0" needlearn="0"
-		event="script" value="kiba/4.gatsuuga.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Tsuigeki No Ko" words="tsuigeki no ko" lvl="50" mana="50" exhaustion="2000"
-		params="1" needlearn="0" event="function" value="searchPlayer">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Shikyaku No Jutsu" words="shikyaku no jutsu" lvl="60" mana="80" aggressive="0"
-		selftarget="1" exhaustion="1000" needlearn="0" needmana="0" event="script"
-		value="kiba/6.shikyaku_no_jutsu.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
-	<instant name="Garouga" words="garouga" lvl="70" mana="450" exhaustion="0" needlearn="0"
-		event="script" value="kiba/7.garouga.lua">
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-	</instant>
+	</instant>-->
 
 	<!-- Jutsus de Gaara -->
-	<instant name="Suna Shuriken" words="suna shuriken" lvl="10" mana="100" blockwalls="1"
+	<!--<instant
+		name="Suna Shuriken" words="suna shuriken"
+		lvl="10" mana="100" blockwalls="1"
 		exhaustion="1000" needlearn="0" event="script" value="gaara/suna shuriken.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Sabaku Kyu" words="sabaku kyu" lvl="30" mana="300" range="5"
+	<instant name="Sabaku Kyu" words="sabaku kyu" lvl="30"
+		mana="300" range="5"
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="gaara/sabaku kyu.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna Wall" words="suna wall" lvl="40" mana="400" blockwalls="1" exhaustion="2000"
+	<instant name="Suna Wall" words="suna wall" lvl="40"
+		mana="400" blockwalls="1" exhaustion="2000"
 		needlearn="0" event="script" value="gaara/suna wall.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Shukaku Form" words="shukaku form" lvl="40" mana="100" exhaustion="1000"
+	<instant name="Shukaku Form" words="shukaku form" lvl="40"
+		mana="100" exhaustion="1000"
 		needlearn="0" event="script" value="gaara/shukaku form.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna No Yoroi" words="suna no yoroi" lvl="50" mana="50" aggressive="0"
+	<instant name="Suna No Yoroi" words="suna no yoroi"
+		lvl="50" mana="50" aggressive="0"
 		selftarget="1" exhaustion="1000" needlearn="0" event="script"
 		value="gaara/suna no yoroi.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna No Yoroi Kyanseru" words="suna no yoroi kyanseru" lvl="50" mana="50"
+	<instant name="Suna No Yoroi Kyanseru"
+		words="suna no yoroi kyanseru" lvl="50" mana="50"
 		aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" event="script"
 		value="gaara/suna no yoroi kyanseru.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Sajin Sougeki" words="sajin sougeki" lvl="70" mana="500" aggressive="0"
+	<instant name="Sajin Sougeki" words="sajin sougeki"
+		lvl="70" mana="500" aggressive="0"
 		direction="1" exhaustion="2000" needlearn="0" event="script" value="gaara/sajin sougeki.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna Ryuuna No Jutsu" words="suna ryuuna no jutsu" lvl="80" mana="670" range="5"
+	<instant name="Suna Ryuuna No Jutsu"
+		words="suna ryuuna no jutsu" lvl="80" mana="670" range="5"
 		casterTargetOrDirection="1" exhaustion="2000" needlearn="0"
 		script="gaara/suna ryuuna no jutsu.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
 
-	<instant name="Suna Shigure" words="suna shigure" lvl="130" mana="1200" blockwalls="1"
+	<instant name="Suna Shigure" words="suna shigure"
+		lvl="130" mana="1200" blockwalls="1"
 		exhaustion="2000" needlearn="0" event="script" value="gaara/suna shigure.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna Jinji No Jutsu" words="suna jinji no jutsu" lvl="170" mana="2000"
+	<instant name="Suna Jinji No Jutsu"
+		words="suna jinji no jutsu" lvl="170" mana="2000"
 		direction="0" exhaustion="3000" needlearn="0" script="gaara/suna jinji no jutsu.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
 	</instant>
-	<instant name="Suna Bakuhatsu no Jutsu" words="suna bakuhatsu no jutsu" lvl="250" mana="2550"
+	<instant name="Suna Bakuhatsu no Jutsu"
+		words="suna bakuhatsu no jutsu" lvl="250" mana="2550"
 		direction="0" exhaustion="3000" needlearn="0" script="gaara/Suna Bakuhatsu no Jutsu.lua">
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="74" />
-		<vocation id="75" />
-	</instant>
+	</instant>-->
 
 	<!-- Jutsus de Shikamaru -->
-	<instant name="Kage Mane No Jutsu" words="kage mane no jutsu" lvl="10" mana="100" direction="1"
+	<!--<instant
+		name="Kage Mane No Jutsu" words="kage mane no jutsu" lvl="10" mana="100" direction="1"
 		blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="shikamaru/kage mane no jutsu.lua">
 		<vocation id="1" />
@@ -1219,7 +831,8 @@
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Kibaku Fuuda" words="Kage kibaku fuuda" lvl="30" mana="280" range="3"
+	<instant name="Kage Kibaku Fuuda" words="Kage kibaku fuuda"
+		lvl="30" mana="280" range="3"
 		casterTargetOrDirection="1" exhaustion="2000" needlearn="0"
 		script="shikamaru/Kage kibaku fuuda.lua">
 		<vocation id="1" />
@@ -1227,21 +840,24 @@
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Nui" words="kage nui" lvl="50" mana="600" direction="1" exhaustion="2000"
+	<instant name="Kage Nui" words="kage nui" lvl="50"
+		mana="600" direction="1" exhaustion="2000"
 		needlearn="0" script="shikamaru/kage nui.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Nui No Kimira" words="kage nui no kimira" lvl="80" mana="720" direction="0"
+	<instant name="Kage Nui No Kimira"
+		words="kage nui no kimira" lvl="80" mana="720" direction="0"
 		exhaustion="2000" needlearn="0" script="shikamaru/kage nui no kimira.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="kage mane no sensha" words="kage mane no sensha" lvl="100" mana="400"
+	<instant name="kage mane no sensha"
+		words="kage mane no sensha" lvl="100" mana="400"
 		direction="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="shikamaru/kage mane no sensha.lua">
 		<vocation id="1" />
@@ -1249,14 +865,16 @@
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Mane No Kibaru" words="kage mane no kibaru" lvl="120" mana="820"
+	<instant name="Kage Mane No Kibaru"
+		words="kage mane no kibaru" lvl="120" mana="820"
 		direction="1" exhaustion="2000" needlearn="0" script="shikamaru/kage mane no kibaru.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage No Kishashou" words="kage no kishashou" lvl="150" mana="910" direction="1"
+	<instant name="Kage No Kishashou" words="kage no kishashou"
+		lvl="150" mana="910" direction="1"
 		blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="shikamaru/kage no kishashou.lua">
 		<vocation id="1" />
@@ -1264,7 +882,8 @@
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Kishabari No Jutsu" words="kage kishabari no jutsu" lvl="200" mana="1500"
+	<instant name="Kage Kishabari No Jutsu"
+		words="kage kishabari no jutsu" lvl="200" mana="1500"
 		selftarget="1" exhaustion="2000" needlearn="0"
 		script="shikamaru/kage kishabari no jutsu.lua">
 		<vocation id="1" />
@@ -1272,499 +891,353 @@
 		<vocation id="3" />
 		<vocation id="4" />
 	</instant>
-	<instant name="Kage Mane No Yaiba" words="kage mane no yaiba" lvl="250" mana="700" direction="1"
+	<instant name="Kage Mane No Yaiba"
+		words="kage mane no yaiba" lvl="250" mana="700" direction="1"
 		blockwalls="1" exhaustion="2000" needlearn="0" event="script"
 		value="shikamaru/kage mane no yaiba.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
-	</instant>
+	</instant>-->
 
+	<!-- Jutsus de Monstros-->
+	<!-- sagas -->
+	<instant spellid="10001"
+		name="Katon Goukakyu No Jutsu - Monster"
+		words="katon goukakyu no jutsu - monster"
+		lvl="0" mana="0"
+		exhaustion="0" direction="1" needlearn="0" event="script"
+		value="saga/katon_goukakyu_no_jutsu.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10002" name="Ossos Um"
+		words="ossos um" lvl="0" mana="0" exhaustion="2000"
+		range="4"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/ossos1.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10003" name="Ossos Dois"
+		words="ossos dois" lvl="0"
+		mana="280" exhaustion="2000" needlearn="0"
+		event="script" value="monster/ossos2.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10004" name="Water Dragon"
+		words="water dragon" lvl="0"
+		mana="0" exhaustion="2000" range="4"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/water dragon.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10005" name="Stone Destruction"
+		words="stone destruction"
+		lvl="0" mana="280" exhaustion="2000"
+		range="4" casterTargetOrDirection="1" needlearn="0" event="script"
+		value="stone destruction.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10006" name="Stone Combusted"
+		words="stone combusted"
+		lvl="0" mana="280" exhaustion="2000"
+		needlearn="0" event="script" value="stone combusted.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10007" name="Chakra Veil"
+		words="chakra veil" lvl="0"
+		mana="0" exhaustion="2000" range="3"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/chakra veil.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10008" name="Chakra Cut"
+		words="chakra cut" lvl="0"
+		mana="0" exhaustion="2000" range="3"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/chakra cut.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10009" name="shadown" words="shadown"
+		lvl="0" mana="0"
+		exhaustion="2000" needlearn="0"
+		event="script" value="shadown.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10010" name="monster kaiten"
+		words="monster kaiten"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="saga/monster kaiten.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10011" name="Water Dragon"
+		words="Water Dragon" event="script"
+		value="saga/dragao de agua.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10012" name="Doku Insect Poison"
+		words="doku insect poison" lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/doku_insect_poison.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10013" name="Fuuton Base"
+		words="fuuton base"
+		casterTargetOrDirection="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/fuuton_base.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10014" name="Destruction On The Line"
+		words="destruction on the line"
+		direction="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/destruction_on_the_line.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant
+		spellid="10015" name="Katon Ryuuka" words="katon ryuuka"
+		direction="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/katon_ryuuka.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant
+		spellid="10016" name="Sabaku Kyu - Monster" words="sabaku kyu monster"
+		target="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/gaara/sabaku_kyu.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant
+		spellid="10017" name="Suna Jinji - Monster" words="suna jinji monster"
+		direction="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/gaara/suna_jinji.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant
+		spellid="10018" name="Suna Ryuuna - Monster" words="suna ryyuuna monster"
+		direction="1"
+		lvl="0" mana="0" exhaustion="2000"
+		needlearn="0" event="script" value="monster/gaara/suna_ryuuna.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant
+		spellid="10019" name="Hakke Hiasangi - Monster" words="hakke hiasangi - monster"
+		lvl="0" mana="0" selftarget="1"
+		exhaustion="0" needlearn="0" event="script" value="monster/neji/hakke_hiasangi.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10020"
+		name="Hakeshou Kaiten - Monster" words="hakeshou kaiten - monster"
+		lvl="0" mana="0" selftarget="1"
+		exhaustion="0" needlearn="0" event="script" value="monster/neji/hakeshou_kaiten.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10021" name="Renkuudan - Monster"
+		words="renkuudan - monster" lvl="0" mana="0" direction="1"
+		exhaustion="2000" needlearn="0" event="script" value="monster/temari/renkuudan.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10022" name="Dai Senkai - Monster"
+		words="dai senkai - monster" lvl="0"
+		mana="0" exhaustion="2000" range="3"
+		casterTargetOrDirection="1" needlearn="0" event="script" value="monster/dai_senkai.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10023" name="Paralize - Monster"
+		words="paralize - monster" lvl="0" mana="0"
+		range="1" casterTargetOrDirection="1"
+		exhaustion="2000" needlearn="0" event="script" value="sai/paralize.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10024" name="Oto-Nin Vibration"
+		words="oto-nin vibration" lvl="0" mana="0"
+		direction="1" castsound="0" blockwalls="1" range="7" npc="1"
+		needtarget="1" exhaustion="2000" event="script"
+		value="monster/otogakure_jutsus/oto_vibration.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10025" name="Oto-Paralyze"
+		words="oto paralyze" lvl="0" mana="0"
+		direction="1" castsound="0" blockwalls="1" range="7" npc="1"
+		needtarget="1" exhaustion="2000" event="script"
+		value="monster/otogakure_jutsus/oto_paralyze.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10026" name="Zankuuha"
+		words="zankuuha" direction="1" blockwalls="1" range="7"
+		needtarget="1" exhaustion="2000" event="script"
+		value="monster/otogakure_jutsus/zankuuha.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10027" name="Orioke no jutsu"
+		words="orioke no jutsu"
+		description="&#10;"
+		exhaustion="2000" event="script"
+		value="all/orioke.lua">
+	</instant>
+	<instant spellid="10028" name="Demon Poison" words="Demon Poison" event="script"
+		value="monster/gozu_and_meizu/demon_poison.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10029" name="Zabuza Bunshin"
+		words="Zabuza Bunshin" event="script"
+		value="monster/bunshins/zabuza.lua">
+		<vocation id="1000" />
+	</instant>
+	<!--<instant
+	spellid="10030" name="Kinobori no Jutsu"
+		words="kinobori" lvl="10" mana="20"
+		exhaustion="2000"
+		needlearn="0" event="script" value="training/kinobori.lua">
+	</instant>-->
+	<instant spellid="10031" name="Haku Bunshin"
+		words="Haku Bunshin" event="script"
+		value="monster/bunshins/haku.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10032" name="Ranpu" words="ranpu"
+		description="&#10;Gera um pequeno campo luminoso em volta do usuário que acompanha o seu movimento."
+		lvl="5" mana="20"
+		aggressive="0" selftarget="1"
+		exhaustion="1000" needlearn="0" event="script" value="support/light.lua">
+	</instant>
 	<!-- Jutsus de Suporte -->
-	<instant name="Hide" words="hide" lvl="1" mana="0" exhaustion="1000" needlearn="0"
+	<!--<instant
+	spellid="10013"
+		name="Hide" words="hide" lvl="1" mana="0"
+		exhaustion="1000" needlearn="0"
 		event="script" value="all/hide.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 		<vocation id="5" />
+		<vocation id="6" />
 		<vocation id="7" />
+		<vocation id="8" />
 		<vocation id="9" />
 		<vocation id="10" />
 		<vocation id="11" />
+		<vocation id="12" />
 		<vocation id="13" />
 		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
 	</instant>
-	<instant name="Chiyo" words="chiyo" lvl="5" mana="20" aggressive="0" selftarget="1"
+	<instant spellid="10014" name="Chiyo" words="chiyo" lvl="5" mana="20"
+		aggressive="0" selftarget="1"
 		exhaustion="1000" needlearn="0" event="script" value="all/chiyo.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
+		<vocation id="1000" />
 	</instant>
-	<instant name="Mutto Chiyo" words="mutto chiyo" lvl="40" mana="0" aggressive="0" selftarget="1"
+	<instant spellid="10015" name="Mutto Chiyo" words="mutto chiyo" lvl="40"
+		mana="0" aggressive="0" selftarget="1"
 		exhaustion="1000" needlearn="0" event="script" value="all/mutto_chiyo.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
+		<vocation id="1000" />
 	</instant>
-	<instant name="Ranpu" words="ranpu" lvl="5" mana="20" aggressive="0" selftarget="1"
+	<instant spellid="10016" name="Ranpu" words="ranpu" lvl="5" mana="20"
+		aggressive="0" selftarget="1"
 		exhaustion="1000" needlearn="0" event="script" value="support/light.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 		<vocation id="5" />
+		<vocation id="6" />
 		<vocation id="7" />
+		<vocation id="8" />
 		<vocation id="9" />
 		<vocation id="10" />
 		<vocation id="11" />
+		<vocation id="12" />
 		<vocation id="13" />
 		<vocation id="14" />
+
 		<vocation id="15" />
 		<vocation id="16" />
 		<vocation id="17" />
 		<vocation id="18" />
-
+		<vocation id="19" />
+		<vocation id="20" />
 		<vocation id="21" />
 		<vocation id="22" />
 		<vocation id="23" />
+
 		<vocation id="24" />
 		<vocation id="25" />
 		<vocation id="26" />
 		<vocation id="27" />
 		<vocation id="28" />
 		<vocation id="29" />
+		<vocation id="30" />
 		<vocation id="31" />
 		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
 	</instant>
-	<instant name="Chakra Strike" words="chakra strike" lvl="5" mana="20" range="3"
+	<instant spellid="10017" name="Chakra Strike" words="chakra strike"
+		lvl="5" mana="20" range="3"
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="0" needlearn="0" event="script"
 		value="chakra strike.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10018" name="Chakra Speed" words="chakra speed" lvl="5"
+		mana="40" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" needmana="0"
+		event="script" value="all/chakra_speed.lua">
 		<vocation id="1" />
 		<vocation id="2" />
 		<vocation id="3" />
 		<vocation id="4" />
 		<vocation id="5" />
+		<vocation id="6" />
 		<vocation id="7" />
+		<vocation id="8" />
 		<vocation id="9" />
 		<vocation id="10" />
 		<vocation id="11" />
+		<vocation id="12" />
 		<vocation id="13" />
 		<vocation id="14" />
+
 		<vocation id="15" />
 		<vocation id="16" />
 		<vocation id="17" />
 		<vocation id="18" />
-
+		<vocation id="19" />
+		<vocation id="20" />
 		<vocation id="21" />
 		<vocation id="22" />
 		<vocation id="23" />
+
 		<vocation id="24" />
 		<vocation id="25" />
 		<vocation id="26" />
 		<vocation id="27" />
 		<vocation id="28" />
 		<vocation id="29" />
+		<vocation id="30" />
 		<vocation id="31" />
 		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="64" />
-		<vocation id="65" />
-		<vocation id="66" />
-		<vocation id="67" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
-	</instant>
-	<instant name="Chakra Speed" words="chakra speed" lvl="5" mana="40" aggressive="0"
-		selftarget="1"
-		exhaustion="1000" needlearn="0" needmana="0" event="script" value="all/chakra_speed.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="7" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="13" />
-		<vocation id="14" />
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="31" />
-		<vocation id="32" />
-		<vocation id="33" />
-		<vocation id="35" />
-		<vocation id="36" />
-		<vocation id="37" />
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-		<vocation id="43" />
-		<vocation id="44" />
-		<vocation id="45" />
-		<vocation id="47" />
-		<vocation id="48" />
-		<vocation id="57" />
-		<vocation id="59" />
-		<vocation id="60" />
-		<vocation id="61" />
-		<vocation id="62" />
-		<vocation id="63" />
-		<vocation id="70" />
-		<vocation id="71" />
-		<vocation id="72" />
-		<vocation id="73" />
-		<vocation id="74" />
-		<vocation id="75" />
-		<vocation id="76" />
-		<vocation id="77" />
-		<vocation id="78" />
-		<vocation id="79" />
-		<vocation id="80" />
-		<vocation id="81" />
-		<vocation id="82" />
-		<vocation id="92" />
-		<vocation id="93" />
-		<vocation id="94" />
-		<vocation id="95" />
-		<vocation id="96" />
-		<vocation id="97" />
-		<vocation id="100" />
-		<vocation id="101" />
-		<vocation id="102" />
-		<vocation id="103" />
-		<vocation id="104" />
-		<vocation id="105" />
 	</instant>
 
-	<conjure name="Create Explosive Kunai" words="explosive kunai seisei" lvl="60" mana="400"
+	<conjure spellid="10019" name="Create Explosive Kunai"
+		words="explosive kunai seisei" lvl="60" mana="400"
 		conjureId="2546" conjureCount="5" exhaustion="1000" needlearn="0" event="function"
 		value="conjureItem">
-		<vocation id="47" />
-		<vocation id="48" />
+		<vocation id="1000" />
 	</conjure>
-	<conjure name="Create Kunai" words="kunai seisei" lvl="40" mana="200" conjureId="2410"
+	<conjure spellid="10020" name="Create Kunai" words="kunai seisei" lvl="40"
+		mana="200" conjureId="2410"
 		conjureCount="5" exhaustion="1000" needlearn="0" event="function" value="conjureItem">
-		<vocation id="47" />
-		<vocation id="48" />
+		<vocation id="1000" />
 	</conjure>
-	<conjure name="Create Shuriken" words="shuriken seisei" lvl="25" mana="100" conjureId="2399"
+	<conjure spellid="10021" name="Create Shuriken" words="shuriken seisei"
+		lvl="25" mana="100" conjureId="2399"
 		conjureCount="5" exhaustion="1000" needlearn="0" event="function" value="conjureItem">
-		<vocation id="47" />
-		<vocation id="48" />
+		<vocation id="1000" />
 	</conjure>
-	<conjure name="Create Sebon" words="sebon seisei" lvl="10" mana="50" conjureId="2544"
+	<conjure spellid="10022" name="Create Sebon" words="sebon seisei" lvl="10"
+		mana="50" conjureId="2544"
 		conjureCount="5" exhaustion="1000" needlearn="0" event="function" value="conjureItem">
-		<vocation id="47" />
-		<vocation id="48" />
+		<vocation id="1000" />
 	</conjure>
-	<conjure name="Shinteshin No Jutsu" words="shinteshin no jutsu" lvl="30" mana="200" soul="0"
+	<conjure spellid="10023" name="Shinteshin No Jutsu"
+		words="shinteshin no jutsu" lvl="30" mana="200" soul="0"
 		conjureId="2290" conjureCount="1" exhaustion="1000" needlearn="0" event="function"
 		value="conjureRune">
-		<vocation id="39" />
-		<vocation id="40" />
-		<vocation id="41" />
-	</conjure>
+		<vocation id="1000" />
+	</conjure>-->
 </spells>

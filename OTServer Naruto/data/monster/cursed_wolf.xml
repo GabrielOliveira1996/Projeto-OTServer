@@ -1,45 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="cursed wolf" nameDescription="a cursed wolf" race="blood" experience="3500" speed="325" manacost="1300">
-  <health now="2350" max="2350"/>
-  <look type="79" corpse="2854"/>
-  <targetchange interval="5000" chance="8"/>
-  <strategy attack="100" defense="0"/>
+<monster name="cursed wolf" nameDescription="a cursed wolf" race="blood" experience="3500"
+  speed="325" manacost="1300">
+  <health now="2350" max="2350" />
+  <look type="79" corpse="2854" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
   <flags>
-    <flag summonable="0"/>
-    <flag attackable="1"/>
-    <flag hostile="1"/>
-    <flag illusionable="1"/>
-    <flag convinceable="1"/>
-    <flag pushable="0"/>
-    <flag canpushitems="1"/>
-    <flag canpushcreatures="1"/>
-    <flag targetdistance="0"/>
-    <flag staticattack="90"/>
-    <flag runonhealth="100"/>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="1" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="100" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="62" attack="56"/> 
+    <attack name="melee" interval="2000" skill="48" attack="50" />
   </attacks>
-  <defenses armor="20" defense="14"/>
+  <defenses armor="20" defense="14" />
   <immunities>
-    <immunity physical="0"/>
-    <immunity energy="0"/>
-    <immunity fire="1"/>
-    <immunity poison="0"/>
-    <immunity lifedrain="0"/>
-    <immunity paralyze="0"/>
-    <immunity outfit="0"/>
-    <immunity drunk="0"/>
-    <immunity invisible="0"/>
+    <immunity physical="0" />
+    <immunity energy="0" />
+    <immunity fire="1" />
+    <immunity poison="0" />
+    <immunity lifedrain="0" />
+    <immunity paralyze="0" />
+    <immunity outfit="0" />
+    <immunity drunk="0" />
+    <immunity invisible="0" />
   </immunities>
   <voices interval="5000" chance="10">
-    <voice sentence="Rrrrrrr.."/>
-    <voice sentence="..."/>
+    <voice sentence="Rrrrrrr.." />
+    <voice sentence="..." />
   </voices>
   <loot>
-    <item id="2666" countmax="5" chance1="56000" chancemax="0"/>
+    <item id="2666" countmax="5" chance1="56000" chancemax="0" />
   </loot>
-<script>
+  <script>
 <event name="mkillm"/>
 </script>
 </monster>

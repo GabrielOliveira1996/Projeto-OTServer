@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Kiba(Professor)" script="data/npc/scripts/kiba(Professor).lua" walkinterval="2000" floorchange="0" lookdir="2">
-	<mana now="100" max="100"/>
-	<health now="100" max="100"/>
-	<look type="18"/>
-	<parameters>
-		<parameter key="module_shop" value="0" />
-		<parameter key="message_greet" value="Holla |PLAYERNAME|. Para saber quais jutsus eu ensino diga 'teach'." />
-	</parameters>
+<npc name="Kiba(Professor)" script="data/npc/scripts/kiba(Professor).lua" walkinterval="0"
+	floorchange="0" lookdir="2">
+	<mana now="100" max="100" />
+	<health now="100" max="100" />
+	<look type="18" />
 </npc>

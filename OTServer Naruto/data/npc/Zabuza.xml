@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Zabuza Momochi" script="data/npc/scripts/sagas/zabuza.lua" walkinterval="0" speed="320"
+	floorchange="0">
+	<health now="100" max="100" />
+	<look type="3" />
+</npc>

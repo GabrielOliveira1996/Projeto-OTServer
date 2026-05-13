@@ -1,14 +1,18 @@
 local config = {
     type = COMBAT_PHYSICALDAMAGE,
-    storage = 23001,
-    cooldown = 2,
     invisibleOutfit = 0 
 }
 
-local effects = {
-    [0] = 29, [1] = 27, [2] = 30, [3] = 28
+-- Efeitos normais e efeitos de Fusão (Novos IDs e Direções)
+local effectsNormal = { [0] = 29, [1] = 27, [2] = 30, [3] = 28 }
+local effectsFusion = { 
+    [0] = 46, -- Cima
+    [1] = 47, -- Direita
+    [2] = 45, -- Baixo
+    [3] = 35  -- Esquerda
 }
 
+-- Funções Auxiliares (Obrigatórias)
 local function canWalk(pos)
     local tile = getTileInfo(pos)
     if not tile or tile.thingID == 0 then return false end
@@ -54,10 +58,12 @@ local function executeTsuuga(cid)
     local dir = getCreatureLookDirection(cid)
     local level = getPlayerLevel(cid)
     local fist = getPlayerSkillLevel(cid, SKILL_FIST)
+    local isFused = getPlayerStorageValue(cid, STORAGE_IS_FUSED) > 0
 
-    local distance = (level >= 100 and 7) or (level >= 50 and 5) or 3
+    local distance = (level >= 100 and 5) or (level >= 50 and 4) or 3
     local originalOutfit = getCreatureOutfit(cid)
     
+    -- Fica invisível durante o giro
     doSetCreatureOutfit(cid, {lookType = config.invisibleOutfit}, -1)
     doCreatureSetNoMove(cid, true)
 
@@ -69,25 +75,58 @@ local function executeTsuuga(cid)
             local nextPos = getPosByDir(currentPos, dir)
             
             if canWalk(nextPos) then
-                local minDmg = -((fist * 1.0) + (level * 1.0))
-                local maxDmg = -((fist * 1.5) + (level * 1.5))
+                -- FÓRMULA DE DANO AJUSTADA
+                local minDmg, maxDmg
+                if isFused then
+                    -- Dano na Fusão (Mais forte)
+                    minDmg = -((fist * 5.0) + (level * 2.5)) 
+                    maxDmg = -((fist * 7.5) + (level * 4.0))
+                else
+                    -- Dano Normal
+                    minDmg = -((fist * 3.0) + (level * 1.5)) 
+                    maxDmg = -((fist * 4.5) + (level * 3.0))
+                end
                 
+                -- Aplica dano na frente e nas laterais
                 doSafeDamage(cid, nextPos, config.type, minDmg, maxDmg)
-                
                 local posL, posR = getLateralPos(nextPos, dir)
                 doSafeDamage(cid, posL, config.type, minDmg, maxDmg)
                 doSafeDamage(cid, posR, config.type, minDmg, maxDmg)
 
                 doTeleportThing(cid, nextPos, true)
-                doSendMagicEffect(nextPos, effects[dir] or 29)
+
+                if isFused then
+                    local effectPos = {x = nextPos.x, y = nextPos.y, z = nextPos.z}
+                    local offsets = {
+                        [0] = {x = 1, y = 1}, -- Cima 
+                        [1] = {x = 0, y = 1}, -- Direita
+                        [2] = {x = 1, y = 1}, -- Baixo
+                        [3] = {x = 0, y = 1}  -- Esquerda
+                    }
+
+                    local configOffset = offsets[dir]
+                    if configOffset then
+                        effectPos.x = effectPos.x + configOffset.x
+                        effectPos.y = effectPos.y + configOffset.y
+                    end
+                    doSendMagicEffect(effectPos, effectsFusion[dir] or 45)
+                else
+                    doSendMagicEffect(nextPos, effectsNormal[dir] or 29)
+                end
             else
-                distance = i
+                distance = i 
             end
 
             if i == distance then
                 if isCreature(cid) then
-                    doSetCreatureOutfit(cid, originalOutfit, 0)
                     doCreatureSetNoMove(cid, false)
+                    if isFused then
+                        -- Se ainda estiver em fusão, volta para a roupa da fusão
+                        doSetCreatureOutfit(cid, {lookType = FIRST_FUSION_OUTFIT}, -1)
+                    else
+                        -- Se não, volta para o que era antes (Kiba normal)
+                        doSetCreatureOutfit(cid, originalOutfit, 0)
+                    end
                 end
             end
         end, i * 60)
@@ -95,17 +134,7 @@ local function executeTsuuga(cid)
 end
 
 function onCastSpell(cid, var)
-    if not isPlayer(cid) then
-        return false 
-    end
-
-    if exhaustion.check(cid, config.storage) then
-        doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED)
-        return false
-    end
-
-    exhaustion.set(cid, config.storage, config.cooldown)
+    if not isPlayer(cid) then return false end
     executeTsuuga(cid)
-
     return true
 end

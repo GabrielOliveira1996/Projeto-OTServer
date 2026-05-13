@@ -1,0 +1,255 @@
+SkillNameLabel < GameLabel
+  font: verdana-11px-monochrome
+  anchors.left: parent.left
+  anchors.top: parent.top
+  anchors.bottom: parent.bottom
+  phantom: true
+
+SkillValueLabel < GameLabel
+  id: value
+  font: verdana-11px-monochrome
+  text-align: topright
+  anchors.right: parent.right
+  anchors.top: parent.top
+  anchors.bottom: parent.bottom
+  width: 40
+  phantom: true
+
+SkillPercentPanel < ProgressBar
+  id: percent
+  background-color: green
+  height: 5
+  margin-top: 15
+  anchors.left: parent.left
+  anchors.right: parent.right
+  anchors.top: parent.top
+  phantom: false
+
+AddPointButton < UIButton
+  id: addButton
+  size: 14 14
+  text: +
+  font: verdana-11px-monochrome
+  anchors.right: parent.right
+  anchors.verticalCenter: parent.verticalCenter
+  margin-right: 45
+  background-color: #444444
+  color: #00ff00
+  visible: false
+  @onClick: modules.game_skills.onAddPoint(self:getParent():getId())
+
+SkillButton < UIButton
+  height: 21
+  margin-bottom: 2
+
+SmallSkillButton < SkillButton
+  height: 14
+
+MiniWindow
+  id: skillWindow
+  !text: tr('Skills')
+  height: 150
+  icon: /images/topbuttons/skills
+  @onClose: modules.game_skills.onMiniWindowClose()
+  &save: true
+  &autoOpen: false
+
+  MiniWindowContents
+    padding-left: 5
+    padding-right: 5
+    layout: verticalBox
+
+    Label
+      id: attributePointsLabel
+      !text: tr('Points: 0')
+      font: verdana-11px-monochrome
+      color: #ff0000
+      height: 20
+      margin-top: 5
+      text-align: center
+
+    SkillButton
+      id: experience
+      height: 15
+      !tooltip: tr('Sua experiência total acumulada.')
+      SkillNameLabel
+        !text: tr('Experience')
+      SkillValueLabel
+
+    SkillButton
+      id: level
+      !tooltip: tr('A cada nível alcançado, sua vida e chakra aumentam. Além disso, você ganha 1 ponto de atributo por nível, com um bônus de 3 pontos a cada 10 níveis.')
+      SkillNameLabel
+        !text: tr('Level')
+      SkillValueLabel
+      SkillPercentPanel
+        background-color: red
+
+    SkillButton
+      id: health
+      height: 15
+      !tooltip: tr('Sua reserva de vida atual e maxima.')
+      SkillNameLabel
+        !text: tr('Hit Points')
+      SkillValueLabel
+
+    SkillButton
+      id: mana
+      height: 15
+      !tooltip: tr('Sua reserva de chakra para utilizar Jutsus.')
+      SkillNameLabel
+        !text: tr('Chakra')
+      SkillValueLabel
+
+    SkillButton
+      id: soul
+      height: 15
+      !tooltip: tr('Pontos de Soul, usados em alguns sistemas de craft ou magias especiais.')
+      SkillNameLabel
+        !text: tr('Pontos de Energia')
+      SkillValueLabel
+
+    SkillButton
+      id: capacity
+      height: 15
+      !tooltip: tr('Capacidade de carga. Define quanto peso voce pode carregar.')
+      SkillNameLabel
+        !text: tr('Capacidade')
+      SkillValueLabel
+
+    SkillButton
+      id: speed
+      height: 15
+      !tooltip: tr('Sua velocidade de movimento.')
+      SkillNameLabel
+        !text: tr('Speed')
+      SkillValueLabel
+
+    SkillButton
+      id: regenerationTime
+      !tooltip: tr('Tempo restante de regeneracao de vida e mana.')
+      SkillNameLabel
+        !text: tr('Regeneration Time')
+      SkillValueLabel
+
+    SkillButton
+      id: stamina
+      !tooltip: tr('Sua energia de treino. Quando baixa, voce ganha menos experiência.')
+      SkillNameLabel
+        !text: tr('Stamina')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SkillButton
+      id: offlineTraining
+      !tooltip: tr('Tempo disponível para treinamento offline.')
+      SkillNameLabel
+        !text: tr('Offline Training')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SkillButton
+      id: magiclevel
+      !tooltip: tr('Ninjutsu. Aumenta o dano de jutsus elementais.')
+      SkillNameLabel
+        !text: tr('Magic Level')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId0
+      !tooltip: tr('Taijutsu. Aumenta o dano de ataques básicos ou .')
+      SkillNameLabel
+        !text: tr('Fist Fighting')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId1
+      !tooltip: tr('Dano com porretes e armas de impacto.')
+      SkillNameLabel
+        !text: tr('Club Fighting')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId2
+      !tooltip: tr('Bukijutsu. Aumenta o dano com Katanas e Espadas.')
+      SkillNameLabel
+        !text: tr('Sword Fighting')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId3
+      !tooltip: tr('Dano com machados.')
+      SkillNameLabel
+        !text: tr('Axe Fighting')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId4
+      !tooltip: tr('Shurikenjutsu. Aumenta o dano de armas a distancia.')
+      SkillNameLabel
+        !text: tr('Distance Fighting')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId5
+      !tooltip: tr('Sua capacidade de defesa com escudos ou armas.')
+      SkillNameLabel
+        !text: tr('Shielding')
+      AddPointButton
+      SkillValueLabel
+
+    SkillButton
+      id: skillId6
+      !tooltip: tr('Habilidade de pesca.')
+      SkillNameLabel
+        !text: tr('Fishing')
+      AddPointButton
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId7
+      !tooltip: tr('Chance de causar um acerto critico.')
+      SkillNameLabel
+        !text: tr('Critical Hit Chance')
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId8
+      !tooltip: tr('Dano extra causado pelo acerto critico.')
+      SkillNameLabel
+        !text: tr('Critical Hit Damage')
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId9
+      !tooltip: tr('Chance de converter parte do dano causado em vida.')
+      SkillNameLabel
+        !text: tr('Life Leech Chance')
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId10
+      !tooltip: tr('Quantidade de vida absorvida no Life Leech.')
+      SkillNameLabel
+        !text: tr('Life Leech Amount')
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId11
+      !tooltip: tr('Chance de converter parte do dano causado em mana.')
+      SkillNameLabel
+        !text: tr('Mana Leech Chance')
+      SkillValueLabel
+
+    SmallSkillButton
+      id: skillId12
+      !tooltip: tr('Quantidade de mana absorvida no Mana Leech.')
+      SkillNameLabel
+        !text: tr('Mana Leech Amount')
+      SkillValueLabel

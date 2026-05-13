@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="Haku Glass" nameDescription="a haku glass" race="blood" experience="0" speed="0"
+  manacost="0">
+  <health now="3000" max="3000" />
+  <look type="89" corpse="0" />
+  <targetchange interval="2000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="2" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+
+  <attacks>
+    <attack name="physical" interval="1000" chance="30" range="3" target="1" min="-2" max="-6">
+      <attribute key="areaEffect" value="SMALLCLOUDS" />
+      <attribute key="shootEffect" value="arrow" />
+    </attack>
+  </attacks>
+
+  <defenses armor="150" defense="150">
+    <defense name="healing" interval="2000" chance="50" min="100" max="300">
+      <attribute key="areaEffect" value="blueshimmer" />
+    </defense>
+  </defenses>
+
+  <elements>
+    <element physicalPercent="-99" />
+    <element icePercent="-99" />
+    <element firePercent="-99" />
+    <element energyPercent="-99" />
+    <element deathPercent="-99" />
+    <element holyPercent="-99" />
+    <element earthPercent="-99" />
+  </elements>
+
+  <voices interval="5000" chance="10">
+    <voice sentence="Can you see my movements?" />
+    <voice sentence="I am Zabuza's tool. I will eliminate his enemies." />
+    <voice sentence="Secret Jutsu: Crystal Ice Mirrors!" />
+  </voices>
+</monster>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Kakashi[saga 1]" script="data/npc/scripts/kakashi[saga 1].lua" walkinterval="2000" floorchange="0">
-    <look type="369"/>
-    <parameters>
-        <parameter key="module_shop" value="0" />
-    </parameters>
-</npc>

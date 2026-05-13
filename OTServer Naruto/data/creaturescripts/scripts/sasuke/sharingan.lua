@@ -1,20 +1,18 @@
 function onStatsChange(cid, attacker, type, combat, value)
-    -- Verifica se quem recebe o dano √© um jogador e se √© perda de vida
+    -- Verifica se quem recebe o dano È um jogador e se È perda de vida
     if isPlayer(cid) and (type == STATSCHANGE_HEALTHLOSS) then
         
-        -- Verifica se o Sharingan est√° Ativo (Storage 10001)
-        if getPlayerStorageValue(cid, 312345) > 0 then
+        -- Verifica se o Sharingan est· engatilhado (Storage 312345)
+        if getPlayerStorageValue(cid, STORAGE_SHARINGAN) > 0 then
             
-            -- Verifica se o dano √© f√≠sico ou dist√¢ncia (Taijutsu/Kunai)
-            if combat == COMBAT_PHYSICALDAMAGE or combat == COMBAT_DISTANCEDAMAGE then
-                
-                -- Chance de 15% de esquivar
-                if math.random(1, 100) <= 15 then
-                    doSendMagicEffect(getCreaturePosition(cid), 26)
-                    doSendAnimatedText(getCreaturePosition(cid), "DODGE!", 180) -- Texto subindo
-                    return false -- Retornar false cancela o dano no statschange
-                end
-            end
+            -- Dodge 100% garantido
+            doSendMagicEffect(getCreaturePosition(cid), 26) -- Efeito visual do dodge
+            doSendAnimatedText(getCreaturePosition(cid), "DODGE!", 180)
+            
+            -- DESATIVA o storage para o prÛximo ataque n„o ter dodge
+            setPlayerStorageValue(cid, STORAGE_SHARINGAN, -1)
+            
+            return false -- Cancela 100% deste dano atual
         end
     end
 

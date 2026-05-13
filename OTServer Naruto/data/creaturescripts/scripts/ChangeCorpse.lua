@@ -5,55 +5,50 @@ end
 
 function onDeath(cid, corpse, deathList)
     local voc = {
-        [1] = 2830, --- shikamaru
-        [2] = 2930, --- shikamaru 
-        [3] = 2832, --- shikamaru
-        [4] = 2833, --- shikamaru
+        [1] = 2806, --- naruto classic
+        [2] = 2807, --- naruto shippuden 
+        [3] = 2807, --- naruto war
+        [4] = 2808, --- naruto kage
+        [5] = 2806, --- naruto classic kyuubi 1
+        [6] = 2806, --- naruto classic kyuubi 2
+        [7] = 2806, --- naruto classic kyuubi 3
+        [8] = 2807, --- naruto shippuden kyuubi 3
+        [9] = 2807, --- naruto shippuden kyuubi 4
+        [10] = 2807, --- naruto shippuden kyuubi 3
+        [11] = 2807, --- naruto shippuden sanin mode
+        [12] = 2807, --- naruto shippuden kyuubi sanin mode
+        [13] = 2808, --- naruto kage kyuubi sanin mode
+        [14] = 2808, --- naruto baryon mode
 
-        [5] = 2816, --- gaara
-        [6] = 2816, --- gaara
-        [7] = 2817, --- gaara
-        [8] = 2818, --- gaara
+        [15] = 2809, --- sasuke classic
+        [16] = 2810, --- sasuke shippuden
+        [17] = 2811, --- sasuke taka member
+        [18] = 2810, --- sasuke war
+        [19] = 2844, --- sasuke sasayaki (falta adicionar)
+        [20] = 2809, --- sasuke classic cursed 1
+        [21] = 2809, --- sasuke classic cursed 2
+        [22] = 2809, --- sasuke classic cursed 3
+        [23] = 2810, --- sasuke shippuden cursed 3
 
-        [9] = 2845, --- kiba
-        [10] = 2845, --- kiba
-        [11] = 2946, --- kiba
-        [12] = 2946, --- kiba
+        [24] = 2813, --- sakura classic
+        [25] = 2814, --- sakura kunoichi
+        [26] = 2815, --- sakura shippuden
+        [27] = 2821, --- sakura war (falta adicionar)
+        [28] = 2822, --- sakura shinsu (falta adicionar)
+        [29] = 2814, --- sakura kunoichi iryou hei
+        [30] = 2815, --- sakura shippuden iryou hei
+        [31] = 2835, --- sakura war iryou hei (falta adicionar)
+        [32] = 2835, --- sakura shinsu iryou hei (falta adicionar)
 
-        [13] = 2813, --- sakura
-        [14] = 2814, --- sakura
-        [15] = 2815, --- sakura
-        [16] = 2815, --- sakura
+        [33] = 2845, --- kiba classic
+        [34] = 2809, --- kiba tracker (falta adicionar)
+        [35] = 2810, --- kiba shippuden (falta adicionar)
+        [36] = 2811, --- kiba war (falta adicionar)
+        [37] = 2806, --- kiba veteran (falta adicionar)
 
-        [17] = 2843, --- shino
-        [18] = 2843, --- shino
-        [19] = 2844, --- shino
-        [20] = 2844, --- shino
-
-        [21] = 2823, --- kankuro
-        [22] = 2824, --- kankuro
-        [23] = 2825, --- kankuro
-        [24] = 2825, --- kankuro
-
-        [25] = 2819, --- temari
-        [26] = 2820, --- temari
-        [27] = 2821, --- temari
-        [28] = 2822, --- temari
-
-        [29] = 2834, --- neji
-        [30] = 2834, --- neji
-        [31] = 2835, --- neji
-        [32] = 2835, --- neji
-
-        [33] = 2809, --- sasuke
-        [34] = 2809, --- sasuke
-        [35] = 2810, --- sasuke
-        [36] = 2811, --- sasuke
-
-        [37] = 2806, --- naruto
-        [38] = 2806, --- naruto
-        [39] = 2807, --- naruto
-        [40] = 2807, --- naruto
+        [38] = 2806, --- 
+        [39] = 2807, --- 
+        [40] = 2807, --- 
 
         [41] = 2836, --- rock lee
         [42] = 2836, --- rock lee

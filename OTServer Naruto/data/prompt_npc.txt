@@ -1,0 +1,25 @@
+"Crie um script de NPC para TFS/Otx seguindo este modelo:
+
+Nome/Profissão: [Nome do NPC]
+
+Local do Script: [Ex: data/npc/scripts/nome_da_pasta/arquivo.lua]
+
+Função/Personalidade: [Ex: Rabugento, Alegre, Fofoqueiro]
+
+Itens de Venda (XML): [Item ID, Nome, Preço]
+
+Tópicos de Diálogo: [Sobre o que ele fala?]
+
+Interação com Quest Isac/Utaka: [Sim/Não]
+
+⚠️ REGRAS OBRIGATÓRIAS DE CONSTRUÇÃO:
+
+XML: Crie o XML com module_shop e os itens no shop_buyable. O path deve seguir o local definido acima.
+
+ABA NPC: Todas as falas (npcHandler:say) DEVEM usar o parâmetro cid para saírem na aba azul.
+
+MENSAGEM HI: A saudação inicial (MESSAGE_GREET) deve ser configurada SEMPRE dentro do arquivo .lua.
+
+DESPEDIDAS SEGURAS: Use apenas MESSAGE_FAREWELL e MESSAGE_WALKAWAY no .lua.
+
+ESTABILIDADE: Não use CALLBACK_CREATURE_DISAPPEAR com funções de fala ou lógica que busque o cid para evitar erros de 'Thing not found' no logout."

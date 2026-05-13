@@ -1,0 +1,8 @@
+[26/04/2026 15:46:40] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Naruto Base Teste sent unknown byte: 0x562f74c
+
+[26/04/2026 15:46:41] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Naruto Base Teste sent unknown byte: 0x562f74c
+
+[26/04/2026 15:46:56] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Naruto Base Teste sent unknown byte: 0x562f74c
+
+[26/04/2026 15:54:39] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Naruto Base Teste sent unknown byte: 0x562f74c
+
