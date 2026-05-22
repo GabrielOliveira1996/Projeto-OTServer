@@ -119,6 +119,17 @@
     <monster name="Shinobazu" file="humans/shinobazu.xml" />
     <monster name="Savager" file="humans/savager.xml" />
 
+    <!-- insects -->
+    <monster name="Dokumushi" file="insects/dokumushi.xml" />
+
+    <!-- dark creatures -->
+    <monster name="Cursed Wolf" file="dark_creatures/cursed_wolf.xml" />
+    <monster name="Cursed Skeleton" file="dark_creatures/cursed_skeleton.xml" />
+
+    <!-- suna creatures -->
+    <monster name="Sandbound Soul" file="suna_creatures/sandbound_soul.xml" />
+    <monster name="Suna Demon" file="suna_creatures/suna_demon.xml" />
+
     <!--world
     shinobi monsters-->
     <monster name="trainer" file="trainer.xml" />
@@ -136,17 +147,13 @@
     <monster name="White Ninja" file="white ninja.xml" />
     <monster name="Water Shinobi" file="water shinobi.xml" />
     <monster name="Vampire" file="vampire.xml" />
-    <monster name="Nervous Wolf" file="cursed_wolf.xml" />
     <monster name="Monk" file="monk.xml" />
     <monster name="Ashar" file="ashar.xml" />
     <monster name="Juhi Member" file="juhi member.xml" />
-    <monster name="Insect" file="insect.xml" />
     <monster name="Fuuton Shinobi" file="fuuton shinobi.xml" />
-    <monster name="Desert Jump" file="desert jump.xml" />
     <monster name="Cyborg" file="cyborg.xml" />
     <monster name="Cursed Man" file="cursed man.xml" />
     <monster name="Bandit Hunter" file="bandit hunter.xml" />
-    <monster name="Cursed Skeleton" file="cursed skeleton.xml" />
     <monster name="Samurai" file="samurai.xml" />
 
     <monster

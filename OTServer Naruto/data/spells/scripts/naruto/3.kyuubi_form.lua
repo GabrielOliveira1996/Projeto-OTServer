@@ -10,18 +10,24 @@ function onCastSpell(cid, var)
     if vocation == NARUTO_CLASSIC_VOCATION then
         if playerLevel >= 30 and playerLevel <= 49 then
             kyuubiTransform(cid, 354, 5, 15, control) -- 1 calda classic
+            return true
         elseif playerLevel >= 50 and playerLevel <= 69 then
             kyuubiTransform(cid, 355, 6, 20, control) -- 2 caldas classic
-        elseif playerLevel >= 70 then
+            return true
+        elseif playerLevel >= 70 and playerLevel <= 89 then
             kyuubiTransform(cid, 356, 7, 25, control) -- 3 caldas classic
+            return true
         end
     elseif vocation == NARUTO_SHIPPUDEN_VOCATION then
         if playerLevel >= 100 and playerLevel <= 139 then
             kyuubiTransform(cid, 357, 8, 25, control) -- 3 caldas shippuden
+            return true
         elseif playerLevel >= 140 and playerLevel <= 169 then 
             kyuubiTransform(cid, 351, 9, 30, control) -- 4 caldas shippuden
+            return true
         elseif playerLevel >= 180 then
             kyuubiTransform(cid, 383, 10, 0, control) -- forma máxima da kyuubi
+            return true
         end
     elseif vocation >= 5 and vocation <= 10 then -- toggle para destransformar a kyuubi
         -- se o level for menor que 90, ele volta para o classic
@@ -32,9 +38,10 @@ function onCastSpell(cid, var)
         else
             kyuubiRevert(cid, NARUTO_SHIPPUDEN_OUTFIT, NARUTO_WAR_VOCATION)
         end
+        return true
     end
-
-    return true
+    doPlayerSendCancel(cid, "Nesse momento você não pode se transformar na Kyuubi.")
+    return false
 end
 
 function kyuubiTransform(cid, lookType, vocation, reqControl, currentControl)

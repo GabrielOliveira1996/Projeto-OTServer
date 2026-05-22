@@ -37,8 +37,9 @@ manaCircle = nil
 
 function init()
     connect(g_game, { onGameStart = onGameStart, onGameEnd = offline })
+    connect(LocalPlayer, { onSoulChange = onSoulChange, onVocationChange = onSoulChange })
+    connect(LocalPlayer, { onSpellListUpdate = function() onSoulChange(g_game.getLocalPlayer()) end })
 
-    -- Janela de topo
     healthInfoWindow = g_ui.loadUI('healthinfo', rootWidget)
     healthInfoWindow:hide()
 
@@ -49,16 +50,11 @@ function init()
     topHealthBar = healthBar
     topManaBar = manaBar
 
-    -- Cria o Overlay (Círculos) no MapPanel
     overlay = g_ui.createWidget('HealthOverlay', modules.game_interface.getMapPanel())
     overlay:hide()
     
     healthCircleFront = overlay:getChildById('healthCircleFront')
     manaCircleFront = overlay:getChildById('manaCircleFront')
-    
-    -- CORREÇÃO PARA ESCONDER TUDO:
-    -- Atribuímos o 'overlay' inteiro às variáveis que o menu de opções controla.
-    -- Quando desmarcar "Show health and mana circle", o container pai some por completo.
     healthCircle = overlay
     manaCircle = overlay
 
@@ -67,6 +63,9 @@ end
 
 function terminate()
     disconnect(g_game, { onGameStart = onGameStart, onGameEnd = offline })
+    disconnect(LocalPlayer, { onSoulChange = onSoulChange, onVocationChange = onSoulChange })
+    disconnect(LocalPlayer, { onSpellListUpdate = function() onSoulChange(g_game.getLocalPlayer()) end })
+
     offline()
     
     if healthInfoWindow then 
@@ -193,10 +192,45 @@ function onManaChange(localPlayer, mana, maxMana)
     end
 end
 
+local function canShowChakraBar()
+    local player = g_game.getLocalPlayer()
+    if not player then return false end
+
+    local spells = {}
+    if modules.game_actionbar and modules.game_actionbar.getPlayerSpellList then
+        spells = modules.game_actionbar.getPlayerSpellList()
+    end
+
+    if type(spells) == 'table' then
+        for _, spellData in pairs(spells) do
+            if spellData and spellData.name then
+                if tostring(spellData.name):lower() == "meditate" then
+                    return true
+                end
+            end
+        end
+    end
+
+    return false
+end
+
 function onSoulChange(localPlayer, soul)
-    if soulLabel then 
-        soulLabel:setText('Chakra: ' .. soul) 
-        soulLabel:setValue(soul, 0, 100)
+    if not localPlayer or not soulLabel then return end
+    
+    local currentSoul = soul or localPlayer:getSoul()
+    
+    soulLabel:setText('Nature Chakra: ' .. (currentSoul < 0 and 0 or currentSoul))
+    soulLabel:setValue(currentSoul, 0, math.max(currentSoul, 100))
+
+    if canShowChakraBar() then
+        soulLabel:setVisible(true)
+        soulLabel:setHeight(12)
+        soulLabel:setMarginTop(5)
+        soulLabel:setOpacity(1.0)
+    else
+        soulLabel:setVisible(false)
+        soulLabel:setHeight(0)
+        soulLabel:setMarginTop(0)
     end
 end
 

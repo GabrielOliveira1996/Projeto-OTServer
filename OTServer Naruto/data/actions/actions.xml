@@ -570,4 +570,16 @@
 		value="quests/stone_assassin_cave.lua" />
 	<action uniqueid="9501" event="script"
 		value="quests/reward_assassin_cave.lua" />
+
+	<!-- Quests Shinobazu Village -->
+	<action uniqueid="9502" event="script"
+		value="quests/shinobazu_village/first_reward.lua" />
+	<action uniqueid="9503" event="script"
+		value="quests/shinobazu_village/second_reward.lua" />
+	<action uniqueid="9504" event="script"
+		value="quests/shinobazu_village/third_reward.lua" />
+
+	<!-- Tower Quest -->
+	<action uniqueid="9505" event="script"
+		value="quests/tower/top_of_the_tower.lua" />
 </actions>

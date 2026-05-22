@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Skeleton" nameDescription="a cursed skeleton" race="blood" experience="4500"
+  speed="285" manacost="1500">
+  <health now="1500" max="1500" />
+  <look type="24" corpse="2873" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="0" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="70" attack="69" />
+  </attacks>
+  <defenses armor="18" defense="12" />
+  <elements>
+    <element fire="5" />
+  </elements>
+  <voices interval="5000" chance="10">
+    <voice sentence="Ainda queima..." />
+    <voice sentence="Por que eu não posso fechar os olhos?" />
+    <voice sentence="Eu lembro do meu nome..." />
+    <voice sentence="Tire isso de mim..." />
+    <voice sentence="O chão... está tão frio lá fora?" />
+  </voices>
+  <loot>
+    <item id="2148" countmax="88" chance1="56000" chancemax="0" />
+    <item id="7452" chance1="2000" chancemax="0" />
+    <item id="7457" chance1="1600" chancemax="0" />
+    <item id="2468" chance1="2000" chancemax="0" />
+    <item id="5913" countmax="1" chance1="2500" chancemax="0" />
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2396" chance1="2000" chancemax="0" />
+        <item id="2148" countmax="93" chance1="39000" chancemax="0" />
+      </inside>
+    </item>
+  </loot>
+  <script>
+    <event name="mkillm"/>
+  </script>
+</monster>

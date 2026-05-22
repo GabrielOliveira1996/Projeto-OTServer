@@ -22,7 +22,7 @@
   <attacks>
     <attack name="melee" interval="2000" skill="8" attack="6" />
     <attack name="melee" interval="1000" chance="19" range="4" target="1" min="-2" max="-5">
-      <attribute key="shootEffect" value="throwingknife" />
+      <attribute key="shootEffect" value="shurikenthrow" />
     </attack>
   </attacks>
   <defenses armor="5" defense="8" />

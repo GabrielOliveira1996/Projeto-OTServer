@@ -8,11 +8,11 @@ function onCastSpell(cid, var)
     
     local target = getCreatureTarget(cid)
     local playerName = getCreatureName(cid)
-    local narutoVocations = {1,5,6,7}
+    local narutoVocations = {1,2,3,4,5,6,7,8,10,11,12,13,14}
 
     -- quarta calda n√£o permite usar esse jutsu
     local playerVoc = getPlayerVocation(cid)
-    local fourthTailVocations = 68
+    local fourthTailVocations = 9
     if playerVoc == fourthTailVocations then
         doPlayerSendCancel(cid, "Esta forma n„o permite o uso deste jutsu.")
         doSendMagicEffect(getThingPos(cid), 2)

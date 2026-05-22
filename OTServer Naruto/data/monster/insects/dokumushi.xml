@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="insect" nameDescription="a insect" race="blood" experience="7500" speed="340"
-  manacost="1650">
-  <health now="1500" max="1500" />
+<monster name="Dokumushi" nameDescription="a dokumushi" race="blood" experience="2800" speed="305"
+  manacost="1800">
+  <health now="950" max="950" />
   <look type="51" corpse="6016" />
   <targetchange interval="5000" chance="8" />
   <strategy attack="100" defense="0" />
@@ -19,12 +19,10 @@
     <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" skill="60" attack="50" />
-    <attack name="doku insect poison" interval="1000" chance="16" range="3" target="0" min="-100"
-      max="-150">
-    </attack>
+    <attack name="melee" interval="2000" skill="40" attack="42" />
+    <attack name="insect poison one" interval="1500" chance="5" range="1" />
   </attacks>
-  <defenses armor="2" defense="2" />
+  <defenses armor="10" defense="15" />
   <elements>
     <element firePercent="120" />
   </elements>

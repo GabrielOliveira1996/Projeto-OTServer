@@ -21,7 +21,7 @@
   <attacks>
     <attack name="melee" interval="2000" skill="40" attack="40" />
     <attack name="melee" interval="1000" chance="33" range="4" target="1" min="-30" max="-35">
-      <attribute key="shootEffect" value="throwingknife" />
+      <attribute key="shootEffect" value="kunaithrow" />
     </attack>
   </attacks>
   <defenses armor="7" defense="7" />

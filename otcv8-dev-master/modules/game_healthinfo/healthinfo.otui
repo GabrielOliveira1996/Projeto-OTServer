@@ -77,7 +77,7 @@ UIWidget
 
   ProgressBar
     id: soulBar
-    background-color: #ffffff
+    background-color: #00a71c
     size: 200 12
     anchors.top: manaBar.bottom
     anchors.left: parent.left

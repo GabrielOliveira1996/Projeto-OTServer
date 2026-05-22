@@ -1,18 +1,21 @@
 local EVOLUTION_CONFIG = {
     -- Naruto
-    {level = 90, fromVoc = 1, toVoc = 2}, -- naruto classic to shippuden
-    {level = 170, fromVoc = 2, toVoc = 3}, -- naruto shippuden to war
-    {level = 250, fromVoc = 3, toVoc = 4}, -- naruto war to hokage
+    {level = 90, fromVoc = {1, 5, 6, 7}, toVoc = 2}, -- naruto classic (ou transf) to shippuden
+    {level = 170, fromVoc = {2, 8, 9, 11}, toVoc = 3}, -- naruto shippuden to war
+    {level = 250, fromVoc = {3, 10, 12}, toVoc = 4}, -- naruto war to hokage
+
     -- Sasuke
-    {level = 90, fromVoc = 15, toVoc = 16}, -- sasuke classic to shippuden
-    {level = 130, fromVoc = 16, toVoc = 17}, -- sasuke shippuden to sasuke taka member
+    {level = 90, fromVoc = {15, 20, 21, 22}, toVoc = 16}, -- sasuke classic to shippuden
+    {level = 130, fromVoc = {16, 23}, toVoc = 17}, -- sasuke shippuden to sasuke taka member
     {level = 170, fromVoc = 17, toVoc = 18}, -- sasuke taka member to war
     {level = 250, fromVoc = 18, toVoc = 19}, -- sasuke war to sasayaki
+
     -- Sakura
     {level = 30, fromVoc = 24, toVoc = 25}, -- sakura classic to kunoichi
-    {level = 90, fromVoc = 25, toVoc = 26}, -- sakura kunoichi to sakura shippuden
-    {level = 170, fromVoc = 26, toVoc = 27}, -- sakura shippuden to war
-    {level = 250, fromVoc = 27, toVoc = 28}, -- sakura war to shinsu
+    {level = 90, fromVoc = {25, 29}, toVoc = 26}, -- sakura kunoichi to sakura shippuden
+    {level = 170, fromVoc = {26, 30}, toVoc = 27}, -- sakura shippuden to war
+    {level = 250, fromVoc = {27, 31}, toVoc = 28}, -- sakura war to shinsu
+
     -- Kiba
     {level = 30, fromVoc = 33, toVoc = 34}, -- Kiba classic to tracker
     {level = 90, fromVoc = 34, toVoc = 35}, -- Kiba tracker to shippuden
@@ -42,7 +45,7 @@ local VOCATION_OUTFITS = {
     -- kiba
     [33] = 18, -- kiba classic
     [34] = 386, -- kiba classic
-    [35] = 25, -- kiba shippuden
+    [35] = 93, -- kiba shippuden
     [36] = 25, -- kiba war
     [37] = 92, -- kiba veteran
 }
@@ -72,12 +75,23 @@ local VOCATION_BONUS = {
 function onAdvance(cid, skill, oldLevel, newLevel)
     if skill ~= SKILL__LEVEL then return true end
 
-    local evolved = false
-    local currentVoc = getPlayerVocation(cid)
+    local pVoc = getPlayerVocation(cid)
 
     -- loop to check all evolutions
     for _, evo in ipairs(EVOLUTION_CONFIG) do
-        if newLevel >= evo.level and getPlayerVocation(cid) == evo.fromVoc then
+        local matchVocation = false
+        
+        -- Se for uma tabela de vocações (ex: {1, 5, 6, 7})
+        if type(evo.fromVoc) == "table" then
+            if isInArray(evo.fromVoc, pVoc) then
+                matchVocation = true
+            end
+        -- Se for apenas um número ID comum
+        elseif pVoc == evo.fromVoc then
+            matchVocation = true
+        end
+
+        if newLevel >= evo.level and matchVocation then
             
             -- vocation
             doPlayerSetVocation(cid, evo.toVoc)
@@ -106,7 +120,7 @@ function onAdvance(cid, skill, oldLevel, newLevel)
             doCreatureSay(cid, newVocName .. "!", TALKTYPE_ORANGE_1)
             doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Você evoluiu para " .. newVocName .. "!")
             
-            evolved = true
+            break -- Para o loop já que o jogador evoluiu nesta faixa de nível
         end
     end
 

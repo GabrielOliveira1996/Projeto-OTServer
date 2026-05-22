@@ -16,16 +16,11 @@ arr1 = {
         {0, 0, 0}
 }
 
-
-
-
 arr2 = {
         {0, 0, 0},
         {0, 3, 0},
         {0, 0, 0}
 }
-
-
 
 local area1 = createCombatArea(arr1)
 local area2 = createCombatArea(arr2)
@@ -44,7 +39,6 @@ function onCastSpell(cid, var)
 local parameters = { cid = cid, var = var}
 addEvent(onCastSpell1, 100, parameters)
 addEvent(onCastSpell2, 100, parameters)
-
 return TRUE
 
 end

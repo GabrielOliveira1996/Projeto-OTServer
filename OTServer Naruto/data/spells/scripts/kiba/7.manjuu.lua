@@ -1,5 +1,5 @@
 local FUSION_EFFECT = 10 
-local CHAKRA_DRAIN_PER_SECOND = 20 
+local CHAKRA_DRAIN_PER_SECOND = 10 
 local DRAIN_INTERVAL = 2000 
 
 local fusionConditions = {}

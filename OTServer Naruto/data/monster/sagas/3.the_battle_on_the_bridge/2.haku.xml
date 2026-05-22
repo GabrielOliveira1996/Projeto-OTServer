@@ -21,7 +21,7 @@
     <attack
       name="physical" interval="1000" chance="100" range="7" target="1" min="-5" max="-15">
       <attribute key="areaEffect" value="SMALLCLOUDS" />
-      <attribute key="shootEffect" value="arrow" />
+      <attribute key="shootEffect" value="sebonthrow" />
     </attack>
     <attack name="Haku Bunshin" interval="1000" chance="30" />
   </attacks>

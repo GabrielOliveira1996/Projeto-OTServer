@@ -1,0 +1,115 @@
+InventoryItem < Item
+  width: 34
+  height: 34
+  phantom: false
+  draggable: true
+  virtual: true
+  image-source: /images/game/slots/slot 
+  &background: '/images/game/slots/slot'
+
+InventoryWindow
+  id: inventoryWindow
+  !text: tr('Inventário')
+  size: 200 300
+  @onClose: modules.game_inventory.onMiniWindowClose()
+  &save: true
+
+  MiniWindowContents
+    id: contentsPanel
+    layout: anchor
+
+    UIWidget
+      id: customInventoryPanel
+      anchors.fill: parent
+      layout: anchor
+      phantom: true
+      image-source: /images/ui/dark_background
+      image-smooth: true
+
+      UIWidget
+        id: vocationFigure
+        anchors.centerIn: parent
+        size: 130 180
+        image-source: /images/vocations/1
+        image-smooth: true
+        opacity: 0.9
+        phantom: true 
+
+      # A PARTIR DAQUI TUDO ESTÁ DENTRO DO customInventoryPanel
+      InventoryItem
+        id: slot1
+        slot-id: 1
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        margin-top: 10
+
+      InventoryItem
+        id: slot2
+        slot-id: 2
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-top: 50
+        margin-left: 15
+
+      InventoryItem
+        id: slot5
+        slot-id: 5
+        anchors.top: slot2.bottom
+        anchors.left: parent.left
+        margin-top: 15
+        margin-left: 15
+
+      InventoryItem
+        id: slot9
+        slot-id: 9
+        anchors.top: slot5.bottom
+        anchors.left: parent.left
+        margin-top: 15
+        margin-left: 15
+
+      InventoryItem
+        id: slot6
+        slot-id: 6
+        anchors.top: slot9.bottom
+        anchors.left: parent.left
+        margin-top: 15
+        margin-left: 15
+
+      InventoryItem
+        id: slot3
+        slot-id: 3
+        anchors.top: parent.top
+        anchors.right: parent.right
+        margin-top: 50
+        margin-right: 15
+
+      InventoryItem
+        id: slot4
+        slot-id: 4
+        anchors.top: slot3.bottom
+        anchors.right: parent.right
+        margin-top: 15
+        margin-right: 15
+
+      InventoryItem
+        id: slot10
+        slot-id: 10
+        anchors.top: slot4.bottom
+        anchors.right: parent.right
+        margin-top: 15
+        margin-right: 15
+
+      InventoryItem
+        id: slot7
+        slot-id: 7
+        anchors.top: slot10.bottom
+        anchors.right: parent.right
+        margin-top: 15
+        margin-right: 15
+
+      InventoryItem
+        id: slot8
+        slot-id: 8
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        margin-bottom: 15

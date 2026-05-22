@@ -22,7 +22,7 @@
   <attacks>
     <attack name="melee" interval="2000" skill="28" attack="27" />
     <attack name="melee" interval="1000" chance="80" range="7" target="1" min="-20" max="-25">
-      <attribute key="shootEffect" value="spear" />
+      <attribute key="shootEffect" value="fuumashurikenthrow" />
     </attack>
   </attacks>
   <defenses armor="1" defense="1" />

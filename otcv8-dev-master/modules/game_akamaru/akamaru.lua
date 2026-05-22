@@ -79,6 +79,11 @@ function init()
   })
 
   g_keyboard.bindKeyDown('Ctrl+Shift+A', AkamaruSystem.toggle)
+  g_keyboard.bindKeyDown('Escape', function()
+    if akamaruWindow and akamaruWindow:isVisible() then
+      akamaruWindow:hide()
+    end
+  end)
 
   -- Se já estiver logado (Reload)
   if g_game.isOnline() then
@@ -116,36 +121,25 @@ function AkamaruSystem.setup()
   local player = g_game.getLocalPlayer()
   if not player then return end
 
-  -- Busca lista da actionbar
-  local spells = {}
-  if modules.game_actionbar and modules.game_actionbar.getPlayerSpellList then
-    spells = modules.game_actionbar.getPlayerSpellList()
-  end
-
-  local hasAkamaru = false
-  if type(spells) == 'table' then
-    for _, spellData in pairs(spells) do
-      if spellData and spellData.name then
-        if tostring(spellData.name):lower() == "akamaru" then
-          hasAkamaru = true
-          break
-        end
-      end
-    end
-  end
-
-  if hasAkamaru then
+  if AkamaruSystem.canUse() then
     if not akamaruButton and modules.client_topmenu then
-      -- Lembre de colocar a imagem correta aqui depois!
       akamaruButton = modules.client_topmenu.addLeftGameButton('akamaruButton', 'Akamaru', '/images/topbuttons/akamaru', AkamaruSystem.toggle)
     end
-    if akamaruButton then akamaruButton:show() end
     
-    -- Garante que o sinal de update de pontos está conectado ao player logado
+    if akamaruButton then 
+      akamaruButton:show() 
+    end
+    
     disconnect(player, { onAkamaruUpdate = AkamaruSystem.onAkamaruUpdate })
     connect(player, { onAkamaruUpdate = AkamaruSystem.onAkamaruUpdate })
   else
-    if akamaruButton then akamaruButton:hide() end
+    if akamaruButton then 
+      akamaruButton:hide() 
+    end
+    
+    if akamaruWindow and akamaruWindow:isVisible() then 
+      akamaruWindow:hide() 
+    end
   end
 end
 
@@ -164,10 +158,35 @@ function AkamaruSystem.destroy()
   if akamaruButton then akamaruButton:destroy(); akamaruButton = nil end
 end
 
+function AkamaruSystem.canUse()
+  local player = g_game.getLocalPlayer()
+  if not player then return false end
+
+  local spells = {}
+  if modules.game_actionbar and modules.game_actionbar.getPlayerSpellList then
+    spells = modules.game_actionbar.getPlayerSpellList()
+  end
+
+  if type(spells) == 'table' then
+    for _, spellData in pairs(spells) do
+      if spellData and spellData.name and tostring(spellData.name):lower() == "akamaru" then
+        return true
+      end
+    end
+  end
+
+  return false
+end
+
 function AkamaruSystem.toggle()
   if not g_game.isOnline() or not akamaruWindow then return end
+
+  if not AkamaruSystem.canUse() then
+    return 
+  end
+
   if akamaruWindow:isVisible() then
-    akamaruWindow:hide()
+    AkamaruSystem.hideAndFocus() 
   else
     AkamaruSystem.refresh()
     akamaruWindow:show()
@@ -182,5 +201,16 @@ function AkamaruSystem.addPoint(attributeName)
       protocol:sendAkamaruAddPoint(attributeName)
   else
       perror("AkamaruSystem: Protocolo de jogo nao encontrado.")
+  end
+end
+
+function AkamaruSystem.hideAndFocus()
+  if not akamaruWindow then return end
+  
+  akamaruWindow:hide()
+  
+  local gameRootPanel = modules.game_interface.getRootPanel()
+  if gameRootPanel then
+    gameRootPanel:focus()
   end
 end

@@ -6,6 +6,16 @@
 	<!-- randoms -->
 	<movevent type="StepIn" actionid="16000" event="script" value="bandit_tile.lua" />
 
+	<!-- gloves -->
+	<movevent type="Equip" itemid="2423" slot="hand" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2423" slot="hand" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2398" slot="hand" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2398" slot="hand" event="function" value="onDeEquipItem" />
+
+	<!-- metal gloves -->
+	<movevent type="Equip" itemid="2424" slot="hand" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2424" slot="hand" event="function" value="onDeEquipItem" />
+
 	<!-- missions -->
 	<movevent type="StepIn" actionid="34000" event="script"
 		value="missions/natalia_prisoner.lua" />
@@ -41,6 +51,9 @@
 		value="items/tsunade_shirt.lua" />
 
 	<!-- itens com bônus -->
+	<!-- gashadokuro cuisses -->
+	<movevent type="Equip" itemid="2468" slot="legs" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="2468" slot="legs" event="function" value="onDeEquipItem" />
 	<!-- jhon lee trousers -->
 	<movevent type="Equip" itemid="2647" slot="legs" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2647" slot="legs" event="function" value="onDeEquipItem" />
@@ -59,6 +72,9 @@
 	<!-- orochimaru shirt -->
 	<movevent type="DeEquip" itemid="2656" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2656" slot="armor" event="function" value="onEquipItem" />
+	<!-- kimono -->
+	<movevent type="DeEquip" itemid="2476" slot="armor" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="2476" slot="armor" event="function" value="onEquipItem" />
 	<!-- speed shoes -->
 	<movevent type="DeEquip" itemid="2643" slot="feet" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2643" slot="feet" event="function" value="onEquipItem" />
@@ -524,15 +540,10 @@
 	</movevent>
 	<movevent type="DeEquip" itemid="2492" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2466" slot="armor" event="function" value="onEquipItem">
-
 	</movevent>
 	<movevent type="DeEquip" itemid="2466" slot="armor" event="function" value="onDeEquipItem" />
-	<movevent type="Equip" itemid="2476" slot="armor" event="function" value="onEquipItem">
 
-	</movevent>
-	<movevent type="DeEquip" itemid="2476" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2500" slot="armor" event="function" value="onEquipItem">
-
 	</movevent>
 	<movevent type="DeEquip" itemid="2500" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="2660" slot="armor" event="function" value="onEquipItem">

@@ -21,7 +21,7 @@
 	<instant spellid="3"
 		name="Kyuubi Form" words="kyuubi form" lvl="30" mana="0" exhaustion="1000"
 		icon="3149"
-		description="O manto de chakra vermelho protege e ao mesmo tempo consome o usuário. Para dominar as caudas sem que o chakra corrosivo queime sua própria vitalidade, o ninja deve possuir um alto nível de Controle de Chakra (15 a 30 dependendo da forma). Apenas na forma máxima, em total sintonia com a Kurama, o controle deixa de ser uma barreira, permitindo o uso pleno do poder sem sacrifício de vida ou restrição de Bunshins. 1ª Cauda: Level. 30 (Requer: 15 Controle de chakra) 2ª Cauda: Level. 50 (Requer: 20 Controle de controle de chakra) 3ª Cauda: Level. 70 classic/100 shippuden (Requer: 25 Controle de chakra) 4ª Cauda: Level. 140 (Req: 30 Controle) Forma Máxima: Level. 180 (Livre de Requisitos) Aviso: Se o controle for insuficiente, o usuário perderá vida continuamente e o mesmo não conseguirá usar o Kage Bunshin. Use novamente para destransformar."
+		description="&#10;O manto de chakra vermelho protege e ao mesmo tempo consome o usuário. Para dominar as caudas sem que o chakra corrosivo queime sua própria vitalidade, o ninja deve possuir um alto nível de Controle de Chakra (15 a 30 dependendo da forma). Apenas na forma máxima, em total sintonia com a Kurama, o controle deixa de ser uma barreira, permitindo o uso pleno do poder sem sacrifício de vida ou restrição de Bunshins.&#10; &#10;1ª Cauda: Level. 30 (Requer: 15 Controle de chakra)&#10; &#10;2ª Cauda: Level. 50 (Requer: 20 Controle de controle de chakra)&#10; &#10;3ª Cauda: Level. 70 classic/100 shippuden (Requer: 25 Controle de chakra)&#10; &#10;4ª Cauda: Level. 140 (Req: 30 Controle)&#10; &#10;Forma Máxima: Level. 180 (Livre de Requisitos)&#10; &#10;Aviso: Se o controle for insuficiente, o usuário perderá vida continuamente e o mesmo não conseguirá usar o Kage Bunshin. Use novamente para destransformar."
 		needlearn="0" event="script" value="naruto/3.kyuubi_form.lua">
 		<vocation id="1;2;3;4;5;6;7;8;9;10;11;12;13;14" />
 	</instant>
@@ -153,7 +153,7 @@
 	<instant spellid="106"
 		name="Chidori Nagashi" words="chidori nagashi" lvl="100" mana="940"
 		exhaustion="2000"
-		icon="3169" description="Corrente elÃ©trica em Ã¡rea" selftarget="1" needlearn="0"
+		icon="3169" description="Corrente elétrica em área" selftarget="1" needlearn="0"
 		event="script" value="sasuke/10.chidori_nagashi.lua">
 		<vocation id="15;16;17;18;19;20;21;22;23" />
 	</instant>
@@ -161,7 +161,7 @@
 	<instant spellid="107"
 		name="Katon Gouryuuka No Jutsu" words="katon gouryuuka no jutsu" lvl="110"
 		mana="350"
-		exhaustion="2000" icon="3170" description="DragÃ£o de fogo queima inimigos" needlearn="0"
+		exhaustion="2000" icon="3170" description="Dragão de fogo queima inimigos" needlearn="0"
 		event="script" value="sasuke/11.katon_gouryuuka_no_jutsu.lua">
 		<vocation id="15;16;17;18;19;20;21;22;23" />
 	</instant>
@@ -169,7 +169,7 @@
 	<instant spellid="108"
 		name="Kirin" words="kirin" lvl="120" mana="1000" exhaustion="3000"
 		icon="3171"
-		description="Raio de relÃ¢mpago de altÃ­ssimo nÃ­vel" range="7" casterTargetOrDirection="1"
+		description="Raio de relámpago de altíssimo nível" range="7" casterTargetOrDirection="1"
 		needlearn="0" event="script" value="sasuke/12.kirin.lua">
 		<vocation id="15;16;17;18;19;20;21;22;23" />
 	</instant>
@@ -220,7 +220,7 @@
 	<instant spellid="203"
 		name="Doku Chiyo" words="doku chiyo" lvl="30" mana="100"
 		exhaustion="1000" icon="3177"
-		description="Uma técnica médica specializada em purificação. Neutraliza toxinas e remove o estado de envenenamento (Poison) do usuário ou de um aliado. Para tratar um companheiro, utilize o nome dele como parâmetro após o comando do jutsu."
+		description="Uma técnica médica especializada em neutralizar toxinas, removendo o estado de envenenamento (Poison) do usuário ou de um aliado. Para tratar um companheiro, utilize o nome dele como parâmetro após o comando do jutsu."
 		aggressive="0" needtarget="1" params="1" needlearn="0" event="script"
 		value="sakura/3.doku_chiyo.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
@@ -230,7 +230,7 @@
 		name="Chakra Gan No Seizou" words="chakra gan no seizou" lvl="40"
 		mana="400"
 		exhaustion="1000" icon="3178"
-		description="Uma técnica de manipulação de substâncias orgânicas que utiliza o chakra para destilar propriedades curativas. Ao consumir 3 Strawberries, o usuário sintetiza uma Genin Pill, um poderoso revigorante de chakra. Certifique-se de ter os ingredientes necessÃ¡rios em sua mochila antes de iniciar o processo."
+		description="Uma técnica de manipulação de substâncias orgânicas que utiliza o chakra para destilar propriedades curativas. Ao consumir 3 Strawberries, o usuário sintetiza uma Genin Pill, um poderoso revigorante de chakra. Certifique-se de ter os ingredientes necessários em sua mochila antes de iniciar o processo."
 		aggressive="0" selftarget="1" needlearn="0" event="script"
 		value="sakura/5.chakra_gan_no_seizou.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
@@ -250,7 +250,7 @@
 		name="Chiyute Koumou" words="chiyute koumou" lvl="60" mana="400"
 		exhaustion="1000"
 		icon="3179"
-		description="Uma tÃ©cnica mÃ©dica de alta complexidade que expande o chakra curativo em uma rede invisÃ­vel. Ao ser ativada, restaura instantaneamente a vitalidade de todos os aliados que fazem parte da sua Party (Grupo) em um raio de atÃ© 7 metros (SQMs). Ideal para manter a equipe estÃ¡vel durante confrontos intensos contra chefes ou em guerras."
+		description="Uma técnica médica de alta complexidade que expande o chakra curativo em uma rede invisível. Ao ser ativada, restaura instantaneamente a vitalidade de todos os aliados que fazem parte da sua Party (Grupo) em um raio de até 7 metros (SQMs). Ideal para manter a equipe estável durante confrontos intensos contra chefes ou em guerras."
 		aggressive="0" selftarget="1" needlearn="0" event="script"
 		value="sakura/7.chiyute_koumou.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
@@ -260,7 +260,7 @@
 		name="Create Scroll Of Healing" words="create scroll of healing" lvl="70"
 		mana="400"
 		exhaustion="1000" icon="3183"
-		description="AtravÃ©s da caligrafia imbuÃ­da de chakra, o usuÃ¡rio transcreve essÃªncias medicinais em um pergaminho virgem. Esta tÃ©cnica consome 1 Empty Scroll e 30 Strawberries para selar propriedades curativas de alto nÃ­vel. O pergaminho resultante pode ser utilizado posteriormente para restauraÃ§Ã£o instantÃ¢nea de vitalidade em campo de batalha."
+		description="Através da caligrafia imbuída de chakra, o usuário transcreve essências medicinais em um pergaminho virgem. Esta técnica consome 1 Empty Scroll e 30 Strawberries para selar propriedades curativas de alto nível. O pergaminho resultante pode ser utilizado posteriormente para restauração instantânea de vitalidade em campo de batalha."
 		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_healing.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -269,7 +269,7 @@
 		name="Create Scroll Of Chakra" words="create scroll of chakra" lvl="70"
 		mana="400"
 		exhaustion="1000" icon="3184"
-		description="Uma tÃ©cnica avanÃ§ada de selamento que funde a energia natural de cogumelos e frutas com o chakra do usuÃ¡rio. Requer 1 Empty Scroll, 10 Mushrooms e 30 Strawberries. O processo cria um pergaminho de chakra concentrado, permitindo que qualquer ninja recupere suas reservas de energia rapidamente em situaÃ§Ãµes crÃ­ticas."
+		description="Uma técnica avançada de selamento que funde a energia natural de cogumelos e frutas com o chakra do usuário. Requer 1 Empty Scroll, 10 Mushrooms e 30 Strawberries. O processo cria um pergaminho de chakra concentrado, permitindo que qualquer ninja recupere suas reservas de energia rapidamente em situações críticas."
 		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_chakra.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -278,7 +278,7 @@
 		name="Create Scroll Of Speed" words="create scroll of speed" lvl="70"
 		mana="400"
 		exhaustion="1000" icon="3185"
-		description="Utilizando as propriedades estimulantes de fungos raros, o ninja mÃ©dico sela um encantamento de agilidade em papel special. Ao consumir 1 Empty Scroll e 10 Mushrooms, o usuÃ¡rio cria um pergaminho capaz de aumentar temporariamente a velocidade de movimento de quem o romper, ideal para fugas ou perseguiÃ§Ãµes tÃ¡ticas."
+		description="Utilizando as propriedades estimulantes de fungos raros, o ninja médico sela um encantamento de agilidade em papel special. Ao consumir 1 Empty Scroll e 10 Mushrooms, o usuário cria um pergaminho capaz de aumentar temporariamente a velocidade de movimento de quem o romper, ideal para fugas ou perseguições táticas."
 		aggressive="0" needlearn="0" event="script" value="sakura/8.scroll_of_speed.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -286,7 +286,7 @@
 	<instant spellid="210"
 		name="Jinshin" words="jinshin" lvl="110" mana="450" exhaustion="2000"
 		icon="3188"
-		description="O usuÃ¡rio golpeia o chÃ£o com criando uma onda de choque que se propaga em uma zona retangular devastadora. As fendas abertas no solo engolem a estabilidade dos adversÃ¡rios, convertendo a energia do impacto em puro dano destrutivo. Uma demonstraÃ§Ã£o de forÃ§a que redefine o campo de batalha."
+		description="O usuário golpeia o chão com criando uma onda de choque que se propaga em uma zona retangular devastadora. As fendas abertas no solo engolem a estabilidade dos adversários, convertendo a energia do impacto em puro dano destrutivo. Uma demonstração de força que redefine o campo de batalha."
 		needlearn="0" event="script" value="sakura/10.jinshin.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -294,7 +294,7 @@
 	<instant spellid="211"
 		name="Sozo Sazei" words="sozo sazei" lvl="120" mana="0" exhaustion="1000"
 		icon="3187"
-		description="A tÃ©cnica definitiva de regeneraÃ§Ã£o celular. Ao liberar o selo de chakra, o usuÃ¡rio forÃ§a a divisÃ£o celular instantÃ¢nea, curando ferimentos fatais a cada segundo. Enquanto estiver ativa, esta tÃ©cnica consome suas reservas de Chakra continuamente para manter o corpo em um estado de quase imortalidade."
+		description="A técnica definitiva de regeneração celular. Ao liberar o selo de chakra, o usuário força a divisão celular instantânea, curando ferimentos fatais a cada segundo. Enquanto estiver ativa, esta técnica consome suas reservas de Chakra continuamente para manter o corpo em um estado de quase imortalidade."
 		aggressive="0" selftarget="1" needlearn="0" event="script" value="sakura/12.sozo_sazei.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -302,7 +302,7 @@
 	<instant spellid="212"
 		name="Oukashou" words="oukashou" lvl="140" mana="600" exhaustion="2000"
 		icon="3186"
-		description="O Ã¡pice do controle de forÃ§a bruta da Sakura. Diferente do Shannaro convencional, o Oukashou permite que o chakra seja projetado para muito alÃ©m do ponto de impacto, criando um rastro de destruiÃ§Ã£o que alcanÃ§a atÃ© 6 SQMs. A forÃ§a Ã© tÃ£o extrema que a pressÃ£o do ar e os detritos esmagam qualquer oponente em seu caminho."
+		description="O ápice do controle de força bruta da Sakura. Diferente do Shannaro convencional, o Oukashou permite que o chakra seja projetado para muito além do ponto de impacto, criando um rastro de destruição que alcança até 6 SQMs. A força é tão extrema que a pressão do ar e os detritos esmagam qualquer oponente em seu caminho."
 		aggressive="0" needlearn="0" event="script" value="sakura/14.oukashou.lua">
 		<vocation id="24;25;26;27;28;29;30;31;32" />
 	</instant>
@@ -356,7 +356,7 @@
 	<instant spellid="304" icon="3194" name="Gatsuuga"
 		description="&#10;O usuario gira avançando em linha reta junto com o Akamaru, o avanço causa dano no centro e dos lados.&#10; &#10;Distância:&#10;Level 40 avança 3 SQMS.&#10;Level 80 avança 4 SQMS.&#10;Level 120 avança 5 SQMS.&#10; &#10;Dano: Baseado em Taijutsu e Level."
 		words="gatsuuga" lvl="40"
-		mana="250" exhaustion="0" needlearn="0"
+		mana="250" exhaustion="2000" needlearn="0"
 		event="script" value="kiba/4.gatsuuga.lua">
 		<vocation id="33" /> <!-- kiba classic -->
 		<vocation id="34" /> <!-- kiba tracker -->
@@ -385,9 +385,9 @@
 		<vocation id="36" /> <!-- kiba war -->
 		<vocation id="37" /> <!-- kiba veteran-->
 	</instant>
-	<instant spellid="307" icon="3198" name="manjuu" words="manjuu" lvl="70"
+	<instant spellid="307" icon="3198" name="Manjuu" words="manjuu" lvl="70"
 		mana="0" exhaustion="1000"
-		description="&#10;O Akamaru se funde ao Kiba se transformando em um cachorro de duas cabeças, pegando métade dos atributos dele e somando aos do Kiba."
+		description="&#10;O Akamaru se funde ao Kiba se transformando em um cachorro de duas cabeças, dessa forma métade dos atributos do Akamaru se somam aos do Kiba. Essa jutsu consome 20 de chakra a cada 2 segundos."
 		event="script" value="kiba/7.manjuu.lua">
 		<vocation id="33" /> <!-- kiba classic -->
 		<vocation id="34" /> <!-- kiba tracker -->
@@ -998,10 +998,8 @@
 		<vocation id="1000" />
 	</instant>
 	<instant
-		spellid="10016" name="Sabaku Kyu - Monster" words="sabaku kyu monster"
-		target="1"
-		lvl="0" mana="0" exhaustion="2000"
-		needlearn="0" event="script" value="monster/gaara/sabaku_kyu.lua">
+		spellid="10016" name="Sabaku Kyu - Monster" words="sabaku kyu - monster" event="script"
+		value="monster/gaara/sabaku_kyu.lua">
 		<vocation id="1000" />
 	</instant>
 	<instant
@@ -1099,6 +1097,15 @@
 		aggressive="0" selftarget="1"
 		exhaustion="1000" needlearn="0" event="script" value="support/light.lua">
 	</instant>
+	<instant spellid="10033" name="Insect Poison One" words="insect poison one"
+		description="&#10;Aplica um veneno que causa dano contínuo ao alvo." event="script"
+		value="monster/poisons/insect_poison_one.lua">
+		<vocation id="1000" />
+	</instant>
+	<instant spellid="10034" name="Chakra Speed" words="chakra speed" lvl="5"
+		mana="40" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" needmana="0"
+		event="script" value="all/chakra_speed.lua">
+	</instant>
 	<!-- Jutsus de Suporte -->
 	<!--<instant
 	spellid="10013"
@@ -1173,44 +1180,6 @@
 		casterTargetOrDirection="1" blockwalls="1" exhaustion="0" needlearn="0" event="script"
 		value="chakra strike.lua">
 		<vocation id="1000" />
-	</instant>
-	<instant spellid="10018" name="Chakra Speed" words="chakra speed" lvl="5"
-		mana="40" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" needmana="0"
-		event="script" value="all/chakra_speed.lua">
-		<vocation id="1" />
-		<vocation id="2" />
-		<vocation id="3" />
-		<vocation id="4" />
-		<vocation id="5" />
-		<vocation id="6" />
-		<vocation id="7" />
-		<vocation id="8" />
-		<vocation id="9" />
-		<vocation id="10" />
-		<vocation id="11" />
-		<vocation id="12" />
-		<vocation id="13" />
-		<vocation id="14" />
-
-		<vocation id="15" />
-		<vocation id="16" />
-		<vocation id="17" />
-		<vocation id="18" />
-		<vocation id="19" />
-		<vocation id="20" />
-		<vocation id="21" />
-		<vocation id="22" />
-		<vocation id="23" />
-
-		<vocation id="24" />
-		<vocation id="25" />
-		<vocation id="26" />
-		<vocation id="27" />
-		<vocation id="28" />
-		<vocation id="29" />
-		<vocation id="30" />
-		<vocation id="31" />
-		<vocation id="32" />
 	</instant>
 
 	<conjure spellid="10019" name="Create Explosive Kunai"

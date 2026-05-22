@@ -8,17 +8,12 @@ setConditionParam(condition, CONDITION_PARAM_SPEED, 50)
 setCombatCondition(combat, condition)
 
 function onCastSpell(cid, var)
-    local getSkill = getPlayerSkillLevel(cid, 6) -- pega a skill equivalente o chakra control que na source Ã© o fishing.
-    local getMana = getCreatureMana(cid)
-    local necessarySkill = 20 -- deve ser 30 para conseguir utilizar.
+    local chakraControl = getPlayerSkillLevel(cid, SKILL_CONTROL)
+    local necessaryToUse = 20
 
-    if (getPlayerVocation(cid) == 64 or getPlayerVocation(cid) == 65 or getPlayerVocation(cid) == 65) then
-        doPlayerSendCancel(cid, "You cannot use this jutsu while in Kyuubi form.")
+    if (chakraControl >= necessaryToUse) then
+        return doCombat(cid, combat, var)
     else
-        if (getSkill >= necessarySkill) then
-            return doCombat(cid, combat, var)
-        else
-            doPlayerSendCancel(cid, "You need to have level " .. necessarySkill .. " in chakra control.")
-        end
+        doPlayerSendCancel(cid, "Você precisa ter " .. necessaryToUse .. " deControle de Chakra.")
     end
 end

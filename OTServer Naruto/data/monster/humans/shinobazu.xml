@@ -22,7 +22,7 @@
     <attack name="melee" interval="2000" skill="50" attack="45" />
     <!-- Corte de Vento (Troquei 'scythe' por 'spear' para evitar o erro) -->
     <attack name="physical" interval="1500" chance="10" range="3" min="-70" max="-100">
-      <attribute key="shootEffect" value="spear" />
+      <attribute key="shootEffect" value="explosivekunaithrow" />
       <attribute key="areaEffect" value="greenspark" />
     </attack>
     <!-- Ataque Giratório -->
@@ -44,12 +44,13 @@
   <loot>
     <item id="2148" countmax="88" chance1="56000" chancemax="0" />
     <item id="2479" chance1="2800" chancemax="0" />
-    <item id="2643" chance1="2500" chancemax="0" />
+    <item id="2413" chance1="2800" chancemax="0" />
+    <item id="2643" chance1="500" chancemax="0" />
     <item id="3966" chance1="2000" chancemax="0" />
     <item id="1987" chance="100000">
       <inside>
-        <item id="2660" chance1="2000" chancemax="0" />
-        <item id="2413" chance1="2800" chancemax="0" />
+        <item id="2546" countmax="3" chance1="40000" chancemax="0" />
+        <item id="2660" chance1="2200" chancemax="0" />
         <item id="2411" chance1="3200" chancemax="0" />
         <item id="2148" countmax="90" chance1="55000" chancemax="0" />
       </inside>

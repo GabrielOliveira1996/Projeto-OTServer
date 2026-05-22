@@ -279,8 +279,9 @@
 	</distance>
 
 	<!-- Armas de Distancia -->
-	<distance id="2545" event="script" value="poison_arrow.lua" />
+	<!--<distance
+	id="2545" event="script" value="poison_arrow.lua" />
 	<distance id="2546" event="script" value="Explosive Kunai.lua" />
-	<distance id="7366" event="script" value="Suna Shuriken.lua" />
+	<distance id="7366" event="script" value="Suna Shuriken.lua" />-->
 
 </weapons>

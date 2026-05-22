@@ -256,8 +256,8 @@
 		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="10" gainmanaticks="2"
 		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
 		fromvoc="26" manager="0">
-		<formula meleeDamage="1.2" distDamage="1.2" wandDamage="1.0" magDamage="1.2"
-			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<formula meleeDamage="1.3" distDamage="1.3" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
 	</vocation>
@@ -265,7 +265,7 @@
 		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="15" gainmanaticks="2"
 		gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
 		fromvoc="27" manager="0">
-		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+		<formula meleeDamage="1.4" distDamage="1.4" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
@@ -274,7 +274,7 @@
 		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="20" gainmanaticks="2"
 		gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
 		fromvoc="28" manager="0">
-		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+		<formula meleeDamage="1.5" distDamage="1.5" wandDamage="1.0" magDamage="1.5"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
@@ -285,7 +285,7 @@
 		gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="5" gainmanaticks="2"
 		gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0" gainsoulticks="0"
 		fromvoc="25" manager="0">
-		<formula meleeDamage="1.2" distDamage="1.1" wandDamage="1.0" magDamage="1.1"
+		<formula meleeDamage="1.3" distDamage="1.1" wandDamage="1.0" magDamage="1.1"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
@@ -294,8 +294,8 @@
 		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="10"
 		gainmanaticks="2" gainmanaamount="10" manamultiplier="1.1" attackspeed="2000" soulmax="0"
 		gainsoulticks="0" fromvoc="26" manager="0">
-		<formula meleeDamage="1.3" distDamage="1.2" wandDamage="1.0" magDamage="1.2"
-			magHealingDamage="1.0" defense="1.2" magDefense="1.2" armor="1.0" />
+		<formula meleeDamage="1.4" distDamage="1.3" wandDamage="1.0" magDamage="1.3"
+			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
 	</vocation>
@@ -303,7 +303,7 @@
 		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="15"
 		gainmanaticks="2" gainmanaamount="15" manamultiplier="1.1" attackspeed="2000" soulmax="0"
 		gainsoulticks="0" fromvoc="27" manager="0">
-		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+		<formula meleeDamage="1.5" distDamage="1.4" wandDamage="1.0" magDamage="1.4"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />
@@ -312,7 +312,7 @@
 		needpremium="0" gaincap="10" gainhp="10" gainmana="20" gainhpticks="2" gainhpamount="20"
 		gainmanaticks="2" gainmanaamount="20" manamultiplier="1.1" attackspeed="2000" soulmax="0"
 		gainsoulticks="0" fromvoc="28" manager="0">
-		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0"
+		<formula meleeDamage="1.6" distDamage="1.5" wandDamage="1.0" magDamage="1.5"
 			magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.1" shielding="1.1"
 			fishing="1.0" experience="1.0" />

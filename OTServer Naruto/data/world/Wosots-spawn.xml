@@ -23,15 +23,14 @@
 <monster name="vampire" x="-3" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2564" centery="3244" centerz="4" radius="6">
-<monster name="vampire" x="-4" y="-3" spawntime="60"/>
-<monster name="vampire" x="3" y="-3" spawntime="60"/>
-<monster name="vampire" x="5" y="-2" spawntime="60"/>
-<monster name="vampire" x="-5" y="-1" spawntime="60"/>
-<monster name="vampire" x="2" y="-1" spawntime="60"/>
-<monster name="vampire" x="-2" y="0" spawntime="60"/>
-<monster name="vampire" x="4" y="2" spawntime="60"/>
-<monster name="vampire" x="-4" y="3" spawntime="60"/>
-<monster name="vampire" x="0" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="4" y="1" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="-2" spawntime="60"/>
+<monster name="Suna Demon" x="1" y="-1" spawntime="60"/>
+<monster name="Suna Demon" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3392" centery="2989" centerz="5" radius="8">
 <monster name="cyborg" x="-5" y="-3" spawntime="20"/>
@@ -58,27 +57,36 @@
 <monster name="Wolf" x="5" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3204" centery="3226" centerz="5" radius="5">
-<monster name="cursed skeleton" x="-4" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="5" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="5" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2978" centery="3227" centerz="5" radius="1">
-<monster name="nervous wolf" x="-1" y="-1" spawntime="60"/>
-<monster name="nervous wolf" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2988" centery="3240" centerz="5" radius="1">
-<monster name="cursed skeleton" x="-1" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="0" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2563" centery="3244" centerz="5" radius="8">
-<monster name="vampire" x="-1" y="-4" spawntime="60"/>
-<monster name="vampire" x="7" y="-4" spawntime="60"/>
-<monster name="vampire" x="-4" y="1" spawntime="60"/>
-<monster name="vampire" x="6" y="3" spawntime="60"/>
-<monster name="vampire" x="0" y="5" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="-4" spawntime="60"/>
+<monster name="Sandbound Soul" x="0" y="-4" spawntime="60"/>
+<monster name="Sandbound Soul" x="0" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="7" y="0" spawntime="60"/>
+<monster name="Sandbound Soul" x="6" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="2" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="-5" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="-6" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="5" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="5" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="5" y="1" spawntime="60"/>
+<monster name="Sandbound Soul" x="8" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-5" y="1" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="0" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3247" centery="2955" centerz="6" radius="1">
 <monster name="water shinobi" x="1" y="0" spawntime="60"/>
@@ -146,7 +154,7 @@
 <monster name="cyborg" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3210" centery="3014" centerz="6" radius="5">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
 <monster name="Assassin" x="-3" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3135" centery="3016" centerz="6" radius="5">
@@ -164,7 +172,7 @@
 </spawn>
 <spawn centerx="3197" centery="3023" centerz="6" radius="5">
 <monster name="Assassin" x="-3" y="-5" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-2" spawntime="60"/>
 <monster name="Assassin" x="5" y="-2" spawntime="60"/>
 <monster name="Assassin" x="-3" y="5" spawntime="60"/>
 </spawn>
@@ -324,40 +332,47 @@
 <monster name="samurai" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2970" centery="3229" centerz="6" radius="1">
-<monster name="cursed skeleton" x="0" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3274" centery="3229" centerz="6" radius="1">
 <monster name="samurai" x="-1" y="1" spawntime="60"/>
-</spawn>
-<spawn centerx="2949" centery="3230" centerz="6" radius="1">
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3235" centery="3232" centerz="6" radius="1">
 <monster name="Bandit" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2986" centery="3233" centerz="6" radius="1">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
 </spawn>
-<spawn centerx="2962" centery="3234" centerz="6" radius="1">
-<monster name="cursed skeleton" x="1" y="-1" spawntime="60"/>
+<spawn centerx="2956" centery="3236" centerz="6" radius="1">
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2931" centery="3238" centerz="6" radius="5">
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="-3" spawntime="60"/>
+<spawn centerx="2931" centery="3238" centerz="6" radius="2">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2939" centery="3238" centerz="6" radius="1">
-<monster name="cursed skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2564" centery="3242" centerz="6" radius="10">
-<monster name="vampire" x="-4" y="-5" spawntime="60"/>
-<monster name="vampire" x="7" y="-4" spawntime="60"/>
-<monster name="vampire" x="-8" y="4" spawntime="60"/>
-<monster name="vampire" x="5" y="7" spawntime="60"/>
-<monster name="vampire" x="-4" y="9" spawntime="60"/>
+<monster name="Sandbound Soul" x="-6" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="-5" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="-2" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="-6" y="7" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="6" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="9" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="7" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="7" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="4" y="7" spawntime="60"/>
+<monster name="Sandbound Soul" x="7" y="8" spawntime="60"/>
+<monster name="Sandbound Soul" x="4" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="-9" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-8" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="9" spawntime="60"/>
 </spawn>
 <spawn centerx="2924" centery="3249" centerz="6" radius="1">
-<monster name="juhi member" x="1" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3130" centery="2840" centerz="7" radius="1">
 <monster name="kiba" x="0" y="-1" spawntime="20"/>
@@ -603,13 +618,14 @@
 <monster name="shinobazu" x="-3" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2631" centery="3181" centerz="7" radius="5">
-<monster name="desert jump" x="-3" y="-3" spawntime="60"/>
-<monster name="desert jump" x="4" y="0" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2606" centery="3186" centerz="7" radius="5">
-<monster name="desert jump" x="4" y="-3" spawntime="60"/>
-<monster name="desert jump" x="-4" y="-1" spawntime="60"/>
-<monster name="desert jump" x="-1" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-2" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3256" centery="3186" centerz="7" radius="5">
 <monster name="Wolf" x="-3" y="-4" spawntime="60"/>
@@ -621,8 +637,9 @@
 <monster name="savager" x="4" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2630" centery="3197" centerz="7" radius="5">
-<monster name="desert jump" x="-5" y="-3" spawntime="60"/>
-<monster name="desert jump" x="4" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="-4" spawntime="60"/>
+<monster name="Sandbound Soul" x="-1" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3122" centery="3197" centerz="7" radius="5">
 <monster name="savager" x="4" y="-5" spawntime="60"/>
@@ -662,10 +679,10 @@
 <monster name="savager" x="-5" y="5" spawntime="60"/>
 </spawn>
 <spawn centerx="2958" centery="3221" centerz="7" radius="1">
-<monster name="nervous wolf" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2973" centery="3221" centerz="7" radius="1">
-<monster name="nervous wolf" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="3094" centery="3221" centerz="7" radius="5">
 <monster name="savager" x="1" y="-4" spawntime="60"/>
@@ -676,11 +693,9 @@
 <monster name="bandit hunter" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2967" centery="3233" centerz="7" radius="5">
-<monster name="juhi member" x="-1" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="-3" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3172" centery="3235" centerz="7" radius="5">
 <monster name="Wolf" x="5" y="-4" spawntime="60"/>
@@ -691,29 +706,30 @@
 <monster name="bandit hunter" x="0" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2563" centery="3243" centerz="7" radius="12">
-<monster name="desert jump" x="-8" y="-8" spawntime="60"/>
-<monster name="desert jump" x="2" y="-8" spawntime="60"/>
-<monster name="desert jump" x="11" y="-7" spawntime="60"/>
-<monster name="desert jump" x="-6" y="-4" spawntime="60"/>
-<monster name="desert jump" x="1" y="-4" spawntime="60"/>
-<monster name="desert jump" x="7" y="-1" spawntime="60"/>
-<monster name="desert jump" x="-2" y="3" spawntime="60"/>
-<monster name="desert jump" x="1" y="3" spawntime="60"/>
-<monster name="desert jump" x="8" y="3" spawntime="60"/>
-<monster name="desert jump" x="-10" y="6" spawntime="60"/>
-<monster name="desert jump" x="-9" y="8" spawntime="60"/>
-<monster name="desert jump" x="3" y="8" spawntime="60"/>
-<monster name="desert jump" x="-5" y="10" spawntime="60"/>
-<monster name="desert jump" x="11" y="10" spawntime="60"/>
+<monster name="Sandbound Soul" x="-10" y="0" spawntime="60"/>
+<monster name="Sandbound Soul" x="-5" y="-7" spawntime="60"/>
+<monster name="Sandbound Soul" x="9" y="-7" spawntime="60"/>
+<monster name="Sandbound Soul" x="10" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="5" y="7" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="2" spawntime="60"/>
+<monster name="Sandbound Soul" x="2" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="-1" y="1" spawntime="60"/>
+<monster name="Sandbound Soul" x="2" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="1" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="2" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-4" y="8" spawntime="60"/>
+<monster name="Sandbound Soul" x="-7" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="0" y="8" spawntime="60"/>
+<monster name="Sandbound Soul" x="7" y="9" spawntime="60"/>
 </spawn>
 <spawn centerx="2956" centery="3243" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2941" centery="3244" centerz="7" radius="1">
-<monster name="cursed skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3252" centery="3246" centerz="7" radius="5">
 <monster name="Wolf" x="-2" y="-3" spawntime="60"/>
@@ -721,39 +737,38 @@
 <monster name="Wolf" x="-5" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2991" centery="3247" centerz="7" radius="1">
-<monster name="nervous wolf" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2975" centery="3249" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-1" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="-3" spawntime="60"/>
+<monster name="Cursed Wolf" x="-2" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="2936" centery="3252" centerz="7" radius="5">
-<monster name="nervous wolf" x="-1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="5" spawntime="60"/>
 </spawn>
 <spawn centerx="2986" centery="3253" centerz="7" radius="5">
-<monster name="juhi member" x="-1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="5" spawntime="60"/>
 </spawn>
 <spawn centerx="2950" centery="3257" centerz="7" radius="1">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2930" centery="3258" centerz="7" radius="5">
-<monster name="juhi member" x="-1" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="4" spawntime="60"/>
+<monster name="Cursed Wolf" x="-2" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2966" centery="3263" centerz="7" radius="5">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="-3" spawntime="60"/>
-<monster name="cursed skeleton" x="-2" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="-5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="-5" spawntime="60"/>
+<monster name="Cursed Wolf" x="3" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="3229" centery="3259" centerz="7" radius="5">
 <monster name="Wolf" x="5" y="-5" spawntime="60"/>
@@ -771,20 +786,21 @@
 <monster name="Wolf" x="-5" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2981" centery="3265" centerz="7" radius="5">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="4" spawntime="60"/>
+<monster name="Cursed Wolf" x="4" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2941" centery="3266" centerz="7" radius="5">
-<monster name="vampire" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-3" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2953" centery="3273" centerz="7" radius="1">
-<monster name="nervous wolf" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2965" centery="3275" centerz="7" radius="1">
-<monster name="juhi member" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="3203" centery="3295" centerz="7" radius="5">
 <monster name="Wolf" x="4" y="-4" spawntime="60"/>
@@ -1001,14 +1017,14 @@
 <monster name="juhi member" x="-3" y="0" spawntime="20"/>
 <monster name="juhi member" x="-5" y="2" spawntime="30"/>
 <monster name="juhi member" x="4" y="5" spawntime="30"/>
-<monster name="cursed skeleton" x="1" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="3" spawntime="60"/>
 <monster name="shadown man" x="-4" y="-4" spawntime="60"/>
 </spawn>
 <spawn centerx="3098" centery="3191" centerz="12" radius="5">
 <monster name="juhi member" x="-5" y="0" spawntime="20"/>
 <monster name="juhi member" x="4" y="1" spawntime="30"/>
-<monster name="cursed skeleton" x="5" y="-3" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="5" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="4" spawntime="60"/>
 <monster name="shadown man" x="-2" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="3102" centery="3201" centerz="12" radius="5">
@@ -1017,8 +1033,8 @@
 <monster name="juhi member" x="0" y="4" spawntime="30"/>
 <monster name="juhi member" x="-1" y="-3" spawntime="30"/>
 <monster name="juhi member" x="5" y="3" spawntime="30"/>
-<monster name="cursed skeleton" x="-3" y="3" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-3" spawntime="60"/>
 <monster name="shadown man" x="-3" y="-1" spawntime="60"/>
 <monster name="shadown man" x="3" y="0" spawntime="60"/>
 </spawn>
@@ -1027,25 +1043,24 @@
 <monster name="juhi member" x="-3" y="1" spawntime="30"/>
 <monster name="juhi member" x="3" y="3" spawntime="30"/>
 <monster name="juhi member" x="-1" y="-4" spawntime="30"/>
-<monster name="cursed skeleton" x="3" y="0" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="-4" spawntime="60"/>
 <monster name="shadown man" x="-2" y="-5" spawntime="60"/>
 </spawn>
 <spawn centerx="3127" centery="3207" centerz="12" radius="5">
 <monster name="juhi member" x="-3" y="-2" spawntime="30"/>
 <monster name="juhi member" x="5" y="-2" spawntime="30"/>
 <monster name="juhi member" x="-1" y="3" spawntime="30"/>
-<monster name="cursed skeleton" x="1" y="-5" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="1" spawntime="60"/>
 <monster name="shadown man" x="4" y="0" spawntime="60"/>
 <monster name="shadown man" x="-4" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3108" centery="3164" centerz="9" radius="2">
-<monster name="cursed skeleton" x="2" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="3127" centery="3139" centerz="9" radius="5">
-<monster name="savager" x="-3" y="0" spawntime="60"/>
 <monster name="savager" x="3" y="-5" spawntime="60"/>
 <monster name="savager" x="0" y="-3" spawntime="60"/>
 <monster name="savager" x="-3" y="5" spawntime="60"/>
@@ -1055,8 +1070,7 @@
 <monster name="shinobazu" x="0" y="0" spawntime="60"/>
 <monster name="shinobazu" x="-3" y="-4" spawntime="60"/>
 <monster name="shinobazu" x="-4" y="0" spawntime="60"/>
-<monster name="kusa shinobi" x="1" y="3" spawntime="60"/>
-<monster name="kusa shinobi" x="2" y="-2" spawntime="60"/>
+<monster name="savager" x="-2" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="3094" centery="3096" centerz="7" radius="5">
 <monster name="Ninja" x="3" y="4" spawntime="60"/>
@@ -1100,37 +1114,57 @@
 <monster name="water shinobi" x="5" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="3185" centery="3067" centerz="10" radius="10">
-<monster name="white ninja" x="-6" y="2" spawntime="60"/>
-<monster name="white ninja" x="5" y="2" spawntime="60"/>
 <monster name="shinobazu" x="-2" y="0" spawntime="60"/>
 <monster name="shinobazu" x="1" y="2" spawntime="60"/>
 <monster name="shinobazu" x="-5" y="7" spawntime="60"/>
 <monster name="shinobazu" x="7" y="6" spawntime="60"/>
 <monster name="shinobazu" x="-1" y="4" spawntime="60"/>
-<monster name="kusa shinobi" x="0" y="7" spawntime="60"/>
-<monster name="kusa shinobi" x="-5" y="-1" spawntime="60"/>
-<monster name="kusa shinobi" x="6" y="1" spawntime="60"/>
 <monster name="savager" x="3" y="-9" spawntime="60"/>
 <monster name="savager" x="-3" y="-7" spawntime="60"/>
 <monster name="savager" x="-7" y="-9" spawntime="60"/>
-<monster name="white ninja" x="1" y="-5" spawntime="60"/>
+<monster name="shinobazu" x="-7" y="-4" spawntime="60"/>
+<monster name="shinobazu" x="1" y="-7" spawntime="60"/>
+<monster name="shinobazu" x="-3" y="-2" spawntime="60"/>
+<monster name="shinobazu" x="3" y="-1" spawntime="60"/>
+<monster name="shinobazu" x="-1" y="9" spawntime="60"/>
+<monster name="shinobazu" x="2" y="8" spawntime="60"/>
+<monster name="shinobazu" x="-7" y="4" spawntime="60"/>
+<monster name="shinobazu" x="0" y="7" spawntime="60"/>
+<monster name="shinobazu" x="4" y="5" spawntime="60"/>
+<monster name="savager" x="3" y="-3" spawntime="60"/>
+<monster name="savager" x="-4" y="-4" spawntime="60"/>
+<monster name="savager" x="-8" y="-6" spawntime="60"/>
+<monster name="savager" x="6" y="-9" spawntime="60"/>
+<monster name="savager" x="-4" y="-9" spawntime="60"/>
+<monster name="savager" x="4" y="-10" spawntime="60"/>
+<monster name="savager" x="-10" y="-9" spawntime="60"/>
 </spawn>
 <spawn centerx="3185" centery="3046" centerz="10" radius="8">
-<monster name="kusa shinobi" x="4" y="7" spawntime="60"/>
-<monster name="kusa shinobi" x="-6" y="1" spawntime="60"/>
-<monster name="kusa shinobi" x="4" y="-3" spawntime="60"/>
 <monster name="savager" x="5" y="0" spawntime="60"/>
 <monster name="savager" x="-4" y="-4" spawntime="60"/>
 <monster name="savager" x="1" y="-6" spawntime="60"/>
-<monster name="white ninja" x="4" y="-6" spawntime="60"/>
-<monster name="white ninja" x="4" y="2" spawntime="60"/>
 <monster name="savager" x="0" y="-3" spawntime="60"/>
 <monster name="savager" x="-8" y="6" spawntime="60"/>
+<monster name="shinobazu" x="5" y="7" spawntime="60"/>
+<monster name="shinobazu" x="-6" y="1" spawntime="60"/>
+<monster name="shinobazu" x="4" y="-4" spawntime="60"/>
+<monster name="shinobazu" x="-1" y="-4" spawntime="60"/>
+<monster name="savager" x="-6" y="4" spawntime="60"/>
+<monster name="savager" x="7" y="4" spawntime="60"/>
+<monster name="savager" x="8" y="0" spawntime="60"/>
+<monster name="savager" x="-1" y="-1" spawntime="60"/>
+<monster name="savager" x="7" y="-3" spawntime="60"/>
+<monster name="savager" x="-7" y="7" spawntime="60"/>
 </spawn>
 <spawn centerx="3198" centery="3043" centerz="10" radius="5">
-<monster name="kusa shinobi" x="2" y="1" spawntime="60"/>
-<monster name="white ninja" x="-1" y="-3" spawntime="60"/>
-<monster name="white ninja" x="2" y="-4" spawntime="60"/>
+<monster name="white ninja" x="1" y="-1" spawntime="60"/>
+<monster name="shinobazu" x="-4" y="1" spawntime="60"/>
+<monster name="shinobazu" x="-2" y="-2" spawntime="60"/>
+<monster name="shinobazu" x="1" y="2" spawntime="60"/>
+<monster name="savager" x="-3" y="-3" spawntime="60"/>
+<monster name="savager" x="-1" y="5" spawntime="60"/>
+<monster name="savager" x="3" y="3" spawntime="60"/>
+<monster name="savager" x="2" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="3152" centery="3088" centerz="9" radius="5">
 <monster name="savager" x="1" y="4" spawntime="60"/>
@@ -1154,9 +1188,12 @@
 <monster name="shinobazu" x="2" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="3170" centery="3125" centerz="9" radius="5">
-<monster name="kusa shinobi" x="2" y="-4" spawntime="60"/>
-<monster name="kusa shinobi" x="-2" y="-1" spawntime="60"/>
-<monster name="kusa shinobi" x="0" y="2" spawntime="60"/>
+<monster name="shinobazu" x="-4" y="-1" spawntime="60"/>
+<monster name="shinobazu" x="2" y="-2" spawntime="60"/>
+<monster name="shinobazu" x="1" y="3" spawntime="60"/>
+<monster name="shinobazu" x="-1" y="1" spawntime="60"/>
+<monster name="shinobazu" x="-1" y="-3" spawntime="60"/>
+<monster name="shinobazu" x="-3" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3091" centery="3146" centerz="9" radius="5">
 <monster name="shinobazu" x="4" y="-1" spawntime="60"/>
@@ -1170,8 +1207,6 @@
 <monster name="shinobazu" x="1" y="-5" spawntime="60"/>
 <monster name="savager" x="4" y="2" spawntime="60"/>
 <monster name="savager" x="-1" y="5" spawntime="60"/>
-<monster name="white ninja" x="-2" y="0" spawntime="60"/>
-<monster name="white ninja" x="-2" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3080" centery="3145" centerz="9" radius="5">
 <monster name="shinobazu" x="2" y="-4" spawntime="60"/>
@@ -1185,11 +1220,14 @@
 <monster name="shinobazu" x="-3" y="3" spawntime="60"/>
 <monster name="shinobazu" x="4" y="-3" spawntime="60"/>
 <monster name="shinobazu" x="4" y="4" spawntime="60"/>
-<monster name="kusa shinobi" x="0" y="-1" spawntime="60"/>
+<monster name="shinobazu" x="1" y="-1" spawntime="60"/>
+<monster name="shinobazu" x="3" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3151" centery="3130" centerz="9" radius="5">
-<monster name="kusa shinobi" x="-2" y="-3" spawntime="60"/>
-<monster name="kusa shinobi" x="2" y="0" spawntime="60"/>
+<monster name="shinobazu" x="0" y="-4" spawntime="60"/>
+<monster name="shinobazu" x="3" y="-4" spawntime="60"/>
+<monster name="shinobazu" x="3" y="-3" spawntime="60"/>
+<monster name="shinobazu" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3152" centery="3112" centerz="9" radius="5">
 <monster name="shinobazu" x="-2" y="-1" spawntime="60"/>
@@ -1197,7 +1235,7 @@
 <monster name="savager" x="0" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="3171" centery="3111" centerz="9" radius="1">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3048" centery="3074" centerz="7" radius="1">
 <npc name="Kakashi[saga 2]" x="1" y="-1"/>
@@ -1449,20 +1487,15 @@
 <monster name="samurai" x="4" y="-2" spawntime="60"/>
 <monster name="samurai" x="2" y="3" spawntime="60"/>
 </spawn>
-<spawn centerx="2947" centery="3235" centerz="6" radius="5">
-<monster name="cursed skeleton" x="-1" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="-1" spawntime="60"/>
+<spawn centerx="2945" centery="3235" centerz="6" radius="2">
+<monster name="Cursed Skeleton" x="0" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2924" centery="3244" centerz="6" radius="5">
-<monster name="cursed skeleton" x="3" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="1" spawntime="60"/>
-</spawn>
-<spawn centerx="2967" centery="3230" centerz="6" radius="5">
-<monster name="cursed skeleton" x="1" y="5" spawntime="60"/>
+<spawn centerx="2924" centery="3244" centerz="6" radius="2">
+<monster name="Cursed Skeleton" x="-2" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2978" centery="3231" centerz="6" radius="5">
-<monster name="cursed skeleton" x="4" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="3304" centery="3002" centerz="6" radius="5">
 <monster name="white ninja" x="-1" y="-1" spawntime="60"/>
@@ -1489,70 +1522,65 @@
 <monster name="trainer" x="4" y="2" spawntime="60"/>
 <monster name="trainer" x="4" y="-2" spawntime="60"/>
 </spawn>
-<spawn centerx="2882" centery="3088" centerz="7" radius="5">
-<monster name="huge insect" x="2" y="0" spawntime="60"/>
+<spawn centerx="2879" centery="3092" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2859" centery="3088" centerz="6" radius="5">
 <monster name="huge insect" x="-2" y="-1" spawntime="60"/>
 <monster name="huge insect" x="2" y="1" spawntime="60"/>
 </spawn>
-<spawn centerx="2870" centery="3023" centerz="7" radius="5">
-<monster name="insect" x="3" y="-2" spawntime="60"/>
-<monster name="insect" x="5" y="5" spawntime="60"/>
-<monster name="insect" x="-4" y="3" spawntime="60"/>
+<spawn centerx="2870" centery="3023" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="1" spawntime="60"/>
 </spawn>
-<spawn centerx="2877" centery="3043" centerz="7" radius="5">
-<monster name="insect" x="4" y="3" spawntime="60"/>
-<monster name="insect" x="-2" y="-1" spawntime="60"/>
+<spawn centerx="2877" centery="3043" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2849" centery="3056" centerz="7" radius="5">
-<monster name="insect" x="4" y="-2" spawntime="60"/>
-<monster name="insect" x="-4" y="5" spawntime="60"/>
+<spawn centerx="2849" centery="3056" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="1" spawntime="60"/>
 </spawn>
-<spawn centerx="2836" centery="3054" centerz="7" radius="5">
-<monster name="insect" x="-5" y="4" spawntime="60"/>
-<monster name="insect" x="3" y="-2" spawntime="60"/>
+<spawn centerx="2836" centery="3054" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-2" spawntime="60"/>
 </spawn>
-<spawn centerx="2825" centery="3065" centerz="7" radius="5">
-<monster name="insect" x="3" y="-4" spawntime="60"/>
-<monster name="insect" x="-3" y="4" spawntime="60"/>
+<spawn centerx="2825" centery="3065" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-2" spawntime="60"/>
 </spawn>
-<spawn centerx="2842" centery="3081" centerz="7" radius="5">
-<monster name="insect" x="4" y="-4" spawntime="60"/>
-<monster name="insect" x="-4" y="1" spawntime="60"/>
-<monster name="insect" x="3" y="4" spawntime="60"/>
+<spawn centerx="2842" centery="3081" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="0" spawntime="60"/>
 </spawn>
-<spawn centerx="2873" centery="3078" centerz="7" radius="5">
-<monster name="insect" x="-4" y="2" spawntime="60"/>
-<monster name="insect" x="4" y="-4" spawntime="60"/>
+<spawn centerx="2873" centery="3078" centerz="7" radius="2">
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="0" spawntime="60"/>
 </spawn>
-<spawn centerx="2823" centery="3109" centerz="7" radius="5">
-<monster name="insect" x="3" y="-4" spawntime="60"/>
-<monster name="insect" x="-4" y="-1" spawntime="60"/>
-<monster name="insect" x="0" y="5" spawntime="60"/>
+<spawn centerx="2823" centery="3109" centerz="7" radius="2">
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2846" centery="3123" centerz="7" radius="5">
-<monster name="insect" x="3" y="-4" spawntime="60"/>
-<monster name="insect" x="-2" y="4" spawntime="60"/>
+<spawn centerx="2846" centery="3123" centerz="7" radius="2">
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2867" centery="3109" centerz="7" radius="5">
-<monster name="insect" x="5" y="3" spawntime="60"/>
-<monster name="insect" x="-4" y="-3" spawntime="60"/>
-<monster name="insect" x="5" y="-5" spawntime="60"/>
+<spawn centerx="2867" centery="3109" centerz="7" radius="2">
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
 </spawn>
-<spawn centerx="2890" centery="3119" centerz="7" radius="5">
-<monster name="insect" x="-4" y="-3" spawntime="60"/>
-<monster name="insect" x="4" y="3" spawntime="60"/>
-<monster name="insect" x="-3" y="4" spawntime="60"/>
+<spawn centerx="2880" centery="3120" centerz="7" radius="2">
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2817" centery="3090" centerz="7" radius="5">
-<monster name="insect" x="2" y="-4" spawntime="60"/>
-<monster name="insect" x="5" y="4" spawntime="60"/>
-<monster name="insect" x="0" y="-5" spawntime="60"/>
+<spawn centerx="2817" centery="3090" centerz="7" radius="2">
+<monster name="Dokumushi" x="0" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
-<spawn centerx="2884" centery="3028" centerz="7" radius="5">
-<monster name="insect" x="3" y="-3" spawntime="60"/>
-<monster name="insect" x="-1" y="1" spawntime="60"/>
+<spawn centerx="2884" centery="3028" centerz="7" radius="2">
+<monster name="Dokumushi" x="-2" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2826" centery="2944" centerz="5" radius="8">
 <monster name="samurai" x="-2" y="-2" spawntime="60"/>
@@ -1683,58 +1711,32 @@
 <npc name="Medic Seller" x="0" y="0"/>
 </spawn>
 <spawn centerx="2929" centery="3249" centerz="8" radius="5">
-<monster name="cursed skeleton" x="-4" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="2" spawntime="60"/>
-<monster name="juhi member" x="-2" y="-3" spawntime="60"/>
-<monster name="juhi member" x="2" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="-3" spawntime="60"/>
-<monster name="shadown man" x="-2" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2913" centery="3252" centerz="8" radius="5">
-<monster name="cursed skeleton" x="-2" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="5" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-3" spawntime="60"/>
-<monster name="cursed skeleton" x="5" y="-2" spawntime="60"/>
-<monster name="juhi member" x="0" y="4" spawntime="60"/>
-<monster name="juhi member" x="2" y="-1" spawntime="60"/>
-<monster name="juhi member" x="-2" y="-5" spawntime="60"/>
-<monster name="juhi member" x="-4" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-2" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="5" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="2" spawntime="60"/>
-<monster name="shadown man" x="2" y="5" spawntime="60"/>
-<monster name="shadown man" x="4" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="5" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="5" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2925" centery="3258" centerz="8" radius="5">
-<monster name="cursed skeleton" x="-3" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="-4" spawntime="60"/>
-<monster name="juhi member" x="-2" y="-3" spawntime="60"/>
-<monster name="juhi member" x="0" y="3" spawntime="60"/>
-<monster name="juhi member" x="3" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="-4" y="1" spawntime="60"/>
-<monster name="shadown man" x="-2" y="3" spawntime="60"/>
-<monster name="shadown man" x="4" y="2" spawntime="60"/>
-<monster name="shadown man" x="-5" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2920" centery="3246" centerz="8" radius="5">
-<monster name="juhi member" x="1" y="3" spawntime="60"/>
-<monster name="cursed skeleton" x="0" y="3" spawntime="60"/>
-</spawn>
-<spawn centerx="2924" centery="3264" centerz="8" radius="5">
-<monster name="juhi member" x="4" y="1" spawntime="60"/>
-<monster name="juhi member" x="-1" y="3" spawntime="60"/>
-<monster name="juhi member" x="2" y="3" spawntime="60"/>
-<monster name="shadown man" x="4" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3219" centery="3011" centerz="9" radius="5">
 <monster name="white ninja" x="-5" y="-1" spawntime="60"/>
@@ -1980,25 +1982,25 @@
 <monster name="Assassin" x="0" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="3216" centery="2986" centerz="10" radius="5">
-<monster name="cursed skeleton" x="-3" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="-5" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="0" y="-5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="-5" spawntime="60"/>
 <monster name="Assassin" x="-3" y="5" spawntime="60"/>
 <monster name="Assassin" x="5" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="3214" centery="2972" centerz="10" radius="5">
-<monster name="cursed skeleton" x="2" y="3" spawntime="60"/>
-<monster name="cursed skeleton" x="-2" y="-1" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="-2" spawntime="60"/>
 <monster name="Assassin" x="0" y="-2" spawntime="60"/>
 <monster name="Assassin" x="3" y="2" spawntime="60"/>
 <monster name="Assassin" x="0" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="3218" centery="2974" centerz="11" radius="5">
-<monster name="cursed skeleton" x="1" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="1" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-5" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-5" y="2" spawntime="60"/>
 <monster name="Assassin" x="-2" y="0" spawntime="60"/>
 <monster name="Assassin" x="1" y="-2" spawntime="60"/>
 <monster name="Assassin" x="4" y="1" spawntime="60"/>
@@ -2006,17 +2008,17 @@
 <monster name="Assassin" x="-3" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3224" centery="2989" centerz="11" radius="5">
-<monster name="cursed skeleton" x="2" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="-2" y="1" spawntime="60"/>
-<monster name="cursed skeleton" x="-1" y="-4" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-3" spawntime="60"/>
 <monster name="Assassin" x="-1" y="-1" spawntime="60"/>
 <monster name="Assassin" x="1" y="3" spawntime="60"/>
 <monster name="Assassin" x="-3" y="-4" spawntime="60"/>
 <monster name="Assassin" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="3213" centery="2996" centerz="10" radius="1">
-<monster name="cursed skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="3277" centery="3334" centerz="7" radius="0">
 <npc name="Medic Seller" x="0" y="0"/>
@@ -2065,51 +2067,45 @@
 <monster name="shadown man" x="-2" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2979" centery="3249" centerz="6" radius="5">
-<monster name="shadown man" x="-2" y="3" spawntime="60"/>
-<monster name="cursed skeleton" x="0" y="-2" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2426" centery="3140" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-2" y="3" spawntime="60"/>
-<monster name="nervous wolf" x="4" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2383" centery="3139" centerz="7" radius="5">
-<monster name="cursed skeleton" x="4" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="4" y="-3" spawntime="60"/>
-</spawn>
-<spawn centerx="2367" centery="3145" centerz="7" radius="5">
-<monster name="nervous wolf" x="3" y="-1" spawntime="60"/>
-<monster name="nervous wolf" x="-4" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2383" centery="3122" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-1" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="2" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="2370" centery="3112" centerz="7" radius="5">
-<monster name="cursed skeleton" x="2" y="3" spawntime="60"/>
-<monster name="cursed skeleton" x="0" y="-5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="-5" spawntime="60"/>
 </spawn>
 <spawn centerx="2387" centery="3100" centerz="7" radius="5">
-<monster name="cursed skeleton" x="0" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2422" centery="3096" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-4" y="2" spawntime="60"/>
-<monster name="cursed skeleton" x="5" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-4" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="5" y="-4" spawntime="60"/>
 </spawn>
 <spawn centerx="2444" centery="3099" centerz="7" radius="5">
-<monster name="cursed skeleton" x="4" y="5" spawntime="60"/>
-<monster name="cursed skeleton" x="-3" y="-4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="4" y="5" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-4" spawntime="60"/>
 </spawn>
 <spawn centerx="2440" centery="3124" centerz="7" radius="5">
-<monster name="cursed skeleton" x="-1" y="4" spawntime="60"/>
-<monster name="cursed skeleton" x="3" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="4" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2411" centery="3121" centerz="7" radius="5">
-<monster name="shadown man" x="2" y="2" spawntime="60"/>
 <monster name="juhi member" x="-4" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="2411" centery="3121" centerz="6" radius="5">
-<monster name="shadown man" x="2" y="2" spawntime="60"/>
 <monster name="juhi member" x="-3" y="2" spawntime="60"/>
 <monster name="juhi member" x="3" y="-3" spawntime="60"/>
 </spawn>
@@ -2117,13 +2113,8 @@
 <monster name="juhi member" x="-4" y="1" spawntime="60"/>
 <monster name="juhi member" x="-2" y="-1" spawntime="60"/>
 <monster name="juhi member" x="-1" y="-4" spawntime="60"/>
-<monster name="shadown man" x="2" y="3" spawntime="60"/>
-<monster name="shadown man" x="4" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2411" centery="3121" centerz="4" radius="5">
-<monster name="shadown man" x="3" y="2" spawntime="60"/>
-<monster name="shadown man" x="-4" y="3" spawntime="60"/>
-<monster name="shadown man" x="-3" y="-3" spawntime="60"/>
 <monster name="juhi member" x="2" y="0" spawntime="60"/>
 <monster name="juhi member" x="-2" y="1" spawntime="60"/>
 <monster name="juhi member" x="2" y="-3" spawntime="60"/>
@@ -2135,17 +2126,8 @@
 <monster name="juhi member" x="4" y="1" spawntime="60"/>
 <monster name="juhi member" x="5" y="-3" spawntime="60"/>
 <monster name="juhi member" x="2" y="4" spawntime="60"/>
-<monster name="shadown man" x="4" y="3" spawntime="60"/>
-<monster name="shadown man" x="-1" y="-4" spawntime="60"/>
-<monster name="shadown man" x="-4" y="2" spawntime="60"/>
-<monster name="shadown man" x="-2" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2411" centery="3121" centerz="2" radius="5">
-<monster name="shadown man" x="1" y="4" spawntime="60"/>
-<monster name="shadown man" x="4" y="0" spawntime="60"/>
-<monster name="shadown man" x="0" y="2" spawntime="60"/>
-<monster name="shadown man" x="-2" y="3" spawntime="60"/>
-<monster name="shadown man" x="-2" y="0" spawntime="60"/>
 <monster name="juhi member" x="2" y="-2" spawntime="60"/>
 <monster name="juhi member" x="-3" y="-2" spawntime="60"/>
 <monster name="juhi member" x="-4" y="2" spawntime="60"/>
@@ -2162,81 +2144,36 @@
 <monster name="juhi member" x="-4" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2425" centery="3097" centerz="2" radius="5">
-<monster name="shadown man" x="4" y="-4" spawntime="60"/>
-<monster name="shadown man" x="3" y="0" spawntime="60"/>
-<monster name="shadown man" x="-4" y="-1" spawntime="60"/>
-<monster name="shadown man" x="-3" y="2" spawntime="60"/>
-<monster name="shadown man" x="0" y="1" spawntime="60"/>
-<monster name="shadown man" x="-5" y="4" spawntime="60"/>
-<monster name="shadown man" x="0" y="3" spawntime="60"/>
-<monster name="shadown man" x="-5" y="1" spawntime="60"/>
-<monster name="shadown man" x="2" y="-1" spawntime="60"/>
-<monster name="shadown man" x="-5" y="-4" spawntime="60"/>
+<monster name="juhi member" x="-4" y="-1" spawntime="60"/>
+<monster name="juhi member" x="4" y="-1" spawntime="60"/>
+<monster name="juhi member" x="-3" y="4" spawntime="60"/>
+<monster name="juhi member" x="0" y="2" spawntime="60"/>
+<monster name="juhi member" x="-1" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="2404" centery="3091" centerz="2" radius="5">
-<monster name="shadown man" x="4" y="-4" spawntime="60"/>
-<monster name="shadown man" x="-2" y="-3" spawntime="60"/>
-<monster name="shadown man" x="-4" y="1" spawntime="60"/>
-<monster name="shadown man" x="0" y="5" spawntime="60"/>
-<monster name="shadown man" x="1" y="1" spawntime="60"/>
-<monster name="shadown man" x="4" y="3" spawntime="60"/>
-<monster name="shadown man" x="3" y="-1" spawntime="60"/>
-<monster name="shadown man" x="-4" y="-5" spawntime="60"/>
-<monster name="shadown man" x="1" y="-5" spawntime="60"/>
+<monster name="juhi member" x="-4" y="-1" spawntime="60"/>
+<monster name="juhi member" x="3" y="-1" spawntime="60"/>
+<monster name="juhi member" x="1" y="3" spawntime="60"/>
+<monster name="juhi member" x="0" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2416" centery="3084" centerz="2" radius="5">
-<monster name="shadown man" x="-3" y="5" spawntime="60"/>
-<monster name="shadown man" x="3" y="2" spawntime="60"/>
-<monster name="shadown man" x="0" y="-2" spawntime="60"/>
-<monster name="shadown man" x="3" y="-5" spawntime="60"/>
-<monster name="shadown man" x="1" y="-5" spawntime="60"/>
-<monster name="shadown man" x="0" y="4" spawntime="60"/>
-<monster name="shadown man" x="-4" y="1" spawntime="60"/>
-<monster name="shadown man" x="2" y="-3" spawntime="60"/>
-<monster name="shadown man" x="2" y="5" spawntime="60"/>
+<monster name="juhi member" x="-1" y="4" spawntime="60"/>
+<monster name="juhi member" x="-3" y="2" spawntime="60"/>
+<monster name="juhi member" x="3" y="-3" spawntime="60"/>
+<monster name="juhi member" x="3" y="-2" spawntime="60"/>
+<monster name="juhi member" x="3" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2402" centery="3080" centerz="2" radius="5">
-<monster name="shadown man" x="-3" y="2" spawntime="60"/>
-<monster name="shadown man" x="1" y="-3" spawntime="60"/>
-<monster name="shadown man" x="1" y="3" spawntime="60"/>
-<monster name="shadown man" x="0" y="2" spawntime="60"/>
+<monster name="juhi member" x="0" y="2" spawntime="60"/>
+<monster name="juhi member" x="1" y="-3" spawntime="60"/>
+<monster name="juhi member" x="2" y="4" spawntime="60"/>
+<monster name="juhi member" x="-2" y="2" spawntime="60"/>
 </spawn>
-<spawn centerx="2419" centery="3076" centerz="2" radius="5">
-<monster name="shadown man" x="-3" y="0" spawntime="60"/>
-<monster name="shadown man" x="1" y="-2" spawntime="60"/>
-</spawn>
-<spawn centerx="2434" centery="3202" centerz="7" radius="0">
-<npc name="Medic Seller" x="0" y="0"/>
-</spawn>
-<spawn centerx="2467" centery="3233" centerz="7" radius="5">
-<monster name="trainer" x="3" y="3" spawntime="60"/>
-<monster name="trainer" x="-1" y="3" spawntime="60"/>
-<monster name="trainer" x="-1" y="-1" spawntime="60"/>
-<monster name="trainer" x="3" y="-1" spawntime="60"/>
-<monster name="trainer" x="3" y="-5" spawntime="60"/>
-<monster name="trainer" x="-1" y="-5" spawntime="60"/>
-</spawn>
-<spawn centerx="2476" centery="3233" centerz="7" radius="5">
-<monster name="trainer" x="2" y="3" spawntime="60"/>
-<monster name="trainer" x="-2" y="3" spawntime="60"/>
-<monster name="trainer" x="-2" y="-1" spawntime="60"/>
-<monster name="trainer" x="2" y="-1" spawntime="60"/>
-<monster name="trainer" x="2" y="-5" spawntime="60"/>
-<monster name="trainer" x="-2" y="-5" spawntime="60"/>
-</spawn>
-<spawn centerx="2476" centery="3223" centerz="7" radius="5">
-<monster name="trainer" x="-2" y="1" spawntime="60"/>
-<monster name="trainer" x="2" y="1" spawntime="60"/>
-<monster name="trainer" x="2" y="-3" spawntime="60"/>
-<monster name="trainer" x="-2" y="-3" spawntime="60"/>
-</spawn>
-<spawn centerx="2467" centery="3223" centerz="7" radius="5">
-<monster name="trainer" x="-1" y="1" spawntime="60"/>
-<monster name="trainer" x="3" y="1" spawntime="60"/>
-<monster name="trainer" x="3" y="-3" spawntime="60"/>
-<monster name="trainer" x="-1" y="-3" spawntime="60"/>
-<monster name="trainer" x="-5" y="1" spawntime="60"/>
-<monster name="trainer" x="-5" y="-3" spawntime="60"/>
+<spawn centerx="2419" centery="3077" centerz="2" radius="5">
+<monster name="juhi member" x="-2" y="1" spawntime="60"/>
+<monster name="juhi member" x="-2" y="-1" spawntime="60"/>
+<monster name="juhi member" x="1" y="0" spawntime="60"/>
+<monster name="juhi member" x="-1" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="3298" centery="3226" centerz="8" radius="5">
 <monster name="fishman" x="-3" y="0" spawntime="60"/>
@@ -3327,125 +3264,177 @@
 <monster name="huge insect" x="4" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2809" centery="3159" centerz="9" radius="1">
-<monster name="insect" x="0" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2810" centery="3171" centerz="9" radius="1">
-<monster name="insect" x="0" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2797" centery="3192" centerz="9" radius="1">
-<monster name="insect" x="1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2813" centery="3189" centerz="9" radius="1">
-<monster name="insect" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2824" centery="3190" centerz="9" radius="1">
-<monster name="insect" x="-1" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2804" centery="3200" centerz="9" radius="1">
-<monster name="insect" x="0" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2820" centery="3199" centerz="9" radius="1">
-<monster name="insect" x="0" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2772" centery="3193" centerz="9" radius="1">
-<monster name="insect" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2774" centery="3168" centerz="9" radius="1">
-<monster name="insect" x="-1" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2769" centery="3149" centerz="9" radius="5">
-<monster name="insect" x="-1" y="2" spawntime="60"/>
-<monster name="insect" x="3" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="4" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="4" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2777" centery="3125" centerz="9" radius="5">
-<monster name="insect" x="-2" y="2" spawntime="60"/>
-<monster name="insect" x="4" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-5" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="3" spawntime="60"/>
 </spawn>
 <spawn centerx="2787" centery="3105" centerz="9" radius="5">
-<monster name="insect" x="-2" y="4" spawntime="60"/>
-<monster name="insect" x="4" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="-4" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="4" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2804" centery="3086" centerz="9" radius="5">
-<monster name="insect" x="-1" y="2" spawntime="60"/>
-<monster name="insect" x="3" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-3" spawntime="60"/>
 </spawn>
 <spawn centerx="2824" centery="3098" centerz="9" radius="3">
-<monster name="insect" x="-2" y="0" spawntime="60"/>
-<monster name="insect" x="2" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2839" centery="3183" centerz="9" radius="5">
-<monster name="insect" x="-2" y="3" spawntime="60"/>
-<monster name="insect" x="3" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="-4" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="4" y="-5" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="0" spawntime="60"/>
 </spawn>
 <spawn centerx="2848" centery="3155" centerz="9" radius="5">
-<monster name="insect" x="-4" y="4" spawntime="60"/>
-<monster name="insect" x="-4" y="-4" spawntime="60"/>
-<monster name="insect" x="4" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="-4" y="-4" spawntime="60"/>
 </spawn>
 <spawn centerx="2864" centery="3138" centerz="9" radius="3">
-<monster name="insect" x="-1" y="1" spawntime="60"/>
-<monster name="insect" x="3" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2850" centery="3144" centerz="9" radius="3">
-<monster name="insect" x="-2" y="2" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="-2" spawntime="60"/>
 </spawn>
 <spawn centerx="2862" centery="3123" centerz="9" radius="3">
-<monster name="insect" x="-2" y="1" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2852" centery="3119" centerz="9" radius="3">
-<monster name="insect" x="-2" y="-2" spawntime="60"/>
-<monster name="insect" x="1" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2848" centery="3107" centerz="9" radius="2">
-<monster name="insect" x="-1" y="1" spawntime="60"/>
-<monster name="insect" x="1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2859" centery="3100" centerz="9" radius="3">
-<monster name="insect" x="-2" y="2" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2884" centery="3064" centerz="9" radius="5">
-<monster name="insect" x="-3" y="3" spawntime="60"/>
-<monster name="insect" x="3" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2904" centery="3052" centerz="9" radius="5">
-<monster name="insect" x="-2" y="3" spawntime="60"/>
-<monster name="insect" x="3" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="-4" y="0" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="4" spawntime="60"/>
 </spawn>
 <spawn centerx="2916" centery="3031" centerz="9" radius="5">
-<monster name="insect" x="1" y="4" spawntime="60"/>
-<monster name="insect" x="-2" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="-4" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="3" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="4" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2907" centery="3000" centerz="9" radius="5">
-<monster name="insect" x="3" y="3" spawntime="60"/>
-<monster name="insect" x="-4" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="4" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2896" centery="2984" centerz="9" radius="5">
-<monster name="insect" x="2" y="3" spawntime="60"/>
-<monster name="insect" x="-3" y="2" spawntime="60"/>
-<monster name="insect" x="1" y="-5" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="3" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-4" spawntime="60"/>
+<monster name="Dokumushi" x="4" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2868" centery="3045" centerz="9" radius="3">
-<monster name="insect" x="-2" y="3" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="-1" spawntime="60"/>
 </spawn>
 <spawn centerx="2873" centery="3036" centerz="9" radius="3">
-<monster name="insect" x="2" y="2" spawntime="60"/>
-<monster name="insect" x="-1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2859" centery="3030" centerz="9" radius="3">
-<monster name="insect" x="-2" y="3" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="-3" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2846" centery="3019" centerz="9" radius="3">
-<monster name="insect" x="-1" y="2" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-2" y="2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="2" y="2" spawntime="60"/>
 </spawn>
 <spawn centerx="2867" centery="3014" centerz="9" radius="3">
-<monster name="insect" x="-2" y="2" spawntime="60"/>
-<monster name="insect" x="2" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="-3" y="-1" spawntime="60"/>
+<monster name="Dokumushi" x="0" y="-2" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="1" spawntime="60"/>
 </spawn>
 <spawn centerx="2980" centery="3108" centerz="7" radius="0">
 <npc name="Daizou" x="0" y="0"/>
@@ -3945,5 +3934,251 @@
 <monster name="Assassin" x="2" y="2" spawntime="60"/>
 <monster name="Assassin" x="0" y="2" spawntime="60"/>
 <monster name="Assassin" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2795" centery="3154" centerz="9" radius="2">
+<monster name="Dokumushi" x="-2" y="1" spawntime="60"/>
+<monster name="Dokumushi" x="1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2945" centery="3258" centerz="6" radius="5">
+<monster name="Cursed Skeleton" x="-3" y="-2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="2" y="2" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-2" y="2" spawntime="60"/>
+</spawn>
+<spawn centerx="2957" centery="3258" centerz="6" radius="5">
+<monster name="Cursed Skeleton" x="3" y="-3" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-3" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="3" y="3" spawntime="60"/>
+</spawn>
+<spawn centerx="2964" centery="3249" centerz="6" radius="5">
+<monster name="Cursed Wolf" x="-2" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="2" y="3" spawntime="60"/>
+</spawn>
+<spawn centerx="2964" centery="3266" centerz="6" radius="5">
+<monster name="Cursed Wolf" x="3" y="2" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="2" spawntime="60"/>
+</spawn>
+<spawn centerx="2952" centery="3248" centerz="6" radius="1">
+<monster name="Cursed Wolf" x="-1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2952" centery="3268" centerz="6" radius="1">
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2961" centery="3249" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="0" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2953" centery="3249" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3249" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3261" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3268" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2955" centery="3268" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2966" centery="3268" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="0" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2966" centery="3255" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2959" centery="3253" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="0" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2948" centery="3253" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2948" centery="3263" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2962" centery="3263" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2962" centery="3258" centerz="5" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="0" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2953" centery="3253" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2948" centery="3262" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2958" centery="3262" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2958" centery="3249" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3249" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3259" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3267" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2954" centery="3267" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2965" centery="3267" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2965" centery="3260" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="1" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2965" centery="3253" centerz="4" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2959" centery="3249" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2950" centery="3249" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3249" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3258" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2943" centery="3267" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2957" centery="3267" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="0" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2965" centery="3267" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="0" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2965" centery="3257" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2948" centery="3262" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="-1" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2948" centery="3255" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2960" centery="3255" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="0" spawntime="60"/>
+</spawn>
+<spawn centerx="2960" centery="3263" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="-1" spawntime="60"/>
+</spawn>
+<spawn centerx="2954" centery="3263" centerz="3" radius="1">
+<monster name="Cursed Skeleton" x="-1" y="1" spawntime="60"/>
+<monster name="Cursed Skeleton" x="1" y="-1" spawntime="60"/>
+<monster name="Cursed Wolf" x="0" y="1" spawntime="60"/>
+</spawn>
+<spawn centerx="2523" centery="3132" centerz="7" radius="5">
+<monster name="Suna Demon" x="-1" y="4" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="-3" spawntime="60"/>
+<monster name="Sandbound Soul" x="0" y="-4" spawntime="60"/>
+</spawn>
+<spawn centerx="2541" centery="3135" centerz="7" radius="5">
+<monster name="Sandbound Soul" x="-3" y="1" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="-4" spawntime="60"/>
+<monster name="Sandbound Soul" x="2" y="4" spawntime="60"/>
+<monster name="Suna Demon" x="2" y="-1" spawntime="60"/>
+<monster name="Sandbound Soul" x="-1" y="-4" spawntime="60"/>
+</spawn>
+<spawn centerx="2527" centery="3118" centerz="7" radius="5">
+<monster name="Sandbound Soul" x="-3" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="-2" spawntime="60"/>
+<monster name="Sandbound Soul" x="3" y="3" spawntime="60"/>
+<monster name="Sandbound Soul" x="-3" y="-3" spawntime="60"/>
+<monster name="Suna Demon" x="0" y="3" spawntime="60"/>
 </spawn>
 </spawns>

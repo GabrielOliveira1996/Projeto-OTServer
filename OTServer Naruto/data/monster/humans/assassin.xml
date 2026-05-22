@@ -21,7 +21,7 @@
   <attacks>
     <attack name="melee" interval="2000" skill="32" attack="36" />
     <attack name="physical" interval="1500" chance="10" range="5" min="-25" max="-40">
-      <attribute key="shootEffect" value="throwingstar" />
+      <attribute key="shootEffect" value="shurikenthrow" />
     </attack>
     <attack name="Demon Poison" interval="1500" chance="30" range="1" />
   </attacks>

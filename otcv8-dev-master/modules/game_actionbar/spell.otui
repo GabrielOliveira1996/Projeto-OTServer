@@ -68,7 +68,7 @@ MainWindow
     width: 2
     background-color: #303030
 
-  Panel
+  ScrollablePanel
     id: spellDetails
     anchors.top: spellList.top
     anchors.left: spellList.right
@@ -79,6 +79,8 @@ MainWindow
     border-width: 1
     border-color: #666666
     padding: 8
+    clipping: true
+    vertical-scrollbar: detailsScrollBar
 
     Label
       id: spellName
@@ -107,13 +109,13 @@ MainWindow
       text: "Descrição:"
       color: #d8d8d8
       text-wrap: true
-      text-offset: 0 2
       text-auto-resize: true
+      text-align: top-left
 
     Label
       id: spellChakra
       anchors.top: spellDescription.bottom
-      margin-top: 5
+      margin-top: 8
       anchors.left: parent.left
       text: "Chakra:"
       color: #d8d8d8
@@ -139,6 +141,15 @@ MainWindow
       text-wrap: true
       text-offset: 0 2
       height: 60
+
+  VerticalScrollBar
+    id: detailsScrollBar
+    anchors.top: spellDetails.top
+    anchors.right: spellDetails.right
+    anchors.bottom: spellDetails.bottom
+    margin-right: 1
+    step: 14
+    pixels-scroll: true
 
   VerticalScrollBar
     id: listScrollBar
